@@ -6,6 +6,14 @@ Engineering problems are usually too complex for one person to solve alone. A ro
 
 The strongest team is not always the team with the most experienced person. A strong team is a group where different people can bring different strengths and where those strengths are noticed, respected, and used.
 
+## What This Course Is Really About
+
+This course is about building something together. The robot gives us a shared challenge, but the deeper goal is to become more curious, more confident, and more willing to try unfamiliar work.
+
+We are not here only to win a competition. We are here to learn how teams solve problems. We are here to make new friendships, encourage each other, test ideas, and discover how building, coding, design, physics, and communication can help people contribute to the world.
+
+Everyone should participate. Everyone should get a chance to try tools, ask questions, test the robot, explain ideas, and help the team improve.
+
 ## Different Strengths Matter
 
 In robotics, there are many ways to contribute.
@@ -15,13 +23,13 @@ In robotics, there are many ways to contribute.
 | Careful observation | Notices loose wires, rubbing wheels, unsafe tests, or confusing instructions |
 | Creativity | Suggests new designs, team names, strategies, or ways to solve problems |
 | Patience | Helps during debugging, testing, rebuilding, and learning new skills |
-| Organization | Keeps track of tools, parts, data, roles, deadlines, and portfolio evidence |
+| Organization | Keeps track of tools, parts, data, team needs, deadlines, and portfolio evidence |
 | Communication | Helps the team explain decisions, listen to each other, and present clearly |
 | Confidence | Helps the team take action, test ideas, and keep moving |
 | Curiosity | Asks useful questions and looks for better explanations |
 | Persistence | Keeps working when the robot does not work the first time |
 | Technical experience | Helps with building, coding, tools, wiring, or strategy |
-| Willingness to learn | Helps the team grow and try new roles |
+| Willingness to learn | Helps the team grow and try new kinds of work |
 
 Prior experience is useful, but it is not the only kind of value. A student who is new to robotics may ask an important question that experienced students missed. A quiet teammate may notice a design problem before anyone else. A careful documenter may save the team from forgetting why a decision was made.
 
@@ -37,7 +45,7 @@ Good engineering teams make room for quiet voices because:
 - new learners may ask simple questions that expose confusing design choices,
 - and teams make better decisions when more people understand the plan.
 
-Bringing quiet voices forward does not mean forcing people to talk constantly. It means creating a team culture where people are invited, listened to, and given real roles.
+Bringing quiet voices forward does not mean forcing people to talk constantly. It means creating a team culture where people are invited, listened to, and given real ways to contribute.
 
 ## Helping Is Not the Same as Taking Over
 
@@ -48,28 +56,28 @@ Robotics teams need to help each other. But there is a difference between helpin
 | "Move, I'll do it." | "Do you want me to show you, or talk you through it?" |
 | "That's wrong." | "Can we test that idea and see what happens?" |
 | "Just copy my code." | "Here is the part of the code that controls the motor." |
-| "You should do the notebook." | "Which role do you want to try this session?" |
+| "You should do the notebook." | "Which kind of work do you want to try this session?" |
 | "I already know how to do this." | "I can explain what I know, and then you can try the next step." |
 
 A good teammate does not make other people smaller. A good teammate helps other people become more capable.
 
-## Engineering Teams Need a Mix of Roles
+## Engineering Teams Need a Mix of Contributions
 
-A full robotics team needs many kinds of work. Some roles are technical. Some are organizational. Some are communication-based. All of them matter.
+A full robotics team needs many kinds of work. Some contributions are technical. Some are organizational. Some are communication-based. All of them matter.
 
-| Role | What This Person Helps With |
+| Contribution | What This Person Helps With |
 |---|---|
-| Designer | Sketches ideas and thinks through trade-offs |
-| Builder / Fabricator | Assembles parts, uses tools, and improves mechanisms |
-| Programmer | Writes and tests code for motors, servos, sensors, and controls |
-| Driver / Operator | Practices controlling the robot and gives feedback |
-| Tester / Data Lead | Records what happens, measures performance, and looks for patterns |
-| Portfolio Lead | Documents decisions, photos, code, data, and reflections |
-| Presenter | Explains the robot and the team's process to others |
-| Materials Steward | Helps track shared parts, tools, and borrowed equipment |
-| Team Organizer | Helps the team divide tasks and keep moving |
+| Design support | Sketches ideas and thinks through trade-offs |
+| Build / fabrication support | Assembles parts, uses tools, and improves mechanisms |
+| Programming support | Writes and tests code for motors, servos, sensors, and controls |
+| Driving / operating support | Practices controlling the robot and gives feedback |
+| Testing / data support | Records what happens, measures performance, and looks for patterns |
+| Portfolio support | Documents decisions, photos, code, data, and reflections |
+| Presentation support | Explains the robot and the team's process to others |
+| Materials support | Helps track shared parts, tools, and borrowed equipment |
+| Team organization support | Helps the team divide tasks and keep moving |
 
-These roles can rotate. A student should not be trapped in one role forever. The goal is for everyone to contribute and everyone to grow.
+These contributions can rotate. A student should not be trapped in one kind of work forever. The goal is for everyone to contribute and everyone to grow.
 
 ## How This Connects to Your Bio
 
@@ -79,7 +87,7 @@ Your bio should include:
 
 - strengths you already have,
 - skills you want to learn,
-- roles you might want to try,
+- kinds of work you might want to try,
 - goals you have for the course,
 - how you work best,
 - and one challenge you may need to manage.
@@ -107,7 +115,7 @@ ______________________________________________________________________________
 
 ______________________________________________________________________________
 
-What is one role you might want to try during this course?
+What is one kind of work you might want to try during this course?
 
 ______________________________________________________________________________
 
