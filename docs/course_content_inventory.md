@@ -31,8 +31,10 @@ Status meanings:
 | `02_student_materials/readings/day1_session1_robotics_safety_norms.md` | Safety norms handout | Student | Day 1 Session 1 | source candidate | Supports safety expectations and student commitment. |
 | `02_student_materials/readings/day1_session2_collaborative_engineering_teams.md` | Background reading | Student | Day 1 Session 2 | source candidate | Supports collaborative team formation and role awareness. |
 | `02_student_materials/readings/day2_session3_why_team_names_matter.md` | Background reading | Student | Day 2 Session 3 | source candidate | Supports team identity/name decision. |
-| `02_student_materials/readings/day2_session4_chassis_physics_space_background.md` | Background reading | Student | Day 2 Session 4 | source candidate | Supports chassis physics and space planning decisions. |
 | `02_student_materials/readings/day2_session4_decode_scoring_strategy_background.md` | Background reading | Student | Day 2 Session 4 | source candidate | Supports game strategy, course constraints, scoring, autonomous goals, and evidence. |
+| `02_student_materials/readings/day2_session4_programming_background.md` | Background reading | Student | Day 2 Session 4 | source candidate | Supports the first programming session, including OpModes, hardware names, and configuration. |
+| `02_student_materials/readings/day2_session4_reading_basic_teleop.md` | Background reading | Student | Day 2 Session 4 | source candidate | Supports reading and modifying a basic TeleOp program. |
+| `02_student_materials/readings/day3_session5_chassis_physics_space_background.md` | Background reading | Student | Day 3 Session 5 | source candidate | Supports chassis physics, space planning, and build-start constraints. |
 | `02_student_materials/decision_menus/day1_session1_individual_goal_menu.md` | Goal menu / workbook material | Student | Day 1 Session 1 | source candidate | Contains goal areas, Must/Should/Could structure, and final reflection preview. |
 | `02_student_materials/decision_menus/day2_session3_team_name_menu.md` | Decision menu | Student teams | Day 2 Session 3 | source candidate | Includes menu options, decision table, SLD connection, portfolio deliverable, and reflection. |
 | `02_student_materials/decision_menus/day2_session3_team_norms_menu.md` | Decision menu | Student teams | Day 2 Session 3 | source candidate | Includes norm options, repair agreement, decision table, SLD connection, portfolio deliverable, and reflection. |
@@ -47,7 +49,7 @@ Status meanings:
 | `04_research_and_design_rationale/research_brief_design_menu_cards.md` | Research/design rationale | Teacher / curriculum designer | Whole course | keep | Explains rationale for design menus and decision tables. |
 | `04_research_and_design_rationale/research_brief_student_led_discussions.md` | Research/design rationale | Teacher / curriculum designer | Whole course | keep | Explains rationale for student-led discussions. |
 | `05_print_packets/day2_session4_chassis_material_menu.pdf` | PDF export | Student / teacher | Day 2 Session 4 | generated export | Likely generated from matching Markdown source. |
-| `05_print_packets/day2_session4_chassis_physics_space_background.pdf` | PDF export | Student / teacher | Day 2 Session 4 | generated export | Likely generated from matching Markdown source. |
+| `05_print_packets/day3_session5_chassis_physics_space_background.pdf` | PDF export | Student / teacher | Day 3 Session 5 | generated export | Likely generated from matching Markdown source. |
 | `05_print_packets/day2_session4_chassis_shape_menu.pdf` | PDF export | Student / teacher | Day 2 Session 4 | generated export | Likely generated from matching Markdown source. |
 | `05_print_packets/day2_session4_decode_scoring_strategy_background.pdf` | PDF export | Student / teacher | Day 2 Session 4 | generated export | Likely generated from matching Markdown source. |
 | `05_print_packets/day2_session4_electronics_battery_placement_menu.pdf` | PDF export | Student / teacher | Day 2 Session 4 | generated export | Likely generated from matching Markdown source. |

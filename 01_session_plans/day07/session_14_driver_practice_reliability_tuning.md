@@ -1,50 +1,50 @@
-# Session 14: Driver Practice and Reliability Tuning
+# Session 14: Whole-System Operation and Tuning
 
 ## Session Snapshot
 - Day: 7
 - Session: 14
-- Big goal: Practice driving, tune controls, and identify reliability problems.
-- Student-facing objective: I can separate driver practice issues from robot, code, and strategy issues.
-- Main deliverable: Driver practice log with observed issue and next adjustment.
-- Existing materials to use: `future_human_controller_mapping_background.md`; `02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md`
-- Materials still needed: TODO: driver practice drills; reliability checklist; field setup notes; notebook log.
+- Big goal: Test the robot as a connected system and tune for repeatable loading, firing, reloading, and firing again.
+- Student-facing objective: I can identify how robot subsystems interact and choose quick adjustments that improve reliability.
+- Main deliverable: Robot can load, fire, reload, and repeat with documented adjustments.
+- Existing materials to use: `02_student_materials/readings/day7_session14_whole_system_testing.md`; `02_student_materials/readings/day7_session14_quick_adjustments_and_tuning.md`; `02_student_materials/readings/day7_session13_test_shooting_and_observation.md`
+- Materials still needed: TODO: whole-system test checklist; driver/operator routine guide; reliability tuning log.
 
 ## Teacher Setup Before Class
 
-TODO: Prepare field/test stations, driver rotation expectations, batteries, and a practice log.
+TODO: Prepare field/test stations, target area, driver/operator roles, charged batteries, safety boundaries, and a whole-system test log.
 
 ## Opening Move
 
-TODO: Remind teams that driver skill and robot reliability both need practice evidence.
+TODO: Remind teams that parts can work separately but fail when the robot operates as a full system.
 
 ## Background / Mini-Lesson
 
-TODO: Mini-lesson on controlled driving drills, precision/speed trade-offs, and diagnosing failures.
+Use the whole-system testing and quick adjustments readings to introduce subsystem interactions, repeatable operating sequences, tuning, temporary fixes, and safety limits.
 
 ## Student-Led Discussion
 
-Prompt: Is this problem caused by the robot, the code, the driver, or the strategy?
+Prompt: Which subsystem worked alone but caused a problem when the whole robot operated together?
 
 ## Team Task
 
-Teams assign driver/operator/tester/documenter roles and choose practice targets.
+Teams write a repeatable load-fire-reset-reload sequence and assign driver/operator/tester/documenter roles.
 
 ## Build / Program / Test Time
 
-Teams run driver practice, tune controls if needed, and document reliability issues.
+Teams run whole-system tests, make safe quick adjustments, and document reliability issues.
 
 ## Engineering Notebook Evidence
 
-Teams complete a driver practice log with issue, likely cause, and next adjustment.
+Teams complete a whole-system test log with sequence, what worked, what failed, and next adjustment.
 
 ## Share-Out / Reflection
 
-TODO: Teams identify one improvement from practice and one reliability concern.
+TODO: Teams identify one quick adjustment that helped and what a stronger permanent version would look like.
 
 ## Cleanup
 
-TODO: Reset field, charge/store batteries, and save practice logs.
+TODO: Reset field, remove loose temporary materials, charge/store batteries, and save test logs.
 
 ## Teacher Notes
 
-TODO: Track teams with unsafe driving, recurring failures, or unclear role rotation.
+TODO: Track teams with unsafe quick fixes, recurring subsystem interactions, or unclear driver/operator timing.

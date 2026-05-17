@@ -4,7 +4,7 @@
 
 This is a 10-day, 20-session modified FIRST Tech Challenge robotics course. Students build, program, test, document, and present a working FTC-style robot in two weeks.
 
-The course is not only a build sprint. It is structured so students practice engineering decisions, teamwork, evidence collection, safety, repair, communication, and reflection. The current repo is strongest in early course culture, student-led discussion, decision menus, and chassis/strategy planning.
+The course is not only a build sprint. It is structured so students practice engineering decisions, teamwork, evidence collection, safety, repair, communication, and reflection. The current repo is strongest in early course culture, student-led discussion, decision menus, first programming readings, and chassis/strategy planning.
 
 ## What Students Will Build
 
@@ -17,8 +17,8 @@ The planned robot arc includes drivetrain/chassis, wiring/electronics placement,
 | Day | Sessions | Main arc |
 |---:|---|---|
 | 1 | 1-2 | Course entry, FIRST/FTC culture, safety, borrowed equipment, student goals, collaborative teams |
-| 2 | 3-4 | Team identity, team norms, game strategy, chassis design decisions |
-| 3 | 5-6 | Chassis build start, build continuation, readiness for powered testing |
+| 2 | 3-4 | Team identity, team norms, game strategy, first programming session |
+| 3 | 5-6 | Chassis design planning, build start, build continuation, readiness for powered testing |
 | 4 | 7-8 | Controller mapping, first TeleOp, drivetrain testing |
 | 5 | 9-10 | Strategy check, mechanism planning, robot improvement sprint |
 | 6 | 11-12 | Testing methods, data collection, iteration from evidence |
@@ -92,7 +92,8 @@ The notebook should answer: What did we choose, why did we choose it, what did w
 
 - Robot startup and driving: students need a powered, safe robot that can move under control.
 - Team identity and strategy: teams choose names, norms, and a starting game strategy.
-- Chassis design: teams choose chassis shape, material, wheels, motor placement, and electronics/battery placement.
+- First programming: teams read a basic TeleOp program and connect code names to configured hardware.
+- Chassis design: teams choose chassis shape, material, wheels, motor placement, and electronics/battery placement as Day 3 build planning begins.
 - Chassis build and wiring: teams assemble or modify the chassis and prepare for safe powered testing.
 - First TeleOp: teams configure/program basic driver-controlled movement.
 - Controller mapping/functions: teams connect controls to driver intuition and robot needs.
@@ -163,7 +164,7 @@ Highest-need missing pieces:
 
 ## Immediate Weekend Priorities
 
-1. Turn Sessions 1-4 into usable timed plans because the existing materials are strongest there.
+1. Turn Sessions 1-4 into usable timed plans, with Session 4 focused on first programming.
 2. Build the first version of the student engineering notebook/workbook so evidence collection is consistent from Day 1.
 3. Create teacher setup/checklist materials for safety, tools, batteries, controllers, parts, and cleanup.
 4. Draft missing programming supports for Sessions 7-8 and 13.

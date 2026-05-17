@@ -1,50 +1,50 @@
-# Session 11: Testing Methods and Data Collection
+# Session 11: Gravity-Fed Hopper Design
 
 ## Session Snapshot
 - Day: 6
 - Session: 11
-- Big goal: Learn how to test one change at a time and collect useful evidence.
-- Student-facing objective: I can design a simple robot test that produces evidence my team can use.
-- Main deliverable: Test plan and first data table.
-- Existing materials to use: `02_student_materials/decision_menus/day2_session3_team_norms_menu.md`; decision menus with evidence prompts in `02_student_materials/decision_menus/`
-- Materials still needed: TODO: testing background reading; test-plan template; teacher guide; sample data table.
+- Big goal: Design and test a gravity-fed hopper that guides balls reliably toward the shooter.
+- Student-facing objective: I can explain how a hopper controls the ball path before the flywheel launches the ball.
+- Main deliverable: Hopper sketch/mockup and ball-path test.
+- Existing materials to use: `02_student_materials/readings/day6_session11_gravity_fed_hopper_design.md`; `02_student_materials/readings/day6_session11_hopper_jams_and_ball_path.md`; `02_student_materials/readings/day5_session9_flywheel_build_and_test_planning.md`
+- Materials still needed: TODO: teacher hopper guide; hopper test-plan template; sample ball-path data table.
 
 ## Teacher Setup Before Class
 
-TODO: Prepare test space, timers/measuring tools, scoring criteria, and data table format.
+TODO: Prepare balls, hopper materials, ramps/rails, test space, measuring tools, and ball-path data table format.
 
 ## Opening Move
 
-TODO: Contrast useful evidence with vague claims like "it worked."
+TODO: Frame the hopper as the system that controls when and how balls reach the flywheel.
 
 ## Background / Mini-Lesson
 
-TODO: Mini-lesson on testing one change at a time, repeated trials, and recording conditions.
+Use the gravity-fed hopper and hopper jams readings to introduce ball path, feed path, slope, jams, one-at-a-time feeding, and hand testing before adding a servo.
 
 ## Student-Led Discussion
 
-Prompt: What evidence is more useful than "it worked" or "it did not work"?
+Prompt: Where is our hopper most likely to jam, and what evidence would prove it?
 
 ## Team Task
 
-Teams choose a robot behavior to test and write a simple test plan.
+Teams sketch or mock up a gravity-fed hopper and identify the ball path from loading to trigger.
 
 ## Build / Program / Test Time
 
-Teams run first trials and collect data without changing too many variables at once.
+Teams test the ball path by hand, watching for jams, rubbing, bridging, and inconsistent ball position.
 
 ## Engineering Notebook Evidence
 
-Teams submit a test plan and first data table.
+Teams submit a hopper sketch/mockup note, ball-path test results, and one planned redesign.
 
 ## Share-Out / Reflection
 
-TODO: Teams share one measurement that helped them understand the robot.
+TODO: Teams share one hopper problem they found and the evidence that showed it.
 
 ## Cleanup
 
-TODO: Reset field/test space and save data sheets.
+TODO: Reset test space, collect loose balls, secure hopper mockups, and save data sheets.
 
 ## Teacher Notes
 
-TODO: Track whether teams are collecting usable evidence or only opinions.
+TODO: Track whether teams are finding specific jam points or only describing the hopper generally.

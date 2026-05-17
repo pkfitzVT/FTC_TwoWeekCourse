@@ -6,7 +6,7 @@
 - Big goal: Begin building or modifying the drivetrain/chassis based on team decisions.
 - Student-facing objective: I can start building a chassis that matches my team's documented design choices.
 - Main deliverable: Build log entry with photo/sketch, parts used, first issue noticed, and next step.
-- Existing materials to use: `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md`; `02_student_materials/decision_menus/day2_session4_chassis_material_menu.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md`
+- Existing materials to use: `02_student_materials/readings/day3_session5_chassis_physics_space_background.md`; `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md`; `02_student_materials/decision_menus/day2_session4_chassis_material_menu.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md`; `05_print_packets/day3_session5_chassis_physics_space_background.pdf`
 - Materials still needed: TODO: full session plan; tool safety mini-lesson; build checklist; notebook build-log template; materials checkout form.
 
 ## Teacher Setup Before Class
@@ -19,7 +19,7 @@ TODO: Remind teams that build choices should match documented decisions unless e
 
 ## Background / Mini-Lesson
 
-TODO: Brief tool, fastener, alignment, and parts-management mini-lesson.
+Use the chassis physics and space planning reading to frame size constraints, load support, turning, clearance, attachment space, and repair access. Pair it with a brief tool, fastener, alignment, and parts-management mini-lesson.
 
 ## Student-Led Discussion
 

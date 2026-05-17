@@ -1,50 +1,50 @@
-# Session 15: Documentation and Engineering Portfolio Work Session
+# Session 15: Robot Inspection and Readiness Check
 
 ## Session Snapshot
 - Day: 8
 - Session: 15
-- Big goal: Organize evidence into an engineering notebook/portfolio.
-- Student-facing objective: I can select evidence that explains my team's engineering decisions, tests, and learning.
-- Main deliverable: Portfolio evidence checklist and missing-evidence list.
-- Existing materials to use: Portfolio deliverables in `02_student_materials/decision_menus/`; SLD structures in `02_student_materials/sld_prompts/day1_session1_sld_shared_materials_student.md`
-- Materials still needed: TODO: consolidated engineering notebook; portfolio checklist; teacher review guide; example structure.
+- Big goal: Inspect the robot for safety, size, wiring, power, and basic function before public demonstration.
+- Student-facing objective: I can use an inspection checklist to find and fix robot readiness issues.
+- Main deliverable: Robot passes internal inspection checklist.
+- Existing materials to use: `02_student_materials/readings/day8_session15_robot_inspection_and_safety.md`; `02_student_materials/readings/day8_session15_robot_readiness_checklist.md`
+- Materials still needed: TODO: teacher inspection guide; demonstration safety checklist; repair priority tracker.
 
 ## Teacher Setup Before Class
 
-TODO: Prepare team evidence folders, notebook/portfolio checklist, and review conference structure.
+TODO: Prepare inspection stations, size-check space, batteries, tools, repair supplies, and internal checklist copies.
 
 ## Opening Move
 
-TODO: Frame documentation as evidence of engineering thinking, not a separate paperwork task.
+TODO: Frame inspection as a normal engineering safety and reliability process, not a punishment.
 
 ## Background / Mini-Lesson
 
-TODO: Mini-lesson on organizing decisions, sketches, photos, test data, code notes, and reflections.
+Use the robot inspection and readiness readings to review safety, size, wiring, power, moving parts, and basic function checks.
 
 ## Student-Led Discussion
 
-Prompt: What evidence best explains our team's engineering story?
+Prompt: What inspection issue could make our robot unsafe or unreliable?
 
 ## Team Task
 
-Teams sort existing evidence and identify missing pieces.
+Teams inspect the robot and identify safety, wiring, size, power, and function issues.
 
 ## Build / Program / Test Time
 
-TODO: Use only as needed for quick evidence capture or clarification, not a full build sprint.
+Teams fix high-priority readiness issues and retest the affected item.
 
 ## Engineering Notebook Evidence
 
-Teams complete a portfolio evidence checklist and missing-evidence list.
+Teams complete an internal inspection table with pass/fix/retest notes.
 
 ## Share-Out / Reflection
 
-TODO: Teams share one strong evidence item and one gap they need to close.
+TODO: Teams share one issue inspection caught before demonstration.
 
 ## Cleanup
 
-TODO: Save files, return paper evidence, and preserve photos/data in team locations.
+TODO: Store robots safely, return tools, save inspection sheets, and note unresolved readiness issues.
 
 ## Teacher Notes
 
-TODO: Track teams missing core design, test, or reflection evidence.
+TODO: Track teams with unresolved safety, wiring, power, size, or function issues.

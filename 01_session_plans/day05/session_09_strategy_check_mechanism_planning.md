@@ -1,50 +1,50 @@
-# Session 9: Strategy Check and Mechanism Planning
+# Session 9: Flywheel Construction Basics
 
 ## Session Snapshot
 - Day: 5
 - Session: 9
-- Big goal: Decide what additional mechanism or scoring feature is realistic for the remaining time.
-- Student-facing objective: I can help my team choose a simple improvement that fits our strategy, time, and materials.
-- Main deliverable: Mechanism decision table, sketch, and build-risk note.
-- Existing materials to use: `02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md`; `02_student_materials/readings/day2_session4_decode_scoring_strategy_background.md`
-- Materials still needed: TODO: mechanism design menus; background readings; session plan; teacher guide; notebook mechanism template.
+- Big goal: Understand flywheel shooter basics and build a first testable shooter mockup.
+- Student-facing objective: I can explain how motor power, wheel speed, ball compression, and launch speed connect in a flywheel shooter.
+- Main deliverable: Shooter design sketch, compression plan, and first flywheel mockup/build.
+- Existing materials to use: `02_student_materials/readings/day5_session9_flywheel_motor_speed_compression.md`; `02_student_materials/readings/day5_session9_flywheel_build_and_test_planning.md`; `02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md`
+- Materials still needed: TODO: teacher flywheel build guide; shooter safety checklist; mechanism notebook template.
 
 ## Teacher Setup Before Class
 
-TODO: Prepare available mechanism parts, examples if appropriate, and realistic constraints for the remaining course time.
+TODO: Prepare flywheel parts, motors, wheels, ball samples, mounting hardware, safety expectations, and realistic constraints for the remaining course time.
 
 ## Opening Move
 
-TODO: Frame mechanism planning around simple, testable improvements rather than maximum complexity.
+TODO: Frame the shooter as a testable system: motor power, wheel speed, ball compression/contact, and launch speed.
 
 ## Background / Mini-Lesson
 
-TODO: Mini-lesson on mechanism scope, reliability, attachment points, and protecting drivetrain function.
+Use the flywheel motor speed/compression and build/test planning readings to introduce shooter vocabulary, compression, motor limits, first-build checks, and testable hypotheses.
 
 ## Student-Led Discussion
 
-Prompt: What is the simplest mechanism that could improve our strategy without risking the whole robot?
+Prompt: What first shooter variable should our team test, and what evidence will show whether it improved?
 
 ## Team Task
 
-Teams choose or refine a mechanism/improvement plan and sketch how it attaches to the robot.
+Teams sketch a flywheel shooter, choose a first compression gap or adjustment, and plan how it attaches to the robot.
 
 ## Build / Program / Test Time
 
-TODO: Teams may prototype or check fit if materials and time allow.
+Teams build a first flywheel mockup or check fit, focusing on safe mounting, wheel clearance, ball path, and a planned stop method.
 
 ## Engineering Notebook Evidence
 
-Teams record mechanism choice, sketch, expected benefit, and build risk.
+Teams record shooter sketch, motor/wheel placement, compression plan, first variable to test, expected result, and build risk.
 
 ## Share-Out / Reflection
 
-TODO: Teams share the improvement they chose and what they are not attempting.
+TODO: Teams share their first shooter test variable and one safety risk they planned for.
 
 ## Cleanup
 
-TODO: Return unused mechanism parts and save sketches/decision records.
+TODO: Return unused shooter parts, secure prototypes, and save sketches/decision records.
 
 ## Teacher Notes
 
-TODO: Watch for over-scoped mechanisms and teams risking a working drivetrain.
+TODO: Watch for unsafe flywheel handling, over-tight compression, weak motor mounting, and teams risking a working drivetrain.

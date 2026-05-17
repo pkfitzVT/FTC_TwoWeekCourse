@@ -24,7 +24,8 @@ The existing files already support this rhythm through background readings, desi
 - Day 1 Session 1 has multiple orientation and community materials.
 - Day 1 Session 1 includes both student-facing and teacher-facing SLD materials.
 - Day 2 Session 3 has team identity and team norms materials.
-- Day 2 Session 4 has several chassis, electronics, wheel, motor, and strategy decision menus.
+- Day 2 Session 4 has first-programming readings for FTC program structure and a basic TeleOp.
+- Day 3 Session 5 uses the chassis, electronics, wheel, motor, and space-planning materials as teams begin chassis design and build planning.
 - The repository includes templates for future design menus and SLD prompts.
 - Research briefs explain the rationale for design menus and student-led discussions.
 - Several PDFs appear to be generated print exports from Markdown source files.

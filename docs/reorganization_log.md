@@ -14,7 +14,7 @@ No files marked `Manual review first` were moved. The `.idea` directory, `packag
 - `day1_session1_robotics_safety_norms.md` -> `02_student_materials/readings/day1_session1_robotics_safety_norms.md`
 - `day1_session2_collaborative_engineering_teams.md` -> `02_student_materials/readings/day1_session2_collaborative_engineering_teams.md`
 - `day2_session3_why_team_names_matter.md` -> `02_student_materials/readings/day2_session3_why_team_names_matter.md`
-- `day2_session4_chassis_physics_space_background.md` -> `02_student_materials/readings/day2_session4_chassis_physics_space_background.md`
+- `day2_session4_chassis_physics_space_background.md` -> `02_student_materials/readings/day3_session5_chassis_physics_space_background.md`
 - `day2_session4_decode_scoring_strategy_background.md` -> `02_student_materials/readings/day2_session4_decode_scoring_strategy_background.md`
 
 ### Student Decision Menus
@@ -45,7 +45,7 @@ No files marked `Manual review first` were moved. The `.idea` directory, `packag
 ### Generated PDF Exports
 
 - `day2_session4_chassis_material_menu.pdf` -> `05_print_packets/day2_session4_chassis_material_menu.pdf`
-- `day2_session4_chassis_physics_space_background.pdf` -> `05_print_packets/day2_session4_chassis_physics_space_background.pdf`
+- `day2_session4_chassis_physics_space_background.pdf` -> `05_print_packets/day3_session5_chassis_physics_space_background.pdf`
 - `day2_session4_chassis_shape_menu.pdf` -> `05_print_packets/day2_session4_chassis_shape_menu.pdf`
 - `day2_session4_decode_scoring_strategy_background.pdf` -> `05_print_packets/day2_session4_decode_scoring_strategy_background.pdf`
 - `day2_session4_electronics_battery_placement_menu.pdf` -> `05_print_packets/day2_session4_electronics_battery_placement_menu.pdf`
@@ -96,3 +96,10 @@ No files marked `Manual review first` were moved. The `.idea` directory, `packag
 - Added root `.gitignore` with the requested ignore rules.
 - Created target organizing folders from the proposed move plan.
 - Updated `docs/course_content_inventory.md` so file paths match the new folder structure.
+
+## Day 2 / Day 3 Reading Realignment
+
+- Renamed `02_student_materials/readings/day2_session4_chassis_physics_space_background.md` -> `02_student_materials/readings/day3_session5_chassis_physics_space_background.md`.
+- Renamed `05_print_packets/day2_session4_chassis_physics_space_background.pdf` -> `05_print_packets/day3_session5_chassis_physics_space_background.pdf`.
+- Renamed the Day 2 Session 4 plan shell to `01_session_plans/day02/session_04_first_programming_session.md`.
+- Updated the scope sequence, session plans, engineering notebook, inventory, course overview, teacher overview, and coteacher review packet so Day 2 Session 4 focuses on first programming and Day 3 Session 5 carries chassis physics / space constraints.

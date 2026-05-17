@@ -165,13 +165,13 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 - Useful references: `02_student_materials/readings/day2_session3_why_team_names_matter.md`; `02_student_materials/decision_menus/day2_session3_team_name_menu.md`; `02_student_materials/decision_menus/day2_session3_team_norms_menu.md`
 - TODO: Develop the specific printable student page for this session.
 
-## Session 4: Game Strategy and Chassis Design Choices
+## Session 4: First Programming Session
 
-- Today's goal: Make early strategy, chassis shape, material, wheel, motor, and electronics layout decisions.
-- Team decision or task: Choose starting strategy and chassis design direction.
-- Notebook evidence required: Strategy decision table, chassis decision tables, sketches, evidence plan.
-- Reflection prompt: What should our robot prioritize first: scoring strategy, reliable movement, repair access, or future mechanism space?
-- Useful references: `02_student_materials/readings/day2_session4_decode_scoring_strategy_background.md`; `02_student_materials/readings/day2_session4_chassis_physics_space_background.md`; `02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md`; `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md`; `02_student_materials/decision_menus/day2_session4_chassis_material_menu.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md`
+- Today's goal: Connect a basic FTC TeleOp program to robot hardware names, gamepad input, and motor output.
+- Team decision or task: Read a basic TeleOp program and identify what it should make the robot do.
+- Notebook evidence required: TeleOp name, hardware names, motor ports, button mappings, one code change, and test result.
+- Reflection prompt: Why must the names in the configuration file match the names in the program exactly?
+- Useful references: `02_student_materials/readings/day2_session4_programming_background.md`; `02_student_materials/readings/day2_session4_reading_basic_teleop.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 5: Chassis Build Start
@@ -180,7 +180,7 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 - Team decision or task: Start building the chassis from documented decisions.
 - Notebook evidence required: Build log entry with photo/sketch, parts used, first issue noticed, and next step.
 - Reflection prompt: Which design choice should we protect when the build gets difficult or slow?
-- Useful references: `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md`; `02_student_materials/decision_menus/day2_session4_chassis_material_menu.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md`
+- Useful references: `02_student_materials/readings/day3_session5_chassis_physics_space_background.md`; `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md`; `02_student_materials/decision_menus/day2_session4_chassis_material_menu.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 6: Chassis Build Continuation and First Movement Checks

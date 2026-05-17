@@ -1,17 +1,17 @@
-# Session 8: Basic TeleOp Programming and Drivetrain Test
+# Session 8: Wire, Configure, and Test Drive
 
 ## Session Snapshot
 - Day: 4
 - Session: 8
-- Big goal: Program or configure basic driver-controlled movement and test it safely.
-- Student-facing objective: I can test whether the robot drives as expected and document what changed.
+- Big goal: Wire the drivetrain, configure motor names, and test basic TeleOp movement safely.
+- Student-facing objective: I can explain how wiring, configuration names, and Java code connect during a first-drive test.
 - Main deliverable: TeleOp test record with observed behavior, code/config change, and result.
-- Existing materials to use: `future_human_controller_mapping_background.md`
-- Materials still needed: TODO: full programming materials; step-by-step setup; troubleshooting guide; test table.
+- Existing materials to use: `02_student_materials/readings/day4_session8_wiring_configuration_and_first_drive.md`; `02_student_materials/readings/day4_session8_troubleshooting_basic_drive.md`; `02_student_materials/readings/day2_session4_programming_background.md`; `02_student_materials/readings/day2_session4_reading_basic_teleop.md`
+- Materials still needed: TODO: teacher wiring guide; step-by-step configuration screenshots; test table; inspection checklist.
 
 ## Teacher Setup Before Class
 
-TODO: Prepare programming devices, robot configurations, batteries, test space, and troubleshooting flow.
+TODO: Prepare programming devices, robot configurations, charged batteries, safe test blocks, Driver Stations, and troubleshooting flow.
 
 ## Opening Move
 
@@ -19,7 +19,7 @@ TODO: Review that unexpected robot motion is a testing and safety issue, not jus
 
 ## Background / Mini-Lesson
 
-TODO: Mini-lesson on basic TeleOp structure, motor directions, controller inputs, and safe test procedures.
+Use the wiring/configuration and troubleshooting readings to review motor ports, configuration names, hardwareMap, safe first-drive procedure, and one-change-at-a-time debugging.
 
 ## Student-Led Discussion
 

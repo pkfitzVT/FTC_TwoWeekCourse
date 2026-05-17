@@ -1,50 +1,50 @@
-# Session 16: Final Robot Improvements and Test Round
+# Session 16: Presentation Script and Judging Prep
 
 ## Session Snapshot
 - Day: 8
 - Session: 16
-- Big goal: Make final design/code adjustments based on evidence and presentation needs.
-- Student-facing objective: I can help my team choose a final improvement that is worth the risk.
-- Main deliverable: Final improvement decision record and final test evidence.
-- Existing materials to use: Decision/reflection structures in `02_student_materials/decision_menus/`
-- Materials still needed: TODO: full session plan; final test checklist; scope-control guide.
+- Big goal: Draft a concise team presentation that explains the robot, evidence, teamwork, growth, and award targets.
+- Student-facing objective: I can help my team turn robot evidence into a clear 4-minute presentation story.
+- Main deliverable: 4-minute team presentation draft with award targets.
+- Existing materials to use: `02_student_materials/readings/day8_session16_presentation_story_and_script.md`; `02_student_materials/readings/day8_session16_awards_judging_and_growth_narrative.md`; `02_student_materials/engineering_notebook/student_engineering_notebook_master.md`
+- Materials still needed: TODO: presentation rubric; timing guide; judge-question practice sheet.
 
 ## Teacher Setup Before Class
 
-TODO: Prepare final test space, repair supplies, and clear limits on risky late changes.
+TODO: Prepare presentation timing expectations, sample evidence options, notebook access, and judge-question prompts.
 
 ## Opening Move
 
-TODO: Ask teams to name what already works and what must not be broken.
+TODO: Ask teams to name the most important moment in their robot story.
 
 ## Background / Mini-Lesson
 
-TODO: Mini-lesson on final-change risk, reliability, and deciding when to stop.
+Use the presentation story and awards/judging readings to introduce concise storytelling, visuals, evidence, award claims, growth narrative, and judge questions.
 
 ## Student-Led Discussion
 
-Prompt: What final change is worth the risk, and what should we leave alone?
+Prompt: What should judges remember about our robot and our team after 4 minutes?
 
 ## Team Task
 
-Teams choose one final improvement or decide to protect reliability.
+Teams draft a 4-minute presentation structure and choose evidence for robot design, testing, teamwork, and growth.
 
 ## Build / Program / Test Time
 
-Teams complete the final improvement and run a test round to collect evidence.
+Teams rehearse or outline the presentation, select visuals, and prepare answers to likely judge questions.
 
 ## Engineering Notebook Evidence
 
-Teams record final improvement choice, risk, test evidence, and result.
+Teams record presentation roles, key claims, supporting evidence, award targets, and questions they need to practice.
 
 ## Share-Out / Reflection
 
-TODO: Teams share whether the final change helped, hurt, or should be reversed.
+TODO: Teams share one claim and the evidence that supports it.
 
 ## Cleanup
 
-TODO: Store robots in presentation/demo-ready condition.
+TODO: Save presentation drafts, organize visuals/evidence, and store robots in demo-ready condition.
 
 ## Teacher Notes
 
-TODO: Identify teams that need final repair support or scope reduction.
+TODO: Identify teams needing presentation support, clearer evidence, role balance, or judge-question practice.
