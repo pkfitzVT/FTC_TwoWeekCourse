@@ -19,7 +19,15 @@ Status meanings:
 | `docs/source_file_policy.md` | Source policy | Teacher / curriculum organizer | Whole course | keep | Explains Markdown/PDF source policy. |
 | `docs/proposed_file_move_plan.md` | Move plan | Teacher / curriculum organizer | Whole course | keep | Planning document used for safe-file reorganization. |
 | `docs/reorganization_log.md` | Reorganization log | Teacher / curriculum organizer | Whole course | keep | Summary of moved files and remaining manual-review items. |
+| `README.md` | Repository index | Student / teacher / public | Whole course | keep | Root entry point linking to the static course site and main documentation. |
 | `docs/README.md` | Documentation index | Teacher / repository maintainer | Whole course | keep | Entry point for course documentation, maps, session pages, and impact-study planning. |
+| `site/index.html` | Static site home | Student / teacher / public | Whole course | keep | Phase 1 public navigation layer linking to existing Markdown materials. |
+| `site/students/index.html` | Static site student page | Student / public | Whole course | keep | Student-facing navigation for readings, guides, menus, notebook materials, and challenge pathways. |
+| `site/teachers/index.html` | Static site teacher page | Teacher / public | Whole course | keep | Teacher-facing navigation for course maps, lesson plans, planning docs, templates, and impact-study resources. |
+| `site/sessions/index.html` | Static site session index | Teacher / public | Whole course | keep | Links to the pre-course page and 20 teacher-facing session lesson plans. |
+| `site/materials/index.html` | Static site materials index | Student / teacher / public | Whole course | keep | Category-based index for student materials, teacher resources, maps, templates, and planning documents. |
+| `site/assets/css/styles.css` | Static site stylesheet | Public site | Whole course | keep | Shared CSS for the lightweight navigation layer. |
+| `site/README.md` | Static site documentation | Teacher / repository maintainer | Whole course | keep | Explains local preview, site purpose, link conventions, and future GitHub Pages readiness. |
 | `docs/teacher_facing_robotics_course_overview.md` | Teacher overview / site landing page | Teacher / co-teacher | Whole course | keep | Current website-ready teacher overview with 20-session table, resource map, and links to individual session pages. |
 | `docs/teacher_facing_robotics_course_lesson_plan.md` | All-in-one teacher plan | Teacher / curriculum organizer | Whole course | keep | Preserved source/reference version of the teacher-facing lesson plan. |
 | `docs/coteacher_weekend_review_packet.md` | Co-teacher review packet | Teacher / co-teacher | Whole course | keep | Compact review packet; should stay aligned with the current course sequence. |

@@ -2,6 +2,11 @@
 
 This folder contains teacher-facing planning, course maps, site/page maps, content inventory, impact-study planning, and website-ready session pages.
 
+## Public Preview Site
+
+- [`../site/index.html`](../site/index.html): lightweight static navigation layer for students and teachers.
+- [`../site/README.md`](../site/README.md): local preview notes and future GitHub Pages guidance.
+
 ## Main Teacher Entry Points
 
 - [`teacher_facing_robotics_course_overview.md`](teacher_facing_robotics_course_overview.md): current website-ready teacher overview and session index.

@@ -1,0 +1,143 @@
+:root {
+  --bg: #f7f8fb;
+  --panel: #ffffff;
+  --text: #1c2430;
+  --muted: #5c6675;
+  --line: #d9dee8;
+  --accent: #1768ac;
+  --accent-dark: #0f4f86;
+  --soft: #eaf3fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--accent-dark);
+  text-decoration: underline;
+}
+
+.site-header {
+  background: #1d2735;
+  color: #ffffff;
+  padding: 28px 20px;
+}
+
+.site-header h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+
+.site-header p {
+  margin: 0;
+  max-width: 760px;
+  color: #d8e0ea;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.nav a {
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 6px;
+  padding: 7px 11px;
+}
+
+.nav a:hover,
+.nav a:focus {
+  background: rgba(255, 255, 255, 0.12);
+  text-decoration: none;
+}
+
+main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 28px 20px 44px;
+}
+
+.intro {
+  max-width: 860px;
+  margin-bottom: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.card,
+.section {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.card h2,
+.section h2 {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+.card p,
+.section p {
+  color: var(--muted);
+}
+
+.section {
+  margin-bottom: 18px;
+}
+
+.link-list {
+  padding-left: 1.1rem;
+}
+
+.link-list li {
+  margin: 7px 0;
+}
+
+.tag {
+  display: inline-block;
+  background: var(--soft);
+  color: var(--accent-dark);
+  border-radius: 999px;
+  padding: 3px 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.note {
+  border-left: 4px solid var(--accent);
+  background: var(--soft);
+  padding: 12px 14px;
+  color: var(--text);
+}
+
+footer {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px 28px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
