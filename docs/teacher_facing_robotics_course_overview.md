@@ -112,6 +112,8 @@ Assessment should value safety, contribution, evidence, iteration, communication
 
 ### Assembly Guides
 
+- [Design, build, and revise process](../02_student_materials/guides/robotics_design_build_revise_process_handout.md)
+- [What should I be doing right now? work-ahead menu](../02_student_materials/guides/what_should_i_be_doing_right_now_robotics_work_ahead_menu.md)
 - [Principles of robot assembly](../02_student_materials/readings/principles_of_robot_assembly_day3.md)
 - [Chassis build checklist](../02_student_materials/readings/day4_session7_chassis_build_checklist.md)
 - [Mounting motors and wheels](../02_student_materials/readings/day4_session7_mounting_motors_and_wheels.md)

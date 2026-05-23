@@ -21,6 +21,7 @@ Prepare tools, safety glasses, frame parts, brackets, fasteners, wheels, motors,
 ## Student Background Reading / Preparation
 
 - [Chassis physics and space background](../../02_student_materials/readings/day3_session5_chassis_physics_space_background.md)
+- [Design, build, and revise process](../../02_student_materials/guides/robotics_design_build_revise_process_handout.md)
 - [Principles of robot assembly](../../02_student_materials/readings/principles_of_robot_assembly_day3.md)
 - [Chassis shape menu](../../02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md)
 - [Chassis material menu](../../02_student_materials/decision_menus/day2_session4_chassis_material_menu.md)
@@ -66,4 +67,5 @@ Coach careful assembly habits: count holes, start finger tight, use two fastener
 ## Linked Resources
 
 - [Principles of robot assembly](../../02_student_materials/readings/principles_of_robot_assembly_day3.md)
+- [What should I be doing right now? work-ahead menu](../../02_student_materials/guides/what_should_i_be_doing_right_now_robotics_work_ahead_menu.md)
 - [Engineering notebook](../../02_student_materials/engineering_notebook/student_engineering_notebook_master.md)

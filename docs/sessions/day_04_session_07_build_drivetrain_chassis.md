@@ -63,4 +63,5 @@ Keep students attentive to set screws, hubs, and axle collars. Fast assembly wit
 
 - [Chassis build checklist](../../02_student_materials/readings/day4_session7_chassis_build_checklist.md)
 - [Mounting motors and wheels](../../02_student_materials/readings/day4_session7_mounting_motors_and_wheels.md)
+- [What should I be doing right now? work-ahead menu](../../02_student_materials/guides/what_should_i_be_doing_right_now_robotics_work_ahead_menu.md)
 - [Engineering notebook](../../02_student_materials/engineering_notebook/student_engineering_notebook_master.md)
