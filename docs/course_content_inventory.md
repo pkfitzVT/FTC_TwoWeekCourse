@@ -48,14 +48,11 @@ Status meanings:
 | `docs/impact_study/robotics_course_impact_study_plan.md` | Impact-study plan | Teacher / researcher | Whole course | keep | Planning document for measuring robotics course impact. |
 | `docs/impact_study/discussion_tool_impact_study_plan.md` | Impact-study plan | Teacher / researcher | Whole course | keep | Planning document for discussion-tool impact study. |
 | `docs/impact_study/discussion_tool_compliance_planning_checklist.md` | Compliance checklist | Teacher / researcher | Whole course | keep | Compliance planning checklist for discussion-tool study. |
-| `background_documents_print_packet.pdf` | Print packet | Student / teacher | Early course; likely Day 1 and/or Day 2 | generated export | Not moved because packet PDFs require manual review and source manifests. |
-| `chassis_menus_shape_material_motor_wheel_packet.pdf` | Print packet | Student / teacher | Day 2 Session 4 | generated export | Not moved because packet PDFs require manual review and source manifests. |
-| `day1_session1_first_ftc_handouts.md` | Combined background handout | Student | Day 1 Session 1 | duplicate candidate | Not moved; combines FIRST and FTC background and overlaps with two separate files. |
-| `day1_session1_student_bio_template.md` | Student template | Student | Day 1 Session 1 | source candidate | Not moved; needs manual decision about engineering notebook vs workbook vs team-formation location. |
-| `day1_session1_what_is_first.md` | Background reading | Student | Day 1 Session 1 | duplicate candidate | Not moved; overlaps with `day1_session1_first_ftc_handouts.md`. |
-| `day1_session1_what_is_first_tech_challenge.md` | Background reading | Student | Day 1 Session 1 | duplicate candidate | Not moved; overlaps with `day1_session1_first_ftc_handouts.md`. |
-| `day2_session4_chassis_design_discussion_packet.pdf` | Print packet | Student / teacher | Day 2 Session 4 | generated export | Not moved because packet PDFs require manual review and source manifests. |
-| `future_human_controller_mapping_background.md` | Background reading | Student | Future programming/control session; mapped to Day 4 Session 7 | source candidate | Not moved per explicit exception; useful later-course material but not yet day/session-named. |
+| `99_archive_or_local/day1_session1_first_ftc_handouts.md` | Archived duplicate handout | Student / curriculum reference | Day 1 Session 1 | archive candidate | Archived combined FIRST/FTC draft. Modular readings are the source of truth. |
+| `02_student_materials/readings/day1_session1_what_is_first.md` | Background reading | Student | Day 1 Session 1 | source candidate | Modular FIRST reading; source of truth for FIRST ecosystem background. |
+| `02_student_materials/readings/day1_session1_what_is_first_tech_challenge.md` | Background reading | Student | Day 1 Session 1 | source candidate | Modular FTC reading; source of truth for FTC program background. |
+| `02_student_materials/engineering_notebook/day1_session1_student_bio_template.md` | Student template | Student | Day 1 Session 1 | source candidate | Student bio/team-formation template stored with engineering notebook materials. |
+| `02_student_materials/readings/future_human_controller_mapping_background.md` | Background reading | Student | Future programming/control session; mapped to Day 4 Session 7 | source candidate | Student background reading for controller mapping and human-centered controls. |
 | `02_student_materials/readings/day1_session1_borrowed_equipment_expectations.md` | Background reading / norms handout | Student | Day 1 Session 1 | source candidate | Supports borrowed equipment, community trust, and SLD 1. |
 | `02_student_materials/readings/day1_session1_robotics_safety_norms.md` | Safety norms handout | Student | Day 1 Session 1 | source candidate | Supports safety expectations and student commitment. |
 | `02_student_materials/readings/day1_session2_collaborative_engineering_teams.md` | Background reading | Student | Day 1 Session 2 | source candidate | Supports collaborative team formation and role awareness. |
@@ -109,6 +106,9 @@ Status meanings:
 | `04_research_and_design_rationale/research_brief_design_menu_cards.md` | Research/design rationale | Teacher / curriculum designer | Whole course | keep | Explains rationale for design menus and decision tables. |
 | `04_research_and_design_rationale/research_brief_student_led_discussions.md` | Research/design rationale | Teacher / curriculum designer | Whole course | keep | Explains rationale for student-led discussions. |
 | `05_print_packets/day2_session4_chassis_material_menu.pdf` | PDF export | Student / teacher | Day 2 Session 4 | generated export | Likely generated from matching Markdown source. |
+| `05_print_packets/background_documents_print_packet.pdf` | Print packet | Student / teacher | Early course; likely Day 1 and/or Day 2 | generated export | Moved from root; source manifest still recommended. |
+| `05_print_packets/chassis_menus_shape_material_motor_wheel_packet.pdf` | Print packet | Student / teacher | Day 2 Session 4 | generated export | Moved from root; source manifest still recommended. |
+| `05_print_packets/day2_session4_chassis_design_discussion_packet.pdf` | Print packet | Student / teacher | Day 2 Session 4 | generated export | Moved from root; source manifest still recommended. |
 | `05_print_packets/day3_session5_chassis_physics_space_background.pdf` | PDF export | Student / teacher | Day 3 Session 5 | generated export | Likely generated from matching Markdown source. |
 | `05_print_packets/day2_session4_chassis_shape_menu.pdf` | PDF export | Student / teacher | Day 2 Session 4 | generated export | Likely generated from matching Markdown source. |
 | `05_print_packets/day2_session4_decode_scoring_strategy_background.pdf` | PDF export | Student / teacher | Day 2 Session 4 | generated export | Likely generated from matching Markdown source. |
@@ -116,7 +116,7 @@ Status meanings:
 | `05_print_packets/day2_session4_game_strategy_goals_menu.pdf` | PDF export | Student / teacher | Day 2 Session 4 | generated export | Likely generated from matching Markdown source. |
 | `05_print_packets/day2_session4_motor_placement_menu.pdf` | PDF export | Student / teacher | Day 2 Session 4 | generated export | Likely generated from matching Markdown source. |
 | `05_print_packets/day2_session4_wheel_selection_menu.pdf` | PDF export | Student / teacher | Day 2 Session 4 | generated export | Likely generated from matching Markdown source. |
-| `05_print_packets/future_human_controller_mapping_background.pdf` | PDF export | Student / teacher | Future programming/control session; mapped to Day 4 Session 7 | generated export | Likely generated from matching Markdown source; Markdown source remains at repository root by explicit exception. |
+| `05_print_packets/future_human_controller_mapping_background.pdf` | PDF export | Student / teacher | Future programming/control session; mapped to Day 4 Session 7 | generated export | Likely generated from matching Markdown source. |
 | `90_templates/menu_prompt_template.md` | Template | Curriculum writer / teacher | Whole course | keep | Template for future design menus and decision records. |
 | `90_templates/research_brief_template.md` | Template | Curriculum writer / teacher | Whole course | keep | Template for future research briefs. |
 | `90_templates/sld_prompt_template.md` | Template | Curriculum writer / teacher | Whole course | keep | Template for student-facing SLD prompts and teacher/mentor SLD guides. |

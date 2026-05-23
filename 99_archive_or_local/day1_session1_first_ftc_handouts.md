@@ -1,3 +1,14 @@
+# Archived Duplicate: Day 1 FIRST/FTC Combined Handout
+
+This file is kept only as an older combined draft/reference. The editable source-of-truth files are:
+
+- `02_student_materials/readings/day1_session1_what_is_first.md`
+- `02_student_materials/readings/day1_session1_what_is_first_tech_challenge.md`
+
+The modular readings are preferred because FIRST and FTC are related but separate concepts.
+
+---
+
 # What Is FIRST?
 
 ## The Only Sport Where Everyone Can Go Pro

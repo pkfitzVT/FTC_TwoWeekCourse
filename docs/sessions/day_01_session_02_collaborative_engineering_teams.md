@@ -21,7 +21,7 @@ Prepare the collaborative engineering teams reading and decide whether student b
 ## Student Background Reading / Preparation
 
 - [Collaborative engineering teams](../../02_student_materials/readings/day1_session2_collaborative_engineering_teams.md)
-- [Student bio template](../../day1_session1_student_bio_template.md)
+- [Student bio template](../../02_student_materials/engineering_notebook/day1_session1_student_bio_template.md)
 
 ## Student-Led Discussion / Decision
 

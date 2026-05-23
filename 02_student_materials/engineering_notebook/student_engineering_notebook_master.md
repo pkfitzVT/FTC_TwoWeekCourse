@@ -14,7 +14,7 @@ This notebook is where your team records what you decided, built, tested, change
 
 Related materials:
 
-- `day1_session1_student_bio_template.md`
+- `02_student_materials/engineering_notebook/day1_session1_student_bio_template.md`
 - `02_student_materials/decision_menus/day1_session1_individual_goal_menu.md`
 
 ## Team Information
@@ -144,7 +144,7 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 - Team decision or task: Choose a personal goal and make a safety/community commitment.
 - Notebook evidence required: Personal goal choice, safety/community commitment, first SLD reflection, optional student bio.
 - Reflection prompt: What do we owe to the teams, mentors, and community members who made this robotics equipment available to us?
-- Useful references: `02_student_materials/readings/day1_session1_robotics_safety_norms.md`; `02_student_materials/readings/day1_session1_borrowed_equipment_expectations.md`; `02_student_materials/decision_menus/day1_session1_individual_goal_menu.md`; `02_student_materials/sld_prompts/day1_session1_sld_shared_materials_student.md`; `day1_session1_student_bio_template.md`
+- Useful references: `02_student_materials/readings/day1_session1_robotics_safety_norms.md`; `02_student_materials/readings/day1_session1_borrowed_equipment_expectations.md`; `02_student_materials/decision_menus/day1_session1_individual_goal_menu.md`; `02_student_materials/sld_prompts/day1_session1_sld_shared_materials_student.md`; `02_student_materials/engineering_notebook/day1_session1_student_bio_template.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 2: Collaborative Engineering Teams
@@ -153,7 +153,7 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 - Team decision or task: Name ways each person can contribute to the team.
 - Notebook evidence required: Teamwork reflection or bio-based contribution note.
 - Reflection prompt: How should an engineering team make room for different kinds of contributors?
-- Useful references: `02_student_materials/readings/day1_session2_collaborative_engineering_teams.md`; `day1_session1_student_bio_template.md`
+- Useful references: `02_student_materials/readings/day1_session2_collaborative_engineering_teams.md`; `02_student_materials/engineering_notebook/day1_session1_student_bio_template.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 3: Team Identity and Team Norms
@@ -198,7 +198,7 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 - Team decision or task: Draft a controller mapping plan connected to driver intuition and robot needs.
 - Notebook evidence required: Controller mapping plan or control-design reflection.
 - Reflection prompt: How should the controller match the driver's intuition under pressure?
-- Useful references: `future_human_controller_mapping_background.md`
+- Useful references: `02_student_materials/readings/future_human_controller_mapping_background.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 8: Basic TeleOp Programming and Drivetrain Test
@@ -207,7 +207,7 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 - Team decision or task: Test whether the robot drives as expected and decide what to adjust.
 - Notebook evidence required: TeleOp test record with observed behavior, code/config change, and result.
 - Reflection prompt: What should we change first when the robot does not drive the way we expected?
-- Useful references: `future_human_controller_mapping_background.md`
+- Useful references: `02_student_materials/readings/future_human_controller_mapping_background.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 9: Strategy Check and Mechanism Planning
@@ -261,7 +261,7 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 - Team decision or task: Identify whether issues come from the robot, code, driver, or strategy.
 - Notebook evidence required: Driver practice log with observed issue and next adjustment.
 - Reflection prompt: Is this problem caused by the robot, the code, the driver, or the strategy?
-- Useful references: `future_human_controller_mapping_background.md`; `02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md`
+- Useful references: `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 15: Documentation and Engineering Portfolio Work Session

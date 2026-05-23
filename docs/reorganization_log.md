@@ -2,9 +2,24 @@
 
 ## Summary
 
-This pass implemented only the approved safe parts of `docs/proposed_file_move_plan.md`.
+The initial pass implemented only the approved safe parts of `docs/proposed_file_move_plan.md`.
 
-No files marked `Manual review first` were moved. The `.idea` directory, `package.json`, `index.js`, `future_human_controller_mapping_background.md`, and Day 1 Session 1 duplicate/overlapping source files were intentionally left in place.
+During that initial pass, no files marked `Manual review first` were moved. The `.idea` directory, `package.json`, `index.js`, `future_human_controller_mapping_background.md`, and Day 1 Session 1 duplicate/overlapping source files were intentionally left in place.
+
+## Root-Level Manual Review Cleanup
+
+A later cleanup pass applied the Day 1 FIRST/FTC source-of-truth decision and the approved root-file moves:
+
+- `day1_session1_what_is_first.md` -> `02_student_materials/readings/day1_session1_what_is_first.md`
+- `day1_session1_what_is_first_tech_challenge.md` -> `02_student_materials/readings/day1_session1_what_is_first_tech_challenge.md`
+- `day1_session1_first_ftc_handouts.md` -> `99_archive_or_local/day1_session1_first_ftc_handouts.md`
+- `day1_session1_student_bio_template.md` -> `02_student_materials/engineering_notebook/day1_session1_student_bio_template.md`
+- `future_human_controller_mapping_background.md` -> `02_student_materials/readings/future_human_controller_mapping_background.md`
+- `background_documents_print_packet.pdf` -> `05_print_packets/background_documents_print_packet.pdf`
+- `chassis_menus_shape_material_motor_wheel_packet.pdf` -> `05_print_packets/chassis_menus_shape_material_motor_wheel_packet.pdf`
+- `day2_session4_chassis_design_discussion_packet.pdf` -> `05_print_packets/day2_session4_chassis_design_discussion_packet.pdf`
+
+The modular FIRST and FTC readings are now the source of truth. The combined Markdown handout is archived as an older duplicate/reference, not an editable source file.
 
 ## Files Moved
 
@@ -66,30 +81,20 @@ No files marked `Manual review first` were moved. The `.idea` directory, `packag
 - `run_ipad_frame_export.ps1` -> `91_utilities/run_ipad_frame_export.ps1`
 - `video_frame_exporter.ps1` -> `91_utilities/video_frame_exporter.ps1`
 
-## Files Intentionally Not Moved
+## Files Intentionally Not Moved During Initial Pass
 
 - `.idea/` and all `.idea` files
 - `package.json`
 - `index.js`
-- `future_human_controller_mapping_background.md`
-- `day1_session1_first_ftc_handouts.md`
-- `day1_session1_what_is_first.md`
-- `day1_session1_what_is_first_tech_challenge.md`
-- `day1_session1_student_bio_template.md`
-- `background_documents_print_packet.pdf`
-- `chassis_menus_shape_material_motor_wheel_packet.pdf`
-- `day2_session4_chassis_design_discussion_packet.pdf`
 
 ## Manual Review Items Remaining
 
-1. Decide whether `day1_session1_first_ftc_handouts.md` or the two modular readings should be the Day 1 Session 1 source of truth.
-2. Decide where `day1_session1_student_bio_template.md` belongs: engineering notebook, workbook packet, or team-formation materials.
-3. Create source manifests for packet PDFs:
-   - `background_documents_print_packet.pdf`
-   - `chassis_menus_shape_material_motor_wheel_packet.pdf`
-   - `day2_session4_chassis_design_discussion_packet.pdf`
-4. Decide the final session/path assignment for `future_human_controller_mapping_background.md`.
-5. Decide whether `.idea/`, `package.json`, and `index.js` should remain, be ignored, or be archived later.
+1. Create source manifests for packet PDFs:
+   - `05_print_packets/background_documents_print_packet.pdf`
+   - `05_print_packets/chassis_menus_shape_material_motor_wheel_packet.pdf`
+   - `05_print_packets/day2_session4_chassis_design_discussion_packet.pdf`
+2. Decide the final session/path assignment for `02_student_materials/readings/future_human_controller_mapping_background.md`.
+3. Decide whether `.idea/`, `package.json`, and `index.js` should remain, be ignored, or be archived later.
 
 ## Other Changes
 

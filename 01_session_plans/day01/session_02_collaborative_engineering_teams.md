@@ -6,7 +6,7 @@
 - Big goal: Help students understand how different strengths, roles, and communication styles support a robot team.
 - Student-facing objective: I can describe how I might contribute to an engineering team and how teammates can make room for different strengths.
 - Main deliverable: Teamwork reflection or bio-based contribution note.
-- Existing materials to use: `02_student_materials/readings/day1_session2_collaborative_engineering_teams.md`; `day1_session1_student_bio_template.md`
+- Existing materials to use: `02_student_materials/readings/day1_session2_collaborative_engineering_teams.md`; `02_student_materials/engineering_notebook/day1_session1_student_bio_template.md`
 - Materials still needed: TODO: full session plan; student-facing SLD prompt; teacher guide; team formation process; notebook template.
 
 ## Teacher Setup Before Class

@@ -83,8 +83,8 @@ Use the templates in `02_student_materials/engineering_notebook/student_engineer
 
 | Day | Session | Session Focus | Purpose | Student Activities | Materials / Readings | Deliverables | Engineering Portfolio Evidence | Reflection / Share-Out |
 |---:|---:|---|---|---|---|---|---|---|
-| 1 | 1 | FIRST, FTC, safety, trust, and personal goals | Establish community, safety, shared-material stewardship, and personal growth goals. | Read orientation/safety materials, discuss borrowed equipment, choose a personal goal. | `day1_session1_first_ftc_handouts.md`; `day1_session1_what_is_first.md`; `day1_session1_what_is_first_tech_challenge.md`; `02_student_materials/readings/day1_session1_robotics_safety_norms.md`; `02_student_materials/readings/day1_session1_borrowed_equipment_expectations.md`; `02_student_materials/decision_menus/day1_session1_individual_goal_menu.md`; `02_student_materials/sld_prompts/day1_session1_sld_shared_materials_student.md` | Personal goal, safety/community commitment, first SLD note, optional bio. | Goal choice, safety norm, borrowed-equipment commitment, SLD insight. | What do we owe to the teams, mentors, and community members who made this equipment available? |
-| 1 | 2 | Collaborative engineering teams | Help students see many valid ways to contribute. | Read team-culture material, identify strengths, discuss participation and helping without taking over. | `02_student_materials/readings/day1_session2_collaborative_engineering_teams.md`; `day1_session1_student_bio_template.md` | Teamwork reflection or contribution note. | One contribution the student can make and one team behavior to practice. | How should an engineering team make room for different kinds of contributors? |
+| 1 | 1 | FIRST, FTC, safety, trust, and personal goals | Establish community, safety, shared-material stewardship, and personal growth goals. | Read orientation/safety materials, discuss borrowed equipment, choose a personal goal. | `02_student_materials/readings/day1_session1_what_is_first.md`; `02_student_materials/readings/day1_session1_what_is_first_tech_challenge.md`; `02_student_materials/readings/day1_session1_robotics_safety_norms.md`; `02_student_materials/readings/day1_session1_borrowed_equipment_expectations.md`; `02_student_materials/decision_menus/day1_session1_individual_goal_menu.md`; `02_student_materials/sld_prompts/day1_session1_sld_shared_materials_student.md` | Personal goal, safety/community commitment, first SLD note, optional bio. | Goal choice, safety norm, borrowed-equipment commitment, SLD insight. | What do we owe to the teams, mentors, and community members who made this equipment available? |
+| 1 | 2 | Collaborative engineering teams | Help students see many valid ways to contribute. | Read team-culture material, identify strengths, discuss participation and helping without taking over. | `02_student_materials/readings/day1_session2_collaborative_engineering_teams.md`; `02_student_materials/engineering_notebook/day1_session1_student_bio_template.md` | Teamwork reflection or contribution note. | One contribution the student can make and one team behavior to practice. | How should an engineering team make room for different kinds of contributors? |
 | 2 | 3 | Team identity and team norms | Form teams and practice evidence-based decisions before robot design. | Choose team name and norms using menus; record trade-offs and repair agreements. | `02_student_materials/readings/day2_session3_why_team_names_matter.md`; `02_student_materials/decision_menus/day2_session3_team_name_menu.md`; `02_student_materials/decision_menus/day2_session3_team_norms_menu.md` | Team name decision table, team norms table, team agreement. | Team identity, selected norms, trade-offs, evidence plan. | What should our team name and norms say about the team we want to become? |
 | 2 | 4 | First programming session | Connect FTC TeleOp code to hardware names, configuration, gamepad input, and motor output. | Read basic TeleOp, identify hardware names, predict behavior, make one small code/config note. | `02_student_materials/readings/day2_session4_programming_background.md`; `02_student_materials/readings/day2_session4_reading_basic_teleop.md` | Programming notebook entry with OpMode name, hardware names, motor ports, button mapping, test note. | Configuration names, code names, one code change or prediction, observed result. | Why must configuration names match code names exactly? |
 | 3 | 5 | Chassis design planning and build start | Begin chassis construction from documented design choices. | Review chassis physics, shape/material/wheel/motor/electronics menus, sketch layout, begin frame. | `02_student_materials/readings/day3_session5_chassis_physics_space_background.md`; `02_student_materials/readings/principles_of_robot_assembly_day3.md`; `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md`; `02_student_materials/decision_menus/day2_session4_chassis_material_menu.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md` | SLD decision, chassis sketch, build photos, build log. | Chassis choice, trade-off, parts used, first issue, next step. | Which design choice should we protect when the build gets difficult? |
@@ -126,9 +126,8 @@ Teacher Preparation:
 
 Student Background Reading / Preparation:
 
-- `day1_session1_first_ftc_handouts.md`
-- `day1_session1_what_is_first.md`
-- `day1_session1_what_is_first_tech_challenge.md`
+- `02_student_materials/readings/day1_session1_what_is_first.md`
+- `02_student_materials/readings/day1_session1_what_is_first_tech_challenge.md`
 - `02_student_materials/readings/day1_session1_robotics_safety_norms.md`
 - `02_student_materials/readings/day1_session1_borrowed_equipment_expectations.md`
 - `02_student_materials/decision_menus/day1_session1_individual_goal_menu.md`
@@ -192,7 +191,7 @@ Teacher Preparation:
 Student Background Reading / Preparation:
 
 - `02_student_materials/readings/day1_session2_collaborative_engineering_teams.md`
-- `day1_session1_student_bio_template.md`
+- `02_student_materials/engineering_notebook/day1_session1_student_bio_template.md`
 
 Student-Led Discussion / Decision:
 
@@ -1301,7 +1300,7 @@ Super Challenges are optional Challenge by Choice pathways. They are invitations
 | Challenge Title | Source Material | Student-Facing Purpose | Possible Deliverables | STEM / Career Connection |
 |---|---|---|---|---|
 | Software Engineering Super Challenge: Shooter Code Organization | `02_student_materials/challenge_by_choice/software_engineering_super_challenge_robot_shooter_code.md` | Organize shooter, trigger, and driver-control code using methods or a class so teammates can understand and test it. | Cleaner TeleOp, helper methods, `ShooterSystem` class, code comments, telemetry, explanation. | AP Computer Science A, Java, software engineering, robotics programming, AI-assisted development. |
-| Draft Idea: Driver Control Improvement | Day 2/4 programming readings; `future_human_controller_mapping_background.md` | Improve driver control using speed modes, dead zones, telemetry, or clearer button mapping. | Code screenshot/file, before/after test notes, driver feedback. | Programming, human-centered design, controls, debugging. |
+| Draft Idea: Driver Control Improvement | Day 2/4 programming readings; `02_student_materials/readings/future_human_controller_mapping_background.md` | Improve driver control using speed modes, dead zones, telemetry, or clearer button mapping. | Code screenshot/file, before/after test notes, driver feedback. | Programming, human-centered design, controls, debugging. |
 
 ### Data Analysis Super Challenges
 

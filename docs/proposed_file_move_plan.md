@@ -11,11 +11,11 @@ The plan follows the current source policy:
 
 ## Review Flags
 
-- Day 1 Session 1 has overlapping FIRST/FTC background files:
-  - `day1_session1_first_ftc_handouts.md` appears to combine `day1_session1_what_is_first.md` and `day1_session1_what_is_first_tech_challenge.md`.
-  - Review before deciding whether the combined handout or the two modular readings are the source of truth.
-- Packet PDFs need source manifests before relying on them as stable print packets.
-- `future_human_controller_mapping_background.md` is useful course content but is not yet named by day/session.
+- Day 1 Session 1 source-of-truth decision has been applied:
+  - `02_student_materials/readings/day1_session1_what_is_first.md` and `02_student_materials/readings/day1_session1_what_is_first_tech_challenge.md` are the source files.
+  - `99_archive_or_local/day1_session1_first_ftc_handouts.md` is kept only as an archived combined duplicate/reference.
+- Packet PDFs were moved to `05_print_packets/`, but still need source manifests before relying on them as stable print packets.
+- `02_student_materials/readings/future_human_controller_mapping_background.md` is useful course content but is not yet named by day/session.
 - `index.js`, `package.json`, and `.idea/` appear local/project-scaffold files, not course content.
 - `photo_rescue_notes.md` and related PowerShell scripts are utilities, not core course materials.
 
@@ -39,15 +39,15 @@ No current files are complete session plans. Do not move existing readings, menu
 | Current path | Proposed new path | Reason for move | File category | Move safety |
 |---|---|---|---|---|
 | `day1_session1_borrowed_equipment_expectations.md` | `02_student_materials/readings/day1_session1_borrowed_equipment_expectations.md` | Student background/norms reading for safety, borrowed equipment, and community trust. | source file | Safe to move automatically |
-| `day1_session1_first_ftc_handouts.md` | `02_student_materials/readings/day1_session1_first_ftc_handouts.md` | Combined FIRST/FTC student background handout. | duplicate candidate | Manual review first |
+| `99_archive_or_local/day1_session1_first_ftc_handouts.md` | `99_archive_or_local/day1_session1_first_ftc_handouts.md` | Archived combined FIRST/FTC duplicate. Modular readings are the source of truth. | archive candidate | Completed |
 | `day1_session1_robotics_safety_norms.md` | `02_student_materials/readings/day1_session1_robotics_safety_norms.md` | Student safety norms handout. | source file | Safe to move automatically |
-| `day1_session1_what_is_first.md` | `02_student_materials/readings/day1_session1_what_is_first.md` | Modular FIRST background reading. | duplicate candidate | Manual review first |
-| `day1_session1_what_is_first_tech_challenge.md` | `02_student_materials/readings/day1_session1_what_is_first_tech_challenge.md` | Modular FTC background reading. | duplicate candidate | Manual review first |
+| `02_student_materials/readings/day1_session1_what_is_first.md` | `02_student_materials/readings/day1_session1_what_is_first.md` | Modular FIRST background reading. | source file | Completed |
+| `02_student_materials/readings/day1_session1_what_is_first_tech_challenge.md` | `02_student_materials/readings/day1_session1_what_is_first_tech_challenge.md` | Modular FTC background reading. | source file | Completed |
 | `day1_session2_collaborative_engineering_teams.md` | `02_student_materials/readings/day1_session2_collaborative_engineering_teams.md` | Student background reading for team formation and engineering roles. | source file | Safe to move automatically |
 | `day2_session3_why_team_names_matter.md` | `02_student_materials/readings/day2_session3_why_team_names_matter.md` | Student background reading for team identity/name decision. | source file | Safe to move automatically |
 | `day2_session4_chassis_physics_space_background.md` | `02_student_materials/readings/day3_session5_chassis_physics_space_background.md` | Student background reading for chassis physics and space planning, now aligned to Day 3 Session 5 build planning. | source file | Safe to move automatically |
 | `day2_session4_decode_scoring_strategy_background.md` | `02_student_materials/readings/day2_session4_decode_scoring_strategy_background.md` | Student background reading for DECODE scoring and strategy. | source file | Safe to move automatically |
-| `future_human_controller_mapping_background.md` | `02_student_materials/readings/future_human_controller_mapping_background.md` | Student background reading for later robot-control/controller-mapping session. | source file | Manual review first |
+| `02_student_materials/readings/future_human_controller_mapping_background.md` | `02_student_materials/readings/future_human_controller_mapping_background.md` | Student background reading for later robot-control/controller-mapping session. | source file | Completed |
 
 ## 02_student_materials/decision_menus
 
@@ -75,7 +75,7 @@ No current file is a consolidated engineering notebook. Several decision menus c
 
 | Current path | Proposed new path | Reason for move | File category | Move safety |
 |---|---|---|---|---|
-| `day1_session1_student_bio_template.md` | `02_student_materials/engineering_notebook/day1_session1_student_bio_template.md` | Student template that may belong in workbook/notebook materials rather than readings. | source file | Manual review first |
+| `02_student_materials/engineering_notebook/day1_session1_student_bio_template.md` | `02_student_materials/engineering_notebook/day1_session1_student_bio_template.md` | Student bio/team-formation template stored with engineering notebook materials. | source file | Completed |
 
 ## 03_teacher_materials/teacher_guides
 
@@ -110,9 +110,9 @@ No dedicated setup/cleanup files currently found. Safety and borrowed equipment 
 
 | Current path | Proposed new path | Reason for move | File category | Move safety |
 |---|---|---|---|---|
-| `background_documents_print_packet.pdf` | `05_print_packets/background_documents_print_packet.pdf` | Generated early-course print packet. Needs source manifest. | generated export | Manual review first |
-| `chassis_menus_shape_material_motor_wheel_packet.pdf` | `05_print_packets/chassis_menus_shape_material_motor_wheel_packet.pdf` | Generated chassis menu packet. Needs source manifest. | generated export | Manual review first |
-| `day2_session4_chassis_design_discussion_packet.pdf` | `05_print_packets/day2_session4_chassis_design_discussion_packet.pdf` | Generated Day 2 Session 4 discussion/design packet. Needs source manifest. | generated export | Manual review first |
+| `05_print_packets/background_documents_print_packet.pdf` | `05_print_packets/background_documents_print_packet.pdf` | Generated early-course print packet. Needs source manifest. | generated export | Completed |
+| `05_print_packets/chassis_menus_shape_material_motor_wheel_packet.pdf` | `05_print_packets/chassis_menus_shape_material_motor_wheel_packet.pdf` | Generated chassis menu packet. Needs source manifest. | generated export | Completed |
+| `05_print_packets/day2_session4_chassis_design_discussion_packet.pdf` | `05_print_packets/day2_session4_chassis_design_discussion_packet.pdf` | Generated Day 2 Session 4 discussion/design packet. Needs source manifest. | generated export | Completed |
 | `day2_session4_chassis_material_menu.pdf` | `05_print_packets/day2_session4_chassis_material_menu.pdf` | PDF export of matching Markdown source. | generated export | Safe to move automatically |
 | `day2_session4_chassis_physics_space_background.pdf` | `05_print_packets/day3_session5_chassis_physics_space_background.pdf` | PDF export of matching Markdown source, now aligned to Day 3 Session 5 build planning. | generated export | Safe to move automatically |
 | `day2_session4_chassis_shape_menu.pdf` | `05_print_packets/day2_session4_chassis_shape_menu.pdf` | PDF export of matching Markdown source. | generated export | Safe to move automatically |
@@ -164,8 +164,6 @@ The `docs` folder should keep repository-management documentation rather than st
 
 Before any move script or bulk reorganization, review these decisions:
 
-1. Decide whether `day1_session1_first_ftc_handouts.md` is the preferred source of truth, or whether the separate FIRST and FTC readings should remain the primary sources.
-2. Create manifests for `background_documents_print_packet.pdf`, `chassis_menus_shape_material_motor_wheel_packet.pdf`, and `day2_session4_chassis_design_discussion_packet.pdf`.
-3. Decide whether `future_human_controller_mapping_background.md` should be renamed later to a specific day/session once the programming/control sequence is finalized.
-4. Decide whether `.idea/`, `index.js`, and `package.json` should be archived, ignored, or kept if a future build/export workflow will use them.
-5. Decide whether `day1_session1_student_bio_template.md` belongs in engineering notebook materials, student workbook materials, or team-formation session materials.
+1. Create manifests for `05_print_packets/background_documents_print_packet.pdf`, `05_print_packets/chassis_menus_shape_material_motor_wheel_packet.pdf`, and `05_print_packets/day2_session4_chassis_design_discussion_packet.pdf`.
+2. Decide whether `02_student_materials/readings/future_human_controller_mapping_background.md` should be renamed later to a specific day/session once the programming/control sequence is finalized.
+3. Decide whether `.idea/`, `index.js`, and `package.json` should be archived, ignored, or kept if a future build/export workflow will use them.
