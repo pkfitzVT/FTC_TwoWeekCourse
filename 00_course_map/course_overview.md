@@ -4,7 +4,7 @@
 
 This repository supports a 10-day, 20-session modified FIRST Tech Challenge robotics course. Students will build, program, test, document, and present a working FTC-style robot in two weeks.
 
-The current repository contains strong early-course materials for FIRST/FTC orientation, safety, borrowed equipment expectations, student goals, team identity, team norms, student-led discussion, and early chassis/game-strategy decisions. It does not yet contain a complete 20-session course map, full teacher session plans, or a consolidated engineering notebook/workbook.
+The current repository contains course maps, 20 website-ready teacher session pages, student-facing readings and guides, decision menus, Challenge by Choice materials, student-led discussion materials, and an engineering notebook master. It also includes newer support materials for drivetrain construction, wiring/configuration, flywheel shooters, hopper/servo triggers, whole-system testing, robot inspection, presentation preparation, and impact-study planning.
 
 ## Course Rhythm
 
@@ -26,16 +26,20 @@ The existing files already support this rhythm through background readings, desi
 - Day 2 Session 3 has team identity and team norms materials.
 - Day 2 Session 4 has first-programming readings for FTC program structure and a basic TeleOp.
 - Day 3 Session 5 uses the chassis, electronics, wheel, motor, and space-planning materials as teams begin chassis design and build planning.
+- Day 4 through Day 8 now have student readings for drivetrain building, first drive testing, flywheel shooter design, projectile motion, hopper and servo trigger design, whole-system testing, inspection, and presentation preparation.
+- `02_student_materials/guides/` contains reusable student guides for design-build-revise habits and productive work-ahead tasks.
+- `docs/teacher_facing_robotics_course_overview.md` is the current teacher landing page for the website-ready course structure.
+- `docs/sessions/` contains a pre-course meet-the-teacher page and 20 individual teacher-facing session lesson plan pages.
+- `docs/impact_study/` contains planning materials for course impact study and discussion-tool compliance.
 - The repository includes templates for future design menus and SLD prompts.
 - Research briefs explain the rationale for design menus and student-led discussions.
 - Several PDFs appear to be generated print exports from Markdown source files.
 
 ## Current Content Gaps
 
-- No master 20-session scope and sequence existed before this organizing pass.
-- No complete teacher guide packet exists across all 20 sessions.
-- No consolidated student workbook or engineering notebook exists.
-- Later-course content is mostly missing: programming, build iteration, testing, debugging, driving practice, final presentation, and final reflection.
+- The 20-session course map and website-ready teacher session pages exist, but some session details still need timing, setup quantities, and field-management specifics.
+- The engineering notebook master exists, but printable daily student notebook pages may still need formatting.
+- Later-course scoring sheets, rubrics, final demonstration forms, and print packet manifests still need final source-of-truth decisions.
 - Print packets do not yet include manifests listing their source Markdown files.
 - Generated PDFs and source Markdown files are currently mixed in the repository root.
 
@@ -45,4 +49,4 @@ Markdown files should be treated as editable source files. PDFs should be treate
 
 ## Immediate Organization Goal
 
-For now, this repository should keep existing files in place while course-map documents clarify what exists, what is missing, and how future work should be organized.
+For now, this repository should keep existing files in place while course-map documents clarify what exists, what is missing, and how future work should be organized. The current website-facing teacher map starts at `docs/teacher_facing_robotics_course_overview.md`.

@@ -12,13 +12,12 @@ Students will move through a build/program/test/present cycle:
 
 - learn FIRST/FTC culture, safety, and borrowed-equipment expectations,
 - form teams and choose team norms,
-- choose a game strategy,
 - program basic TeleOp driving,
 - plan, build, and wire a drivetrain/chassis,
-- map controller functions,
-- prototype or add a simple mechanism,
-- test and revise with evidence,
-- add autonomous or scripted behavior if realistic,
+- build and test a flywheel shooter,
+- design a gravity-fed hopper and servo trigger,
+- test and revise the full robot system with evidence,
+- inspect the robot for safety and readiness,
 - practice driving and collect final performance evidence,
 - organize an engineering notebook,
 - prepare and deliver a judging-style presentation and final demonstration.
@@ -38,20 +37,22 @@ The purpose of the pattern is to keep student work evidence-based. Students shou
 | 1 | 1-2 | Course entry, FIRST/FTC culture, safety, borrowed equipment, personal goals, collaborative teams | Personal goal, safety/community commitment, first SLD reflection, teamwork contribution note |
 | 2 | 3-4 | Team identity, team norms, game strategy, first programming session | Team name/norm decision tables, strategy decision table, programming notebook entry |
 | 3 | 5-6 | Chassis design planning, build start, build continuation, readiness for powered testing | Chassis design tables, sketches, build log, chassis photo/sketch, readiness checklist, issue list |
-| 4 | 7-8 | Controller mapping, first TeleOp, drivetrain testing | Controller mapping plan, TeleOp test record |
-| 5 | 9-10 | Strategy check, mechanism planning, robot improvement sprint | Mechanism decision table, sketch, build-risk note, sprint log |
-| 6 | 11-12 | Testing methods, data collection, iteration from evidence | Test plan, data table, iteration record |
-| 7 | 13-14 | Autonomous/scripted behavior, driver practice, reliability tuning | Autonomous plan/test results, driver practice log |
-| 8 | 15-16 | Documentation, portfolio organization, final robot improvements | Portfolio evidence checklist, final improvement record, final test evidence |
+| 4 | 7-8 | Drivetrain/chassis build, wiring, configuration, first drive testing | Build photos, updated sketch, wiring/config table, TeleOp test record |
+| 5 | 9-10 | Flywheel shooter construction basics, projectile motion, target behavior | Shooter sketch, compression plan, first mockup/build, shot-test plan |
+| 6 | 11-12 | Gravity-fed hopper design, servo positions, trigger control | Hopper sketch/mockup, ball-path test, trigger plan, servo position test notes |
+| 7 | 13-14 | Trigger implementation, first controlled shots, whole-system tuning | Mounted trigger photo, shot observation log, whole-system test log |
+| 8 | 15-16 | Robot inspection/readiness, presentation script, judging prep | Readiness checklist, fix/retest notes, 4-minute presentation draft |
 | 9 | 17-18 | Practice challenge evidence, presentation planning | Match/practice data, reliability reflection, presentation outline |
 | 10 | 19-20 | Presentation rehearsal, final demo, final reflection | Rehearsal feedback, final revision list, final reflection, completed notebook/portfolio |
 
 ## What Is Ready Enough To Use
 
-Course map:
+Course map and website-ready teacher pages:
 
 - `00_course_map/course_overview.md`
 - `00_course_map/20_session_scope_sequence.md`
+- `docs/teacher_facing_robotics_course_overview.md`
+- `docs/sessions/`
 
 Session shells:
 
@@ -80,7 +81,21 @@ Readings:
 - `02_student_materials/readings/day2_session4_programming_background.md`
 - `02_student_materials/readings/day2_session4_reading_basic_teleop.md`
 - `02_student_materials/readings/day3_session5_chassis_physics_space_background.md`
+- Day 4-8 readings for drivetrain build, wiring/configuration, flywheel, projectile motion, hopper, servos, trigger implementation, whole-system testing, inspection, and presentation preparation.
 - FIRST/FTC orientation readings remain at the repo root pending duplicate review.
+
+Reusable student guides:
+
+- `02_student_materials/guides/robotics_design_build_revise_process_handout.md`
+- `02_student_materials/guides/what_should_i_be_doing_right_now_robotics_work_ahead_menu.md`
+
+Challenge by Choice:
+
+- `02_student_materials/challenge_by_choice/`
+
+Impact study planning:
+
+- `docs/impact_study/`
 
 Engineering notebook skeleton:
 
@@ -102,13 +117,9 @@ Teacher / design support:
 - Polished Day 1 materials: duplicate FIRST/FTC readings need a source-of-truth decision, and Day 1 packet order needs to be set.
 - Full teacher setup notes: safety, tools, batteries, controllers, field space, cleanup, and borrowed equipment routines.
 - Print packets: packet PDFs need manifests listing source Markdown files.
-- Rubrics: robot performance, notebook, teamwork, presentation, and final reflection rubrics are not built.
-- Programming handouts: TeleOp setup, drivetrain code/configuration, controller mapping implementation, troubleshooting.
-- Flywheel materials: design options, safety notes, testing procedure, and notebook page are missing.
-- Servo/hopper materials: design options, wiring/control notes, testing procedure, and notebook page are missing.
-- Autonomous materials: code examples, safe test procedure, and test table are missing.
-- Inspection checklist: chassis/electronics/fastener/wiring/safety inspection page is missing.
-- Judging/presentation pages: planning sheet, rehearsal feedback form, rubric, and final demo scoring sheet are missing.
+- Rubrics and scoring sheets: final robot performance, notebook, teamwork, presentation, and final reflection rubrics are not finalized.
+- Field/demo logistics: final challenge rules, scoring sheet, field rotation, and evidence capture flow still need confirmation.
+- Website readiness: session pages exist, but final navigation/front matter may be needed depending on the static-site tool.
 
 ## Questions For Coteacher Feedback
 

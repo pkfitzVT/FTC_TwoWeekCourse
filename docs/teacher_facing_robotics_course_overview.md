@@ -74,6 +74,10 @@ Assessment should value safety, contribution, evidence, iteration, communication
 
 ## Twenty-Session Overview
 
+Optional pre-course page:
+
+- [Meet the Teacher Robotics Intro](sessions/pre_course_meet_the_teacher_robotics_intro.md): 25-minute course trailer for students before the official 20-session course begins.
+
 | Day | Session | Session Focus | Purpose | Main Activities | Deliverables | Lesson Plan Link |
 |---:|---:|---|---|---|---|---|
 | 1 | 1 | FIRST, FTC, safety, trust, and personal goals | Establish community, safety, stewardship, and personal growth goals. | Orientation, safety discussion, individual goal choice, first SLD. | Personal goal, safety/community commitment, SLD note. | [Day 1, Session 1](sessions/day_01_session_01_first_ftc_safety_trust_goals.md) |
@@ -165,6 +169,12 @@ Assessment should value safety, contribution, evidence, iteration, communication
 - [Software engineering shooter code challenge](../02_student_materials/challenge_by_choice/software_engineering_super_challenge_robot_shooter_code.md)
 - [Physics projectile motion video analysis challenge](../02_student_materials/challenge_by_choice/physics_super_challenge_projectile_motion_video_analysis.md)
 - [Using AI wisely](../02_student_materials/challenge_by_choice/using_ai_wisely_in_robotics_course.md)
+
+### Impact Study and Planning
+
+- [Robotics course impact study plan](impact_study/robotics_course_impact_study_plan.md)
+- [Discussion tool impact study plan](impact_study/discussion_tool_impact_study_plan.md)
+- [Discussion tool compliance planning checklist](impact_study/discussion_tool_compliance_planning_checklist.md)
 
 ## Co-Teacher Notes
 

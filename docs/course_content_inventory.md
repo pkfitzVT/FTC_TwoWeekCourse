@@ -1,6 +1,6 @@
 # Course Content Inventory
 
-This inventory maps the current Markdown and PDF files in the repository after the first safe-file reorganization pass. It is organizational only.
+This inventory maps the current Markdown and PDF files in the repository after the course-map, website-session, student-guide, and impact-study planning updates. It is organizational only.
 
 Status meanings:
 
@@ -15,10 +15,39 @@ Status meanings:
 |---|---|---|---|---|---|
 | `00_course_map/course_overview.md` | Course map | Teacher / curriculum organizer | Whole course | keep | Course overview organizing document. |
 | `00_course_map/20_session_scope_sequence.md` | Scope and sequence | Teacher / curriculum organizer | Whole course | keep | 20-session organizing map. |
-| `docs/course_content_inventory.md` | Inventory | Teacher / curriculum organizer | Whole course | keep | Current inventory after safe-file moves. |
+| `docs/course_content_inventory.md` | Inventory | Teacher / curriculum organizer | Whole course | keep | Current inventory after course-map, session-page, student-guide, and impact-study planning updates. |
 | `docs/source_file_policy.md` | Source policy | Teacher / curriculum organizer | Whole course | keep | Explains Markdown/PDF source policy. |
 | `docs/proposed_file_move_plan.md` | Move plan | Teacher / curriculum organizer | Whole course | keep | Planning document used for safe-file reorganization. |
 | `docs/reorganization_log.md` | Reorganization log | Teacher / curriculum organizer | Whole course | keep | Summary of moved files and remaining manual-review items. |
+| `docs/README.md` | Documentation index | Teacher / repository maintainer | Whole course | keep | Entry point for course documentation, maps, session pages, and impact-study planning. |
+| `docs/teacher_facing_robotics_course_overview.md` | Teacher overview / site landing page | Teacher / co-teacher | Whole course | keep | Current website-ready teacher overview with 20-session table, resource map, and links to individual session pages. |
+| `docs/teacher_facing_robotics_course_lesson_plan.md` | All-in-one teacher plan | Teacher / curriculum organizer | Whole course | keep | Preserved source/reference version of the teacher-facing lesson plan. |
+| `docs/coteacher_weekend_review_packet.md` | Co-teacher review packet | Teacher / co-teacher | Whole course | keep | Compact review packet; should stay aligned with the current course sequence. |
+| `docs/sessions/readme.md` | Session folder index | Teacher / site maintainer | Whole course | keep | Describes the pre-course page and the 20 individual session files. |
+| `docs/sessions/pre_course_meet_the_teacher_robotics_intro.md` | Pre-course session plan | Teacher / co-teacher | Pre-course | source candidate | Optional meet-the-teacher course trailer; does not replace Day 1 Session 1. |
+| `docs/sessions/day_01_session_01_first_ftc_safety_trust_goals.md` | Teacher session page | Teacher / co-teacher | Day 1 Session 1 | keep | Website-ready lesson plan for course launch, FTC, safety, trust, and goals. |
+| `docs/sessions/day_01_session_02_collaborative_engineering_teams.md` | Teacher session page | Teacher / co-teacher | Day 1 Session 2 | keep | Website-ready lesson plan for team culture and contributions. |
+| `docs/sessions/day_02_session_03_team_identity_and_norms.md` | Teacher session page | Teacher / co-teacher | Day 2 Session 3 | keep | Website-ready lesson plan for team identity and team norms. |
+| `docs/sessions/day_02_session_04_first_programming_session.md` | Teacher session page | Teacher / co-teacher | Day 2 Session 4 | keep | Website-ready lesson plan for first programming session. |
+| `docs/sessions/day_03_session_05_chassis_design_planning_and_build_start.md` | Teacher session page | Teacher / co-teacher | Day 3 Session 5 | keep | Website-ready lesson plan for chassis design planning and build start. |
+| `docs/sessions/day_03_session_06_chassis_continuation_and_readiness.md` | Teacher session page | Teacher / co-teacher | Day 3 Session 6 | keep | Website-ready lesson plan for chassis continuation and readiness checks. |
+| `docs/sessions/day_04_session_07_build_drivetrain_chassis.md` | Teacher session page | Teacher / co-teacher | Day 4 Session 7 | keep | Website-ready lesson plan for drivetrain/chassis build. |
+| `docs/sessions/day_04_session_08_wire_configure_and_test_drive.md` | Teacher session page | Teacher / co-teacher | Day 4 Session 8 | keep | Website-ready lesson plan for wiring, configuration, and first drive. |
+| `docs/sessions/day_05_session_09_flywheel_construction_basics.md` | Teacher session page | Teacher / co-teacher | Day 5 Session 9 | keep | Website-ready lesson plan for flywheel construction basics. |
+| `docs/sessions/day_05_session_10_projectile_motion_and_target_behavior.md` | Teacher session page | Teacher / co-teacher | Day 5 Session 10 | keep | Website-ready lesson plan for projectile motion and target behavior. |
+| `docs/sessions/day_06_session_11_gravity_fed_hopper_design.md` | Teacher session page | Teacher / co-teacher | Day 6 Session 11 | keep | Website-ready lesson plan for gravity-fed hopper design. |
+| `docs/sessions/day_06_session_12_servos_and_trigger_control.md` | Teacher session page | Teacher / co-teacher | Day 6 Session 12 | keep | Website-ready lesson plan for servos and trigger control. |
+| `docs/sessions/day_07_session_13_trigger_implementation_and_first_shots.md` | Teacher session page | Teacher / co-teacher | Day 7 Session 13 | keep | Website-ready lesson plan for trigger implementation and first shots. |
+| `docs/sessions/day_07_session_14_whole_system_operation_and_tuning.md` | Teacher session page | Teacher / co-teacher | Day 7 Session 14 | keep | Website-ready lesson plan for whole-system operation and tuning. |
+| `docs/sessions/day_08_session_15_robot_inspection_and_readiness.md` | Teacher session page | Teacher / co-teacher | Day 8 Session 15 | keep | Website-ready lesson plan for robot inspection and readiness. |
+| `docs/sessions/day_08_session_16_presentation_script_and_judging_prep.md` | Teacher session page | Teacher / co-teacher | Day 8 Session 16 | keep | Website-ready lesson plan for presentation script and judging prep. |
+| `docs/sessions/day_09_session_17_practice_challenge_and_evidence_collection.md` | Teacher session page | Teacher / co-teacher | Day 9 Session 17 | keep | Website-ready lesson plan for practice challenge and evidence collection. |
+| `docs/sessions/day_09_session_18_presentation_planning.md` | Teacher session page | Teacher / co-teacher | Day 9 Session 18 | keep | Website-ready lesson plan for presentation planning. |
+| `docs/sessions/day_10_session_19_final_presentation_rehearsal.md` | Teacher session page | Teacher / co-teacher | Day 10 Session 19 | keep | Website-ready lesson plan for final presentation rehearsal. |
+| `docs/sessions/day_10_session_20_final_demonstrations_and_reflection.md` | Teacher session page | Teacher / co-teacher | Day 10 Session 20 | keep | Website-ready lesson plan for final demonstrations and reflection. |
+| `docs/impact_study/robotics_course_impact_study_plan.md` | Impact-study plan | Teacher / researcher | Whole course | keep | Planning document for measuring robotics course impact. |
+| `docs/impact_study/discussion_tool_impact_study_plan.md` | Impact-study plan | Teacher / researcher | Whole course | keep | Planning document for discussion-tool impact study. |
+| `docs/impact_study/discussion_tool_compliance_planning_checklist.md` | Compliance checklist | Teacher / researcher | Whole course | keep | Compliance planning checklist for discussion-tool study. |
 | `background_documents_print_packet.pdf` | Print packet | Student / teacher | Early course; likely Day 1 and/or Day 2 | generated export | Not moved because packet PDFs require manual review and source manifests. |
 | `chassis_menus_shape_material_motor_wheel_packet.pdf` | Print packet | Student / teacher | Day 2 Session 4 | generated export | Not moved because packet PDFs require manual review and source manifests. |
 | `day1_session1_first_ftc_handouts.md` | Combined background handout | Student | Day 1 Session 1 | duplicate candidate | Not moved; combines FIRST and FTC background and overlaps with two separate files. |
@@ -35,6 +64,28 @@ Status meanings:
 | `02_student_materials/readings/day2_session4_programming_background.md` | Background reading | Student | Day 2 Session 4 | source candidate | Supports the first programming session, including OpModes, hardware names, and configuration. |
 | `02_student_materials/readings/day2_session4_reading_basic_teleop.md` | Background reading | Student | Day 2 Session 4 | source candidate | Supports reading and modifying a basic TeleOp program. |
 | `02_student_materials/readings/day3_session5_chassis_physics_space_background.md` | Background reading | Student | Day 3 Session 5 | source candidate | Supports chassis physics, space planning, and build-start constraints. |
+| `02_student_materials/readings/principles_of_robot_assembly_day3.md` | Assembly guide / student handout | Student | Day 3 and build sessions | source candidate | Supports bracket use, fasteners, symmetry, access, stewardship, and careful assembly habits. |
+| `02_student_materials/readings/day4_session7_chassis_build_checklist.md` | Background reading / checklist | Student | Day 4 Session 7 | source candidate | Supports chassis/drivetrain build vocabulary, tools, safety, and space planning. |
+| `02_student_materials/readings/day4_session7_mounting_motors_and_wheels.md` | Background reading | Student | Day 4 Session 7 | source candidate | Supports motor, wheel, hub, axle, mounting, alignment, and friction concepts. |
+| `02_student_materials/readings/day4_session8_wiring_configuration_and_first_drive.md` | Background reading | Student | Day 4 Session 8 | source candidate | Supports Control Hub wiring, configuration names, Java variables, and first-drive testing. |
+| `02_student_materials/readings/day4_session8_troubleshooting_basic_drive.md` | Background reading / troubleshooting guide | Student | Day 4 Session 8 | source candidate | Supports debugging first-drive problems and using telemetry. |
+| `02_student_materials/readings/day5_session9_flywheel_motor_speed_compression.md` | Background reading | Student | Day 5 Session 9 | source candidate | Supports flywheel shooter physics, motor speed, torque, load, compression, and wheel firmness. |
+| `02_student_materials/readings/day5_session9_flywheel_build_and_test_planning.md` | Background reading / test planning guide | Student | Day 5 Session 9 | source candidate | Supports flywheel build planning, testable hypotheses, and safety. |
+| `02_student_materials/readings/day5_session10_projectile_motion_for_shooters.md` | Background reading | Student | Day 5 Session 10 | source candidate | Supports projectile motion, launch angle, initial velocity, distance, and height reasoning. |
+| `02_student_materials/readings/day5_session10_target_impact_and_shot_consistency.md` | Background reading | Student | Day 5 Session 10 | source candidate | Supports target impact, bounce, scoring window, and repeatability concepts. |
+| `02_student_materials/readings/day6_session11_gravity_fed_hopper_design.md` | Background reading | Student | Day 6 Session 11 | source candidate | Supports hopper purpose, gravity-fed ball paths, one-ball feeding, and reliability. |
+| `02_student_materials/readings/day6_session11_hopper_jams_and_ball_path.md` | Background reading / troubleshooting guide | Student | Day 6 Session 11 | source candidate | Supports hopper jam diagnosis and hand-testing ball paths. |
+| `02_student_materials/readings/day6_session12_intro_to_servos_positions.md` | Background reading | Student | Day 6 Session 12 | source candidate | Supports servo vocabulary, position values, endpoints, and safe servo use. |
+| `02_student_materials/readings/day6_session12_servo_trigger_design_and_testing.md` | Background reading / code handout | Student | Day 6 Session 12 | source candidate | Supports servo trigger design, sample test code, telemetry, and safe testing. |
+| `02_student_materials/readings/day7_session13_trigger_implementation_and_first_shots.md` | Background reading | Student | Day 7 Session 13 | source candidate | Supports mounted trigger testing and first controlled shooter shots. |
+| `02_student_materials/readings/day7_session13_test_shooting_and_observation.md` | Background reading / observation guide | Student | Day 7 Session 13 | source candidate | Supports evidence-based shot observation and one-change-at-a-time tuning. |
+| `02_student_materials/readings/day7_session14_whole_system_testing.md` | Background reading | Student | Day 7 Session 14 | source candidate | Supports full robot subsystem interaction testing and operating sequences. |
+| `02_student_materials/readings/day7_session14_quick_adjustments_and_tuning.md` | Background reading | Student | Day 7 Session 14 | source candidate | Supports temporary fixes, tuning, reliability, and safety rules for quick adjustments. |
+| `02_student_materials/readings/day8_session15_robot_inspection_and_safety.md` | Background reading | Student | Day 8 Session 15 | source candidate | Supports inspection as safety and reliability practice. |
+| `02_student_materials/readings/day8_session15_robot_readiness_checklist.md` | Checklist / student handout | Student | Day 8 Session 15 | source candidate | Supports internal robot readiness checks before demonstration. |
+| `02_student_materials/readings/day8_session16_presentation_story_and_script.md` | Background reading | Student | Day 8 Session 16 | source candidate | Supports concise 4-minute presentation story and visual evidence. |
+| `02_student_materials/readings/day8_session16_awards_judging_and_growth_narrative.md` | Background reading | Student | Day 8 Session 16 | source candidate | Supports award/recognition claims, evidence, judging questions, and growth narrative. |
+| `02_student_materials/guides/README.md` | Student guides index | Student / teacher | Course-wide | keep | Explains the reusable guides folder. |
 | `02_student_materials/guides/robotics_design_build_revise_process_handout.md` | Reusable student guide | Student | Course-wide / design-build sessions | source candidate | Supports intentional design, material checks, geometry, interference checks, and revision from evidence. |
 | `02_student_materials/guides/what_should_i_be_doing_right_now_robotics_work_ahead_menu.md` | Reusable student guide / work routine | Student | Course-wide / work sessions | source candidate | Supports productive downtime through programming, testing, design, documentation, driving practice, and tools/inventory tasks. |
 | `02_student_materials/decision_menus/day1_session1_individual_goal_menu.md` | Goal menu / workbook material | Student | Day 1 Session 1 | source candidate | Contains goal areas, Must/Should/Could structure, and final reflection preview. |
@@ -47,6 +98,13 @@ Status meanings:
 | `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md` | Design decision menu | Student teams | Day 2 Session 4 | source candidate | Motor placement options, questions, decision table, SLD connection, portfolio deliverable. |
 | `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md` | Design decision menu | Student teams | Day 2 Session 4 | source candidate | Wheel factors/options, assembly checklist, decision table, SLD connection, portfolio deliverable. |
 | `02_student_materials/sld_prompts/day1_session1_sld_shared_materials_student.md` | Student-led discussion prompt | Student | Day 1 Session 1 | source candidate | Student-facing SLD 1 prompt. |
+| `02_student_materials/engineering_notebook/student_engineering_notebook_master.md` | Engineering notebook master | Student / teacher | Whole course | source candidate | Master notebook/portfolio template with daily logs, decision records, test tables, code logs, photo evidence, final reflection, and presentation planning. |
+| `02_student_materials/challenge_by_choice/challenge_by_choice_README.md` | Challenge by Choice overview | Student | Course-wide | source candidate | Frames challenge pathways, low floor/high ceiling, course culture, and AI-use expectations. |
+| `02_student_materials/challenge_by_choice/challenge_by_choice_courses_and_careers.md` | Course/career connection guide | Student | Course-wide | source candidate | Connects robotics pathways to AP courses, STEM careers, and student interests. |
+| `02_student_materials/challenge_by_choice/using_ai_wisely_in_robotics_course.md` | AI-use guide | Student | Course-wide | source candidate | Supports responsible AI use in robotics without replacing student participation or physical testing. |
+| `02_student_materials/challenge_by_choice/cad_challenge_adjustable_shooter_mount_handout.md` | Super Challenge handout | Student | Optional extension | source candidate | CAD/fabrication challenge for adjustable shooter mount. |
+| `02_student_materials/challenge_by_choice/software_engineering_super_challenge_robot_shooter_code.md` | Super Challenge handout | Student | Optional extension | source candidate | Software engineering challenge for organizing shooter/trigger code. |
+| `02_student_materials/challenge_by_choice/physics_super_challenge_projectile_motion_video_analysis.md` | Super Challenge handout | Student | Optional extension | source candidate | Physics/data challenge for projectile motion video analysis. |
 | `03_teacher_materials/teacher_guides/day1_session1_sld_shared_materials_teacher_guide.md` | Teacher SLD guide | Teacher / mentor | Day 1 Session 1 | source candidate | Teacher-facing SLD 1 guide with tracking and expected comments. |
 | `04_research_and_design_rationale/research_brief_design_menu_cards.md` | Research/design rationale | Teacher / curriculum designer | Whole course | keep | Explains rationale for design menus and decision tables. |
 | `04_research_and_design_rationale/research_brief_student_led_discussions.md` | Research/design rationale | Teacher / curriculum designer | Whole course | keep | Explains rationale for student-led discussions. |
