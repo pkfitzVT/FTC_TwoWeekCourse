@@ -22,6 +22,7 @@ Prepare team assignments, the team name menu, the team norms menu, the Team Stra
 ## Student Background Reading / Preparation
 
 - [Why team names matter](../../02_student_materials/readings/day2_session3_why_team_names_matter.md)
+- [Structure, function, and robot strategy](../../02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md)
 - [Team name menu](../../02_student_materials/decision_menus/day2_session3_team_name_menu.md)
 - [Team norms menu](../../02_student_materials/decision_menus/day2_session3_team_norms_menu.md)
 - [Team Strategy Guide template](../../90_templates/team_strategy_guide_template.md)
@@ -35,6 +36,7 @@ Prompt: What should our team name and norms say about the team we want to become
 - Design: team identity, name, possible logo, motto, or color ideas.
 - Documentation: name and norms decision tables.
 - Team process: repair agreement for when norms are not followed.
+- Reading/discussion: connect structure and function to the idea that robot form should follow game strategy.
 - Strategy: copy the Team Strategy Guide into the team portfolio or shared document and complete the identity, norms connection, and first game-understanding sections.
 
 ## Must / Should / Could
@@ -70,5 +72,6 @@ The strategy guide should be treated as a living document. Do not create team fo
 
 - [Team name menu](../../02_student_materials/decision_menus/day2_session3_team_name_menu.md)
 - [Team norms menu](../../02_student_materials/decision_menus/day2_session3_team_norms_menu.md)
+- [Structure, function, and robot strategy](../../02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md)
 - [Team Strategy Guide template](../../90_templates/team_strategy_guide_template.md)
 - [Engineering notebook](../../02_student_materials/engineering_notebook/student_engineering_notebook_master.md)

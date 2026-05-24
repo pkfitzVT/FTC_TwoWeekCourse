@@ -22,8 +22,10 @@ Prepare tools, safety glasses, frame parts, brackets, fasteners, wheels, motors,
 ## Student Background Reading / Preparation
 
 - [Chassis physics and space background](../../02_student_materials/readings/day3_session5_chassis_physics_space_background.md)
+- [Structure, function, and robot strategy](../../02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md)
 - [Design, build, and revise process](../../02_student_materials/guides/robotics_design_build_revise_process_handout.md)
 - [Principles of robot assembly](../../02_student_materials/readings/principles_of_robot_assembly_day3.md)
+- [Structure, function, and robot strategy](../../02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md)
 - [Team Strategy Guide template](../../90_templates/team_strategy_guide_template.md)
 - [Chassis shape menu](../../02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md)
 - [Chassis material menu](../../02_student_materials/decision_menus/day2_session4_chassis_material_menu.md)

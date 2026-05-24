@@ -6,7 +6,7 @@
 - Big goal: Teams choose a name and norms that shape how they will work, then connect those norms to an initial game strategy.
 - Student-facing objective: I can help my team choose an identity and working agreements using reasons and trade-offs.
 - Main deliverable: Team name decision table, team norm decision table, started Team Strategy Guide, reflection on trade-offs.
-- Existing materials to use: `02_student_materials/readings/day2_session3_why_team_names_matter.md`; `02_student_materials/decision_menus/day2_session3_team_name_menu.md`; `02_student_materials/decision_menus/day2_session3_team_norms_menu.md`; `90_templates/team_strategy_guide_template.md`
+- Existing materials to use: `02_student_materials/readings/day2_session3_why_team_names_matter.md`; `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`; `02_student_materials/decision_menus/day2_session3_team_name_menu.md`; `02_student_materials/decision_menus/day2_session3_team_norms_menu.md`; `90_templates/team_strategy_guide_template.md`
 - Materials still needed: TODO: full session plan; teacher SLD guide; print packet/export; team agreement form.
 
 ## Teacher Setup Before Class
@@ -19,7 +19,7 @@ TODO: Frame team names and norms as first design decisions. Explain that norms d
 
 ## Background / Mini-Lesson
 
-Use the team name reading and briefly connect team identity to future design, documentation, and presentation work.
+Use the team name reading and structure/function reading to connect team identity, robot strategy, and future design work.
 
 ## Student-Led Discussion
 
@@ -27,7 +27,7 @@ Prompt: What should our team name and norms say about the team we want to become
 
 ## Team Task
 
-Teams use the team name and team norms menus to choose and document their identity and working agreements. Then they copy the Team Strategy Guide into their portfolio or shared team document and complete the identity, norms connection, and first game-understanding sections.
+Teams use the team name and team norms menus to choose and document their identity and working agreements. They use the structure/function reading to explain why robot form should follow strategy. Then they copy the Team Strategy Guide into their portfolio or shared team document and complete the identity, norms connection, and first game-understanding sections.
 
 ## Build / Program / Test Time
 

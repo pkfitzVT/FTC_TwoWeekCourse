@@ -2,6 +2,11 @@
 
 Use this guide after your team has formed, chosen a team name, and selected team norms. Copy it into your engineering portfolio or shared team document, then revisit it before major design decisions.
 
+Useful preparation:
+
+- `02_student_materials/guides/modified_robotics_game_rules_and_scoring_guide.md`
+- `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`
+
 Core idea:
 
 > Team norms tell us how we will work together.  
