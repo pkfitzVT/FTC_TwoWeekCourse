@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Robot Behavior Specification Template | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Robot Behavior Specification Template</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../index.html">Home</a>
+        <a href="../../students/index.html">Students</a>
+        <a href="../../teachers/index.html">Teachers</a>
+        <a href="../../sessions/index.html">Sessions</a>
+        <a href="../../materials/index.html">Materials</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../index.html">Back to site home</a> | <a href="../../../90_templates/robot_behavior_specification_template.md">View source Markdown</a></p>
+        <h1 id="robot-behavior-specification-template">Robot Behavior Specification Template</h1>
+<p>Use this template after your team has a first strategy and before choosing major robot design details.</p>
+<p>The Team Strategy Guide explains what your team is trying to accomplish. This behavior specification turns that strategy into specific robot requirements.</p>
+<p>Example:</p>
+<pre><code>Strategy: We want to score in TeleOp.
+
+Behavior specification: Our robot must drive from the starting area to the scoring position, align with the goal, release or shoot 2 artifacts per scoring loop, return for more artifacts, avoid contact, and fully park with 15 seconds remaining.</code></pre>
+<p>Copy this template into your engineering portfolio or shared team document. Revisit it before choosing chassis geometry, frame material, motor placement, mechanism placement, shooter design, hopper design, trigger design, driver controls, or programming priorities.</p>
+<p>---</p>
+<h1 id="1-team-and-strategy-reference">1. Team and Strategy Reference</h1>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Field</th>
+<th>Team Response</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Team name</td>
+<td></td>
+</tr>
+<tr>
+<td>Robot name</td>
+<td></td>
+</tr>
+<tr>
+<td>Date</td>
+<td></td>
+</tr>
+<tr>
+<td>Current strategy name</td>
+<td></td>
+</tr>
+<tr>
+<td>Team Strategy Guide link or location</td>
+<td></td>
+</tr>
+<tr>
+<td>Current version number</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>Strategy summary:</p>
+<p>______________________________________________________________________________</p>
+<p>______________________________________________________________________________</p>
+<p>---</p>
+<h1 id="2-autonomous-behavior-goals">2. Autonomous Behavior Goals</h1>
+<p>List what the robot should do without driver control. Keep the first version simple and testable.</p>
+<p>Examples:</p>
+<ul>
+<li>Drive off the back wall.</li>
+<li>Get off the starting line.</li>
+<li>Score one artifact.</li>
+<li>Move to a safe starting position for TeleOp.</li>
+<li>Avoid contact.</li>
+<li>Stop in a predictable location.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Behavior Description</th>
+<th>Why It Matters for Strategy</th>
+<th>Required Hardware</th>
+<th>Required Code</th>
+<th>Success Criteria</th>
+<th>Testing Plan</th>
+<th>Priority</th>
+</tr></thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Must / Should / Could</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Must / Should / Could</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Must / Should / Could</td>
+</tr>
+</tbody></table></div>
+<p>Autonomous setup requirements:</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Setup Item</th>
+<th>Requirement</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Starting position</td>
+<td></td>
+</tr>
+<tr>
+<td>Robot angle</td>
+<td></td>
+</tr>
+<tr>
+<td>Artifact position</td>
+<td></td>
+</tr>
+<tr>
+<td>Battery or power condition</td>
+<td></td>
+</tr>
+<tr>
+<td>Driver Station / OpMode selection</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>---</p>
+<h1 id="3-teleop-behavior-goals">3. TeleOp Behavior Goals</h1>
+<p>List what the robot should do during driver control.</p>
+<p>Examples:</p>
+<ul>
+<li>Drive reliably.</li>
+<li>Turn without tipping or drifting.</li>
+<li>Push artifacts toward the human operator.</li>
+<li>Collect or guide artifacts.</li>
+<li>Score artifacts in the goal.</li>
+<li>Release artifacts from a sleeve or hopper.</li>
+<li>Make multiple scoring loops.</li>
+<li>Score from one known position.</li>
+<li>Score from multiple positions.</li>
+<li>Avoid contact penalties.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Behavior Description</th>
+<th>Driver / Operator Input Needed</th>
+<th>Required Mechanism</th>
+<th>Required Chassis / Frame Qualities</th>
+<th>Success Criteria</th>
+<th>Testing Plan</th>
+<th>Priority</th>
+</tr></thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Must / Should / Could</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Must / Should / Could</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Must / Should / Could</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Must / Should / Could</td>
+</tr>
+</tbody></table></div>
+<p>TeleOp scoring loop sequence:</p>
+<p>1. 2. 3. 4. 5.</p>
+<p>Driver and operator roles:</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Role</th>
+<th>Responsibilities</th>
+<th>Controls Needed</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Gamepad 1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Gamepad 2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Coach / spotter</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Human operator</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>---</p>
+<h1 id="4-endgame-behavior-goals">4. Endgame Behavior Goals</h1>
+<p>List what the robot needs to do near the end of the match.</p>
+<p>Examples:</p>
+<ul>
+<li>Park.</li>
+<li>Fully park.</li>
+<li>Fully park while another robot also parks.</li>
+<li>Reserve enough time for parking.</li>
+<li>Avoid contact while parking.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Behavior Description</th>
+<th>When We Start Endgame</th>
+<th>Driver / Operator Action</th>
+<th>Success Criteria</th>
+<th>Risk</th>
+<th>Priority</th>
+</tr></thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Must / Should / Could</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Must / Should / Could</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Must / Should / Could</td>
+</tr>
+</tbody></table></div>
+<p>Endgame rule for our team:</p>
+<p>______________________________________________________________________________</p>
+<p>---</p>
+<h1 id="5-performance-targets">5. Performance Targets</h1>
+<p>Use estimates first. Replace them with test data as the robot improves.</p>
+<h2 id="scoring-targets">Scoring Targets</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Target</th>
+<th>Estimate or Goal</th>
+<th>Test Data / Updated Value</th>
+<th>Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Scoring loops expected</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Artifacts attempted per loop</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Success rate</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Time per loop</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Autonomous points</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TeleOp points</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Endgame points</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Likely penalties</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Expected total score</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="non-scoring-targets">Non-Scoring Targets</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Robot Behavior</th>
+<th>Target</th>
+<th>Test Method</th>
+<th>Result</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Drive straight over a fixed distance</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Turn accurately</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Complete a scoring loop within a target time</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Score from a chosen position with a target success rate</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Park within a target time</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Run without disconnects or jams</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>---</p>
+<h1 id="6-design-implications">6. Design Implications</h1>
+<p>Connect desired behaviors to design choices. If a design choice does not support a required behavior, question it.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Design Question</th>
+<th>Team Answer</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>What chassis geometry best supports these behaviors?</td>
+<td></td>
+</tr>
+<tr>
+<td>What frame material best supports these behaviors?</td>
+<td></td>
+</tr>
+<tr>
+<td>Where should drive motors be placed?</td>
+<td></td>
+</tr>
+<tr>
+<td>Where should mechanism motors be placed?</td>
+<td></td>
+</tr>
+<tr>
+<td>What needs to stay open or accessible?</td>
+<td></td>
+</tr>
+<tr>
+<td>What might block movement, scoring, or repair access?</td>
+<td></td>
+</tr>
+<tr>
+<td>What sensors or telemetry would help?</td>
+<td></td>
+</tr>
+<tr>
+<td>What code features are required?</td>
+<td></td>
+</tr>
+<tr>
+<td>What driver controls are required?</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>Most important design requirement:</p>
+<p>______________________________________________________________________________</p>
+<p>Design choice that creates the biggest trade-off:</p>
+<p>______________________________________________________________________________</p>
+<p>---</p>
+<h1 id="7-must-should-could-prioritization">7. Must / Should / Could Prioritization</h1>
+<p>Sort behaviors by importance. A working robot needs the Must behaviors before it needs stretch goals.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Priority</th>
+<th>Behaviors</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Must: required for a working robot</td>
+<td></td>
+</tr>
+<tr>
+<td>Should: important if time allows</td>
+<td></td>
+</tr>
+<tr>
+<td>Could: stretch goals</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>What will we remove or simplify if we run out of time?</p>
+<p>______________________________________________________________________________</p>
+<p>---</p>
+<h1 id="8-testing-plan">8. Testing Plan</h1>
+<p>Test behaviors one at a time before testing the whole robot sequence.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Behavior</th>
+<th>Test</th>
+<th>Success Criteria</th>
+<th>Result</th>
+<th>Revise?</th>
+</tr></thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Yes / No</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Yes / No</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Yes / No</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Yes / No</td>
+</tr>
+</tbody></table></div>
+<p>Next test to run:</p>
+<p>______________________________________________________________________________</p>
+<p>---</p>
+<h1 id="9-revision-log">9. Revision Log</h1>
+<p>Update this table when evidence changes what the robot needs to do.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Date</th>
+<th>Behavior Changed</th>
+<th>Why?</th>
+<th>Evidence</th>
+<th>Design / Code Impact</th>
+</tr></thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>---</p>
+<h1 id="10-decision-check">10. Decision Check</h1>
+<p>Before choosing chassis geometry, frame material, motor placement, or mechanism design, ask:</p>
+<blockquote>Which robot behavior does this design choice support?</blockquote>
+<p>Before adding complexity, ask:</p>
+<blockquote>Which performance goal will this improve, and how will we test it?</blockquote>
+<p>Final check before building:</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Design Choice</th>
+<th>Robot Behavior It Supports</th>
+<th>Performance Goal It Improves</th>
+<th>Test We Will Use</th>
+</tr></thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>Future option: create one team folder per team and copy this template into each folder. For now, keep the reusable blank template in <code>90_templates/</code>, link it from the engineering notebook, and have teams copy it into their portfolio or shared team document.</p>
+      </article>
+
+    </main>
+  </body>
+</html>

@@ -7,6 +7,12 @@ Useful preparation:
 - `02_student_materials/guides/modified_robotics_game_rules_and_scoring_guide.md`
 - `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`
 
+After completing the first version of this strategy guide, use:
+
+- `90_templates/robot_behavior_specification_template.md`
+
+The behavior specification turns your strategy into specific robot actions, performance goals, hardware needs, code needs, and tests.
+
 Core idea:
 
 > Team norms tell us how we will work together.  
@@ -16,6 +22,10 @@ Core idea:
 Before making a major robot decision, ask:
 
 > What scoring strategy does this support?
+
+Before choosing chassis geometry, frame material, motor placement, or mechanism design, ask:
+
+> Which robot behavior does this design choice support?
 
 Before adding complexity, ask:
 
