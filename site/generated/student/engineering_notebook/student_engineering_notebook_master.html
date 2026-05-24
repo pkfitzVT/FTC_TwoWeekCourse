@@ -92,8 +92,10 @@
 <li><code>02_student_materials/decision_menus/day2_session3_team_name_menu.md</code></li>
 <li><code>02_student_materials/decision_menus/day2_session3_team_norms_menu.md</code></li>
 <li><code>02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md</code></li>
+<li><code>02_student_materials/guides/subsystem_design_cycle_guide.md</code></li>
 <li><code>90_templates/team_strategy_guide_template.md</code></li>
 <li><code>90_templates/robot_behavior_specification_template.md</code></li>
+<li><code>90_templates/subsystem_design_cycle_template.md</code></li>
 </ul>
 <h2 id="personal-goals">Personal Goals</h2>
 <p>Use the individual goal menu to choose one goal you want to practice during the course.</p>
@@ -210,6 +212,67 @@
 <ul>
 <li><code>90_templates/team_strategy_guide_template.md</code></li>
 <li><code>90_templates/robot_behavior_specification_template.md</code></li>
+<li><code>02_student_materials/guides/subsystem_design_cycle_guide.md</code></li>
+<li><code>90_templates/subsystem_design_cycle_template.md</code></li>
+</ul>
+<h2 id="subsystem-design-cycle-template">Subsystem Design Cycle Template</h2>
+<p>Use one copy of the subsystem design cycle template for each major robot subsystem.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Subsystem</th>
+<th>Job</th>
+<th>Current working version?</th>
+<th>Last test result</th>
+<th>Ready to integrate?</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Frame / drivetrain</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Shooter</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Hopper / artifact holder</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Trigger / release mechanism</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Controls / programming</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Integrated match system</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>Related materials:</p>
+<ul>
+<li><code>02_student_materials/guides/subsystem_design_cycle_guide.md</code></li>
+<li><code>90_templates/subsystem_design_cycle_template.md</code></li>
 </ul>
 <h2 id="test-data-table-template">Test Data Table Template</h2>
 <div class="table-wrap"><table>
@@ -460,10 +523,10 @@
 <h2 id="session-5-chassis-build-start">Session 5: Chassis Build Start</h2>
 <ul>
 <li>Today&#x27;s goal: Begin building or modifying the drivetrain/chassis based on team decisions.</li>
-<li>Team decision or task: Check the Team Strategy Guide and Robot Behavior Specification, then start building the chassis from documented decisions.</li>
-<li>Notebook evidence required: Strategy and behavior check note, build log entry with photo/sketch, parts used, first issue noticed, and next step.</li>
+<li>Team decision or task: Check the Team Strategy Guide and Robot Behavior Specification, then start the frame/drivetrain subsystem cycle.</li>
+<li>Notebook evidence required: Strategy and behavior check note, frame/drivetrain subsystem cycle entry, build log entry with photo/sketch, parts used, first issue noticed, and next step.</li>
 <li>Reflection prompt: Which design choice should we protect when the build gets difficult or slow?</li>
-<li>Useful references: <code>90_templates/team_strategy_guide_template.md</code>; <code>90_templates/robot_behavior_specification_template.md</code>; <code>02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md</code>; <code>02_student_materials/readings/day3_session5_chassis_physics_space_background.md</code>; <code>02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md</code>; <code>02_student_materials/decision_menus/day2_session4_chassis_material_menu.md</code>; <code>02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md</code>; <code>02_student_materials/decision_menus/day2_session4_motor_placement_menu.md</code>; <code>02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md</code></li>
+<li>Useful references: <code>90_templates/team_strategy_guide_template.md</code>; <code>90_templates/robot_behavior_specification_template.md</code>; <code>02_student_materials/guides/subsystem_design_cycle_guide.md</code>; <code>90_templates/subsystem_design_cycle_template.md</code>; <code>02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md</code>; <code>02_student_materials/readings/day3_session5_chassis_physics_space_background.md</code>; <code>02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md</code>; <code>02_student_materials/decision_menus/day2_session4_chassis_material_menu.md</code>; <code>02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md</code>; <code>02_student_materials/decision_menus/day2_session4_motor_placement_menu.md</code>; <code>02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md</code></li>
 <li>TODO: Develop the specific printable student page for this session.</li>
 </ul>
 <h2 id="session-6-chassis-build-continuation-and-first-movement-checks">Session 6: Chassis Build Continuation and First Movement Checks</h2>
@@ -487,46 +550,46 @@
 <h2 id="session-8-basic-teleop-programming-and-drivetrain-test">Session 8: Basic TeleOp Programming and Drivetrain Test</h2>
 <ul>
 <li>Today&#x27;s goal: Program or configure basic driver-controlled movement and test it safely.</li>
-<li>Team decision or task: Test whether the robot drives as expected and decide what to adjust.</li>
-<li>Notebook evidence required: TeleOp test record with observed behavior, code/config change, and result.</li>
+<li>Team decision or task: Program/control the frame/drivetrain subsystem, test whether the robot drives as expected, and decide what to adjust.</li>
+<li>Notebook evidence required: Frame/drivetrain subsystem cycle update, TeleOp test record with observed behavior, code/config change, and result.</li>
 <li>Reflection prompt: What should we change first when the robot does not drive the way we expected?</li>
-<li>Useful references: <code>02_student_materials/readings/future_human_controller_mapping_background.md</code></li>
+<li>Useful references: <code>02_student_materials/guides/subsystem_design_cycle_guide.md</code>; <code>90_templates/subsystem_design_cycle_template.md</code>; <code>02_student_materials/readings/future_human_controller_mapping_background.md</code></li>
 <li>TODO: Develop the specific printable student page for this session.</li>
 </ul>
 <h2 id="session-9-strategy-check-and-mechanism-planning">Session 9: Strategy Check and Mechanism Planning</h2>
 <ul>
 <li>Today&#x27;s goal: Decide what additional mechanism or scoring feature is realistic for the remaining time.</li>
-<li>Team decision or task: Revisit the Team Strategy Guide and Robot Behavior Specification, then choose a simple robot improvement that fits strategy, time, and materials.</li>
-<li>Notebook evidence required: Strategy and behavior revision or confirmation, mechanism decision table, sketch, and build-risk note.</li>
+<li>Team decision or task: Revisit the Team Strategy Guide and Robot Behavior Specification, then start a shooter subsystem cycle that fits strategy, time, and materials.</li>
+<li>Notebook evidence required: Strategy and behavior revision or confirmation, shooter subsystem cycle entry, mechanism decision table, sketch, and build-risk note.</li>
 <li>Reflection prompt: What is the simplest mechanism that could improve our strategy without risking the whole robot?</li>
-<li>Useful references: <code>90_templates/team_strategy_guide_template.md</code>; <code>90_templates/robot_behavior_specification_template.md</code>; <code>02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md</code>; <code>02_student_materials/readings/day2_session4_decode_scoring_strategy_background.md</code></li>
+<li>Useful references: <code>90_templates/team_strategy_guide_template.md</code>; <code>90_templates/robot_behavior_specification_template.md</code>; <code>02_student_materials/guides/subsystem_design_cycle_guide.md</code>; <code>90_templates/subsystem_design_cycle_template.md</code>; <code>02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md</code>; <code>02_student_materials/readings/day2_session4_decode_scoring_strategy_background.md</code></li>
 <li>TODO: Develop the specific printable student page for this session.</li>
 </ul>
 <h2 id="session-10-mechanism-build-or-robot-improvement-sprint">Session 10: Mechanism Build or Robot Improvement Sprint</h2>
 <ul>
 <li>Today&#x27;s goal: Build, attach, or improve the selected mechanism or drivetrain feature.</li>
-<li>Team decision or task: Set a testable sprint goal and work toward it.</li>
-<li>Notebook evidence required: Build sprint log with testable goal, evidence photo/sketch, and unresolved problem.</li>
+<li>Team decision or task: Build, program, and test a simple working version of the current subsystem.</li>
+<li>Notebook evidence required: Subsystem cycle update with testable goal, control plan, evidence photo/sketch, test result, and unresolved problem.</li>
 <li>Reflection prompt: What should count as good enough to test today?</li>
-<li>Useful references: TODO: no dedicated mechanism-build material found.</li>
+<li>Useful references: <code>02_student_materials/guides/subsystem_design_cycle_guide.md</code>; <code>90_templates/subsystem_design_cycle_template.md</code></li>
 <li>TODO: Develop the specific printable student page for this session.</li>
 </ul>
 <h2 id="session-11-testing-methods-and-data-collection">Session 11: Testing Methods and Data Collection</h2>
 <ul>
 <li>Today&#x27;s goal: Learn how to test one change at a time and collect useful evidence.</li>
-<li>Team decision or task: Choose a robot behavior to test and write a simple test plan.</li>
-<li>Notebook evidence required: Test plan and first data table.</li>
+<li>Team decision or task: Choose one subsystem behavior to test and write a simple test plan.</li>
+<li>Notebook evidence required: Subsystem cycle test plan and first data table.</li>
 <li>Reflection prompt: What evidence is more useful than &quot;it worked&quot; or &quot;it did not work&quot;?</li>
-<li>Useful references: <code>02_student_materials/decision_menus/day2_session3_team_norms_menu.md</code>; decision menus in <code>02_student_materials/decision_menus/</code></li>
+<li>Useful references: <code>02_student_materials/guides/subsystem_design_cycle_guide.md</code>; <code>90_templates/subsystem_design_cycle_template.md</code>; <code>02_student_materials/decision_menus/day2_session3_team_norms_menu.md</code>; decision menus in <code>02_student_materials/decision_menus/</code></li>
 <li>TODO: Develop the specific printable student page for this session.</li>
 </ul>
 <h2 id="session-12-iterate-from-test-evidence">Session 12: Iterate From Test Evidence</h2>
 <ul>
 <li>Today&#x27;s goal: Use test data to decide what to adjust next.</li>
-<li>Team decision or task: Choose one evidence-based change to fix, simplify, or improve the robot.</li>
-<li>Notebook evidence required: Iteration record: problem, evidence, change, result.</li>
+<li>Team decision or task: Choose one evidence-based change to fix, simplify, or improve the current subsystem.</li>
+<li>Notebook evidence required: Subsystem cycle revision record: problem, evidence, change, result.</li>
 <li>Reflection prompt: When should a team fix, simplify, or abandon an idea?</li>
-<li>Useful references: Decision and reflection structures in <code>02_student_materials/decision_menus/</code></li>
+<li>Useful references: <code>02_student_materials/guides/subsystem_design_cycle_guide.md</code>; <code>90_templates/subsystem_design_cycle_template.md</code>; decision and reflection structures in <code>02_student_materials/decision_menus/</code></li>
 <li>TODO: Develop the specific printable student page for this session.</li>
 </ul>
 <h2 id="session-13-autonomous-or-scripted-robot-behavior">Session 13: Autonomous or Scripted Robot Behavior</h2>
@@ -535,16 +598,16 @@
 <li>Team decision or task: Choose and test a realistic autonomous/scripted goal.</li>
 <li>Notebook evidence required: Autonomous plan and test results.</li>
 <li>Reflection prompt: What autonomous goal is reliable enough to be worth keeping?</li>
-<li>Useful references: <code>02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md</code>; <code>02_student_materials/readings/day2_session4_decode_scoring_strategy_background.md</code></li>
+<li>Useful references: <code>02_student_materials/guides/subsystem_design_cycle_guide.md</code>; <code>90_templates/subsystem_design_cycle_template.md</code>; <code>02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md</code>; <code>02_student_materials/readings/day2_session4_decode_scoring_strategy_background.md</code></li>
 <li>TODO: Develop the specific printable student page for this session.</li>
 </ul>
 <h2 id="session-14-driver-practice-and-reliability-tuning">Session 14: Driver Practice and Reliability Tuning</h2>
 <ul>
 <li>Today&#x27;s goal: Practice driving, tune controls, and identify reliability problems.</li>
-<li>Team decision or task: Identify whether issues come from the robot, code, driver, or strategy.</li>
-<li>Notebook evidence required: Driver practice log with observed issue and next adjustment.</li>
+<li>Team decision or task: Identify whether issues come from one subsystem, subsystem integration, code, driver routine, or strategy.</li>
+<li>Notebook evidence required: Integrated subsystem test note or driver practice log with observed issue and next adjustment.</li>
 <li>Reflection prompt: Is this problem caused by the robot, the code, the driver, or the strategy?</li>
-<li>Useful references: <code>02_student_materials/readings/future_human_controller_mapping_background.md</code>; <code>02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md</code></li>
+<li>Useful references: <code>02_student_materials/guides/subsystem_design_cycle_guide.md</code>; <code>90_templates/subsystem_design_cycle_template.md</code>; <code>02_student_materials/readings/future_human_controller_mapping_background.md</code>; <code>02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md</code></li>
 <li>TODO: Develop the specific printable student page for this session.</li>
 </ul>
 <h2 id="session-15-documentation-and-engineering-portfolio-work-session">Session 15: Documentation and Engineering Portfolio Work Session</h2>
@@ -562,7 +625,7 @@
 <li>Team decision or task: Choose one final improvement or decide to protect reliability.</li>
 <li>Notebook evidence required: Final improvement decision record and final test evidence.</li>
 <li>Reflection prompt: What final change is worth the risk, and what should we leave alone?</li>
-<li>Useful references: Decision/reflection structures in <code>02_student_materials/decision_menus/</code></li>
+<li>Useful references: <code>02_student_materials/guides/subsystem_design_cycle_guide.md</code>; <code>90_templates/subsystem_design_cycle_template.md</code>; decision/reflection structures in <code>02_student_materials/decision_menus/</code></li>
 <li>TODO: Develop the specific printable student page for this session.</li>
 </ul>
 <h2 id="session-17-match-practice-challenge-and-evidence-collection">Session 17: Match/Practice Challenge and Evidence Collection</h2>

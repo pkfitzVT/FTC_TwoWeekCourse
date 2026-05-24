@@ -24,6 +24,7 @@ Prepare charged batteries, Driver Stations, Robot Controllers/Control Hubs, moto
 - [Troubleshooting basic drive](../../02_student_materials/readings/day4_session8_troubleshooting_basic_drive.md)
 - [Programming background](../../02_student_materials/readings/day2_session4_programming_background.md)
 - [Reading basic TeleOp](../../02_student_materials/readings/day2_session4_reading_basic_teleop.md)
+- [Subsystem design cycle guide](../../02_student_materials/guides/subsystem_design_cycle_guide.md)
 
 ## Student-Led Discussion / Decision
 
@@ -33,12 +34,12 @@ Prompt: What should we change first when the robot does not drive the way we exp
 
 - Wiring: connect motors and manage wires safely.
 - Programming: confirm hardwareMap names and TeleOp.
-- Testing: on-block test, then controlled floor test if safe.
+- Testing: first drivetrain subsystem test on blocks, then controlled floor test if safe.
 - Documentation: test table and code/config notes.
 
 ## Must / Should / Could
 
-- **Must:** Test basic drivetrain motion safely with wheels lifted first.
+- **Must:** Test basic drivetrain subsystem motion safely with wheels lifted first.
 - **Should:** Record at least one symptom, likely cause, check, change, and result.
 - **Could:** Add telemetry or a clearer driver-control note.
 
@@ -51,7 +52,7 @@ Prompt: What should we change first when the robot does not drive the way we exp
 
 ## Engineering Portfolio Evidence
 
-Teams should add motor port table, configuration names, Java variable names, test behavior, and fix.
+Teams should add motor port table, configuration names, Java variable names, subsystem test behavior, and fix.
 
 ## Reflection / Share-Out
 
@@ -65,4 +66,5 @@ Require students to stop OpModes before changing wires. Normalize debugging as e
 
 - [Wiring, configuration, and first drive](../../02_student_materials/readings/day4_session8_wiring_configuration_and_first_drive.md)
 - [Troubleshooting basic drive](../../02_student_materials/readings/day4_session8_troubleshooting_basic_drive.md)
+- [Subsystem Design Cycle template](../../90_templates/subsystem_design_cycle_template.md)
 - [Engineering notebook](../../02_student_materials/engineering_notebook/student_engineering_notebook_master.md)

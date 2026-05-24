@@ -6,7 +6,7 @@
 - Big goal: Design and test a gravity-fed hopper that guides balls reliably toward the shooter.
 - Student-facing objective: I can explain how a hopper controls the ball path before the flywheel launches the ball.
 - Main deliverable: Hopper sketch/mockup and ball-path test.
-- Existing materials to use: `02_student_materials/readings/day6_session11_gravity_fed_hopper_design.md`; `02_student_materials/readings/day6_session11_hopper_jams_and_ball_path.md`; `02_student_materials/readings/day5_session9_flywheel_build_and_test_planning.md`
+- Existing materials to use: `02_student_materials/readings/day6_session11_gravity_fed_hopper_design.md`; `02_student_materials/readings/day6_session11_hopper_jams_and_ball_path.md`; `02_student_materials/readings/day5_session9_flywheel_build_and_test_planning.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`
 - Materials still needed: TODO: teacher hopper guide; hopper test-plan template; sample ball-path data table.
 
 ## Teacher Setup Before Class
@@ -27,7 +27,7 @@ Prompt: Where is our hopper most likely to jam, and what evidence would prove it
 
 ## Team Task
 
-Teams sketch or mock up a gravity-fed hopper and identify the ball path from loading to trigger.
+Teams start the hopper/artifact holder subsystem cycle, sketch or mock up a gravity-fed hopper, and identify the ball path from loading to trigger.
 
 ## Build / Program / Test Time
 
@@ -35,7 +35,7 @@ Teams test the ball path by hand, watching for jams, rubbing, bridging, and inco
 
 ## Engineering Notebook Evidence
 
-Teams submit a hopper sketch/mockup note, ball-path test results, and one planned redesign.
+Teams submit hopper/artifact holder subsystem cycle evidence, a hopper sketch/mockup note, ball-path test results, and one planned redesign.
 
 ## Share-Out / Reflection
 

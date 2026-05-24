@@ -23,6 +23,7 @@ Prepare safe target area, measuring tape, target/goal, test logs, boundaries, an
 - [Projectile motion for shooters](../../02_student_materials/readings/day5_session10_projectile_motion_for_shooters.md)
 - [Target impact and shot consistency](../../02_student_materials/readings/day5_session10_target_impact_and_shot_consistency.md)
 - [Flywheel build and test planning](../../02_student_materials/readings/day5_session9_flywheel_build_and_test_planning.md)
+- [Subsystem design cycle guide](../../02_student_materials/guides/subsystem_design_cycle_guide.md)
 
 ## Student-Led Discussion / Decision
 
@@ -31,7 +32,7 @@ Prompt: What shot path should our team test first, and what miss pattern would t
 ## Work Time Options
 
 - Design: adjust launch angle or shooter height.
-- Testing: plan controlled shot attempts.
+- Testing: plan controlled shooter subsystem attempts.
 - Data analysis: define observations and success rate.
 - Documentation: shot-test table.
 
@@ -50,7 +51,7 @@ Prompt: What shot path should our team test first, and what miss pattern would t
 
 ## Engineering Portfolio Evidence
 
-Teams should add distance, angle, power, expected path, observed miss pattern, and next change.
+Teams should add shooter subsystem test result, distance, angle, power, expected path, observed miss pattern, and next change.
 
 ## Reflection / Share-Out
 
@@ -64,4 +65,5 @@ Keep launch testing safe and contained. Encourage evidence over random tuning.
 
 - [Projectile motion for shooters](../../02_student_materials/readings/day5_session10_projectile_motion_for_shooters.md)
 - [Target impact and shot consistency](../../02_student_materials/readings/day5_session10_target_impact_and_shot_consistency.md)
+- [Subsystem Design Cycle template](../../90_templates/subsystem_design_cycle_template.md)
 - [Physics Super Challenge](../../02_student_materials/challenge_by_choice/physics_super_challenge_projectile_motion_video_analysis.md)

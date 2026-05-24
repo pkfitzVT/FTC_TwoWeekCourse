@@ -32,8 +32,10 @@ Related materials:
 - `02_student_materials/decision_menus/day2_session3_team_name_menu.md`
 - `02_student_materials/decision_menus/day2_session3_team_norms_menu.md`
 - `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`
+- `02_student_materials/guides/subsystem_design_cycle_guide.md`
 - `90_templates/team_strategy_guide_template.md`
 - `90_templates/robot_behavior_specification_template.md`
+- `90_templates/subsystem_design_cycle_template.md`
 
 ## Personal Goals
 
@@ -88,6 +90,26 @@ Related material:
 
 - `90_templates/team_strategy_guide_template.md`
 - `90_templates/robot_behavior_specification_template.md`
+- `02_student_materials/guides/subsystem_design_cycle_guide.md`
+- `90_templates/subsystem_design_cycle_template.md`
+
+## Subsystem Design Cycle Template
+
+Use one copy of the subsystem design cycle template for each major robot subsystem.
+
+| Subsystem | Job | Current working version? | Last test result | Ready to integrate? |
+|---|---|---|---|---|
+| Frame / drivetrain |  |  |  |  |
+| Shooter |  |  |  |  |
+| Hopper / artifact holder |  |  |  |  |
+| Trigger / release mechanism |  |  |  |  |
+| Controls / programming |  |  |  |  |
+| Integrated match system |  |  |  |  |
+
+Related materials:
+
+- `02_student_materials/guides/subsystem_design_cycle_guide.md`
+- `90_templates/subsystem_design_cycle_template.md`
 
 ## Test Data Table Template
 
@@ -192,10 +214,10 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 ## Session 5: Chassis Build Start
 
 - Today's goal: Begin building or modifying the drivetrain/chassis based on team decisions.
-- Team decision or task: Check the Team Strategy Guide and Robot Behavior Specification, then start building the chassis from documented decisions.
-- Notebook evidence required: Strategy and behavior check note, build log entry with photo/sketch, parts used, first issue noticed, and next step.
+- Team decision or task: Check the Team Strategy Guide and Robot Behavior Specification, then start the frame/drivetrain subsystem cycle.
+- Notebook evidence required: Strategy and behavior check note, frame/drivetrain subsystem cycle entry, build log entry with photo/sketch, parts used, first issue noticed, and next step.
 - Reflection prompt: Which design choice should we protect when the build gets difficult or slow?
-- Useful references: `90_templates/team_strategy_guide_template.md`; `90_templates/robot_behavior_specification_template.md`; `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`; `02_student_materials/readings/day3_session5_chassis_physics_space_background.md`; `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md`; `02_student_materials/decision_menus/day2_session4_chassis_material_menu.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md`
+- Useful references: `90_templates/team_strategy_guide_template.md`; `90_templates/robot_behavior_specification_template.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`; `02_student_materials/readings/day3_session5_chassis_physics_space_background.md`; `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md`; `02_student_materials/decision_menus/day2_session4_chassis_material_menu.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 6: Chassis Build Continuation and First Movement Checks
@@ -219,46 +241,46 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 ## Session 8: Basic TeleOp Programming and Drivetrain Test
 
 - Today's goal: Program or configure basic driver-controlled movement and test it safely.
-- Team decision or task: Test whether the robot drives as expected and decide what to adjust.
-- Notebook evidence required: TeleOp test record with observed behavior, code/config change, and result.
+- Team decision or task: Program/control the frame/drivetrain subsystem, test whether the robot drives as expected, and decide what to adjust.
+- Notebook evidence required: Frame/drivetrain subsystem cycle update, TeleOp test record with observed behavior, code/config change, and result.
 - Reflection prompt: What should we change first when the robot does not drive the way we expected?
-- Useful references: `02_student_materials/readings/future_human_controller_mapping_background.md`
+- Useful references: `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `02_student_materials/readings/future_human_controller_mapping_background.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 9: Strategy Check and Mechanism Planning
 
 - Today's goal: Decide what additional mechanism or scoring feature is realistic for the remaining time.
-- Team decision or task: Revisit the Team Strategy Guide and Robot Behavior Specification, then choose a simple robot improvement that fits strategy, time, and materials.
-- Notebook evidence required: Strategy and behavior revision or confirmation, mechanism decision table, sketch, and build-risk note.
+- Team decision or task: Revisit the Team Strategy Guide and Robot Behavior Specification, then start a shooter subsystem cycle that fits strategy, time, and materials.
+- Notebook evidence required: Strategy and behavior revision or confirmation, shooter subsystem cycle entry, mechanism decision table, sketch, and build-risk note.
 - Reflection prompt: What is the simplest mechanism that could improve our strategy without risking the whole robot?
-- Useful references: `90_templates/team_strategy_guide_template.md`; `90_templates/robot_behavior_specification_template.md`; `02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md`; `02_student_materials/readings/day2_session4_decode_scoring_strategy_background.md`
+- Useful references: `90_templates/team_strategy_guide_template.md`; `90_templates/robot_behavior_specification_template.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md`; `02_student_materials/readings/day2_session4_decode_scoring_strategy_background.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 10: Mechanism Build or Robot Improvement Sprint
 
 - Today's goal: Build, attach, or improve the selected mechanism or drivetrain feature.
-- Team decision or task: Set a testable sprint goal and work toward it.
-- Notebook evidence required: Build sprint log with testable goal, evidence photo/sketch, and unresolved problem.
+- Team decision or task: Build, program, and test a simple working version of the current subsystem.
+- Notebook evidence required: Subsystem cycle update with testable goal, control plan, evidence photo/sketch, test result, and unresolved problem.
 - Reflection prompt: What should count as good enough to test today?
-- Useful references: TODO: no dedicated mechanism-build material found.
+- Useful references: `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 11: Testing Methods and Data Collection
 
 - Today's goal: Learn how to test one change at a time and collect useful evidence.
-- Team decision or task: Choose a robot behavior to test and write a simple test plan.
-- Notebook evidence required: Test plan and first data table.
+- Team decision or task: Choose one subsystem behavior to test and write a simple test plan.
+- Notebook evidence required: Subsystem cycle test plan and first data table.
 - Reflection prompt: What evidence is more useful than "it worked" or "it did not work"?
-- Useful references: `02_student_materials/decision_menus/day2_session3_team_norms_menu.md`; decision menus in `02_student_materials/decision_menus/`
+- Useful references: `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `02_student_materials/decision_menus/day2_session3_team_norms_menu.md`; decision menus in `02_student_materials/decision_menus/`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 12: Iterate From Test Evidence
 
 - Today's goal: Use test data to decide what to adjust next.
-- Team decision or task: Choose one evidence-based change to fix, simplify, or improve the robot.
-- Notebook evidence required: Iteration record: problem, evidence, change, result.
+- Team decision or task: Choose one evidence-based change to fix, simplify, or improve the current subsystem.
+- Notebook evidence required: Subsystem cycle revision record: problem, evidence, change, result.
 - Reflection prompt: When should a team fix, simplify, or abandon an idea?
-- Useful references: Decision and reflection structures in `02_student_materials/decision_menus/`
+- Useful references: `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; decision and reflection structures in `02_student_materials/decision_menus/`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 13: Autonomous or Scripted Robot Behavior
@@ -267,16 +289,16 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 - Team decision or task: Choose and test a realistic autonomous/scripted goal.
 - Notebook evidence required: Autonomous plan and test results.
 - Reflection prompt: What autonomous goal is reliable enough to be worth keeping?
-- Useful references: `02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md`; `02_student_materials/readings/day2_session4_decode_scoring_strategy_background.md`
+- Useful references: `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md`; `02_student_materials/readings/day2_session4_decode_scoring_strategy_background.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 14: Driver Practice and Reliability Tuning
 
 - Today's goal: Practice driving, tune controls, and identify reliability problems.
-- Team decision or task: Identify whether issues come from the robot, code, driver, or strategy.
-- Notebook evidence required: Driver practice log with observed issue and next adjustment.
+- Team decision or task: Identify whether issues come from one subsystem, subsystem integration, code, driver routine, or strategy.
+- Notebook evidence required: Integrated subsystem test note or driver practice log with observed issue and next adjustment.
 - Reflection prompt: Is this problem caused by the robot, the code, the driver, or the strategy?
-- Useful references: `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md`
+- Useful references: `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 15: Documentation and Engineering Portfolio Work Session
@@ -294,7 +316,7 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 - Team decision or task: Choose one final improvement or decide to protect reliability.
 - Notebook evidence required: Final improvement decision record and final test evidence.
 - Reflection prompt: What final change is worth the risk, and what should we leave alone?
-- Useful references: Decision/reflection structures in `02_student_materials/decision_menus/`
+- Useful references: `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; decision/reflection structures in `02_student_materials/decision_menus/`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 17: Match/Practice Challenge and Evidence Collection

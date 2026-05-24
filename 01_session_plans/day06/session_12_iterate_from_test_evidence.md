@@ -6,7 +6,7 @@
 - Big goal: Understand servo positions and plan a simple servo trigger that feeds one ball at a time.
 - Student-facing objective: I can explain how servo position values move a trigger and why the mechanism must move freely.
 - Main deliverable: Servo trigger plan and simple servo test code.
-- Existing materials to use: `02_student_materials/readings/day6_session12_intro_to_servos_positions.md`; `02_student_materials/readings/day6_session12_servo_trigger_design_and_testing.md`; `02_student_materials/readings/day6_session11_hopper_jams_and_ball_path.md`
+- Existing materials to use: `02_student_materials/readings/day6_session12_intro_to_servos_positions.md`; `02_student_materials/readings/day6_session12_servo_trigger_design_and_testing.md`; `02_student_materials/readings/day6_session11_hopper_jams_and_ball_path.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`
 - Materials still needed: TODO: teacher servo guide; servo wiring/configuration screenshots; trigger test table; safety checklist.
 
 ## Teacher Setup Before Class
@@ -27,7 +27,7 @@ Prompt: What load and release positions should our trigger test first, and how w
 
 ## Team Task
 
-Teams design a simple trigger, choose tentative load/release positions, and predict what safe servo motion should look like.
+Teams start the trigger/release subsystem cycle, design a simple trigger, choose tentative load/release positions, and predict what safe servo motion should look like.
 
 ## Build / Program / Test Time
 
@@ -35,7 +35,7 @@ Teams run or review simple servo test code, then test servo motion slowly before
 
 ## Engineering Notebook Evidence
 
-Teams record trigger design, servo position values tested, expected motion, actual motion, and whether the values are safe to keep.
+Teams record trigger/release subsystem cycle evidence, trigger design, servo position values tested, expected motion, actual motion, and whether the values are safe to keep.
 
 ## Share-Out / Reflection
 

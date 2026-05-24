@@ -6,7 +6,7 @@
 - Big goal: Mount the servo trigger and attempt first controlled shooter tests.
 - Student-facing objective: I can test whether the trigger releases one ball at a time and use observations to choose the next adjustment.
 - Main deliverable: Servo trigger mounted and first controlled shots attempted.
-- Existing materials to use: `02_student_materials/readings/day7_session13_trigger_implementation_and_first_shots.md`; `02_student_materials/readings/day7_session13_test_shooting_and_observation.md`; `02_student_materials/readings/day6_session12_servo_trigger_design_and_testing.md`
+- Existing materials to use: `02_student_materials/readings/day7_session13_trigger_implementation_and_first_shots.md`; `02_student_materials/readings/day7_session13_test_shooting_and_observation.md`; `02_student_materials/readings/day6_session12_servo_trigger_design_and_testing.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`
 - Materials still needed: TODO: teacher trigger safety guide; first-shot test station setup; shot observation log.
 
 ## Teacher Setup Before Class
@@ -27,7 +27,7 @@ Prompt: What pattern did our team notice after several controlled shots?
 
 ## Team Task
 
-Teams mount or refine the servo trigger and plan one-ball controlled shot tests.
+Teams mount or refine the servo trigger, update the trigger/release subsystem cycle, and plan one-ball controlled shot tests.
 
 ## Build / Program / Test Time
 
@@ -35,7 +35,7 @@ Teams test trigger motion first, then attempt controlled one-ball shots and reco
 
 ## Engineering Notebook Evidence
 
-Teams record trigger positions, shot observations, what changed, actual result, and whether the adjustment should stay.
+Teams record trigger/release subsystem evidence, trigger positions, shot observations, what changed, actual result, and whether the adjustment should stay.
 
 ## Share-Out / Reflection
 

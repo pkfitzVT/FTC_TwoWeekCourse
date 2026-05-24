@@ -22,6 +22,7 @@ Prepare inspection stations, size-check area, tools, batteries, repair supplies,
 
 - [Robot inspection and safety](../../02_student_materials/readings/day8_session15_robot_inspection_and_safety.md)
 - [Robot readiness checklist](../../02_student_materials/readings/day8_session15_robot_readiness_checklist.md)
+- [Subsystem design cycle guide](../../02_student_materials/guides/subsystem_design_cycle_guide.md)
 
 ## Student-Led Discussion / Decision
 
@@ -29,14 +30,14 @@ Prompt: What inspection issue could make our robot unsafe or unreliable?
 
 ## Work Time Options
 
-- Inspection: safety, wiring, size, and function checks.
+- Inspection: safety, wiring, size, subsystem interaction, and function checks.
 - Repair: fix high-priority issues.
 - Testing: retest fixed items.
 - Documentation: pass/fix/retest record.
 
 ## Must / Should / Could
 
-- **Must:** Complete internal inspection and identify all safety-critical issues.
+- **Must:** Complete internal inspection and identify all safety-critical or subsystem-integration issues.
 - **Should:** Fix and retest high-priority issues.
 - **Could:** Peer-inspect another team's robot using the same checklist.
 
@@ -49,7 +50,7 @@ Prompt: What inspection issue could make our robot unsafe or unreliable?
 
 ## Engineering Portfolio Evidence
 
-Teams should add inspection item, pass/fail, problem found, fix needed, and retest result.
+Teams should add inspection item, pass/fail, problem found, subsystem affected, fix needed, and retest result.
 
 ## Reflection / Share-Out
 
@@ -63,4 +64,5 @@ Frame inspection as professional engineering practice. Do not permit unsafe robo
 
 - [Robot inspection and safety](../../02_student_materials/readings/day8_session15_robot_inspection_and_safety.md)
 - [Robot readiness checklist](../../02_student_materials/readings/day8_session15_robot_readiness_checklist.md)
+- [Subsystem Design Cycle template](../../90_templates/subsystem_design_cycle_template.md)
 - [Engineering notebook](../../02_student_materials/engineering_notebook/student_engineering_notebook_master.md)

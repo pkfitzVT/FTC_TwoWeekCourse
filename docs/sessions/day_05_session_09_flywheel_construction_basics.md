@@ -23,6 +23,7 @@ Prepare shooter motors, wheels, hubs, mounting materials, balls, tools, batterie
 - [Flywheel motor speed and compression](../../02_student_materials/readings/day5_session9_flywheel_motor_speed_compression.md)
 - [Flywheel build and test planning](../../02_student_materials/readings/day5_session9_flywheel_build_and_test_planning.md)
 - [Game strategy goals menu](../../02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md)
+- [Subsystem design cycle guide](../../02_student_materials/guides/subsystem_design_cycle_guide.md)
 
 ## Student-Led Discussion / Decision
 
@@ -30,14 +31,14 @@ Prompt: What first shooter variable should our team test, and what evidence will
 
 ## Work Time Options
 
-- Design: shooter sketch and compression plan.
+- Design: start the shooter subsystem cycle with a shooter sketch and compression plan.
 - Fabrication: first mockup or mounting test.
 - Testing: hand-check ball path and wheel clearance.
 - Documentation: testable hypothesis.
 
 ## Must / Should / Could
 
-- **Must:** Create a shooter sketch and identify the first compression/contact plan.
+- **Must:** Create a shooter subsystem sketch and identify the first compression/contact plan.
 - **Should:** Build a safe first mockup or mount.
 - **Could:** Compare wheel firmness, gap, or motor power as a controlled variable.
 
@@ -50,7 +51,7 @@ Prompt: What first shooter variable should our team test, and what evidence will
 
 ## Engineering Portfolio Evidence
 
-Teams should add shooter system sketch, first variable, expected result, and safety risk.
+Teams should add shooter subsystem cycle entry, shooter system sketch, first variable, expected result, and safety risk.
 
 ## Reflection / Share-Out
 
@@ -64,5 +65,6 @@ Watch for unsafe spinning-wheel handling. Keep teams focused on testable prototy
 
 - [Flywheel motor speed and compression](../../02_student_materials/readings/day5_session9_flywheel_motor_speed_compression.md)
 - [Flywheel build and test planning](../../02_student_materials/readings/day5_session9_flywheel_build_and_test_planning.md)
+- [Subsystem Design Cycle template](../../90_templates/subsystem_design_cycle_template.md)
 - [Design, build, and revise process](../../02_student_materials/guides/robotics_design_build_revise_process_handout.md)
 - [Engineering notebook](../../02_student_materials/engineering_notebook/student_engineering_notebook_master.md)

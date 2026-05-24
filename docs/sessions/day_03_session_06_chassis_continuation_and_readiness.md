@@ -22,6 +22,7 @@ Prepare safe test area, batteries, basic inspection criteria, repair supplies, a
 
 - [Principles of robot assembly](../../02_student_materials/readings/principles_of_robot_assembly_day3.md)
 - [Chassis physics and space background](../../02_student_materials/readings/day3_session5_chassis_physics_space_background.md)
+- [Subsystem design cycle guide](../../02_student_materials/guides/subsystem_design_cycle_guide.md)
 - Relevant Day 2 chassis decision menus.
 
 ## Student-Led Discussion / Decision
@@ -31,12 +32,12 @@ Prompt: What evidence will show that our chassis is ready for powered testing?
 ## Work Time Options
 
 - Assembly: finish drivetrain/chassis structure.
-- Testing: hand-spin wheels, check rubbing, inspect fasteners.
+- Testing: hand-spin wheels, check rubbing, inspect fasteners, and update the frame/drivetrain subsystem cycle.
 - Documentation: readiness checklist and issue list.
 
 ## Must / Should / Could
 
-- **Must:** Complete a mechanical readiness check before powered testing.
+- **Must:** Complete a mechanical readiness check and frame/drivetrain subsystem test note before powered testing.
 - **Should:** Fix at least one identified issue and document the change.
 - **Could:** Create a short inspection routine another team could use.
 
@@ -49,7 +50,7 @@ Prompt: What evidence will show that our chassis is ready for powered testing?
 
 ## Engineering Portfolio Evidence
 
-Teams should add what was checked, what failed readiness, what was fixed, and what remains.
+Teams should add what was checked, what failed readiness, frame/drivetrain subsystem evidence, what was fixed, and what remains.
 
 ## Reflection / Share-Out
 
@@ -65,4 +66,5 @@ Do not let teams power robots until wheels, motors, battery, hub, switch, and wi
 - [Wheel selection menu](../../02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md)
 - [Motor placement menu](../../02_student_materials/decision_menus/day2_session4_motor_placement_menu.md)
 - [Electronics and battery placement menu](../../02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md)
+- [Subsystem Design Cycle template](../../90_templates/subsystem_design_cycle_template.md)
 - [Engineering notebook](../../02_student_materials/engineering_notebook/student_engineering_notebook_master.md)

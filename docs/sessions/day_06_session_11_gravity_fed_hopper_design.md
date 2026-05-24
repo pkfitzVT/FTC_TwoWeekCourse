@@ -22,6 +22,7 @@ Prepare balls, ramp/rail materials, tape or temporary mockup materials, tools, a
 
 - [Gravity-fed hopper design](../../02_student_materials/readings/day6_session11_gravity_fed_hopper_design.md)
 - [Hopper jams and ball path](../../02_student_materials/readings/day6_session11_hopper_jams_and_ball_path.md)
+- [Subsystem design cycle guide](../../02_student_materials/guides/subsystem_design_cycle_guide.md)
 
 ## Student-Led Discussion / Decision
 
@@ -29,14 +30,14 @@ Prompt: Where is our hopper most likely to jam, and what evidence would prove it
 
 ## Work Time Options
 
-- Design: hopper sketch and ball path.
+- Design: start the hopper/artifact holder subsystem cycle with a hopper sketch and ball path.
 - Fabrication: mockup ramp, guide, or rail.
 - Testing: hand-feed multiple balls and observe jams.
 - Documentation: ball-path log.
 
 ## Must / Should / Could
 
-- **Must:** Sketch the hopper and hand-test the ball path.
+- **Must:** Sketch the hopper, hand-test the ball path, and update the hopper/artifact holder subsystem cycle.
 - **Should:** Identify one jam point and redesign it.
 - **Could:** Compare two slopes, openings, or guide shapes.
 
@@ -63,4 +64,5 @@ Require hand testing before servo testing. Treat jams as useful evidence, not fa
 
 - [Gravity-fed hopper design](../../02_student_materials/readings/day6_session11_gravity_fed_hopper_design.md)
 - [Hopper jams and ball path](../../02_student_materials/readings/day6_session11_hopper_jams_and_ball_path.md)
+- [Subsystem Design Cycle template](../../90_templates/subsystem_design_cycle_template.md)
 - [Engineering notebook](../../02_student_materials/engineering_notebook/student_engineering_notebook_master.md)

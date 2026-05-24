@@ -339,6 +339,7 @@ def write_static_pages(pages: list[Page]) -> None:
     student_sources = [
         "02_student_materials/guides/what_should_i_be_doing_right_now_robotics_work_ahead_menu.md",
         "02_student_materials/guides/robotics_design_build_revise_process_handout.md",
+        "02_student_materials/guides/subsystem_design_cycle_guide.md",
         "02_student_materials/guides/robot_troubleshooting_checklist.md",
         "02_student_materials/engineering_notebook/student_engineering_notebook_master.md",
         "02_student_materials/readings/day1_session1_what_is_first.md",

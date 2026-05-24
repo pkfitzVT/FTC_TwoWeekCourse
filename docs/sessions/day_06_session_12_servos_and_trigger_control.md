@@ -22,6 +22,7 @@ Prepare servos, servo horns, linkages, configured test robots, sample code, Driv
 
 - [Intro to servos and positions](../../02_student_materials/readings/day6_session12_intro_to_servos_positions.md)
 - [Servo trigger design and testing](../../02_student_materials/readings/day6_session12_servo_trigger_design_and_testing.md)
+- [Subsystem design cycle guide](../../02_student_materials/guides/subsystem_design_cycle_guide.md)
 
 ## Student-Led Discussion / Decision
 
@@ -29,14 +30,14 @@ Prompt: What load and release positions should our trigger test first, and how w
 
 ## Work Time Options
 
-- Design: trigger sketch and linkage plan.
-- Programming: simple servo test code.
+- Design: start the trigger/release subsystem cycle with a trigger sketch and linkage plan.
+- Programming: simple servo test code for the trigger/release subsystem.
 - Testing: no-ball motion test, then one-ball test if safe.
 - Documentation: position table.
 
 ## Must / Should / Could
 
-- **Must:** Test servo movement without balls and record safe position values.
+- **Must:** Test servo movement without balls, record safe position values, and update the trigger/release subsystem cycle.
 - **Should:** Test load/release with one ball after confirming free motion.
 - **Could:** Add telemetry messages or refine trigger timing.
 
@@ -63,4 +64,5 @@ Stop teams immediately if servos buzz, strain, or hit the frame. Do not let stud
 
 - [Intro to servos and positions](../../02_student_materials/readings/day6_session12_intro_to_servos_positions.md)
 - [Servo trigger design and testing](../../02_student_materials/readings/day6_session12_servo_trigger_design_and_testing.md)
+- [Subsystem Design Cycle template](../../90_templates/subsystem_design_cycle_template.md)
 - [Programming background](../../02_student_materials/readings/day2_session4_programming_background.md)

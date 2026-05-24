@@ -6,7 +6,7 @@
 - Big goal: Draft a concise team presentation that explains the robot, evidence, teamwork, growth, and award targets.
 - Student-facing objective: I can help my team turn robot evidence into a clear 4-minute presentation story.
 - Main deliverable: 4-minute team presentation draft with award targets.
-- Existing materials to use: `02_student_materials/readings/day8_session16_presentation_story_and_script.md`; `02_student_materials/readings/day8_session16_awards_judging_and_growth_narrative.md`; `02_student_materials/engineering_notebook/student_engineering_notebook_master.md`
+- Existing materials to use: `02_student_materials/readings/day8_session16_presentation_story_and_script.md`; `02_student_materials/readings/day8_session16_awards_judging_and_growth_narrative.md`; `02_student_materials/engineering_notebook/student_engineering_notebook_master.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`
 - Materials still needed: TODO: presentation rubric; timing guide; judge-question practice sheet.
 
 ## Teacher Setup Before Class
@@ -27,7 +27,7 @@ Prompt: What should judges remember about our robot and our team after 4 minutes
 
 ## Team Task
 
-Teams draft a 4-minute presentation structure and choose evidence for robot design, testing, teamwork, and growth.
+Teams draft a 4-minute presentation structure and choose subsystem evidence for robot design, testing, teamwork, and growth.
 
 ## Build / Program / Test Time
 
@@ -35,7 +35,7 @@ Teams rehearse or outline the presentation, select visuals, and prepare answers 
 
 ## Engineering Notebook Evidence
 
-Teams record presentation roles, key claims, supporting evidence, award targets, and questions they need to practice.
+Teams record presentation roles, key claims, supporting subsystem evidence, award targets, and questions they need to practice.
 
 ## Share-Out / Reflection
 

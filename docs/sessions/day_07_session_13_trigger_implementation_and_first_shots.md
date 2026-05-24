@@ -23,6 +23,7 @@ Prepare test station, target area, balls, safety boundaries, programming devices
 - [Trigger implementation and first shots](../../02_student_materials/readings/day7_session13_trigger_implementation_and_first_shots.md)
 - [Test shooting and observation](../../02_student_materials/readings/day7_session13_test_shooting_and_observation.md)
 - [Servo trigger design and testing](../../02_student_materials/readings/day6_session12_servo_trigger_design_and_testing.md)
+- [Subsystem design cycle guide](../../02_student_materials/guides/subsystem_design_cycle_guide.md)
 
 ## Student-Led Discussion / Decision
 
@@ -30,14 +31,14 @@ Prompt: What pattern did our team notice after several controlled shots?
 
 ## Work Time Options
 
-- Assembly: mount or refine trigger.
+- Assembly: mount or refine trigger as part of the trigger/release subsystem cycle.
 - Programming: adjust load/release values.
 - Testing: controlled one-ball shots.
 - Documentation: observation log.
 
 ## Must / Should / Could
 
-- **Must:** Test trigger motion safely before launching.
+- **Must:** Test trigger motion safely and update the trigger/release subsystem cycle before launching.
 - **Should:** Attempt controlled one-ball shots and record observations.
 - **Could:** Compare one variable such as angle, power, compression, or trigger timing.
 
@@ -50,7 +51,7 @@ Prompt: What pattern did our team notice after several controlled shots?
 
 ## Engineering Portfolio Evidence
 
-Teams should add trigger positions, observed shot pattern, change made, result, and next adjustment.
+Teams should add trigger subsystem evidence, trigger positions, observed shot pattern, change made, result, and next adjustment.
 
 ## Reflection / Share-Out
 
@@ -64,4 +65,5 @@ Keep teams from rapid-fire testing before they can feed one ball safely. Require
 
 - [Trigger implementation and first shots](../../02_student_materials/readings/day7_session13_trigger_implementation_and_first_shots.md)
 - [Test shooting and observation](../../02_student_materials/readings/day7_session13_test_shooting_and_observation.md)
+- [Subsystem Design Cycle template](../../90_templates/subsystem_design_cycle_template.md)
 - [Engineering notebook](../../02_student_materials/engineering_notebook/student_engineering_notebook_master.md)

@@ -6,7 +6,7 @@
 - Big goal: Continue chassis assembly and prepare for basic movement.
 - Student-facing objective: I can help my team check whether the chassis is ready for powered testing.
 - Main deliverable: Chassis readiness checklist and issue list.
-- Existing materials to use: `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md`
+- Existing materials to use: `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`
 - Materials still needed: TODO: full session plan; inspection checklist; teacher troubleshooting guide; test area norms.
 
 ## Teacher Setup Before Class
@@ -27,7 +27,7 @@ Prompt: What evidence will show that our chassis is ready for powered testing?
 
 ## Team Task
 
-Teams inspect the chassis against readiness criteria and identify issues before power-on.
+Teams inspect the chassis against readiness criteria, update the frame/drivetrain subsystem cycle, and identify issues before power-on.
 
 ## Build / Program / Test Time
 
@@ -35,7 +35,7 @@ Teams continue assembly and, if approved, conduct controlled first movement chec
 
 ## Engineering Notebook Evidence
 
-Teams complete a readiness checklist and issue list with next actions.
+Teams complete a readiness checklist, subsystem test note, and issue list with next actions.
 
 ## Share-Out / Reflection
 

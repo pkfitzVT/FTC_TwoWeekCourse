@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Subsystem Design Cycle Guide | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Subsystem Design Cycle Guide</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../02_student_materials/guides/subsystem_design_cycle_guide.md">View source Markdown</a></p>
+        <h1 id="subsystem-design-cycle-guide">Subsystem Design Cycle Guide</h1>
+<h2 id="big-idea">Big Idea</h2>
+<p>A robot is not one design problem.</p>
+<p>A robot is a set of connected subsystems.</p>
+<p>Examples of robot subsystems include:</p>
+<ul>
+<li>frame / drivetrain</li>
+<li>shooter or scoring mechanism</li>
+<li>hopper / artifact holder</li>
+<li>trigger / release mechanism</li>
+<li>controls / programming</li>
+<li>integrated match system</li>
+</ul>
+<p>Course norm:</p>
+<blockquote>We are not building one robot all at once.</blockquote>
+<blockquote>We are building a system made of smaller systems.</blockquote>
+<blockquote>Each subsystem has a job.</blockquote>
+<blockquote>Each subsystem must be designed, programmed, tested, and documented before we rely on it in the full robot.</blockquote>
+<p>---</p>
+<h1 id="why-subsystems-matter">Why Subsystems Matter</h1>
+<p>Working one subsystem at a time helps your team:</p>
+<ul>
+<li>avoid making too many decisions at once,</li>
+<li>keep a working robot alive,</li>
+<li>test smaller pieces,</li>
+<li>identify what failed,</li>
+<li>divide team roles,</li>
+<li>make programming manageable,</li>
+<li>document evidence clearly,</li>
+<li>and integrate the robot with fewer surprises.</li>
+</ul>
+<p>A subsystem can work by itself and still cause a problem when added to the full robot. That is why teams test both small subsystem behavior and whole-robot behavior.</p>
+<p>---</p>
+<h1 id="the-repeating-subsystem-cycle">The Repeating Subsystem Cycle</h1>
+<p>For every subsystem, use this cycle:</p>
+<pre><code>Decide -&gt; Build -&gt; Program -&gt; Test -&gt; Document -&gt; Integrate</code></pre>
+<p>Each cycle should include:</p>
+<p>1. Identify the job of the subsystem. 2. Connect it to the team strategy. 3. Define Must / Should / Could goals. 4. Make a rough design. 5. Build a simple working version. 6. Program or control it. 7. Test it. 8. Record evidence. 9. Revise it. 10. Decide whether it is ready to integrate.</p>
+<p>Use <code>90_templates/subsystem_design_cycle_template.md</code> each time your team starts or revises a subsystem.</p>
+<p>---</p>
+<h1 id="subsystem-sequence">Subsystem Sequence</h1>
+<h2 id="1-frame-drivetrain">1. Frame / Drivetrain</h2>
+<p>Essential question:</p>
+<blockquote>How will our robot move reliably and leave space for future mechanisms?</blockquote>
+<p>Done means:</p>
+<ul>
+<li>robot drives,</li>
+<li>motors are configured,</li>
+<li>TeleOp works,</li>
+<li>team can drive forward, backward, and turn,</li>
+<li>team has reserved space for future mechanisms,</li>
+<li>team has documented chassis/frame decisions.</li>
+</ul>
+<h2 id="2-shooter">2. Shooter</h2>
+<p>Essential question:</p>
+<blockquote>How will our robot launch or score artifacts reliably?</blockquote>
+<p>Done means:</p>
+<ul>
+<li>shooter motor can be controlled,</li>
+<li>artifact can be launched or moved toward the goal,</li>
+<li>team has test data,</li>
+<li>team knows success rate from at least one position.</li>
+</ul>
+<h2 id="3-hopper-trigger">3. Hopper / Trigger</h2>
+<p>Essential question:</p>
+<blockquote>How will our robot hold, feed, and release artifacts predictably?</blockquote>
+<p>Done means:</p>
+<ul>
+<li>hopper holds artifacts,</li>
+<li>trigger releases one artifact at a time, or at least predictably,</li>
+<li>servo/control code works,</li>
+<li>team has tested jams or failures.</li>
+</ul>
+<h2 id="4-controls-programming">4. Controls / Programming</h2>
+<p>Essential question:</p>
+<blockquote>How will drivers and operators control each subsystem safely and consistently?</blockquote>
+<p>Done means:</p>
+<ul>
+<li>gamepad roles are clear,</li>
+<li>motor and servo names match the robot configuration,</li>
+<li>each subsystem has a safe starting state,</li>
+<li>telemetry helps the team test,</li>
+<li>controls support the team&#x27;s scoring routine.</li>
+</ul>
+<h2 id="5-integration">5. Integration</h2>
+<p>Essential question:</p>
+<blockquote>Can all subsystems work together during a scoring loop?</blockquote>
+<p>Done means:</p>
+<ul>
+<li>team can run a full scoring loop,</li>
+<li>team can park,</li>
+<li>team knows expected score,</li>
+<li>team has revised strategy based on evidence.</li>
+</ul>
+<p>---</p>
+<h1 id="working-robot-rule">Working Robot Rule</h1>
+<blockquote>Do not add the next subsystem until the current subsystem has a working version, a control plan, and at least one test result.</blockquote>
+<p>You are allowed to experiment, but your team is responsible for keeping a working version of the robot alive.</p>
+<p>Before adding a new subsystem, ask:</p>
+<ul>
+<li>What working behavior are we protecting?</li>
+<li>What could this new subsystem block, loosen, overload, or make harder to repair?</li>
+<li>What code or controls will need to change?</li>
+<li>What test will prove the robot still works after integration?</li>
+</ul>
+<p>The goal is not to build everything at once. The goal is to build one reliable subsystem, then connect it carefully to the next one.</p>
+      </article>
+
+    </main>
+  </body>
+</html>

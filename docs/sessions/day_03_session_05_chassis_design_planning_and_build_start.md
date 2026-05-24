@@ -24,10 +24,12 @@ Prepare tools, safety glasses, frame parts, brackets, fasteners, wheels, motors,
 
 - [Chassis physics and space background](../../02_student_materials/readings/day3_session5_chassis_physics_space_background.md)
 - [Structure, function, and robot strategy](../../02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md)
+- [Subsystem design cycle guide](../../02_student_materials/guides/subsystem_design_cycle_guide.md)
 - [Design, build, and revise process](../../02_student_materials/guides/robotics_design_build_revise_process_handout.md)
 - [Principles of robot assembly](../../02_student_materials/readings/principles_of_robot_assembly_day3.md)
 - [Team Strategy Guide template](../../90_templates/team_strategy_guide_template.md)
 - [Robot Behavior Specification template](../../90_templates/robot_behavior_specification_template.md)
+- [Subsystem Design Cycle template](../../90_templates/subsystem_design_cycle_template.md)
 - [Chassis shape menu](../../02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md)
 - [Chassis material menu](../../02_student_materials/decision_menus/day2_session4_chassis_material_menu.md)
 - [Wheel selection menu](../../02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md)
@@ -40,7 +42,7 @@ Prompt: Which design choice should we protect when the build gets difficult or s
 
 ## Work Time Options
 
-- Strategy: review the copied Team Strategy Guide and Robot Behavior Specification and identify what the chassis must support.
+- Strategy: review the copied Team Strategy Guide and Robot Behavior Specification and start the frame/drivetrain subsystem cycle.
 - Design: final top-view chassis sketch.
 - Assembly: frame, brackets, fasteners, wheel/motor fit checks.
 - Documentation: build photos and first issue note.
@@ -55,13 +57,14 @@ Prompt: Which design choice should we protect when the build gets difficult or s
 
 - SLD decision note.
 - Strategy and behavior check note.
+- Frame/drivetrain subsystem cycle entry.
 - Design drawing.
 - Build photos.
 - Engineering portfolio entry.
 
 ## Engineering Portfolio Evidence
 
-Teams should add a strategy and behavior check note, chassis decision, sketch, parts used, first issue noticed, and next step.
+Teams should add a strategy and behavior check note, frame/drivetrain subsystem cycle entry, chassis decision, sketch, parts used, first issue noticed, and next step.
 
 ## Reflection / Share-Out
 
@@ -74,7 +77,9 @@ Coach careful assembly habits: count holes, start finger tight, use two fastener
 ## Linked Resources
 
 - [Principles of robot assembly](../../02_student_materials/readings/principles_of_robot_assembly_day3.md)
+- [Subsystem design cycle guide](../../02_student_materials/guides/subsystem_design_cycle_guide.md)
 - [Team Strategy Guide template](../../90_templates/team_strategy_guide_template.md)
 - [Robot Behavior Specification template](../../90_templates/robot_behavior_specification_template.md)
+- [Subsystem Design Cycle template](../../90_templates/subsystem_design_cycle_template.md)
 - [What should I be doing right now? work-ahead menu](../../02_student_materials/guides/what_should_i_be_doing_right_now_robotics_work_ahead_menu.md)
 - [Engineering notebook](../../02_student_materials/engineering_notebook/student_engineering_notebook_master.md)
