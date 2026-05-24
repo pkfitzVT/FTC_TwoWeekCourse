@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Session 10 Reading: Target Impact and Shot Consistency | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Session 10 Reading: Target Impact and Shot Consistency</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../02_student_materials/readings/day5_session10_target_impact_and_shot_consistency.md">View source Markdown</a></p>
+        <h1 id="session-10-reading-target-impact-and-shot-consistency">Session 10 Reading: Target Impact and Shot Consistency</h1>
+<h2 id="reaching-the-goal-is-not-enough">Reaching the Goal Is Not Enough</h2>
+<p>A shot can reach the goal and still fail if it hits too hard, hits at a bad angle, or bounces out.</p>
+<p>Scoring is about what happens at impact. The ball must not only reach the goal. It must enter the goal in a way that stays in.</p>
+<h2 id="impact-vocabulary">Impact Vocabulary</h2>
+<p><strong>Impact</strong> is the moment the ball hits the goal, rim, wall, floor, or another surface.</p>
+<p><strong>Impact angle</strong> is the direction the ball is moving when it hits.</p>
+<p><strong>Impact speed</strong> is how fast the ball is moving when it hits.</p>
+<p>A <strong>bounce</strong> happens when the ball hits something and changes direction.</p>
+<p>A <strong>rebound</strong> is a bounce back from a surface.</p>
+<p>A <strong>skip</strong> is a fast, low bounce that glances off a surface.</p>
+<p>A <strong>rim</strong> is the edge of an opening or goal.</p>
+<p>A <strong>back wall</strong> is the surface behind or inside a goal that the ball may hit.</p>
+<p>An <strong>opening</strong> is the space the ball must pass through to score.</p>
+<p>A <strong>cushion</strong> is a feature that helps slow, catch, or redirect the ball.</p>
+<p><strong>Tolerance</strong> is how much error a design can handle and still work.</p>
+<p><strong>Margin of error</strong> is the amount a shot can be off and still score.</p>
+<p><strong>Variation</strong> means the shots are not exactly the same every time.</p>
+<p><strong>Consistency</strong> means getting similar results again and again.</p>
+<p><strong>Repeatability</strong> means the shooter can make the same shot many times under the same conditions.</p>
+<p>A <strong>scoring window</strong> is the range of speeds, angles, and positions where the shot still works.</p>
+<h2 id="impact-angle-matters">Impact Angle Matters</h2>
+<p>A ball dropping downward may settle into the goal more easily. A ball moving mostly forward may hit the back wall or rim and bounce.</p>
+<p>This does not mean every shot must be high. It means your team should watch how the ball enters the goal, not just whether it reaches the goal.</p>
+<h2 id="impact-speed-matters">Impact Speed Matters</h2>
+<p>A very fast shot can skip, bounce, or rebound. A slower shot may be more forgiving, but it might not reach the goal.</p>
+<p>Goal shape can provide some cushion. The opening, rim, back wall, or container shape may help redirect some imperfect shots inward.</p>
+<p>This cushion is limited. If the ball arrives too fast or at a bad angle, it may still bounce out.</p>
+<h2 id="more-speed-can-create-more-variation">More Speed Can Create More Variation</h2>
+<p>Faster shots travel farther, but small changes in angle, compression, or ball position can create bigger differences.</p>
+<p>Fast impacts can also make bounce behavior harder to control. Sometimes a slightly slower, more repeatable shot scores more often than a powerful shot.</p>
+<h2 id="what-the-shot-behavior-might-mean">What the Shot Behavior Might Mean</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Shot Behavior</th>
+<th>What It Might Mean</th>
+<th>Possible Team Adjustment</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Ball falls short</td>
+<td>Not enough speed or angle</td>
+<td>Increase power or raise angle</td>
+</tr>
+<tr>
+<td>Ball goes over goal</td>
+<td>Too much speed or angle</td>
+<td>Lower power or lower angle</td>
+</tr>
+<tr>
+<td>Ball hits front rim</td>
+<td>Path is too low or too short</td>
+<td>Increase angle or speed</td>
+</tr>
+<tr>
+<td>Ball hits back hard and bounces out</td>
+<td>Impact speed may be too high or angle too flat</td>
+<td>Reduce power or increase arc</td>
+</tr>
+<tr>
+<td>Ball enters sometimes but not consistently</td>
+<td>Variation in compression, ball position, or motor speed</td>
+<td>Improve guide rails, compression, or testing routine</td>
+</tr>
+</tbody></table></div>
+<h2 id="design-for-a-scoring-window">Design for a Scoring Window</h2>
+<p>A scoring window is the range of speeds, angles, and positions where the shot still works. A strong design has a larger scoring window, so small mistakes do not ruin the shot.</p>
+<p>For example, a shooter with a larger scoring window might still score if the robot is a few inches off or the ball enters the wheel slightly differently.</p>
+<h2 id="test-for-repeatability">Test for Repeatability</h2>
+<p>Test multiple shots from the same position and record:</p>
+<ul>
+<li>how many shots were attempted,</li>
+<li>how many scored,</li>
+<li>where misses went,</li>
+<li>whether the ball bounced out,</li>
+<li>and whether the shooter changed after repeated shots.</li>
+</ul>
+<h2 id="shot-test-log">Shot Test Log</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Trial</th>
+<th>Robot Distance</th>
+<th>Motor Power</th>
+<th>Launch Angle</th>
+<th>Result</th>
+<th>Impact Observation</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="reflection">Reflection</h2>
+<p>Did your team&#x27;s ball usually miss short, miss long, bounce out, or score?</p>
+<p>What does that evidence suggest your team should change first?</p>
+<p>How can your team make the shot more forgiving?</p>
+      </article>
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Robot Troubleshooting Checklist | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Robot Troubleshooting Checklist</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../02_student_materials/guides/robot_troubleshooting_checklist.md">View source Markdown</a></p>
+        <h1 id="robot-troubleshooting-checklist">Robot Troubleshooting Checklist</h1>
+<p>Use this checklist before asking an instructor for help.</p>
+<p>Do not just say:</p>
+<blockquote>“The robot doesn’t work.”</blockquote>
+<p>Instead, figure out which part of the system is failing.</p>
+<p>---</p>
+<h2 id="step-1-what-were-you-trying-to-do">Step 1: What were you trying to do?</h2>
+<p>Write one clear sentence.</p>
+<pre><code>We were trying to:</code></pre>
+<p>Examples:</p>
+<ul>
+<li>Drive forward with gamepad1.</li>
+<li>Turn on the shooter motor with gamepad2 X.</li>
+<li>Move the trigger servo with gamepad2 right trigger.</li>
+<li>Read distance from the distance sensor.</li>
+<li>Run the full robot TeleOp.</li>
+</ul>
+<p>---</p>
+<h2 id="step-2-what-happened-instead">Step 2: What happened instead?</h2>
+<p>Choose one or more:</p>
+<ul>
+<li>Nothing happened.</li>
+<li>Code would not build.</li>
+<li>OpMode did not appear in the menu.</li>
+<li>OpMode appeared but crashed on INIT.</li>
+<li>OpMode initialized but crashed on PLAY.</li>
+<li>Motor moved the wrong direction.</li>
+<li>Servo moved unexpectedly.</li>
+<li>Robot disconnected.</li>
+<li>Robot moved, but not correctly.</li>
+<li>Telemetry did not show what we expected.</li>
+</ul>
+<p>Notes:</p>
+<pre><code>What we observed:</code></pre>
+<p>---</p>
+<h2 id="step-3-connection-check">Step 3: Connection Check</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Check</th>
+<th>Yes / No</th>
+<th>Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Robot battery is connected and charged</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Control Hub is powered on</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Chromebook is connected to the robot Wi-Fi</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Driver Station is connected to Robot Controller</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Robot Controller page / OnBot Java page opens</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Correct robot is selected</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>If any answer is “No,” fix the connection before changing code.</p>
+<p>---</p>
+<h2 id="step-4-code-build-check">Step 4: Code Build Check</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Check</th>
+<th>Yes / No</th>
+<th>Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>We saved the file</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>We clicked Build</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>The build finished successfully</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>We read the first error message if the build failed</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>The OpMode appears in the Driver Station menu</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>If the code does not build, the problem is probably in the Java code.</p>
+<p>Common causes:</p>
+<ul>
+<li>Missing semicolon</li>
+<li>Misspelled variable</li>
+<li>Missing import</li>
+<li>Extra brace or missing brace</li>
+<li>Wrong class name</li>
+<li>File name and class name do not match</li>
+</ul>
+<p>---</p>
+<h2 id="step-5-configuration-name-check">Step 5: Configuration Name Check</h2>
+<p>This is one of the most common beginner problems.</p>
+<p>For each device used in code, check the exact name.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Device in Code</th>
+<th>Name in Code</th>
+<th>Name in Configuration</th>
+<th>Exact Match?</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Left drive motor</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Right drive motor</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Shooter motor</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Trigger servo</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Distance sensor</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>Remember:</p>
+<pre><code>leftDrive</code></pre>
+<p>is not the same as:</p>
+<pre><code>LeftDrive
+leftdrive
+left_drive
+left Drive</code></pre>
+<p>The name must match exactly, including spelling, capitalization, spaces, and underscores.</p>
+<p>---</p>
+<h2 id="step-6-correct-opmode-check">Step 6: Correct OpMode Check</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Check</th>
+<th>Yes / No</th>
+<th>Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>We selected the correct OpMode from the menu</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>The OpMode menu name matches our reference sheet</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>We pressed INIT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Telemetry appeared after INIT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>We pressed PLAY</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>We tested one control at a time</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>Common mistake:</p>
+<blockquote>Students edit one file but run a different OpMode.</blockquote>
+<p>---</p>
+<h2 id="step-7-hardware-and-wiring-check">Step 7: Hardware and Wiring Check</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Check</th>
+<th>Yes / No</th>
+<th>Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Motor or servo is plugged into the expected port</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wire is fully inserted</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wire is not damaged or pinched</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Power is connected</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Servo wire is plugged in with correct orientation</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Hub port matches configuration</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Mechanism can move freely by hand when safe</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>If the code and configuration are correct but nothing moves, check wiring and physical blockage.</p>
+<p>---</p>
+<h2 id="step-8-test-one-device-at-a-time">Step 8: Test One Device at a Time</h2>
+<p>Do not test the whole robot at once.</p>
+<p>Choose one device:</p>
+<pre><code>Device to test:</code></pre>
+<p>Choose one control:</p>
+<pre><code>Control to test:</code></pre>
+<p>Record what happened:</p>
+<pre><code>Result:</code></pre>
+<p>Examples:</p>
+<ul>
+<li>Test only <code>leftDrive</code>.</li>
+<li>Test only <code>rightDrive</code>.</li>
+<li>Test only <code>shooterMotor</code>.</li>
+<li>Test only <code>triggerServo</code>.</li>
+<li>Test only <code>distanceSensor</code> telemetry.</li>
+</ul>
+<p>---</p>
+<h2 id="step-9-what-changed-since-it-last-worked">Step 9: What Changed Since It Last Worked?</h2>
+<p>This is one of the most important troubleshooting questions.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Possible Change</th>
+<th>Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Code changed</td>
+<td></td>
+</tr>
+<tr>
+<td>Configuration changed</td>
+<td></td>
+</tr>
+<tr>
+<td>Wiring changed</td>
+<td></td>
+</tr>
+<tr>
+<td>Battery changed</td>
+<td></td>
+</tr>
+<tr>
+<td>Robot part moved</td>
+<td></td>
+</tr>
+<tr>
+<td>Servo position changed</td>
+<td></td>
+</tr>
+<tr>
+<td>Different OpMode selected</td>
+<td></td>
+</tr>
+<tr>
+<td>Different Chromebook or Driver Station used</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>Ask:</p>
+<blockquote>What is the last version that worked?</blockquote>
+<p>---</p>
+<h2 id="step-10-ask-for-help-with-useful-information">Step 10: Ask for Help With Useful Information</h2>
+<p>Before asking an instructor, be ready to say:</p>
+<p>1. What we were trying to do. 2. What happened instead. 3. Whether the code builds. 4. Which OpMode we ran. 5. Which configuration file is active. 6. Which device name might be the problem. 7. What changed since the last working version. 8. What we already tried.</p>
+<p>Helpful request:</p>
+<blockquote>“Our code builds, and the OpMode initializes, but the shooter motor does not move when we press X. The configuration name in code is <code>shooterMotor</code>, and the configuration file also says <code>shooterMotor</code>. We checked the wire and port. Can you help us decide the next test?”</blockquote>
+<p>Not helpful:</p>
+<blockquote>“It doesn’t work.”</blockquote>
+<p>---</p>
+<h2 id="troubleshooting-rule">Troubleshooting Rule</h2>
+<blockquote>Test the smallest part of the system that could explain the problem.</blockquote>
+<p>Do not change five things at once.</p>
+<p>Change one thing, test, and record what happened.</p>
+      </article>
+
+    </main>
+  </body>
+</html>

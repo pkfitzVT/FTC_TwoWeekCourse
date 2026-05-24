@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proposed File Move Plan | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Proposed File Move Plan</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../docs/proposed_file_move_plan.md">View source Markdown</a></p>
+        <h1 id="proposed-file-move-plan">Proposed File Move Plan</h1>
+<p>This is an organization plan only. Do not move, rename, delete, or archive files until the plan is reviewed and approved.</p>
+<p>The plan follows the current source policy:</p>
+<ul>
+<li>Markdown files are source files unless clearly utility/local.</li>
+<li>PDFs are generated exports unless otherwise noted.</li>
+<li>Packet PDFs should eventually have manifests listing their source Markdown files.</li>
+<li>Duplicate or overlapping files should be reviewed manually before any move/rename/archive action.</li>
+</ul>
+<h2 id="review-flags">Review Flags</h2>
+<p>- <code>02_student_materials/readings/day1_session1_what_is_first.md</code> and <code>02_student_materials/readings/day1_session1_what_is_first_tech_challenge.md</code> are the source files. - <code>99_archive_or_local/day1_session1_first_ftc_handouts.md</code> is kept only as an archived combined duplicate/reference.</p>
+<ul>
+<li>Day 1 Session 1 source-of-truth decision has been applied:</li>
+<li>Packet PDFs were moved to <code>05_print_packets/</code>, but still need source manifests before relying on them as stable print packets.</li>
+<li><code>02_student_materials/readings/future_human_controller_mapping_background.md</code> is useful course content but is not yet named by day/session.</li>
+<li><code>index.js</code>, <code>package.json</code>, and <code>.idea/</code> appear local/project-scaffold files, not course content.</li>
+<li><code>photo_rescue_notes.md</code> and related PowerShell scripts are utilities, not core course materials.</li>
+</ul>
+<h2 id="00-course-map">00_course_map</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Current path</th>
+<th>Proposed new path</th>
+<th>Reason for move</th>
+<th>File category</th>
+<th>Move safety</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>00_course_map/course_overview.md</code></td>
+<td><code>00_course_map/course_overview.md</code></td>
+<td>Already in correct course-map folder.</td>
+<td>source file</td>
+<td>Safe to leave in place</td>
+</tr>
+<tr>
+<td><code>00_course_map/20_session_scope_sequence.md</code></td>
+<td><code>00_course_map/20_session_scope_sequence.md</code></td>
+<td>Already in correct course-map folder.</td>
+<td>source file</td>
+<td>Safe to leave in place</td>
+</tr>
+</tbody></table></div>
+<h2 id="01-session-plans">01_session_plans</h2>
+<p>No current files are complete session plans. Do not move existing readings, menus, prompts, or teacher guides here until full session-plan files are created.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Current path</th>
+<th>Proposed new path</th>
+<th>Reason for move</th>
+<th>File category</th>
+<th>Move safety</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>None currently identified</td>
+<td><code>01_session_plans/</code></td>
+<td>Existing files are content components rather than complete timed session plans.</td>
+<td>source file</td>
+<td>Manual review first</td>
+</tr>
+</tbody></table></div>
+<h2 id="02-student-materials-readings">02_student_materials/readings</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Current path</th>
+<th>Proposed new path</th>
+<th>Reason for move</th>
+<th>File category</th>
+<th>Move safety</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>day1_session1_borrowed_equipment_expectations.md</code></td>
+<td><code>02_student_materials/readings/day1_session1_borrowed_equipment_expectations.md</code></td>
+<td>Student background/norms reading for safety, borrowed equipment, and community trust.</td>
+<td>source file</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>99_archive_or_local/day1_session1_first_ftc_handouts.md</code></td>
+<td><code>99_archive_or_local/day1_session1_first_ftc_handouts.md</code></td>
+<td>Archived combined FIRST/FTC duplicate. Modular readings are the source of truth.</td>
+<td>archive candidate</td>
+<td>Completed</td>
+</tr>
+<tr>
+<td><code>day1_session1_robotics_safety_norms.md</code></td>
+<td><code>02_student_materials/readings/day1_session1_robotics_safety_norms.md</code></td>
+<td>Student safety norms handout.</td>
+<td>source file</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day1_session1_what_is_first.md</code></td>
+<td><code>02_student_materials/readings/day1_session1_what_is_first.md</code></td>
+<td>Modular FIRST background reading.</td>
+<td>source file</td>
+<td>Completed</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day1_session1_what_is_first_tech_challenge.md</code></td>
+<td><code>02_student_materials/readings/day1_session1_what_is_first_tech_challenge.md</code></td>
+<td>Modular FTC background reading.</td>
+<td>source file</td>
+<td>Completed</td>
+</tr>
+<tr>
+<td><code>day1_session2_collaborative_engineering_teams.md</code></td>
+<td><code>02_student_materials/readings/day1_session2_collaborative_engineering_teams.md</code></td>
+<td>Student background reading for team formation and engineering roles.</td>
+<td>source file</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>day2_session3_why_team_names_matter.md</code></td>
+<td><code>02_student_materials/readings/day2_session3_why_team_names_matter.md</code></td>
+<td>Student background reading for team identity/name decision.</td>
+<td>source file</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>day2_session4_chassis_physics_space_background.md</code></td>
+<td><code>02_student_materials/readings/day3_session5_chassis_physics_space_background.md</code></td>
+<td>Student background reading for chassis physics and space planning, now aligned to Day 3 Session 5 build planning.</td>
+<td>source file</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>day2_session4_decode_scoring_strategy_background.md</code></td>
+<td><code>02_student_materials/readings/day2_session4_decode_scoring_strategy_background.md</code></td>
+<td>Student background reading for DECODE scoring and strategy.</td>
+<td>source file</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/future_human_controller_mapping_background.md</code></td>
+<td><code>02_student_materials/readings/future_human_controller_mapping_background.md</code></td>
+<td>Student background reading for later robot-control/controller-mapping session.</td>
+<td>source file</td>
+<td>Completed</td>
+</tr>
+</tbody></table></div>
+<h2 id="02-student-materials-decision-menus">02_student_materials/decision_menus</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Current path</th>
+<th>Proposed new path</th>
+<th>Reason for move</th>
+<th>File category</th>
+<th>Move safety</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>day1_session1_individual_goal_menu.md</code></td>
+<td><code>02_student_materials/decision_menus/day1_session1_individual_goal_menu.md</code></td>
+<td>Student goal menu with Must/Should/Could and reflection structure.</td>
+<td>source file</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>day2_session3_team_name_menu.md</code></td>
+<td><code>02_student_materials/decision_menus/day2_session3_team_name_menu.md</code></td>
+<td>Student team-name decision menu.</td>
+<td>source file</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>day2_session3_team_norms_menu.md</code></td>
+<td><code>02_student_materials/decision_menus/day2_session3_team_norms_menu.md</code></td>
+<td>Student team-norms decision menu and agreement material.</td>
+<td>source file</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>day2_session4_chassis_material_menu.md</code></td>
+<td><code>02_student_materials/decision_menus/day2_session4_chassis_material_menu.md</code></td>
+<td>Student chassis-material decision menu.</td>
+<td>source file</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>day2_session4_chassis_shape_menu.md</code></td>
+<td><code>02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md</code></td>
+<td>Student chassis-shape decision menu.</td>
+<td>source file</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>day2_session4_electronics_battery_placement_menu.md</code></td>
+<td><code>02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md</code></td>
+<td>Student electronics/battery layout decision menu.</td>
+<td>source file</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>day2_session4_game_strategy_goals_menu.md</code></td>
+<td><code>02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md</code></td>
+<td>Student game-strategy decision menu.</td>
+<td>source file</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>day2_session4_motor_placement_menu.md</code></td>
+<td><code>02_student_materials/decision_menus/day2_session4_motor_placement_menu.md</code></td>
+<td>Student motor-placement decision menu.</td>
+<td>source file</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>day2_session4_wheel_selection_menu.md</code></td>
+<td><code>02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md</code></td>
+<td>Student wheel-selection decision menu.</td>
+<td>source file</td>
+<td>Safe to move automatically</td>
+</tr>
+</tbody></table></div>
+<h2 id="02-student-materials-sld-prompts">02_student_materials/sld_prompts</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Current path</th>
+<th>Proposed new path</th>
+<th>Reason for move</th>
+<th>File category</th>
+<th>Move safety</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>day1_session1_sld_shared_materials_student.md</code></td>
+<td><code>02_student_materials/sld_prompts/day1_session1_sld_shared_materials_student.md</code></td>
+<td>Student-facing SLD prompt for shared materials, borrowed equipment, and trust.</td>
+<td>source file</td>
+<td>Safe to move automatically</td>
+</tr>
+</tbody></table></div>
+<h2 id="02-student-materials-engineering-notebook">02_student_materials/engineering_notebook</h2>
+<p>No current file is a consolidated engineering notebook. Several decision menus contain notebook/portfolio deliverables, but they should remain with decision menus until notebook extraction is intentionally designed.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Current path</th>
+<th>Proposed new path</th>
+<th>Reason for move</th>
+<th>File category</th>
+<th>Move safety</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>02_student_materials/engineering_notebook/day1_session1_student_bio_template.md</code></td>
+<td><code>02_student_materials/engineering_notebook/day1_session1_student_bio_template.md</code></td>
+<td>Student bio/team-formation template stored with engineering notebook materials.</td>
+<td>source file</td>
+<td>Completed</td>
+</tr>
+</tbody></table></div>
+<h2 id="03-teacher-materials-teacher-guides">03_teacher_materials/teacher_guides</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Current path</th>
+<th>Proposed new path</th>
+<th>Reason for move</th>
+<th>File category</th>
+<th>Move safety</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>day1_session1_sld_shared_materials_teacher_guide.md</code></td>
+<td><code>03_teacher_materials/teacher_guides/day1_session1_sld_shared_materials_teacher_guide.md</code></td>
+<td>Teacher/mentor guide for SLD 1.</td>
+<td>source file</td>
+<td>Safe to move automatically</td>
+</tr>
+</tbody></table></div>
+<h2 id="03-teacher-materials-rubrics">03_teacher_materials/rubrics</h2>
+<p>No rubric files currently found.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Current path</th>
+<th>Proposed new path</th>
+<th>Reason for move</th>
+<th>File category</th>
+<th>Move safety</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>None currently identified</td>
+<td><code>03_teacher_materials/rubrics/</code></td>
+<td>Future home for presentation, robot performance, notebook, and teamwork rubrics.</td>
+<td>source file</td>
+<td>Manual review first</td>
+</tr>
+</tbody></table></div>
+<h2 id="03-teacher-materials-setup-cleanup">03_teacher_materials/setup_cleanup</h2>
+<p>No dedicated setup/cleanup files currently found. Safety and borrowed equipment materials may inform future setup/cleanup documents, but should not be moved here yet.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Current path</th>
+<th>Proposed new path</th>
+<th>Reason for move</th>
+<th>File category</th>
+<th>Move safety</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>None currently identified</td>
+<td><code>03_teacher_materials/setup_cleanup/</code></td>
+<td>Future home for setup, cleanup, safety, checkout, and materials-management guides.</td>
+<td>source file</td>
+<td>Manual review first</td>
+</tr>
+</tbody></table></div>
+<h2 id="04-research-and-design-rationale">04_research_and_design_rationale</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Current path</th>
+<th>Proposed new path</th>
+<th>Reason for move</th>
+<th>File category</th>
+<th>Move safety</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>research_brief_design_menu_cards.md</code></td>
+<td><code>04_research_and_design_rationale/research_brief_design_menu_cards.md</code></td>
+<td>Design rationale for menu cards and decision tables.</td>
+<td>source file</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>research_brief_student_led_discussions.md</code></td>
+<td><code>04_research_and_design_rationale/research_brief_student_led_discussions.md</code></td>
+<td>Design rationale for student-led discussions.</td>
+<td>source file</td>
+<td>Safe to move automatically</td>
+</tr>
+</tbody></table></div>
+<h2 id="05-print-packets">05_print_packets</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Current path</th>
+<th>Proposed new path</th>
+<th>Reason for move</th>
+<th>File category</th>
+<th>Move safety</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>05_print_packets/background_documents_print_packet.pdf</code></td>
+<td><code>05_print_packets/background_documents_print_packet.pdf</code></td>
+<td>Generated early-course print packet. Needs source manifest.</td>
+<td>generated export</td>
+<td>Completed</td>
+</tr>
+<tr>
+<td><code>05_print_packets/chassis_menus_shape_material_motor_wheel_packet.pdf</code></td>
+<td><code>05_print_packets/chassis_menus_shape_material_motor_wheel_packet.pdf</code></td>
+<td>Generated chassis menu packet. Needs source manifest.</td>
+<td>generated export</td>
+<td>Completed</td>
+</tr>
+<tr>
+<td><code>05_print_packets/day2_session4_chassis_design_discussion_packet.pdf</code></td>
+<td><code>05_print_packets/day2_session4_chassis_design_discussion_packet.pdf</code></td>
+<td>Generated Day 2 Session 4 discussion/design packet. Needs source manifest.</td>
+<td>generated export</td>
+<td>Completed</td>
+</tr>
+<tr>
+<td><code>day2_session4_chassis_material_menu.pdf</code></td>
+<td><code>05_print_packets/day2_session4_chassis_material_menu.pdf</code></td>
+<td>PDF export of matching Markdown source.</td>
+<td>generated export</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>day2_session4_chassis_physics_space_background.pdf</code></td>
+<td><code>05_print_packets/day3_session5_chassis_physics_space_background.pdf</code></td>
+<td>PDF export of matching Markdown source, now aligned to Day 3 Session 5 build planning.</td>
+<td>generated export</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>day2_session4_chassis_shape_menu.pdf</code></td>
+<td><code>05_print_packets/day2_session4_chassis_shape_menu.pdf</code></td>
+<td>PDF export of matching Markdown source.</td>
+<td>generated export</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>day2_session4_decode_scoring_strategy_background.pdf</code></td>
+<td><code>05_print_packets/day2_session4_decode_scoring_strategy_background.pdf</code></td>
+<td>PDF export of matching Markdown source.</td>
+<td>generated export</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>day2_session4_electronics_battery_placement_menu.pdf</code></td>
+<td><code>05_print_packets/day2_session4_electronics_battery_placement_menu.pdf</code></td>
+<td>PDF export of matching Markdown source.</td>
+<td>generated export</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>day2_session4_game_strategy_goals_menu.pdf</code></td>
+<td><code>05_print_packets/day2_session4_game_strategy_goals_menu.pdf</code></td>
+<td>PDF export of matching Markdown source.</td>
+<td>generated export</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>day2_session4_motor_placement_menu.pdf</code></td>
+<td><code>05_print_packets/day2_session4_motor_placement_menu.pdf</code></td>
+<td>PDF export of matching Markdown source.</td>
+<td>generated export</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>day2_session4_wheel_selection_menu.pdf</code></td>
+<td><code>05_print_packets/day2_session4_wheel_selection_menu.pdf</code></td>
+<td>PDF export of matching Markdown source.</td>
+<td>generated export</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>future_human_controller_mapping_background.pdf</code></td>
+<td><code>05_print_packets/future_human_controller_mapping_background.pdf</code></td>
+<td>PDF export of matching Markdown source.</td>
+<td>generated export</td>
+<td>Safe to move automatically</td>
+</tr>
+</tbody></table></div>
+<h2 id="90-templates">90_templates</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Current path</th>
+<th>Proposed new path</th>
+<th>Reason for move</th>
+<th>File category</th>
+<th>Move safety</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>menu_prompt_template.md</code></td>
+<td><code>90_templates/menu_prompt_template.md</code></td>
+<td>Template for future design menus and decision records.</td>
+<td>source file</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>research_brief_template.md</code></td>
+<td><code>90_templates/research_brief_template.md</code></td>
+<td>Template for future research briefs.</td>
+<td>source file</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>sld_prompt_template.md</code></td>
+<td><code>90_templates/sld_prompt_template.md</code></td>
+<td>Template for student-facing SLD prompts and teacher/mentor SLD guides.</td>
+<td>source file</td>
+<td>Safe to move automatically</td>
+</tr>
+</tbody></table></div>
+<h2 id="91-utilities">91_utilities</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Current path</th>
+<th>Proposed new path</th>
+<th>Reason for move</th>
+<th>File category</th>
+<th>Move safety</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>photo_rescue_notes.md</code></td>
+<td><code>91_utilities/photo_rescue_notes.md</code></td>
+<td>Notes for photo/video rescue workflow; not core course content.</td>
+<td>utility</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>run_ipad_frame_export.ps1</code></td>
+<td><code>91_utilities/run_ipad_frame_export.ps1</code></td>
+<td>Wrapper script for iPad frame export workflow.</td>
+<td>utility</td>
+<td>Safe to move automatically</td>
+</tr>
+<tr>
+<td><code>video_frame_exporter.ps1</code></td>
+<td><code>91_utilities/video_frame_exporter.ps1</code></td>
+<td>PowerShell utility for exporting video frames.</td>
+<td>utility</td>
+<td>Safe to move automatically</td>
+</tr>
+</tbody></table></div>
+<h2 id="99-archive-or-local">99_archive_or_local</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Current path</th>
+<th>Proposed new path</th>
+<th>Reason for move</th>
+<th>File category</th>
+<th>Move safety</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>.idea/.gitignore</code></td>
+<td><code>99_archive_or_local/.idea/.gitignore</code></td>
+<td>Local IDE configuration, not course content.</td>
+<td>archive candidate</td>
+<td>Manual review first</td>
+</tr>
+<tr>
+<td><code>.idea/FTC_TwoWeekCourse.iml</code></td>
+<td><code>99_archive_or_local/.idea/FTC_TwoWeekCourse.iml</code></td>
+<td>Local IDE module file, not course content.</td>
+<td>archive candidate</td>
+<td>Manual review first</td>
+</tr>
+<tr>
+<td><code>.idea/modules.xml</code></td>
+<td><code>99_archive_or_local/.idea/modules.xml</code></td>
+<td>Local IDE configuration, not course content.</td>
+<td>archive candidate</td>
+<td>Manual review first</td>
+</tr>
+<tr>
+<td><code>.idea/workspace.xml</code></td>
+<td><code>99_archive_or_local/.idea/workspace.xml</code></td>
+<td>Local IDE workspace state, not course content.</td>
+<td>archive candidate</td>
+<td>Manual review first</td>
+</tr>
+<tr>
+<td><code>index.js</code></td>
+<td><code>99_archive_or_local/index.js</code></td>
+<td>Placeholder JavaScript file, not course content.</td>
+<td>archive candidate</td>
+<td>Manual review first</td>
+</tr>
+<tr>
+<td><code>package.json</code></td>
+<td><code>99_archive_or_local/package.json</code></td>
+<td>Placeholder package metadata with no course build/export workflow yet.</td>
+<td>archive candidate</td>
+<td>Manual review first</td>
+</tr>
+</tbody></table></div>
+<h2 id="docs-folder">Docs Folder</h2>
+<p>The <code>docs</code> folder should keep repository-management documentation rather than student-facing or teacher-facing course content.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Current path</th>
+<th>Proposed new path</th>
+<th>Reason for move</th>
+<th>File category</th>
+<th>Move safety</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>docs/course_content_inventory.md</code></td>
+<td><code>docs/course_content_inventory.md</code></td>
+<td>Already in appropriate repository documentation folder.</td>
+<td>source file</td>
+<td>Safe to leave in place</td>
+</tr>
+<tr>
+<td><code>docs/source_file_policy.md</code></td>
+<td><code>docs/source_file_policy.md</code></td>
+<td>Already in appropriate repository documentation folder.</td>
+<td>source file</td>
+<td>Safe to leave in place</td>
+</tr>
+<tr>
+<td><code>docs/proposed_file_move_plan.md</code></td>
+<td><code>docs/proposed_file_move_plan.md</code></td>
+<td>This proposed move plan.</td>
+<td>source file</td>
+<td>Safe to leave in place</td>
+</tr>
+</tbody></table></div>
+<h2 id="suggested-manual-review-before-moving">Suggested Manual Review Before Moving</h2>
+<p>Before any move script or bulk reorganization, review these decisions:</p>
+<p>1. Create manifests for <code>05_print_packets/background_documents_print_packet.pdf</code>, <code>05_print_packets/chassis_menus_shape_material_motor_wheel_packet.pdf</code>, and <code>05_print_packets/day2_session4_chassis_design_discussion_packet.pdf</code>. 2. Decide whether <code>02_student_materials/readings/future_human_controller_mapping_background.md</code> should be renamed later to a specific day/session once the programming/control sequence is finalized. 3. Decide whether <code>.idea/</code>, <code>index.js</code>, and <code>package.json</code> should be archived, ignored, or kept if a future build/export workflow will use them.</p>
+      </article>
+
+    </main>
+  </body>
+</html>

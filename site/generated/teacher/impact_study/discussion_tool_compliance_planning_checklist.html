@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harkness Discussion Tool Student Data Compliance Planning Checklist | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Harkness Discussion Tool Student Data Compliance Planning Checklist</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../docs/impact_study/discussion_tool_compliance_planning_checklist.md">View source Markdown</a></p>
+        <h1 id="harkness-discussion-tool-student-data-compliance-planning-checklist">Harkness Discussion Tool Student Data Compliance Planning Checklist</h1>
+<h2 id="purpose">Purpose</h2>
+<p>This document outlines a practical compliance planning checklist for a student-led discussion tool used in a Vermont school setting. The tool records student audio, transcribes speech, classifies student contributions, scores or evaluates discussion moves against a rubric, and displays a Harkness-style circle graph.</p>
+<p>This document is not legal advice. It is a planning tool to help the teaching team, school technology staff, administrators, and district privacy/compliance personnel identify what needs to be reviewed before the tool is used with students.</p>
+<h2 id="high-level-recommendation">High-Level Recommendation</h2>
+<p>Because the tool records student voices, creates transcripts, analyzes student speech, and may produce rubric scores or feedback, treat the data as sensitive student education data.</p>
+<p>Before regular classroom use, the team should complete a school/district review that includes:</p>
+<p>1. Data inventory 2. Parent/student notice 3. Access controls 4. Retention/deletion plan 5. Security review 6. Vendor/DPA review if any third-party services are used 7. AI/transcription service review 8. Student-facing explanation of how the tool works 9. De-identification plan for admin-facing reports 10. Written approval from the appropriate school/district authority</p>
+<h2 id="would-code-names-help">Would Code Names Help?</h2>
+<p>Yes, code names would help reduce risk, but they do not make the tool automatically compliant.</p>
+<p>Code names are useful because they reduce direct identifiers in the tool display and may make classroom reflection safer. However, audio recordings, voiceprints, transcripts, timestamps, class membership, team membership, and teacher-held lookup tables can still make data identifiable.</p>
+<p>Use code names as one layer in a broader privacy plan, not as the entire plan.</p>
+<h3 id="recommended-code-name-practice">Recommended Code Name Practice</h3>
+<p>Use code names or randomly assigned student IDs inside the tool interface.</p>
+<p>Recommended:</p>
+<ul>
+<li>Display code names instead of legal names.</li>
+<li>Store the name-to-code lookup outside the tool, preferably in a school-controlled location.</li>
+<li>Limit access to the lookup table to the teacher and authorized school staff.</li>
+<li>Do not include student names in audio file names, transcript file names, exported reports, or AI prompts.</li>
+<li>Use team-level summaries for public or admin-facing examples whenever possible.</li>
+</ul>
+<p>Not enough by itself:</p>
+<ul>
+<li>Code names alone do not anonymize audio.</li>
+<li>Code names alone do not anonymize transcripts if students mention names or personal details.</li>
+<li>Code names alone do not remove FERPA concerns if the school can connect the record back to a student.</li>
+</ul>
+<h2 id="data-map">Data Map</h2>
+<p>Before using the tool, create a data map.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Data Element</th>
+<th>Collected?</th>
+<th>Stored?</th>
+<th>Where Stored?</th>
+<th>Who Can Access?</th>
+<th>Retention Period</th>
+<th>Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Student legal name</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Avoid if possible</td>
+</tr>
+<tr>
+<td>Student code name / ID</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Preferred display identifier</td>
+</tr>
+<tr>
+<td>Audio recording</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>High sensitivity</td>
+</tr>
+<tr>
+<td>Transcript</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>May include names/personal info</td>
+</tr>
+<tr>
+<td>Speaker labels</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>May be identifiable</td>
+</tr>
+<tr>
+<td>Rubric classification</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Education record risk</td>
+</tr>
+<tr>
+<td>Score / feedback</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Education record risk</td>
+</tr>
+<tr>
+<td>Harkness circle graph</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Prefer team-level display</td>
+</tr>
+<tr>
+<td>Teacher notes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Education record risk</td>
+</tr>
+<tr>
+<td>Survey responses</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Use separately from tool data</td>
+</tr>
+<tr>
+<td>Parent/student consent or acknowledgment</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Follow district guidance</td>
+</tr>
+</tbody></table></div>
+<h2 id="likely-legal-policy-buckets-to-review">Likely Legal/Policy Buckets to Review</h2>
+<h3 id="ferpa">FERPA</h3>
+<p>FERPA protects the privacy of student education records at schools receiving U.S. Department of Education funds. Parents and eligible students have rights to inspect and review education records, request amendment in certain circumstances, and exercise some control over disclosure of personally identifiable information from education records.</p>
+<p>Because this tool may generate records directly related to students and maintained by the school or a school-controlled system, assume FERPA may apply.</p>
+<p>Planning questions:</p>
+<ul>
+<li>Are recordings, transcripts, rubric classifications, or scores education records?</li>
+<li>Who has access to the records?</li>
+<li>Are records disclosed to any third-party service?</li>
+<li>Is the disclosure covered by a FERPA exception, such as school official with legitimate educational interest?</li>
+<li>Are parents/students notified?</li>
+<li>What is the process if a parent requests access to records?</li>
+</ul>
+<h3 id="coppa">COPPA</h3>
+<p>COPPA applies to operators of websites or online services directed to children under 13, and to operators with actual knowledge that they collect personal information from children under 13. If the tool is used with students under 13 or collects information online from under-13 students through a third-party service, COPPA review is needed.</p>
+<p>For a high school course, COPPA may be less central if all students are 13 or older, but verify the student age range and any district policies.</p>
+<p>Planning questions:</p>
+<ul>
+<li>Are any students under 13?</li>
+<li>Does the tool or any third-party service collect personal information online from students under 13?</li>
+<li>Is the tool used only for educational purposes?</li>
+<li>Has the school/district reviewed notice and consent requirements?</li>
+</ul>
+<h3 id="ppra">PPRA</h3>
+<p>PPRA may be relevant if surveys ask about certain protected categories or sensitive personal information. The proposed course and discussion surveys should avoid protected/sensitive categories unless explicitly reviewed by the school.</p>
+<p>Planning questions:</p>
+<ul>
+<li>Do surveys ask about political beliefs, religion, mental health, family relationships, illegal behavior, income, or other sensitive categories?</li>
+<li>If yes, does the school need additional notice or opt-out procedures?</li>
+</ul>
+<h3 id="vermont-district-student-data-privacy-requirements">Vermont / District Student Data Privacy Requirements</h3>
+<p>Vermont schools commonly use student data privacy agreements and participate in student data privacy alliance processes for educational technology tools. Districts may require a Data Privacy Agreement or review before students use a web service that collects student data.</p>
+<p>Planning questions:</p>
+<ul>
+<li>Is the school or supervisory union part of the Vermont Student Privacy Alliance or Student Data Privacy Alliance process?</li>
+<li>Is there a required district technology approval process?</li>
+<li>Is a National Data Privacy Agreement or equivalent DPA required?</li>
+<li>Does the district already have policies for recording student audio or using AI tools?</li>
+<li>Who in the district approves new educational technology tools?</li>
+</ul>
+<h3 id="ai-transcription-service-review">AI / Transcription Service Review</h3>
+<p>If audio or transcripts are sent to a third-party AI, transcription, or LLM service, review the service carefully.</p>
+<p>Planning questions:</p>
+<ul>
+<li>What third-party service receives audio, transcripts, or student data?</li>
+<li>Is data used to train models?</li>
+<li>Is data retained by the vendor?</li>
+<li>Can data be deleted?</li>
+<li>Where is data stored?</li>
+<li>Is the service covered by a DPA?</li>
+<li>Does the vendor prohibit advertising, profiling, resale, or non-educational secondary use?</li>
+<li>Is encryption used in transit and at rest?</li>
+<li>Are access logs available?</li>
+</ul>
+<h2 id="minimum-privacy-design-principles">Minimum Privacy Design Principles</h2>
+<h3 id="1-data-minimization">1. Data Minimization</h3>
+<p>Collect only what is needed.</p>
+<p>Recommended:</p>
+<ul>
+<li>Do not collect legal names inside the tool if code names will work.</li>
+<li>Do not collect email addresses unless needed.</li>
+<li>Do not retain raw audio longer than necessary.</li>
+<li>Prefer short discussion samples over full-period recordings during pilots.</li>
+<li>Avoid collecting sensitive personal information.</li>
+</ul>
+<h3 id="2-purpose-limitation">2. Purpose Limitation</h3>
+<p>Use the data only for the educational purpose explained to students and families.</p>
+<p>Recommended purpose statement:</p>
+<blockquote>The discussion tool is used to help students reflect on discussion patterns, participation, listening, questioning, evidence use, and collaborative decision-making during class activities.</blockquote>
+<p>Avoid:</p>
+<ul>
+<li>Using student discussion data for unrelated research without approval</li>
+<li>Using audio/transcripts for product marketing</li>
+<li>Using data to train public models unless explicitly approved and legally reviewed</li>
+<li>Sharing identifiable examples outside the school</li>
+</ul>
+<h3 id="3-access-control">3. Access Control</h3>
+<p>Limit access to the smallest reasonable group.</p>
+<p>Recommended:</p>
+<ul>
+<li>Student sees their own feedback and/or team-level feedback.</li>
+<li>Teacher sees class/team/student data.</li>
+<li>Co-teacher sees course data.</li>
+<li>Administrator sees aggregated/de-identified summaries unless student-level access is educationally necessary.</li>
+<li>Developer sees only test data or de-identified data unless specifically approved by the school/district.</li>
+</ul>
+<p>Important:</p>
+<p>If the developer is not a school employee or approved school official, do not give access to identifiable student data without district review and an appropriate agreement.</p>
+<h3 id="4-retention-and-deletion">4. Retention and Deletion</h3>
+<p>Define exactly how long data is kept.</p>
+<p>Possible pilot retention model:</p>
+<ul>
+<li>Raw audio: delete within 7 to 14 days after transcription/verification.</li>
+<li>Transcripts: keep only through the end of the course unless needed for a documented educational purpose.</li>
+<li>Rubric scores/classifications: keep through the end of the course or grading period.</li>
+<li>De-identified aggregate results: may be kept longer for program evaluation.</li>
+<li>Name-to-code lookup: delete when no longer needed.</li>
+</ul>
+<p>Use district policy if it requires a different retention period.</p>
+<h3 id="5-student-transparency">5. Student Transparency</h3>
+<p>Students should know:</p>
+<ul>
+<li>What is recorded</li>
+<li>Why it is recorded</li>
+<li>What is transcribed</li>
+<li>What is scored or classified</li>
+<li>Who can see the results</li>
+<li>Whether the results affect grades</li>
+<li>How long data is kept</li>
+<li>How to ask questions or report concerns</li>
+</ul>
+<h3 id="6-parent-guardian-transparency">6. Parent/Guardian Transparency</h3>
+<p>For a pilot, provide parents/guardians with a plain-language notice if required or recommended by the district.</p>
+<p>The notice should explain:</p>
+<ul>
+<li>Educational purpose</li>
+<li>Data collected</li>
+<li>How code names are used</li>
+<li>Who can access data</li>
+<li>Whether any third-party services are used</li>
+<li>Retention/deletion</li>
+<li>Whether participation is required</li>
+<li>Who to contact with questions</li>
+</ul>
+<h3 id="7-use-for-reflection-before-grading">7. Use for Reflection Before Grading</h3>
+<p>For early use, the tool should be reflection-focused rather than grade-focused.</p>
+<p>Recommended:</p>
+<ul>
+<li>Do not grade students directly on AI classification during the pilot.</li>
+<li>Use teacher judgment and student reflection.</li>
+<li>Allow students to comment on or challenge classifications.</li>
+<li>Use team-level data to support better discussions.</li>
+</ul>
+<h3 id="8-bias-and-accuracy-review">8. Bias and Accuracy Review</h3>
+<p>AI transcription and classification can make mistakes.</p>
+<p>Planning questions:</p>
+<ul>
+<li>Does transcription accuracy vary by accent, speech pattern, background noise, or English language proficiency?</li>
+<li>Are multilingual students disadvantaged?</li>
+<li>Does the rubric classification misread short comments or informal speech?</li>
+<li>Are students able to review and correct transcripts?</li>
+<li>Are scores treated as suggestions rather than final truth?</li>
+</ul>
+<h2 id="student-facing-explanation">Student-Facing Explanation</h2>
+<p>Suggested language:</p>
+<blockquote>We are testing a discussion reflection tool. The goal is to help teams see patterns in conversation that are hard to notice in the moment: who is speaking, who is listening, who is building on ideas, who is asking questions, and how the group makes decisions. The tool is not here to catch you or rank you as people. It is here to help us improve discussion and teamwork.</blockquote>
+<h2 id="parent-guardian-notice-draft">Parent/Guardian Notice Draft</h2>
+<p>This is a rough internal draft. Have school/district leadership review before sending.</p>
+<blockquote>Dear families,</blockquote>
+<blockquote></blockquote>
+<blockquote>In our robotics course, students may use a discussion reflection tool designed to support student-led conversations and collaborative decision-making. During selected class discussions, the tool may record classroom discussion audio, create a transcript, classify discussion moves using a rubric, and generate a Harkness-style circle graph to help students reflect on participation and collaboration.</blockquote>
+<blockquote></blockquote>
+<blockquote>The purpose of the tool is educational: to help students improve listening, questioning, evidence use, equitable participation, and team decision-making. The tool is not intended to publicly rank students or replace teacher judgment.</blockquote>
+<blockquote></blockquote>
+<blockquote>To reduce the use of personally identifying information, students may use code names or assigned identifiers in the tool. Access to identifiable data will be limited to authorized school staff. Data will be retained only as long as needed for the course or as required by school policy.</blockquote>
+<blockquote></blockquote>
+<blockquote>Please contact [teacher/school contact] with questions.</blockquote>
+<h2 id="compliance-checklist-before-classroom-use">Compliance Checklist Before Classroom Use</h2>
+<h3 id="internal-review">Internal Review</h3>
+<ul>
+<li>[ ] Identify all data collected by the tool.</li>
+<li>[ ] Identify where each data type is stored.</li>
+<li>[ ] Identify all third-party services involved.</li>
+<li>[ ] Confirm whether any third-party service receives audio, transcripts, or student identifiers.</li>
+<li>[ ] Determine whether the developer can access identifiable student data.</li>
+<li>[ ] Review school/district policies on student recordings.</li>
+<li>[ ] Review school/district policies on AI tools.</li>
+<li>[ ] Review school/district policies on student data privacy agreements.</li>
+</ul>
+<h3 id="ferpa-education-records">FERPA / Education Records</h3>
+<ul>
+<li>[ ] Determine whether recordings, transcripts, and scores are education records.</li>
+<li>[ ] Determine who has legitimate educational interest.</li>
+<li>[ ] Document who can access records.</li>
+<li>[ ] Create process for parent/eligible-student access requests.</li>
+<li>[ ] Avoid disclosing identifiable records outside school-approved channels.</li>
+</ul>
+<h3 id="coppa-age-review">COPPA / Age Review</h3>
+<ul>
+<li>[ ] Confirm whether any students are under 13.</li>
+<li>[ ] If yes, complete COPPA review.</li>
+<li>[ ] Verify that any operator collecting under-13 data provides required notices and uses data only for educational purposes.</li>
+</ul>
+<h3 id="consent-notice">Consent / Notice</h3>
+<ul>
+<li>[ ] Decide whether parent consent, parent notice, student assent, or district approval is required.</li>
+<li>[ ] Prepare plain-language student explanation.</li>
+<li>[ ] Prepare parent/guardian notice if needed.</li>
+<li>[ ] Provide alternative activity if required by school policy.</li>
+</ul>
+<h3 id="security">Security</h3>
+<ul>
+<li>[ ] Use HTTPS.</li>
+<li>[ ] Encrypt data in transit.</li>
+<li>[ ] Encrypt sensitive stored data where possible.</li>
+<li>[ ] Use strong authentication for teacher/admin access.</li>
+<li>[ ] Restrict access by role.</li>
+<li>[ ] Avoid storing secrets in code.</li>
+<li>[ ] Keep audit logs for admin/teacher access if feasible.</li>
+<li>[ ] Back up data securely if backups are needed.</li>
+<li>[ ] Delete data from backups according to retention policy if feasible.</li>
+</ul>
+<h3 id="data-retention">Data Retention</h3>
+<ul>
+<li>[ ] Define retention period for raw audio.</li>
+<li>[ ] Define retention period for transcripts.</li>
+<li>[ ] Define retention period for rubric scores/classifications.</li>
+<li>[ ] Define retention period for de-identified aggregate results.</li>
+<li>[ ] Create deletion procedure.</li>
+<li>[ ] Test deletion procedure.</li>
+</ul>
+<h3 id="ai-transcription">AI/Transcription</h3>
+<ul>
+<li>[ ] Confirm whether data is used for model training.</li>
+<li>[ ] Confirm vendor retention period.</li>
+<li>[ ] Confirm whether vendor supports deletion.</li>
+<li>[ ] Confirm whether vendor permits educational use with student data.</li>
+<li>[ ] Confirm whether vendor terms allow use by schools.</li>
+<li>[ ] Confirm whether a DPA is needed or already exists.</li>
+</ul>
+<h3 id="reporting-admin-pitch">Reporting / Admin Pitch</h3>
+<ul>
+<li>[ ] Use de-identified or aggregated data in reports.</li>
+<li>[ ] Do not include student names.</li>
+<li>[ ] Do not include raw transcripts unless de-identified and approved.</li>
+<li>[ ] Use student quotes only with permission or after de-identification.</li>
+<li>[ ] Avoid sharing audio externally.</li>
+<li>[ ] Use team-level or class-level trends when possible.</li>
+</ul>
+<h2 id="pilot-recommendation">Pilot Recommendation</h2>
+<p>For the first pilot, use a conservative model:</p>
+<p>1. Use code names. 2. Record only short structured discussions. 3. Do not use the tool for grades. 4. Display team-level data first. 5. Store raw audio temporarily. 6. Delete raw audio quickly after transcription. 7. Keep transcripts only through the course unless needed. 8. Use de-identified aggregate results for admin-facing evidence. 9. Do not give outside developers access to identifiable data. 10. Get school/district approval before using real student data.</p>
+<h2 id="questions-for-school-district-review">Questions for School/District Review</h2>
+<p>1. May teachers record student discussion audio for instructional reflection? 2. Is parent/guardian notice required? 3. Is parent/guardian consent required? 4. Can students opt out of recording? 5. Does the tool need to go through the district&#x27;s edtech approval process? 6. Is a Data Privacy Agreement required? 7. Can third-party transcription or AI services process the audio/transcripts? 8. Are code names sufficient for the pilot display? 9. What retention period should be used? 10. Can de-identified aggregate results be used in an admin-facing proposal for a FIRST program? 11. What language should be used in parent and student notices?</p>
+<h2 id="suggested-technical-safeguards">Suggested Technical Safeguards</h2>
+<ul>
+<li>Use school-controlled accounts when possible.</li>
+<li>Separate code-name identifiers from real student identities.</li>
+<li>Store lookup table separately.</li>
+<li>Use least-privilege access.</li>
+<li>Avoid putting student names in prompts sent to AI services.</li>
+<li>Strip names from transcripts where possible.</li>
+<li>Do not use student audio or transcripts for model training.</li>
+<li>Create export controls.</li>
+<li>Create deletion tools.</li>
+<li>Keep a simple data dictionary.</li>
+<li>Keep a log of data flows and third-party services.</li>
+</ul>
+<h2 id="suggested-repo-location">Suggested Repo Location</h2>
+<p>Recommended location:</p>
+<p><code>docs/impact_study/discussion_tool_compliance_planning_checklist.md</code></p>
+<h2 id="suggested-related-files">Suggested Related Files</h2>
+<ul>
+<li><code>docs/impact_study/discussion_tool_impact_study_plan.md</code></li>
+<li><code>docs/impact_study/robotics_course_impact_study_plan.md</code></li>
+<li><code>docs/privacy/discussion_tool_data_map.md</code></li>
+<li><code>docs/privacy/discussion_tool_parent_notice_draft.md</code></li>
+<li><code>docs/privacy/discussion_tool_retention_policy.md</code></li>
+</ul>
+<h2 id="suggested-git-branch">Suggested Git Branch</h2>
+<pre><code>git checkout -b feature/discussion-tool-compliance-plan</code></pre>
+<p>Suggested commit:</p>
+<pre><code>git add docs/impact_study/discussion_tool_compliance_planning_checklist.md
+git commit -m &quot;Add discussion tool student data compliance checklist&quot;
+git push -u origin feature/discussion-tool-compliance-plan</code></pre>
+<h2 id="references">References</h2>
+<ul>
+<li>U.S. Department of Education, Student Privacy Policy Office. FERPA resources.</li>
+<li>Federal Trade Commission. Children&#x27;s Online Privacy Protection Rule (COPPA).</li>
+<li>FTC business guidance for edtech companies and schools.</li>
+<li>Vermont Student Privacy Alliance / Student Data Privacy Alliance resources.</li>
+<li>District student data privacy policies and technology approval procedures.</li>
+</ul>
+      </article>
+
+    </main>
+  </body>
+</html>

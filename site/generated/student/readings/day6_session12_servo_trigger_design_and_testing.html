@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Session 12 Reading: Servo Trigger Design and Testing | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Session 12 Reading: Servo Trigger Design and Testing</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../02_student_materials/readings/day6_session12_servo_trigger_design_and_testing.md">View source Markdown</a></p>
+        <h1 id="session-12-reading-servo-trigger-design-and-testing">Session 12 Reading: Servo Trigger Design and Testing</h1>
+<h2 id="controlling-the-feed">Controlling the Feed</h2>
+<p>The trigger controls when a ball enters the flywheel. A good trigger is simple, light, and easy to test.</p>
+<p>For this course, the trigger should release or push one ball at a time. Reliable feeding is part of a reliable shooter.</p>
+<h2 id="trigger-vocabulary">Trigger Vocabulary</h2>
+<p>A <strong>trigger</strong> is the part that controls when a ball is released into the shooter.</p>
+<p>A <strong>gate</strong> blocks or opens the ball path.</p>
+<p>A <strong>pusher</strong> moves a ball forward into the flywheel.</p>
+<p>A <strong>latch</strong> holds something in place until it is released.</p>
+<p>The <strong>load position</strong> is the servo position where the ball waits and does not enter the flywheel.</p>
+<p>The <strong>release position</strong> is the servo position where one ball is allowed or pushed into the flywheel.</p>
+<p><strong>Reset</strong> means returning the trigger to the load position after a release.</p>
+<p>A <strong>servo position</strong> is a command value such as <code>0.2</code> or <code>0.8</code> that tells a standard servo where to move.</p>
+<p>An <strong>endpoint</strong> is one end of the safe motion range.</p>
+<p><strong>Clearance</strong> is the space around the trigger, ball, horn, and frame.</p>
+<p><strong>One ball at a time</strong> means the trigger feeds a single ball instead of dumping the whole stack.</p>
+<p><strong>Timing</strong> means when the trigger moves compared with the flywheel speed and the next shot.</p>
+<p><strong>Flywheel recovery</strong> is the short time the flywheel needs to return to speed after launching a ball.</p>
+<p><strong>Consistency</strong> means the trigger and shooter behave the same way repeatedly.</p>
+<p><strong>Test code</strong> is simple code used to check one robot behavior.</p>
+<p><strong>Telemetry</strong> is information the robot sends to the Driver Station screen.</p>
+<h2 id="push-the-bottom-ball-or-release-the-stack">Push the Bottom Ball or Release the Stack?</h2>
+<p>For this course, it is usually better to control the bottom ball one at a time instead of releasing the whole stack.</p>
+<p>The flywheel slows down each time it launches a ball, so it needs time to recover. Feeding balls too quickly can make shots weaker or inconsistent.</p>
+<p>A trigger that controls one ball at a time gives the team more control over timing and testing.</p>
+<h2 id="servo-trigger-design-rules">Servo Trigger Design Rules</h2>
+<ul>
+<li>The servo should move a light part.</li>
+<li>The servo should not fight a jammed stack of balls.</li>
+<li>The trigger should have a clear load position and release position.</li>
+<li>The ball should not push hard against the servo when it is stuck.</li>
+<li>The servo horn should not hit the frame.</li>
+<li>The linkage should not bind.</li>
+<li>The trigger should be easy to reset.</li>
+<li>The mechanism should be tested slowly before full-speed use.</li>
+</ul>
+<h2 id="simple-servo-test-code">Simple Servo Test Code</h2>
+<pre><code>import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import com.qualcomm.robotcore.hardware.Servo;
+
+@TeleOp(name = &quot;ServoTriggerTest&quot;)
+public class ServoTriggerTest extends LinearOpMode {
+
+    private Servo triggerServo;
+
+    @Override
+    public void runOpMode() {
+        triggerServo = hardwareMap.get(Servo.class, &quot;triggerServo&quot;);
+
+        waitForStart();
+
+        while (opModeIsActive()) {
+            if (gamepad1.a) {
+                triggerServo.setPosition(0.2);
+                telemetry.addLine(&quot;Trigger position: LOAD&quot;);
+            }
+
+            if (gamepad1.b) {
+                triggerServo.setPosition(0.8);
+                telemetry.addLine(&quot;Trigger position: RELEASE&quot;);
+            }
+
+            telemetry.update();
+        }
+    }
+}</code></pre>
+<p>The exact values <code>0.2</code> and <code>0.8</code> are examples. Your team must test your own robot carefully.</p>
+<h2 id="testing-safely">Testing Safely</h2>
+<ul>
+<li>Start with the robot on blocks or disabled from launching.</li>
+<li>Remove balls for the first servo motion test.</li>
+<li>Test small position changes first.</li>
+<li>Watch for buzzing, binding, or hitting the frame.</li>
+<li>Stop if the servo strains.</li>
+<li>Add one ball only after the servo moves freely.</li>
+<li>Test the load position.</li>
+<li>Test the release position.</li>
+<li>Record the two position values that work best.</li>
+</ul>
+<h2 id="servo-trigger-test-log">Servo Trigger Test Log</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Test</th>
+<th>Servo Position</th>
+<th>Expected Result</th>
+<th>Actual Result</th>
+<th>Keep or Change?</th>
+</tr></thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="reflection">Reflection</h2>
+<p>What are your trigger&#x27;s load and release positions? How do you know those positions are safe for the servo?</p>
+      </article>
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Session 8 Reading: Wiring, Configuration, and First Drive | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Session 8 Reading: Wiring, Configuration, and First Drive</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../02_student_materials/readings/day4_session8_wiring_configuration_and_first_drive.md">View source Markdown</a></p>
+        <h1 id="session-8-reading-wiring-configuration-and-first-drive">Session 8 Reading: Wiring, Configuration, and First Drive</h1>
+<h2 id="from-physical-robot-to-code">From Physical Robot to Code</h2>
+<p>Wiring and configuration connect the physical robot to the Java code. The robot cannot guess which motor is the left drive motor or which port has the shooter motor. Your team has to wire parts carefully, name them clearly, and use the same names in the program.</p>
+<p>The key idea is simple: the robot configuration name must exactly match the name used in the Java code.</p>
+<h2 id="wiring-and-code-vocabulary">Wiring and Code Vocabulary</h2>
+<p>The <strong>Control Hub</strong> is the main robot device that connects to motors, servos, sensors, power, and the Robot Controller system.</p>
+<p>An <strong>Expansion Hub</strong> is an extra hub that can add more ports on some robots.</p>
+<p>A <strong>motor port</strong> is a numbered place on the hub where a motor wire plugs in.</p>
+<p>A <strong>servo port</strong> is a numbered place on the hub where a servo cable plugs in.</p>
+<p>A <strong>wire</strong> carries electrical power or signals.</p>
+<p>A <strong>cable</strong> is a covered group of wires or a finished wire connection.</p>
+<p>A <strong>connector</strong> is the end of a wire or cable that plugs into a port.</p>
+<p>A <strong>battery</strong> provides power to the robot.</p>
+<p>A <strong>power switch</strong> turns robot power on and off.</p>
+<p>A <strong>configuration</strong> is the Robot Controller setup that names the hardware plugged into the hub.</p>
+<p>The <strong>hardware map</strong> is the FTC code tool that connects Java names to configured robot hardware.</p>
+<p>A <strong>variable</strong> is a name in code that stores a value or object.</p>
+<p>An <strong>object</strong> is a software version of something the robot can use, such as a motor.</p>
+<p>A <strong>DcMotor</strong> is the FTC Java class used to control a DC motor.</p>
+<p><strong>TeleOp</strong> is the driver-controlled part of the match and also a common name for driver-control programs.</p>
+<p>An <strong>OpMode</strong> is a robot program that appears on the Driver Station.</p>
+<p>A <strong>gamepad</strong> is the controller the driver uses.</p>
+<p>The <strong>Driver Station</strong> is the device drivers use to select OpModes and control the robot.</p>
+<p>The <strong>Robot Controller</strong> is the robot-side system that runs the code and controls the hardware.</p>
+<h2 id="names-must-match">Names Must Match</h2>
+<p>Look at this code:</p>
+<pre><code>leftDrive = hardwareMap.get(DcMotor.class, &quot;leftDrive&quot;);
+rightDrive = hardwareMap.get(DcMotor.class, &quot;rightDrive&quot;);
+shooterMotor = hardwareMap.get(DcMotor.class, &quot;shooterMotor&quot;);</code></pre>
+<p>In the first line, <code>leftDrive</code> before the equals sign is the Java variable name. It is the name the code uses for the motor object.</p>
+<p>The <code>&quot;leftDrive&quot;</code> inside quotation marks is the configuration name. That quoted name must match the Robot Controller configuration exactly.</p>
+<p>Capital letters matter. Spaces and underscores matter. <code>leftDrive</code>, <code>LeftDrive</code>, <code>left_drive</code>, and <code>left drive</code> are different names to the robot.</p>
+<h2 id="example-configuration-table">Example Configuration Table</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Physical part</th>
+<th>Motor port</th>
+<th>Configuration name</th>
+<th>Java variable</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Left drive motor</td>
+<td>0</td>
+<td><code>leftDrive</code></td>
+<td><code>leftDrive</code></td>
+</tr>
+<tr>
+<td>Right drive motor</td>
+<td>1</td>
+<td><code>rightDrive</code></td>
+<td><code>rightDrive</code></td>
+</tr>
+<tr>
+<td>Shooter motor</td>
+<td>2</td>
+<td><code>shooterMotor</code></td>
+<td><code>shooterMotor</code></td>
+</tr>
+</tbody></table></div>
+<p>Your team&#x27;s table may be different. What matters is that the wiring, configuration, and code agree.</p>
+<h2 id="first-drive-testing-checklist">First-Drive Testing Checklist</h2>
+<ul>
+<li>Place the robot on blocks or lift the wheels off the floor.</li>
+<li>Turn on robot power.</li>
+<li>Connect the Driver Station.</li>
+<li>Select the correct TeleOp.</li>
+<li>Press INIT.</li>
+<li>Press START.</li>
+<li>Test one button at a time.</li>
+<li>Keep hands away from moving wheels.</li>
+<li>Stop the OpMode before changing wires.</li>
+<li>Write down what happened before changing code or configuration.</li>
+</ul>
+<h2 id="reflection">Reflection</h2>
+<p>Why is it useful to test the robot with the wheels off the floor before driving it on the ground?</p>
+      </article>
+
+    </main>
+  </body>
+</html>

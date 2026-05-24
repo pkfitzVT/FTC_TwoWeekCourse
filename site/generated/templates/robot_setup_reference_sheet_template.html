@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Robot Setup Reference Sheet Template | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Robot Setup Reference Sheet Template</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../index.html">Home</a>
+        <a href="../../students/index.html">Students</a>
+        <a href="../../teachers/index.html">Teachers</a>
+        <a href="../../sessions/index.html">Sessions</a>
+        <a href="../../materials/index.html">Materials</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../index.html">Back to site home</a> | <a href="../../../90_templates/robot_setup_reference_sheet_template.md">View source Markdown</a></p>
+        <h1 id="robot-setup-reference-sheet-template">Robot Setup Reference Sheet Template</h1>
+<p>This sheet is the team’s master reference for one robot.</p>
+<p>The reference sheet tells the team what the robot is supposed to be. The troubleshooting checklist helps the team find where reality differs from the plan.</p>
+<p>---</p>
+<h2 id="robot-identity">Robot Identity</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Item</th>
+<th>Value</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Team / Group Name</td>
+<td></td>
+</tr>
+<tr>
+<td>Robot ID / Control Hub Name</td>
+<td></td>
+</tr>
+<tr>
+<td>Robot Number / Label</td>
+<td></td>
+</tr>
+<tr>
+<td>Date Created</td>
+<td></td>
+</tr>
+<tr>
+<td>Last Updated</td>
+<td></td>
+</tr>
+<tr>
+<td>Assigned Students</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>---</p>
+<h2 id="network-information">Network Information</h2>
+<blockquote>Do not change borrowed Control Hub network names or passwords without instructor permission.</blockquote>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Item</th>
+<th>Value</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Wi-Fi Network Name</td>
+<td></td>
+</tr>
+<tr>
+<td>Wi-Fi Password</td>
+<td>See printed robot reference card / instructor. Do not change borrowed Control Hub passwords.</td>
+</tr>
+<tr>
+<td>Robot Controller Address</td>
+<td></td>
+</tr>
+<tr>
+<td>Notes</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>---</p>
+<h2 id="configuration-file">Configuration File</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Item</th>
+<th>Value</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Active Configuration File Name</td>
+<td></td>
+</tr>
+<tr>
+<td>Backup Configuration File Name</td>
+<td></td>
+</tr>
+<tr>
+<td>Date of Last Known Working Configuration</td>
+<td></td>
+</tr>
+<tr>
+<td>Who Last Changed It?</td>
+<td></td>
+</tr>
+<tr>
+<td>Reason for Change</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h3 id="suggested-configuration-naming-pattern">Suggested Configuration Naming Pattern</h3>
+<p>Use a name that includes the course, year, robot ID, and purpose.</p>
+<p>Examples:</p>
+<pre><code>YES_2026_Robot9721_BaseConfig
+YES_2026_Robot9721_Day04_DriveWorking
+YES_2026_Robot9721_Day06_ShooterAdded</code></pre>
+<h3 id="configuration-rule">Configuration Rule</h3>
+<p>The names in the configuration file must match the names in the Java code <strong>exactly</strong>.</p>
+<p>This includes:</p>
+<ul>
+<li>Spelling</li>
+<li>Capitalization</li>
+<li>Spaces</li>
+<li>Underscores</li>
+<li>camelCase</li>
+</ul>
+<p>Example:</p>
+<pre><code>hardwareMap.get(DcMotor.class, &quot;leftDrive&quot;);</code></pre>
+<p>The configuration file must contain a motor named:</p>
+<pre><code>leftDrive</code></pre>
+<p>---</p>
+<h1 id="hardware-naming-conventions">Hardware Naming Conventions</h1>
+<h2 id="standard-naming-conventions">Standard Naming Conventions</h2>
+<p>Use clear, consistent names. Avoid spaces unless your instructor requires them.</p>
+<h3 id="motors">Motors</h3>
+<pre><code>leftDrive
+rightDrive
+shooterMotor
+intakeMotor
+armMotor</code></pre>
+<h3 id="servos">Servos</h3>
+<pre><code>triggerServo
+gateServo
+hopperServo
+sensorServo</code></pre>
+<h3 id="sensors">Sensors</h3>
+<pre><code>distanceSensor
+colorSensor
+touchSensor
+imu</code></pre>
+<p>---</p>
+<h2 id="drive-motors">Drive Motors</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Physical Device</th>
+<th>Configuration Name</th>
+<th>Port</th>
+<th>Direction Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Left drive motor</td>
+<td>leftDrive</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Right drive motor</td>
+<td>rightDrive</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>---</p>
+<h2 id="mechanism-motors">Mechanism Motors</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Physical Device</th>
+<th>Configuration Name</th>
+<th>Port</th>
+<th>Direction Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Shooter motor</td>
+<td>shooterMotor</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Intake motor</td>
+<td>intakeMotor</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Arm motor</td>
+<td>armMotor</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>---</p>
+<h2 id="servos">Servos</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Physical Device</th>
+<th>Configuration Name</th>
+<th>Port</th>
+<th>Starting Position</th>
+<th>Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Trigger servo</td>
+<td>triggerServo</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Gate servo</td>
+<td>gateServo</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Sensor servo</td>
+<td>sensorServo</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>---</p>
+<h2 id="sensors">Sensors</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Physical Device</th>
+<th>Configuration Name</th>
+<th>Port</th>
+<th>Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Distance sensor</td>
+<td>distanceSensor</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Color sensor</td>
+<td>colorSensor</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Touch sensor</td>
+<td>touchSensor</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>IMU</td>
+<td>imu</td>
+<td>Built-in</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>---</p>
+<h1 id="opmode-reference">OpMode Reference</h1>
+<h2 id="current-opmodes">Current OpModes</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>File Name</th>
+<th>Menu Name on Driver Station</th>
+<th>Purpose</th>
+<th>Status</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>BasicDriveTeleOp.java</td>
+<td>Basic Drive TeleOp</td>
+<td>Drive test</td>
+<td></td>
+</tr>
+<tr>
+<td>ShooterTriggerTeleOp.java</td>
+<td>Shooter Trigger TeleOp</td>
+<td>Shooter and trigger test</td>
+<td></td>
+</tr>
+<tr>
+<td>FullRobotTeleOp.java</td>
+<td>Full Robot TeleOp</td>
+<td>Full demo control</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="opmode-status-options">OpMode Status Options</h2>
+<p>Use one of these:</p>
+<ul>
+<li>Not tested</li>
+<li>Builds but not tested</li>
+<li>Runs with issues</li>
+<li>Working</li>
+<li>Last known working version</li>
+</ul>
+<p>---</p>
+<h1 id="current-gamepad-map">Current Gamepad Map</h1>
+<h2 id="gamepad-1-driver">Gamepad 1: Driver</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Input</th>
+<th>Robot Action</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Left stick</td>
+<td></td>
+</tr>
+<tr>
+<td>Right stick</td>
+<td></td>
+</tr>
+<tr>
+<td>D-pad</td>
+<td></td>
+</tr>
+<tr>
+<td>A</td>
+<td></td>
+</tr>
+<tr>
+<td>B</td>
+<td></td>
+</tr>
+<tr>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Y</td>
+<td></td>
+</tr>
+<tr>
+<td>Left bumper</td>
+<td></td>
+</tr>
+<tr>
+<td>Right bumper</td>
+<td></td>
+</tr>
+<tr>
+<td>Left trigger</td>
+<td></td>
+</tr>
+<tr>
+<td>Right trigger</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>---</p>
+<h2 id="gamepad-2-operator">Gamepad 2: Operator</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Input</th>
+<th>Robot Action</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Left stick</td>
+<td></td>
+</tr>
+<tr>
+<td>Right stick</td>
+<td></td>
+</tr>
+<tr>
+<td>D-pad</td>
+<td></td>
+</tr>
+<tr>
+<td>A</td>
+<td></td>
+</tr>
+<tr>
+<td>B</td>
+<td></td>
+</tr>
+<tr>
+<td>X</td>
+<td>Turn shooter on</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>Turn shooter off</td>
+</tr>
+<tr>
+<td>Left bumper</td>
+<td></td>
+</tr>
+<tr>
+<td>Right bumper</td>
+<td></td>
+</tr>
+<tr>
+<td>Left trigger</td>
+<td></td>
+</tr>
+<tr>
+<td>Right trigger</td>
+<td>Fire trigger servo</td>
+</tr>
+</tbody></table></div>
+<p>---</p>
+<h1 id="last-known-working-setup">Last Known Working Setup</h1>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Item</th>
+<th>Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Last date robot drove successfully</td>
+<td></td>
+</tr>
+<tr>
+<td>Last OpMode that worked</td>
+<td></td>
+</tr>
+<tr>
+<td>Last configuration file that worked</td>
+<td></td>
+</tr>
+<tr>
+<td>Last mechanism that worked</td>
+<td></td>
+</tr>
+<tr>
+<td>What changed since then?</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>---</p>
+<h1 id="robot-change-log">Robot Change Log</h1>
+<p>Use this table whenever the team changes wiring, ports, configuration names, OpMode names, gamepad controls, or major robot parts.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Date</th>
+<th>What Changed?</th>
+<th>Why?</th>
+<th>Who Made the Change?</th>
+<th>Tested?</th>
+<th>Result</th>
+</tr></thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>---</p>
+<h1 id="team-rule">Team Rule</h1>
+<p>Before changing the configuration file, code names, wiring, ports, or OpMode names, update this sheet.</p>
+<p>If the robot stops working, this sheet is the first place to look.</p>
+      </article>
+
+    </main>
+  </body>
+</html>

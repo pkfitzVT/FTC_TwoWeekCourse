@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reorganization Log | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Reorganization Log</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../docs/reorganization_log.md">View source Markdown</a></p>
+        <h1 id="reorganization-log">Reorganization Log</h1>
+<h2 id="summary">Summary</h2>
+<p>The initial pass implemented only the approved safe parts of <code>docs/proposed_file_move_plan.md</code>.</p>
+<p>During that initial pass, no files marked <code>Manual review first</code> were moved. The <code>.idea</code> directory, <code>package.json</code>, <code>index.js</code>, <code>future_human_controller_mapping_background.md</code>, and Day 1 Session 1 duplicate/overlapping source files were intentionally left in place.</p>
+<h2 id="root-level-manual-review-cleanup">Root-Level Manual Review Cleanup</h2>
+<p>A later cleanup pass applied the Day 1 FIRST/FTC source-of-truth decision and the approved root-file moves:</p>
+<ul>
+<li><code>day1_session1_what_is_first.md</code> -&gt; <code>02_student_materials/readings/day1_session1_what_is_first.md</code></li>
+<li><code>day1_session1_what_is_first_tech_challenge.md</code> -&gt; <code>02_student_materials/readings/day1_session1_what_is_first_tech_challenge.md</code></li>
+<li><code>day1_session1_first_ftc_handouts.md</code> -&gt; <code>99_archive_or_local/day1_session1_first_ftc_handouts.md</code></li>
+<li><code>day1_session1_student_bio_template.md</code> -&gt; <code>02_student_materials/engineering_notebook/day1_session1_student_bio_template.md</code></li>
+<li><code>future_human_controller_mapping_background.md</code> -&gt; <code>02_student_materials/readings/future_human_controller_mapping_background.md</code></li>
+<li><code>background_documents_print_packet.pdf</code> -&gt; <code>05_print_packets/background_documents_print_packet.pdf</code></li>
+<li><code>chassis_menus_shape_material_motor_wheel_packet.pdf</code> -&gt; <code>05_print_packets/chassis_menus_shape_material_motor_wheel_packet.pdf</code></li>
+<li><code>day2_session4_chassis_design_discussion_packet.pdf</code> -&gt; <code>05_print_packets/day2_session4_chassis_design_discussion_packet.pdf</code></li>
+</ul>
+<p>The modular FIRST and FTC readings are now the source of truth. The combined Markdown handout is archived as an older duplicate/reference, not an editable source file.</p>
+<h2 id="files-moved">Files Moved</h2>
+<h3 id="student-readings">Student Readings</h3>
+<ul>
+<li><code>day1_session1_borrowed_equipment_expectations.md</code> -&gt; <code>02_student_materials/readings/day1_session1_borrowed_equipment_expectations.md</code></li>
+<li><code>day1_session1_robotics_safety_norms.md</code> -&gt; <code>02_student_materials/readings/day1_session1_robotics_safety_norms.md</code></li>
+<li><code>day1_session2_collaborative_engineering_teams.md</code> -&gt; <code>02_student_materials/readings/day1_session2_collaborative_engineering_teams.md</code></li>
+<li><code>day2_session3_why_team_names_matter.md</code> -&gt; <code>02_student_materials/readings/day2_session3_why_team_names_matter.md</code></li>
+<li><code>day2_session4_chassis_physics_space_background.md</code> -&gt; <code>02_student_materials/readings/day3_session5_chassis_physics_space_background.md</code></li>
+<li><code>day2_session4_decode_scoring_strategy_background.md</code> -&gt; <code>02_student_materials/readings/day2_session4_decode_scoring_strategy_background.md</code></li>
+</ul>
+<h3 id="student-decision-menus">Student Decision Menus</h3>
+<ul>
+<li><code>day1_session1_individual_goal_menu.md</code> -&gt; <code>02_student_materials/decision_menus/day1_session1_individual_goal_menu.md</code></li>
+<li><code>day2_session3_team_name_menu.md</code> -&gt; <code>02_student_materials/decision_menus/day2_session3_team_name_menu.md</code></li>
+<li><code>day2_session3_team_norms_menu.md</code> -&gt; <code>02_student_materials/decision_menus/day2_session3_team_norms_menu.md</code></li>
+<li><code>day2_session4_chassis_material_menu.md</code> -&gt; <code>02_student_materials/decision_menus/day2_session4_chassis_material_menu.md</code></li>
+<li><code>day2_session4_chassis_shape_menu.md</code> -&gt; <code>02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md</code></li>
+<li><code>day2_session4_electronics_battery_placement_menu.md</code> -&gt; <code>02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md</code></li>
+<li><code>day2_session4_game_strategy_goals_menu.md</code> -&gt; <code>02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md</code></li>
+<li><code>day2_session4_motor_placement_menu.md</code> -&gt; <code>02_student_materials/decision_menus/day2_session4_motor_placement_menu.md</code></li>
+<li><code>day2_session4_wheel_selection_menu.md</code> -&gt; <code>02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md</code></li>
+</ul>
+<h3 id="student-sld-prompts">Student SLD Prompts</h3>
+<ul>
+<li><code>day1_session1_sld_shared_materials_student.md</code> -&gt; <code>02_student_materials/sld_prompts/day1_session1_sld_shared_materials_student.md</code></li>
+</ul>
+<h3 id="teacher-guides">Teacher Guides</h3>
+<ul>
+<li><code>day1_session1_sld_shared_materials_teacher_guide.md</code> -&gt; <code>03_teacher_materials/teacher_guides/day1_session1_sld_shared_materials_teacher_guide.md</code></li>
+</ul>
+<h3 id="research-and-design-rationale">Research and Design Rationale</h3>
+<ul>
+<li><code>research_brief_design_menu_cards.md</code> -&gt; <code>04_research_and_design_rationale/research_brief_design_menu_cards.md</code></li>
+<li><code>research_brief_student_led_discussions.md</code> -&gt; <code>04_research_and_design_rationale/research_brief_student_led_discussions.md</code></li>
+</ul>
+<h3 id="generated-pdf-exports">Generated PDF Exports</h3>
+<ul>
+<li><code>day2_session4_chassis_material_menu.pdf</code> -&gt; <code>05_print_packets/day2_session4_chassis_material_menu.pdf</code></li>
+<li><code>day2_session4_chassis_physics_space_background.pdf</code> -&gt; <code>05_print_packets/day3_session5_chassis_physics_space_background.pdf</code></li>
+<li><code>day2_session4_chassis_shape_menu.pdf</code> -&gt; <code>05_print_packets/day2_session4_chassis_shape_menu.pdf</code></li>
+<li><code>day2_session4_decode_scoring_strategy_background.pdf</code> -&gt; <code>05_print_packets/day2_session4_decode_scoring_strategy_background.pdf</code></li>
+<li><code>day2_session4_electronics_battery_placement_menu.pdf</code> -&gt; <code>05_print_packets/day2_session4_electronics_battery_placement_menu.pdf</code></li>
+<li><code>day2_session4_game_strategy_goals_menu.pdf</code> -&gt; <code>05_print_packets/day2_session4_game_strategy_goals_menu.pdf</code></li>
+<li><code>day2_session4_motor_placement_menu.pdf</code> -&gt; <code>05_print_packets/day2_session4_motor_placement_menu.pdf</code></li>
+<li><code>day2_session4_wheel_selection_menu.pdf</code> -&gt; <code>05_print_packets/day2_session4_wheel_selection_menu.pdf</code></li>
+<li><code>future_human_controller_mapping_background.pdf</code> -&gt; <code>05_print_packets/future_human_controller_mapping_background.pdf</code></li>
+</ul>
+<h3 id="templates">Templates</h3>
+<ul>
+<li><code>menu_prompt_template.md</code> -&gt; <code>90_templates/menu_prompt_template.md</code></li>
+<li><code>research_brief_template.md</code> -&gt; <code>90_templates/research_brief_template.md</code></li>
+<li><code>sld_prompt_template.md</code> -&gt; <code>90_templates/sld_prompt_template.md</code></li>
+</ul>
+<h3 id="utilities">Utilities</h3>
+<ul>
+<li><code>photo_rescue_notes.md</code> -&gt; <code>91_utilities/photo_rescue_notes.md</code></li>
+<li><code>run_ipad_frame_export.ps1</code> -&gt; <code>91_utilities/run_ipad_frame_export.ps1</code></li>
+<li><code>video_frame_exporter.ps1</code> -&gt; <code>91_utilities/video_frame_exporter.ps1</code></li>
+</ul>
+<h2 id="files-intentionally-not-moved-during-initial-pass">Files Intentionally Not Moved During Initial Pass</h2>
+<ul>
+<li><code>.idea/</code> and all <code>.idea</code> files</li>
+<li><code>package.json</code></li>
+<li><code>index.js</code></li>
+</ul>
+<h2 id="manual-review-items-remaining">Manual Review Items Remaining</h2>
+<p>1. Create source manifests for packet PDFs: - <code>05_print_packets/background_documents_print_packet.pdf</code> - <code>05_print_packets/chassis_menus_shape_material_motor_wheel_packet.pdf</code> - <code>05_print_packets/day2_session4_chassis_design_discussion_packet.pdf</code> 2. Decide the final session/path assignment for <code>02_student_materials/readings/future_human_controller_mapping_background.md</code>. 3. Decide whether <code>.idea/</code>, <code>package.json</code>, and <code>index.js</code> should remain, be ignored, or be archived later.</p>
+<h2 id="other-changes">Other Changes</h2>
+<ul>
+<li>Added root <code>.gitignore</code> with the requested ignore rules.</li>
+<li>Created target organizing folders from the proposed move plan.</li>
+<li>Updated <code>docs/course_content_inventory.md</code> so file paths match the new folder structure.</li>
+</ul>
+<h2 id="day-2-day-3-reading-realignment">Day 2 / Day 3 Reading Realignment</h2>
+<ul>
+<li>Renamed <code>02_student_materials/readings/day2_session4_chassis_physics_space_background.md</code> -&gt; <code>02_student_materials/readings/day3_session5_chassis_physics_space_background.md</code>.</li>
+<li>Renamed <code>05_print_packets/day2_session4_chassis_physics_space_background.pdf</code> -&gt; <code>05_print_packets/day3_session5_chassis_physics_space_background.pdf</code>.</li>
+<li>Renamed the Day 2 Session 4 plan shell to <code>01_session_plans/day02/session_04_first_programming_session.md</code>.</li>
+<li>Updated the scope sequence, session plans, engineering notebook, inventory, course overview, teacher overview, and coteacher review packet so Day 2 Session 4 focuses on first programming and Day 3 Session 5 carries chassis physics / space constraints.</li>
+</ul>
+      </article>
+
+    </main>
+  </body>
+</html>

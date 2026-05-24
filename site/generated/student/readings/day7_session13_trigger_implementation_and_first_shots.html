@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Session 13 Reading: Trigger Implementation and First Shots | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Session 13 Reading: Trigger Implementation and First Shots</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../02_student_materials/readings/day7_session13_trigger_implementation_and_first_shots.md">View source Markdown</a></p>
+        <h1 id="session-13-reading-trigger-implementation-and-first-shots">Session 13 Reading: Trigger Implementation and First Shots</h1>
+<h2 id="the-trigger-joins-the-robot">The Trigger Joins the Robot</h2>
+<p>Today the trigger becomes part of the robot. A trigger that works by hand may not work once it is mounted near the hopper, flywheel, frame, wires, and other parts.</p>
+<p>The trigger should control one ball at a time. Before testing with the flywheel running, make sure the trigger moves freely and can return to its starting position.</p>
+<h2 id="trigger-vocabulary">Trigger Vocabulary</h2>
+<p>A <strong>trigger</strong> is the part that releases or pushes a ball into the flywheel.</p>
+<p>A <strong>servo</strong> is a small motor unit that can move to a controlled position.</p>
+<p>A <strong>servo horn</strong> is the arm attached to the servo output shaft.</p>
+<p>A <strong>linkage</strong> is a connected part that transfers servo motion to the trigger.</p>
+<p>The <strong>load position</strong> is where the trigger holds the ball back or waits for the next ball.</p>
+<p>The <strong>release position</strong> is where the trigger lets one ball enter the flywheel.</p>
+<p><strong>Reset</strong> means returning the trigger to the load position after a shot.</p>
+<p><strong>Clearance</strong> is the space around the trigger, servo horn, ball, frame, and hopper.</p>
+<p><strong>Binding</strong> happens when parts rub, twist, or get stuck so the mechanism cannot move freely.</p>
+<p><strong>Range of motion</strong> means how far the trigger can move.</p>
+<p>An <strong>endpoint</strong> is one end of the safe motion range.</p>
+<p><strong>Alignment</strong> means the trigger, hopper, and ball path are lined up so the ball moves where intended.</p>
+<p>The <strong>ball path</strong> is the route the ball follows from the hopper into the flywheel.</p>
+<p><strong>One ball at a time</strong> means the trigger releases one ball instead of dumping the whole stack.</p>
+<p>A <strong>controlled shot</strong> is a shot where the team knows when and how the ball was released.</p>
+<p>A <strong>test shot</strong> is a shot used to collect evidence.</p>
+<p><strong>Reliability</strong> means the trigger works many times without jamming, sticking, or needing constant repair.</p>
+<h2 id="do-not-force-the-servo">Do Not Force the Servo</h2>
+<p>The servo should not be forced to push through a jam. If the servo buzzes, strains, hits the frame, or cannot reach the commanded position, stop and adjust the mechanism.</p>
+<p>A servo trigger should move a light part. It should not fight the full force of a stuck ball stack.</p>
+<h2 id="before-running-the-flywheel">Before Running the Flywheel</h2>
+<p>Test the trigger without launching first:</p>
+<ul>
+<li>Is the servo mounted firmly?</li>
+<li>Is the servo horn attached securely?</li>
+<li>Does the trigger move without hitting the frame?</li>
+<li>Does the trigger have a clear load position?</li>
+<li>Does the trigger have a clear release position?</li>
+<li>Can the trigger return to load position?</li>
+<li>Does the servo buzz or strain?</li>
+<li>Does the ball move as expected when the trigger moves?</li>
+<li>Can the trigger move one ball without releasing the whole stack?</li>
+</ul>
+<p>If the answer to any safety question is no, fix that before spinning the flywheel.</p>
+<h2 id="first-controlled-shots">First Controlled Shots</h2>
+<p>Start with one ball and one shot at a time. The goal is evidence, not rapid firing.</p>
+<ul>
+<li>Load one ball.</li>
+<li>Turn on the flywheel.</li>
+<li>Wait briefly for the flywheel to reach speed.</li>
+<li>Move the trigger to release or push the ball.</li>
+<li>Move the trigger back to load position.</li>
+<li>Stop and observe what happened.</li>
+<li>Record what worked and what failed.</li>
+</ul>
+<p>After one controlled shot works, your team can test whether the trigger resets and feeds the next ball.</p>
+<h2 id="reflection">Reflection</h2>
+<p>What changed when the trigger was mounted on the robot instead of tested by hand?</p>
+      </article>
+
+    </main>
+  </body>
+</html>

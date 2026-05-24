@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Session 9 Reading: Flywheel Speed and Ball Compression | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Session 9 Reading: Flywheel Speed and Ball Compression</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../02_student_materials/readings/day5_session9_flywheel_motor_speed_compression.md">View source Markdown</a></p>
+        <h1 id="session-9-reading-flywheel-speed-and-ball-compression">Session 9 Reading: Flywheel Speed and Ball Compression</h1>
+<h2 id="how-a-flywheel-shooter-works">How a Flywheel Shooter Works</h2>
+<p>A flywheel shooter uses a spinning wheel to transfer energy to a ball. The motor spins the wheel, the wheel grips the ball, and the ball leaves the shooter with speed.</p>
+<p>The basic system chain is:</p>
+<pre><code>motor power -&gt; wheel speed -&gt; ball compression/contact -&gt; launch speed</code></pre>
+<p>If one part of this chain is weak or inconsistent, the shot will be weak or inconsistent too.</p>
+<h2 id="shooter-vocabulary">Shooter Vocabulary</h2>
+<p>A <strong>flywheel</strong> is a wheel that spins quickly and stores motion. In a shooter, the flywheel touches the ball and helps launch it.</p>
+<p>A <strong>shooter</strong> is the robot mechanism that launches a ball or game piece toward a target.</p>
+<p>A <strong>motor</strong> turns electrical energy into spinning motion.</p>
+<p>A <strong>motor shaft</strong> is the spinning metal part coming out of the motor. The shaft may spin a wheel directly or through another connector.</p>
+<p><strong>Rotation</strong> means spinning around a center point.</p>
+<p><strong>Rotations per minute</strong>, or <strong>RPM</strong>, means how many full turns something makes in one minute.</p>
+<p><strong>Wheel speed</strong> means how fast the flywheel is spinning.</p>
+<p><strong>Surface speed</strong> means how fast the outside edge of the wheel is moving. The ball touches this outside edge.</p>
+<p><strong>Power</strong> is the command sent to the motor controller. More power usually tries to make the motor spin harder or faster.</p>
+<p><strong>Torque</strong> is twisting force. If a motor has more torque, it can push harder against resistance, such as when the ball presses into the spinning wheel.</p>
+<p>A <strong>load</strong> is something that makes the motor work harder. A ball pressing into the wheel is a load.</p>
+<p><strong>Friction</strong> is rubbing force between surfaces.</p>
+<p><strong>Traction</strong> is useful grip. A flywheel needs enough traction to push the ball instead of slipping.</p>
+<p><strong>Compression</strong> is how much the ball is squeezed between the flywheel and the wall, ramp, or hood of the shooter.</p>
+<p>A <strong>gap</strong> is the space the ball passes through near the flywheel.</p>
+<p><strong>Elasticity</strong> is how well the ball returns to its shape after being squeezed.</p>
+<p><strong>Stiffness</strong> is how hard it is to squeeze something.</p>
+<p>A <strong>soft wheel</strong> squishes more when it touches the ball.</p>
+<p>A <strong>hard wheel</strong> keeps its shape more when it touches the ball.</p>
+<p><strong>Recovery time</strong> is how long the shooter takes to get back to speed after launching a ball.</p>
+<p><strong>Consistency</strong> means getting similar results again and again.</p>
+<h2 id="power-is-not-the-same-as-speed">Power Is Not the Same as Speed</h2>
+<p>Motors turn electrical energy into rotation. The motor spins a shaft. The shaft spins a wheel. The spinning wheel pushes on the ball.</p>
+<p>In FTC Java, this code sends full power to the shooter motor:</p>
+<pre><code>shooterMotor.setPower(1.0);</code></pre>
+<p>This tells the motor controller to send full power to the motor, but the motor still has physical limits.</p>
+<p>Full power does not mean the motor can spin infinitely fast. Actual speed depends on the motor, battery voltage, friction, load, and the ball pressing into the wheel.</p>
+<h2 id="speed-and-torque-are-different">Speed and Torque Are Different</h2>
+<p>Speed means how fast the motor spins. Torque means twisting force.</p>
+<p>A motor spinning very fast usually has less extra torque available to push through resistance. When a ball presses into the wheel, the wheel may slow down for a moment.</p>
+<p>A good shooter needs enough speed to launch the ball and enough torque to recover after each shot.</p>
+<h2 id="compression-matters">Compression Matters</h2>
+<p>Compression is how much the ball is squeezed between the wheel and the wall or ramp of the shooter.</p>
+<p>Too little compression can cause slipping. The wheel spins, but it does not push the ball strongly.</p>
+<p>Too much compression can jam the ball, slow the motor, or make shots inconsistent.</p>
+<p>Wheel firmness and gap size work together. Softer wheels may grip more and squish more. Harder wheels may keep their shape better but may slip more.</p>
+<p>The best gap depends on the ball size, wheel firmness, ball elasticity, and wheel speed. There is no magic number until your team tests with your parts.</p>
+<h2 id="design-choices">Design Choices</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Design Choice</th>
+<th>Possible Benefit</th>
+<th>Possible Problem</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>More compression</td>
+<td>More grip on the ball</td>
+<td>More motor slowdown or jamming</td>
+</tr>
+<tr>
+<td>Less compression</td>
+<td>Less motor slowdown</td>
+<td>Ball may slip or launch weakly</td>
+</tr>
+<tr>
+<td>Softer wheel</td>
+<td>Better grip and contact</td>
+<td>May absorb energy or deform too much</td>
+</tr>
+<tr>
+<td>Harder wheel</td>
+<td>Holds shape well</td>
+<td>May slip if contact is poor</td>
+</tr>
+<tr>
+<td>Higher motor power</td>
+<td>More possible launch speed</td>
+<td>More bounce, more variation, more battery drain</td>
+</tr>
+</tbody></table></div>
+<h2 id="reflection">Reflection</h2>
+<p>Why is the fastest possible wheel speed not always the best shooter design?</p>
+<p>What compression gap does your team want to test first, and why?</p>
+      </article>
+
+    </main>
+  </body>
+</html>

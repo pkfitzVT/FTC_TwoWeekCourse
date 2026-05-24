@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Super Challenge: Organize the Shooter Code Like a Software Engineer | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Super Challenge: Organize the Shooter Code Like a Software Engineer</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../02_student_materials/challenge_by_choice/software_engineering_super_challenge_robot_shooter_code.md">View source Markdown</a></p>
+        <h1 id="super-challenge-organize-the-shooter-code-like-a-software-engineer">Super Challenge: Organize the Shooter Code Like a Software Engineer</h1>
+<p>This challenge is one way to contribute to your team. It does not make you the only person responsible for code. Share what you learn, invite others to try, and connect your work back to the team&#x27;s build and testing.</p>
+<h2 id="why-software-engineering-matters">Why Software Engineering Matters</h2>
+<p><strong>Software engineering</strong> is the work of designing, building, testing, improving, and maintaining computer programs. In robotics, software is what connects the driver’s choices to the robot’s physical actions. When you press a button, the program decides what motor should turn, what servo should move, and what should happen next.</p>
+<p>Software engineers work in many fields: robotics, video games, websites, apps, cybersecurity, finance, health care, aerospace, education, sports analytics, artificial intelligence, and manufacturing. The U.S. Bureau of Labor Statistics reported that software developers had a median annual wage of <strong>$133,080</strong> in May 2024, and software developer, quality assurance analyst, and tester jobs are projected to grow <strong>15% from 2024 to 2034</strong>, much faster than the average for all occupations. Computer and information technology occupations as a group had a median wage of <strong>$105,990</strong> in May 2024, compared with <strong>$49,500</strong> for all occupations. These numbers do not guarantee any individual person a salary, but they show that software remains a high-value skill.</p>
+<p>AI is changing software work, especially at the entry level. Some simple coding tasks can now be started by tools like ChatGPT, Claude, GitHub Copilot, or Codex. That does <strong>not</strong> mean software engineering is disappearing. It means the valuable skill is shifting from “type every line alone” toward “understand the problem, design the structure, guide the AI, test the output, debug mistakes, and explain why the code works.” In other words, AI can help write code, but humans still need to decide what the robot should do and whether the program is safe, clear, and correct.</p>
+<p>Software is also one of the few industries where small groups of people can start real projects with very little money. A team can build an app, a website, a robot control system, a data tool, or a game mostly with their own time, a computer, and open-source tools. AI makes this more possible because it can help a small team learn faster, generate starter code, explain errors, and organize projects. The most important advantage is not just knowing a programming language. It is learning how to turn an idea into a working system.</p>
+<h2 id="ap-computer-science-a-connection">AP Computer Science A Connection</h2>
+<p><strong>AP Computer Science A</strong> is a high school course that introduces students to computer science through programming in <strong>Java</strong>. The College Board describes AP Computer Science A as focused on <strong>object-oriented programming</strong> and problem-solving using Java. The course includes designing solutions, using data structures, developing algorithms, analyzing solutions, and considering ethical and social implications of computing.</p>
+<p>This robotics challenge connects directly to AP Computer Science A because FTC robot programming also uses Java. AP Computer Science A students learn ideas such as:</p>
+<ul>
+<li>variables</li>
+<li>methods</li>
+<li>parameters</li>
+<li>return values</li>
+<li>classes</li>
+<li>objects</li>
+<li>instantiation</li>
+<li>method calls</li>
+<li>algorithms</li>
+<li>program design</li>
+<li>debugging</li>
+</ul>
+<p>In this challenge, you can see those ideas in a real machine. A method is not just something on a test. A method can turn on a flywheel, move a servo trigger, reset a mechanism, or run a shooting sequence.</p>
+<h2 id="the-robotics-problem">The Robotics Problem</h2>
+<p>Your robot has several connected parts:</p>
+<ul>
+<li>a <strong>flywheel</strong> that launches the ball</li>
+<li>a <strong>servo trigger</strong> that pushes or releases one ball</li>
+<li>a <strong>hopper</strong> that feeds balls toward the trigger</li>
+<li>a <strong>driver control program</strong> that listens to gamepad buttons</li>
+<li>a <strong>sequence</strong> for loading, firing, resetting, and waiting for the flywheel to recover</li>
+</ul>
+<p>At first, students may write all of the code directly inside the main <code>while (opModeIsActive())</code> loop. That can work for a small test, but it becomes hard to read as the robot gets more complicated.</p>
+<p>Software engineers solve this problem by organizing code into smaller pieces.</p>
+<p>---</p>
+<h1 id="challenge-1-organize-the-shooter-code-into-methods">Challenge 1: Organize the Shooter Code into Methods</h1>
+<h2 id="goal">Goal</h2>
+<p>Rewrite the TeleOp code so that the shooter and trigger actions are organized into <strong>methods</strong>.</p>
+<p>A <strong>method</strong> is a named block of code that performs one job. Instead of writing the same motor or servo commands repeatedly, you can give that action a name.</p>
+<p>For example:</p>
+<pre><code>public void shooterOn() {
+    shooterMotor.setPower(1.0);
+}
+
+public void shooterOff() {
+    shooterMotor.setPower(0.0);
+}</code></pre>
+<p>Now the main program can say:</p>
+<pre><code>if (gamepad1.y) {
+    shooterOn();
+}</code></pre>
+<p>That is easier to read. It tells the story of the robot action.</p>
+<h2 id="vocabulary">Vocabulary</h2>
+<p><strong>Method</strong>: A named block of code that performs a specific job.</p>
+<p><strong>Method call</strong>: A line of code that tells a method to run.</p>
+<p><strong>Parameter</strong>: An input value passed into a method.</p>
+<p><strong>Sequence</strong>: A set of actions that happen in order.</p>
+<p><strong>Abstraction</strong>: Hiding details inside a method so the main program is easier to understand.</p>
+<p><strong>Debugging</strong>: Finding and fixing problems in code.</p>
+<p><strong>Telemetry</strong>: Messages sent from the robot program to the Driver Station so the team can see what the robot is doing.</p>
+<h2 id="suggested-methods">Suggested Methods</h2>
+<p>Start by creating simple methods like these:</p>
+<pre><code>public void shooterOn() {
+    shooterMotor.setPower(1.0);
+    telemetry.addLine(&quot;Shooter ON&quot;);
+}
+
+public void shooterOff() {
+    shooterMotor.setPower(0.0);
+    telemetry.addLine(&quot;Shooter OFF&quot;);
+}
+
+public void triggerLoad() {
+    triggerServo.setPosition(0.2);
+    telemetry.addLine(&quot;Trigger LOAD&quot;);
+}
+
+public void triggerRelease() {
+    triggerServo.setPosition(0.8);
+    telemetry.addLine(&quot;Trigger RELEASE&quot;);
+}</code></pre>
+<p>The exact servo values are examples. Your robot may need different values.</p>
+<h2 id="add-parameters-for-more-control">Add Parameters for More Control</h2>
+<p>A more flexible method can use a parameter:</p>
+<pre><code>public void setShooterPower(double power) {
+    shooterMotor.setPower(power);
+    telemetry.addData(&quot;Shooter power&quot;, power);
+}</code></pre>
+<p>Now you can test different powers:</p>
+<pre><code>if (gamepad1.y) {
+    setShooterPower(1.0);
+}
+
+if (gamepad1.x) {
+    setShooterPower(0.0);
+}</code></pre>
+<h2 id="build-a-shooting-sequence">Build a Shooting Sequence</h2>
+<p>A shooting sequence might look like this:</p>
+<p>1. Turn on flywheel. 2. Wait for flywheel to reach speed. 3. Release or push one ball. 4. Reset trigger. 5. Wait before firing again.</p>
+<p>A first version could be:</p>
+<pre><code>public void fireOneBall() {
+    triggerRelease();
+    sleep(300);
+    triggerLoad();
+}</code></pre>
+<p>Be careful: <code>sleep()</code> pauses the whole OpMode. That can be useful in a beginner test, but a robot used in a longer challenge often needs deeper timing logic so the driver does not lose control during the pause.</p>
+<h2 id="main-loop-example">Main Loop Example</h2>
+<pre><code>while (opModeIsActive()) {
+
+    if (gamepad1.y) {
+        shooterOn();
+    }
+
+    if (gamepad1.x) {
+        shooterOff();
+    }
+
+    if (gamepad1.b) {
+        fireOneBall();
+    }
+
+    telemetry.update();
+}</code></pre>
+<h2 id="why-this-is-better">Why This Is Better</h2>
+<p>This version is easier to read because the main loop uses robot language:</p>
+<ul>
+<li><code>shooterOn()</code></li>
+<li><code>shooterOff()</code></li>
+<li><code>fireOneBall()</code></li>
+<li><code>triggerLoad()</code></li>
+<li><code>triggerRelease()</code></li>
+</ul>
+<p>The details are still there, but they are organized into methods.</p>
+<h2 id="challenge-1-reflection">Challenge 1 Reflection</h2>
+<p>What method name best describes the action your robot is performing? What code became easier to understand after you moved it into a method?</p>
+<p>---</p>
+<h1 id="challenge-2-create-a-shooter-class-with-methods">Challenge 2: Create a Shooter Class with Methods</h1>
+<h2 id="goal">Goal</h2>
+<p>The deeper challenge is to create a separate <strong>class</strong> that represents the shooter system.</p>
+<p>A <strong>class</strong> is a blueprint for an object. An <strong>object</strong> is an instance of that class.</p>
+<p>In this challenge, the shooter can become its own object.</p>
+<p>Instead of putting all shooter code directly in the OpMode, you can create a <code>ShooterSystem</code> class with methods such as:</p>
+<ul>
+<li><code>shooterOn()</code></li>
+<li><code>shooterOff()</code></li>
+<li><code>triggerLoad()</code></li>
+<li><code>triggerRelease()</code></li>
+<li><code>fireOneBall()</code></li>
+</ul>
+<p>Then the OpMode can create one shooter object and call its methods.</p>
+<h2 id="why-this-goes-deeper">Why This Goes Deeper</h2>
+<p>This is closer to how larger robot programs are organized. Teams often create separate classes for different robot subsystems:</p>
+<ul>
+<li>drivetrain</li>
+<li>shooter</li>
+<li>intake</li>
+<li>arm</li>
+<li>claw</li>
+<li>lift</li>
+<li>sensors</li>
+</ul>
+<p>Each subsystem class contains the code for that part of the robot. The main OpMode then coordinates the subsystems.</p>
+<h2 id="example-shootersystem-class">Example ShooterSystem Class</h2>
+<p>This example assumes a standard servo trigger and a DC motor flywheel.</p>
+<pre><code>package org.firstinspires.ftc.teamcode;
+
+import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.HardwareMap;
+import com.qualcomm.robotcore.hardware.Servo;
+import org.firstinspires.ftc.robotcore.external.Telemetry;
+
+public class ShooterSystem {
+
+    private DcMotor shooterMotor;
+    private Servo triggerServo;
+    private Telemetry telemetry;
+
+    private double loadPosition = 0.2;
+    private double releasePosition = 0.8;
+    private double shooterPower = 1.0;
+
+    public ShooterSystem(HardwareMap hardwareMap, Telemetry telemetry) {
+        this.telemetry = telemetry;
+
+        shooterMotor = hardwareMap.get(DcMotor.class, &quot;shooterMotor&quot;);
+        triggerServo = hardwareMap.get(Servo.class, &quot;triggerServo&quot;);
+    }
+
+    public void shooterOn() {
+        shooterMotor.setPower(shooterPower);
+        telemetry.addLine(&quot;Shooter ON&quot;);
+    }
+
+    public void shooterOff() {
+        shooterMotor.setPower(0.0);
+        telemetry.addLine(&quot;Shooter OFF&quot;);
+    }
+
+    public void setShooterPower(double power) {
+        shooterPower = power;
+        shooterMotor.setPower(power);
+        telemetry.addData(&quot;Shooter power&quot;, power);
+    }
+
+    public void triggerLoad() {
+        triggerServo.setPosition(loadPosition);
+        telemetry.addLine(&quot;Trigger LOAD&quot;);
+    }
+
+    public void triggerRelease() {
+        triggerServo.setPosition(releasePosition);
+        telemetry.addLine(&quot;Trigger RELEASE&quot;);
+    }
+
+    public void setTriggerPositions(double load, double release) {
+        loadPosition = load;
+        releasePosition = release;
+        telemetry.addData(&quot;Load position&quot;, loadPosition);
+        telemetry.addData(&quot;Release position&quot;, releasePosition);
+    }
+}</code></pre>
+<h2 id="example-opmode-using-the-shootersystem-object">Example OpMode Using the ShooterSystem Object</h2>
+<pre><code>package org.firstinspires.ftc.teamcode;
+
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+
+@TeleOp(name = &quot;ShooterSystemTest&quot;)
+public class ShooterSystemTest extends LinearOpMode {
+
+    private ShooterSystem shooter;
+
+    @Override
+    public void runOpMode() {
+
+        shooter = new ShooterSystem(hardwareMap, telemetry);
+
+        waitForStart();
+
+        while (opModeIsActive()) {
+
+            if (gamepad1.y) {
+                shooter.shooterOn();
+            }
+
+            if (gamepad1.x) {
+                shooter.shooterOff();
+            }
+
+            if (gamepad1.a) {
+                shooter.triggerLoad();
+            }
+
+            if (gamepad1.b) {
+                shooter.triggerRelease();
+            }
+
+            telemetry.update();
+        }
+    }
+}</code></pre>
+<h2 id="what-instantiation-means">What Instantiation Means</h2>
+<p>This line creates the shooter object:</p>
+<pre><code>shooter = new ShooterSystem(hardwareMap, telemetry);</code></pre>
+<p>That is called <strong>instantiation</strong>. The program is creating one usable shooter system from the <code>ShooterSystem</code> class.</p>
+<p>After that, the OpMode can call methods of the object:</p>
+<pre><code>shooter.shooterOn();
+shooter.triggerRelease();</code></pre>
+<p>This is the same kind of object-oriented programming that students study in AP Computer Science A.</p>
+<h2 id="challenge-2-reflection">Challenge 2 Reflection</h2>
+<p>Why might a team want the shooter code in a separate class instead of putting everything in the OpMode?</p>
+<p>---</p>
+<h1 id="using-ai-as-a-programming-partner">Using AI as a Programming Partner</h1>
+<p>Students may use ChatGPT, Claude, GitHub Copilot, or another AI coding assistant to help with this challenge, but the human student remains responsible for understanding, testing, and explaining the code.</p>
+<p>Good AI prompts might sound like:</p>
+<pre><code>I am writing FTC Java code in OnBot Java. I have a DcMotor named shooterMotor and a Servo named triggerServo. Help me organize the shooter code into methods for shooterOn, shooterOff, triggerLoad, and triggerRelease. Keep the code beginner-friendly.</code></pre>
+<p>Or:</p>
+<pre><code>I am learning Java classes. Help me create a ShooterSystem class for FTC OnBot Java. The class should use HardwareMap to get a DcMotor named shooterMotor and a Servo named triggerServo. It should have methods to turn the shooter on and off and move the trigger between load and release positions.</code></pre>
+<p>Before using AI-generated code, students should check:</p>
+<ul>
+<li>Are the hardware names exactly the same as the Robot Controller configuration?</li>
+<li>Does the code use FTC Java imports?</li>
+<li>Does the code compile?</li>
+<li>Does the servo move safely?</li>
+<li>Does the motor turn on and off correctly?</li>
+<li>Can the student explain every method?</li>
+</ul>
+<p>AI can help generate code, but AI can also make mistakes. A software engineer tests carefully.</p>
+<p>---</p>
+<h1 id="optional-github-copilot-workflow">Optional GitHub / Copilot Workflow</h1>
+<p>Some students may want to go farther and use a professional-style workflow.</p>
+<p>For this course, we are mostly using <strong>OnBot Java</strong>. We are not requiring Android Studio. However, a student who wants to go deeper could:</p>
+<p>1. Create a small GitHub repository for the robot code. 2. Write or revise the Java files with GitHub Copilot or another AI coding assistant. 3. Commit changes to Git. 4. Copy and paste the tested code back into OnBot Java. 5. Run the code on the robot. 6. Record what worked and what needed debugging.</p>
+<p>A team might eventually move to Android Studio, where the full FTC Robot Controller project can be managed with Git, branches, commits, and pull requests. For this short course, copying code back into OnBot Java is simpler.</p>
+<h2 id="important-safety-rule">Important Safety Rule</h2>
+<p>Never run code on a robot just because an AI wrote it. Test in small steps:</p>
+<p>1. Compile first. 2. Test without balls. 3. Test with robot wheels or launcher safely controlled. 4. Test one button at a time. 5. Watch telemetry. 6. Stop immediately if the servo strains, the motor behaves unexpectedly, or the robot becomes unsafe.</p>
+<p>---</p>
+<h1 id="two-levels-of-the-programming-super-challenge">Two Levels of the Programming Super Challenge</h1>
+<h2 id="level-1-methods-challenge">Level 1: Methods Challenge</h2>
+<p>You succeed when:</p>
+<ul>
+<li>shooter actions are organized into methods</li>
+<li>trigger actions are organized into methods</li>
+<li>the main loop is easier to read</li>
+<li>the code compiles</li>
+<li>the robot can turn the shooter on/off and move the trigger</li>
+</ul>
+<h2 id="level-2-object-challenge">Level 2: Object Challenge</h2>
+<p>You succeed when:</p>
+<ul>
+<li>you create a separate class, such as <code>ShooterSystem</code></li>
+<li>the class has private motor/servo variables</li>
+<li>the class has methods for shooter and trigger actions</li>
+<li>the OpMode creates an object from the class</li>
+<li>the OpMode calls methods on that object</li>
+<li>you can explain what “class,” “object,” “method,” and “instantiate” mean</li>
+</ul>
+<h2 id="final-reflection">Final Reflection</h2>
+<p>Which version of the code is easiest for a teammate to understand? How could organizing the code help a team debug the robot during a timed challenge or demonstration?</p>
+<p>---</p>
+<h1 id="references">References</h1>
+<p>College Board. (2025). <em>AP Computer Science A course overview</em>. AP Central. https://apcentral.collegeboard.org/media/pdf/ap-computer-science-a-course-overview.pdf</p>
+<p>College Board. (2025). <em>AP Computer Science A course and exam description</em>. AP Central. https://apcentral.collegeboard.org/courses/ap-computer-science-a</p>
+<p>GitHub. (n.d.). <em>GitHub Copilot</em>. https://github.com/features/copilot</p>
+<p>U.S. Bureau of Labor Statistics. (2025). <em>Computer and information technology occupations: Occupational Outlook Handbook</em>. https://www.bls.gov/ooh/computer-and-information-technology/</p>
+<p>U.S. Bureau of Labor Statistics. (2025). <em>Computer programmers: Occupational Outlook Handbook</em>. https://www.bls.gov/ooh/computer-and-information-technology/computer-programmers.htm</p>
+<p>U.S. Bureau of Labor Statistics. (2025). <em>Software developers, quality assurance analysts, and testers: Occupational Outlook Handbook</em>. https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm</p>
+      </article>
+
+    </main>
+  </body>
+</html>

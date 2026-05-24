@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Session 8 Reading: Troubleshooting Basic Drive | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Session 8 Reading: Troubleshooting Basic Drive</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../02_student_materials/readings/day4_session8_troubleshooting_basic_drive.md">View source Markdown</a></p>
+        <h1 id="session-8-reading-troubleshooting-basic-drive">Session 8 Reading: Troubleshooting Basic Drive</h1>
+<h2 id="debugging-is-engineering">Debugging Is Engineering</h2>
+<p>The first drivetrain test almost never works perfectly. That does not mean the team failed. It means the team has evidence.</p>
+<p>Troubleshooting is the process of using evidence to find the cause of a problem, make one careful change, and test again.</p>
+<h2 id="troubleshooting-vocabulary">Troubleshooting Vocabulary</h2>
+<p>To <strong>troubleshoot</strong> means to find and fix a problem step by step.</p>
+<p>To <strong>debug</strong> means to find and fix a problem in code or a robot system.</p>
+<p>A <strong>symptom</strong> is what you observe. For example, &quot;the left wheel does not move&quot; is a symptom.</p>
+<p>A <strong>cause</strong> is the reason the symptom is happening.</p>
+<p><strong>Evidence</strong> is information you can see, hear, measure, or record.</p>
+<p>A <strong>hypothesis</strong> is your best explanation for what might be causing the problem.</p>
+<p>A <strong>test</strong> is a careful check to see whether your hypothesis is correct.</p>
+<p>To <strong>revise</strong> means to change the design, code, wiring, or plan based on evidence.</p>
+<p>A <strong>compile error</strong> happens when the code cannot build. The program usually will not appear as an OpMode until the error is fixed.</p>
+<p>A <strong>runtime error</strong> happens while the program is running.</p>
+<p>A <strong>typo</strong> is a typing mistake. In code and configuration names, a small typo can stop the robot from working.</p>
+<p>A <strong>loose connection</strong> is a wire or connector that is not fully plugged in or secure.</p>
+<p>A <strong>reversed motor</strong> spins the opposite direction from what the team expected.</p>
+<p><strong>Motor direction</strong> means which way the motor spins when it gets positive or negative power.</p>
+<p><strong>Telemetry</strong> is information the robot program sends to the Driver Station screen.</p>
+<h2 id="common-first-drive-problems">Common First-Drive Problems</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Symptom</th>
+<th>Possible Cause</th>
+<th>First Thing to Check</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>OpMode does not appear</td>
+<td>Code did not compile</td>
+<td>Look for red errors or typos</td>
+</tr>
+<tr>
+<td>Robot does not move</td>
+<td>Battery, wire, or configuration issue</td>
+<td>Check power and motor names</td>
+</tr>
+<tr>
+<td>One side moves but the other does not</td>
+<td>Motor unplugged, wrong port, or wrong name</td>
+<td>Check motor wire and configuration</td>
+</tr>
+<tr>
+<td>Robot spins when pressing forward</td>
+<td>Motor directions are opposite of expected</td>
+<td>Check signs in the code</td>
+</tr>
+<tr>
+<td>Robot moves backward when pressing forward</td>
+<td>Drive motor signs are reversed</td>
+<td>Switch positive/negative power in code</td>
+</tr>
+<tr>
+<td>Shooter motor does not turn on</td>
+<td>Wrong button, typo, wrong configuration name, or loose wire</td>
+<td>Check code and config name</td>
+</tr>
+<tr>
+<td>Motor runs but wheel does not move</td>
+<td>Loose hub or set screw</td>
+<td>Check wheel attachment</td>
+</tr>
+<tr>
+<td>Robot starts then stops</td>
+<td>Low battery or loose connection</td>
+<td>Check battery and wires</td>
+</tr>
+</tbody></table></div>
+<h2 id="only-change-one-thing-at-a-time">Only Change One Thing at a Time</h2>
+<p>When the robot does not work, it is tempting to change the code, wiring, configuration, and mechanical parts all at once. That makes troubleshooting harder.</p>
+<p>Change one thing, then test. If the robot improves, you know which change helped. If it does not improve, you have useful evidence and can choose the next check.</p>
+<p>Good troubleshooting sounds like this:</p>
+<ul>
+<li>&quot;We think the right motor name is wrong.&quot;</li>
+<li>&quot;We will check the configuration name only.&quot;</li>
+<li>&quot;Then we will run the same test again.&quot;</li>
+</ul>
+<h2 id="use-telemetry">Use Telemetry</h2>
+<p>Telemetry can show messages on the Driver Station. This helps your team know what the code thinks is happening.</p>
+<p>For example:</p>
+<pre><code>telemetry.addLine(&quot;Shooter ON&quot;);
+telemetry.update();</code></pre>
+<p>If the Driver Station shows <code>Shooter ON</code> but the shooter motor does not spin, the button press may be working and the problem may be wiring, configuration, or the motor command.</p>
+<h2 id="troubleshooting-log">Troubleshooting Log</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Test</th>
+<th>Expected Result</th>
+<th>Actual Result</th>
+<th>Change Made</th>
+<th>Result After Change</th>
+</tr></thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="reflection">Reflection</h2>
+<p>What problem did your team find today? What evidence helped you decide what to change?</p>
+      </article>
+
+    </main>
+  </body>
+</html>

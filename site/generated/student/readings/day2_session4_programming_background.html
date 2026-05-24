@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Session 4 Reading: How FTC Robot Programs Connect to the Robot | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Session 4 Reading: How FTC Robot Programs Connect to the Robot</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../02_student_materials/readings/day2_session4_programming_background.md">View source Markdown</a></p>
+        <h1 id="session-4-reading-how-ftc-robot-programs-connect-to-the-robot">Session 4 Reading: How FTC Robot Programs Connect to the Robot</h1>
+<h2 id="the-big-idea">The Big Idea</h2>
+<p>A robot program is a set of instructions that connects the driver’s choices to the robot’s hardware.</p>
+<p>When a driver presses a button or moves a joystick, the robot program reads that input. Then the program sends commands to motors, servos, and other parts of the robot.</p>
+<p>The basic connection looks like this:</p>
+<p><strong>Driver Station → OpMode → Java code → hardware configuration names → motors and servos</strong></p>
+<p>If any part of that chain is wrong, the robot may not move the way the team expects.</p>
+<p>---</p>
+<h2 id="what-is-onbot-java">What Is OnBot Java?</h2>
+<p>OnBot Java is a programming tool that runs through the Robot Controller. Students can open it in a web browser, write Java code, build the code, and run the program on the robot.</p>
+<p>In this course, each robot should start with at least one working TeleOp program. A TeleOp program lets human drivers control the robot during the driver-controlled part of a match.</p>
+<p>---</p>
+<h2 id="what-is-an-opmode">What Is an OpMode?</h2>
+<p>An <strong>OpMode</strong> is a robot program that appears on the Driver Station.</p>
+<p>When your team selects an OpMode and presses <strong>Start</strong>, the robot runs that program.</p>
+<p>For this course, most teams will use one main TeleOp OpMode. That is helpful because during a match, teams can get nervous. If there is only one main TeleOp choice, it is harder to select the wrong program.</p>
+<p>---</p>
+<h2 id="the-configuration-file-connects-names-to-hardware">The Configuration File Connects Names to Hardware</h2>
+<p>The robot has motors and servos plugged into numbered ports on the Control Hub.</p>
+<p>The configuration file gives each piece of hardware a name.</p>
+<p>For example:</p>
+<ul>
+<li>Motor port 0 might be named <code>leftDrive</code></li>
+<li>Motor port 1 might be named <code>rightDrive</code></li>
+<li>A shooter motor might be named <code>shooterMotor</code></li>
+</ul>
+<p>The Java code must use the exact same names.</p>
+<p>If the configuration file says:</p>
+<pre><code>leftDrive</code></pre>
+<p>but the code says:</p>
+<pre><code>driveLeft</code></pre>
+<p>the robot will not know which motor the code means.</p>
+<p>Spelling, capitalization, and spacing matter.</p>
+<p>---</p>
+<h2 id="objects-methods-and-inputs">Objects, Methods, and Inputs</h2>
+<p>FTC Java code uses <strong>objects</strong>.</p>
+<p>An object is a thing in the program that represents something the robot can use.</p>
+<p>For example:</p>
+<pre><code>leftDrive</code></pre>
+<p>can be a software object that represents the physical left drive motor.</p>
+<p>Objects have <strong>methods</strong>.</p>
+<p>A method is an action the object can do.</p>
+<p>For example:</p>
+<pre><code>leftDrive.setPower(0.5);</code></pre>
+<p>means:</p>
+<p><strong>Tell the <code>leftDrive</code> motor to run at 50% power.</strong></p>
+<p>The input to the method is the value inside the parentheses.</p>
+<p>In this example:</p>
+<pre><code>0.5</code></pre>
+<p>is the input.</p>
+<p>So this line has three important parts:</p>
+<ul>
+<li><strong>Object:</strong> <code>leftDrive</code></li>
+<li><strong>Method:</strong> <code>setPower</code></li>
+<li><strong>Input / parameter:</strong> <code>0.5</code></li>
+</ul>
+<p>Together, they mean:</p>
+<p><strong>Set the power of the left drive motor to 0.5.</strong></p>
+<p>---</p>
+<h2 id="what-is-a-function">What Is a Function?</h2>
+<p>A <strong>function</strong> is a named group of instructions.</p>
+<p>In Java, functions inside a class are usually called <strong>methods</strong>.</p>
+<p>Instead of writing the same motor commands again and again, a team can create a method such as:</p>
+<pre><code>driveForward(power);</code></pre>
+<p>That method can contain the motor commands needed to drive forward.</p>
+<p>Functions help programmers:</p>
+<ul>
+<li>organize code,</li>
+<li>avoid repeating the same lines,</li>
+<li>make code easier to read,</li>
+<li>and connect code to human ideas.</li>
+</ul>
+<p>A method named <code>driveForward()</code> is easier to understand than two separate motor-power lines with no explanation.</p>
+<p>---</p>
+<h2 id="why-start-simple">Why Start Simple?</h2>
+<p>A simple robot program is easier to test.</p>
+<p>At first, the goal is not to make the most advanced code. The goal is to make a program that works, is easy to understand, and can be changed safely.</p>
+<p>Good teams ask:</p>
+<ul>
+<li>Does the program build?</li>
+<li>Does the correct OpMode appear on the Driver Station?</li>
+<li>Do the hardware names match the configuration file?</li>
+<li>Does each button do what we expect?</li>
+<li>Can someone else on the team explain the code?</li>
+</ul>
+<p>---</p>
+<h2 id="key-vocabulary">Key Vocabulary</h2>
+<p><strong>Robot Controller</strong> — the device or Control Hub that runs the robot program.</p>
+<p><strong>Driver Station</strong> — the device used by the drivers to select OpModes and control the robot.</p>
+<p><strong>OnBot Java</strong> — a browser-based tool for writing Java robot programs on the Robot Controller.</p>
+<p><strong>OpMode</strong> — an operational mode; a robot program that can be selected and run from the Driver Station.</p>
+<p><strong>TeleOp</strong> — the driver-controlled part of the match.</p>
+<p><strong>Configuration file</strong> — the robot setup file that names the motors, servos, and sensors connected to the Control Hub.</p>
+<p><strong>Object</strong> — a software representation of something the program can use, such as a motor.</p>
+<p><strong>Method</strong> — an action that an object can perform.</p>
+<p><strong>Input / Parameter</strong> — information given to a method, usually inside parentheses.</p>
+<p><strong>Function</strong> — a named group of instructions. In Java, functions inside a class are called methods.</p>
+<p>---</p>
+<h2 id="think-about-it">Think About It</h2>
+<p>Why is it important for the names in the configuration file to match the names in the program exactly?</p>
+<p>---</p>
+<h2 id="engineering-notebook">Engineering Notebook</h2>
+<p>Record:</p>
+<ul>
+<li>the name of your team’s TeleOp file,</li>
+<li>the name of the OpMode shown on the Driver Station,</li>
+<li>the hardware names used in the configuration file,</li>
+<li>the motor ports used by the robot,</li>
+<li>and one code change your team tested.</li>
+</ul>
+      </article>
+
+    </main>
+  </body>
+</html>

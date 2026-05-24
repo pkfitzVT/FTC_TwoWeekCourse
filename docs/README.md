@@ -2,6 +2,14 @@
 
 This folder contains teacher-facing planning, course maps, site/page maps, content inventory, impact-study planning, and website-ready session pages.
 
+## Public Preview Site
+
+- [`../site/index.html`](../site/index.html): static course-site entry point.
+- [`../site/README.md`](../site/README.md): preview and rebuild instructions.
+- [`../91_utilities/build_static_site.py`](../91_utilities/build_static_site.py): Markdown-to-HTML build script.
+
+Markdown files remain the editable source of truth. Generated HTML pages are written under `../site/generated/`.
+
 ## Main Teacher Entry Points
 
 - [`teacher_facing_robotics_course_overview.md`](teacher_facing_robotics_course_overview.md): current website-ready teacher overview and session index.

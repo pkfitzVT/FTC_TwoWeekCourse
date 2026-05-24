@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Session 14 Reading: Whole-System Testing | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Session 14 Reading: Whole-System Testing</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../02_student_materials/readings/day7_session14_whole_system_testing.md">View source Markdown</a></p>
+        <h1 id="session-14-reading-whole-system-testing">Session 14 Reading: Whole-System Testing</h1>
+<h2 id="separate-parts-become-one-robot">Separate Parts Become One Robot</h2>
+<p>A robot is a system of connected subsystems. The drivetrain, flywheel, hopper, servo trigger, battery, wires, frame, and driver controls may each work separately but still cause problems when used together.</p>
+<p>Whole-system testing helps your team find those interactions before the final challenge.</p>
+<h2 id="system-vocabulary">System Vocabulary</h2>
+<p>A <strong>system</strong> is a group of parts that work together.</p>
+<p>A <strong>subsystem</strong> is one part of the robot that has its own job. The drivetrain is a subsystem because it moves the robot. The hopper is a subsystem because it stores and feeds balls. Subsystems must work together for the whole robot to work.</p>
+<p>An <strong>interaction</strong> is when one part of the robot affects another part.</p>
+<p>A <strong>whole-system test</strong> uses the robot the way it will be used in a challenge.</p>
+<p>A <strong>sequence</strong> is the order of actions the driver or robot follows.</p>
+<p>A <strong>driver routine</strong> is a repeated set of driver actions.</p>
+<p>To <strong>load</strong> means to place or feed a ball into the ready position.</p>
+<p>To <strong>fire</strong> means to release or push a ball into the flywheel so it launches.</p>
+<p>To <strong>reload</strong> means to prepare the next ball.</p>
+<p>To <strong>reset</strong> means to return the trigger or mechanism to its starting position.</p>
+<p><strong>Interference</strong> happens when one part blocks, hits, or disrupts another part.</p>
+<p><strong>Vibration</strong> is shaking that can loosen parts or change alignment.</p>
+<p>A <strong>loose connection</strong> is a wire, fastener, or plug that is not secure.</p>
+<p><strong>Reliability</strong> means the robot works repeatedly without constant repair.</p>
+<p><strong>Consistency</strong> means the robot behaves in a similar way each time.</p>
+<p>A <strong>stress test</strong> checks whether the robot still works after repeated use.</p>
+<p>A <strong>failure point</strong> is the place most likely to stop working first.</p>
+<p>A <strong>refinement</strong> is a small improvement based on evidence.</p>
+<h2 id="what-is-whole-system-testing">What Is Whole-System Testing?</h2>
+<p>Whole-system testing means operating the robot like it will be used in a challenge:</p>
+<ul>
+<li>Drive or position the robot.</li>
+<li>Turn on the flywheel.</li>
+<li>Load or allow a ball to feed.</li>
+<li>Fire one ball.</li>
+<li>Reset the trigger.</li>
+<li>Reload.</li>
+<li>Fire again.</li>
+<li>Repeat.</li>
+</ul>
+<p>A robot can pass a single-part test but fail during a full routine.</p>
+<p>Examples:</p>
+<ul>
+<li>The hopper works until the robot moves and shakes.</li>
+<li>The servo works until the hopper presses on it.</li>
+<li>The flywheel works until several shots slow it down.</li>
+<li>The battery is fine until it slides and pulls on a wire.</li>
+<li>The drivetrain works until loose wires touch the wheels.</li>
+<li>The trigger works once but does not reset reliably.</li>
+</ul>
+<h2 id="subsystems-can-interact">Subsystems Can Interact</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Subsystem Interaction</th>
+<th>Possible Problem</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Hopper + servo</td>
+<td>Ball stack presses on trigger and servo strains</td>
+</tr>
+<tr>
+<td>Flywheel + hopper</td>
+<td>Balls enter too quickly and flywheel loses speed</td>
+</tr>
+<tr>
+<td>Battery + drivetrain</td>
+<td>Battery shifts and changes balance or pulls wires</td>
+</tr>
+<tr>
+<td>Wires + wheels</td>
+<td>Loose wires rub against moving parts</td>
+</tr>
+<tr>
+<td>Frame + shooter</td>
+<td>Shooter angle changes when frame flexes</td>
+</tr>
+<tr>
+<td>Driver + mechanism</td>
+<td>Driver fires before flywheel recovers speed</td>
+</tr>
+</tbody></table></div>
+<h2 id="build-a-repeatable-operating-sequence">Build a Repeatable Operating Sequence</h2>
+<p>Write a simple driver routine, such as:</p>
+<p>1. Aim or position robot. 2. Press Y to turn on flywheel. 3. Wait one second. 4. Press B to release one ball. 5. Press A to reset trigger. 6. Wait for flywheel to recover. 7. Repeat.</p>
+<p>Good robots are not only designed; they are also operated consistently.</p>
+<h2 id="whole-system-test-log">Whole-System Test Log</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Run #</th>
+<th>Sequence Tested</th>
+<th>What Worked</th>
+<th>What Failed</th>
+<th>Next Adjustment</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="reflection">Reflection</h2>
+<p>Which part worked alone but caused a problem when the whole robot operated together?</p>
+      </article>
+
+    </main>
+  </body>
+</html>

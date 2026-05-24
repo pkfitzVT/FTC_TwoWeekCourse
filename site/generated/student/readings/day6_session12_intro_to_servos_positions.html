@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Session 12 Reading: Intro to Servos and Positions | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Session 12 Reading: Intro to Servos and Positions</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../02_student_materials/readings/day6_session12_intro_to_servos_positions.md">View source Markdown</a></p>
+        <h1 id="session-12-reading-intro-to-servos-and-positions">Session 12 Reading: Intro to Servos and Positions</h1>
+<h2 id="what-a-servo-does">What a Servo Does</h2>
+<p>A servo can move a small mechanism to a controlled position. Robots often use servos for triggers, gates, arms, small linkages, and latches.</p>
+<p>Servos do not provide a lot of torque compared with drivetrain motors. They are useful for moving light parts, pushing a light ball, or releasing a small latch. They should not be expected to lift heavy parts, crush balls, or fight the full force of a jammed mechanism.</p>
+<h2 id="servo-vocabulary">Servo Vocabulary</h2>
+<p>A <strong>servo</strong> is a small motor unit that can move a mechanism in a controlled way.</p>
+<p>A <strong>standard servo</strong> moves to a position and tries to hold that position.</p>
+<p>A <strong>continuous rotation servo</strong> spins like a small motor instead of moving to one fixed angle.</p>
+<p>A <strong>servo horn</strong> is the plastic or metal arm attached to the servo output shaft.</p>
+<p>A <strong>linkage</strong> is a connected part that transfers servo motion to another part of the robot.</p>
+<p>A <strong>position</strong> is the commanded place where a standard servo should move.</p>
+<p><strong>Range of motion</strong> means how far the servo and attached mechanism can move.</p>
+<p>A <strong>degree</strong> is a unit used to measure an angle.</p>
+<p>An <strong>angle</strong> describes how far something has turned.</p>
+<p><strong>Torque</strong> is twisting force. A servo with more torque can push or hold a stronger mechanism. A servo with low torque may work for a light trigger but fail if it has to push a heavy or jammed part.</p>
+<p>A <strong>stall</strong> happens when a motor or servo is trying to move but cannot.</p>
+<p><strong>Strain</strong> means the servo or linkage is under too much force.</p>
+<p><strong>Buzzing</strong> can be a sign that the servo is fighting a blocked mechanism or trying to hold a difficult position.</p>
+<p>An <strong>endpoint</strong> is one end of the safe motion range.</p>
+<p>A <strong>trigger</strong> is a part that controls when a ball is released.</p>
+<p>A <strong>latch</strong> is a part that holds something until it is released.</p>
+<p>A <strong>gate</strong> blocks or allows motion through an opening.</p>
+<p>A <strong>release</strong> is the action of letting a ball or part move.</p>
+<h2 id="standard-servo-vs-continuous-rotation-servo">Standard Servo vs. Continuous Rotation Servo</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Type</th>
+<th>What it does</th>
+<th>Code meaning</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Standard servo</td>
+<td>Moves to a position and holds it</td>
+<td><code>0.0</code> to <code>1.0</code> means position</td>
+</tr>
+<tr>
+<td>Continuous rotation servo</td>
+<td>Spins like a small motor</td>
+<td>Power controls speed and direction</td>
+</tr>
+</tbody></table></div>
+<p>Standard servos are usually controlled with <code>setPosition()</code>:</p>
+<pre><code>triggerServo.setPosition(0.0);
+triggerServo.setPosition(0.5);
+triggerServo.setPosition(1.0);</code></pre>
+<p><code>0.0</code> is one end of the servo&#x27;s range. <code>0.5</code> is near the middle. <code>1.0</code> is the other end of the range.</p>
+<p>These values are not written in degrees. The physical angle depends on the servo model, mounting, horn position, and linkage.</p>
+<h2 id="why-servo-direction-feels-confusing">Why Servo Direction Feels Confusing</h2>
+<p>Moving toward <code>1.0</code> does not always mean right, left, open, closed, up, or down. It depends on how the servo is mounted.</p>
+<p>The code tells the servo to move toward a position. The robot design determines whether that motion opens, closes, pushes, pulls, raises, or lowers something.</p>
+<p>That means the same code can do different physical things on different robots.</p>
+<h2 id="do-not-force-a-servo">Do Not Force a Servo</h2>
+<p>If the servo is commanded to a position it cannot physically reach, it may buzz, strain, heat up, or damage the servo or linkage.</p>
+<p>Test small position changes. Make sure the mechanism can move freely before using a larger motion.</p>
+<p>If the servo buzzes or the linkage bends, stop and check what is blocking the motion.</p>
+<h2 id="reflection">Reflection</h2>
+<p>Why might the same servo code open a trigger on one robot but close a trigger on another robot?</p>
+      </article>
+
+    </main>
+  </body>
+</html>

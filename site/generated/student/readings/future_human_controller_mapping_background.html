@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Human-Centered Controller Mapping Background | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Human-Centered Controller Mapping Background</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../02_student_materials/readings/future_human_controller_mapping_background.md">View source Markdown</a></p>
+        <h1 id="human-centered-controller-mapping-background">Human-Centered Controller Mapping Background</h1>
+<h2 id="how-should-the-controller-match-the-driver-s-intuition">How Should the Controller Match the Driver&#x27;s Intuition?</h2>
+<p>Robot control is not only a programming problem. It is also a human design problem.</p>
+<p>When drivers are calm, they can think carefully about what each button does. When drivers are stressed, rushed, defended, or trying to score before time runs out, they rely more on habit, muscle memory, and previous game experience.</p>
+<p>That means a good controller map should feel predictable. The best control scheme is not always the one with the most features. It is the one the driver can use correctly under pressure.</p>
+<h2 id="the-big-idea">The Big Idea</h2>
+<p>A controller map is a design decision. Teams should choose controls that match:</p>
+<ul>
+<li>what the robot needs to do,</li>
+<li>what the driver already understands,</li>
+<li>what actions are most urgent,</li>
+<li>what mistakes would be costly,</li>
+<li>and what the team can practice enough to make automatic.</li>
+</ul>
+<p>If the driver has to stop and remember the controls during a match, the map is too complicated or not practiced enough.</p>
+<h2 id="human-intuition-and-stress">Human Intuition and Stress</h2>
+<p>Under pressure, people often fall back on familiar patterns.</p>
+<p>Examples:</p>
+<ul>
+<li>If a student has played console games, they may expect the left stick to move and the right stick to turn or aim.</li>
+<li>If a student has used D-pad controls in simple games, they may expect each direction to mean a clear fixed movement.</li>
+<li>If a student has driven remote-control cars, they may expect one stick or trigger to control forward/backward and another control to steer.</li>
+<li>If a student has practiced the same loading and shooting routine many times, they may do it smoothly without needing much verbal coaching.</li>
+</ul>
+<p>This is why practice matters. A confusing control map can become manageable with training, but a simple map becomes powerful when the driver has practiced it repeatedly.</p>
+<h2 id="what-is-the-logitech-f310">What Is the Logitech F310?</h2>
+<p>The Logitech F310 is a wired USB gamepad commonly used with FTC Driver Stations. It is designed mainly as a PC game controller.</p>
+<p>Important features:</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Feature</th>
+<th>Why It Matters</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>USB wired connection</td>
+<td>Simple and reliable for Driver Station use.</td>
+</tr>
+<tr>
+<td>XInput mode</td>
+<td>Makes the controller behave like a modern Windows/Xbox-style gamepad.</td>
+</tr>
+<tr>
+<td>DirectInput mode</td>
+<td>Older PC input mode; useful in some computer games, but usually not the first choice for FTC.</td>
+</tr>
+<tr>
+<td>Two analog sticks</td>
+<td>Useful for smooth driving, turning, aiming, or mechanism control.</td>
+</tr>
+<tr>
+<td>D-pad</td>
+<td>Useful for simple fixed-direction driving or step-by-step adjustments.</td>
+</tr>
+<tr>
+<td>A/B/X/Y buttons</td>
+<td>Useful for discrete actions such as shoot, open trigger, reset, slow mode, or mode change.</td>
+</tr>
+<tr>
+<td>Bumpers and triggers</td>
+<td>Useful for actions the driver may need while keeping thumbs on the sticks.</td>
+</tr>
+</tbody></table></div>
+<p>For FTC use, the switch on the bottom of the F310 is usually set to <strong>X</strong> for XInput mode. In many FTC setup examples, the driver assigns the controller by pressing <strong>Start + A</strong> for gamepad 1 or <strong>Start + B</strong> for gamepad 2.</p>
+<h2 id="how-the-f310-relates-to-xbox-playstation-and-pc-controllers">How the F310 Relates to Xbox, PlayStation, and PC Controllers</h2>
+<p>The F310 is not an Xbox or PlayStation controller, but it borrows familiar ideas from both console-style and PC gamepads.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Controller Family</th>
+<th>Connection to the F310</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>PC gamepads</td>
+<td>The F310 is officially a PC-style USB gamepad and supports common PC input standards.</td>
+</tr>
+<tr>
+<td>Xbox-style controllers</td>
+<td>In XInput mode, the F310 uses Xbox-style button names: A, B, X, Y, bumpers, triggers, sticks, Start, and Back. FTC code also commonly uses these names.</td>
+</tr>
+<tr>
+<td>PlayStation-style controllers</td>
+<td>The physical idea is familiar: two sticks, a D-pad, four face buttons, shoulder controls, and center buttons. The labels are different: PlayStation uses symbols such as triangle, circle, cross, and square instead of A/B/X/Y.</td>
+</tr>
+<tr>
+<td>Nintendo-style controllers</td>
+<td>The F310 also has four face buttons and a D-pad, but button positions and labels may not match what a Nintendo player expects.</td>
+</tr>
+</tbody></table></div>
+<p>This matters because students may bring different controller habits. A driver who grew up with PlayStation may understand the layout but not the A/B/X/Y names automatically. A driver used to Xbox-style games may recognize the names more quickly.</p>
+<h2 id="ftc-code-names">FTC Code Names</h2>
+<p>In FTC programs, controller inputs are usually read through names like:</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Driver Action</th>
+<th>Common FTC Code Name</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Left stick forward/back</td>
+<td><code>gamepad1.left_stick_y</code></td>
+</tr>
+<tr>
+<td>Left stick left/right</td>
+<td><code>gamepad1.left_stick_x</code></td>
+</tr>
+<tr>
+<td>Right stick left/right</td>
+<td><code>gamepad1.right_stick_x</code></td>
+</tr>
+<tr>
+<td>D-pad directions</td>
+<td><code>gamepad1.dpad_up</code>, <code>gamepad1.dpad_down</code>, <code>gamepad1.dpad_left</code>, <code>gamepad1.dpad_right</code></td>
+</tr>
+<tr>
+<td>Face buttons</td>
+<td><code>gamepad1.a</code>, <code>gamepad1.b</code>, <code>gamepad1.x</code>, <code>gamepad1.y</code></td>
+</tr>
+<tr>
+<td>Bumpers</td>
+<td><code>gamepad1.left_bumper</code>, <code>gamepad1.right_bumper</code></td>
+</tr>
+<tr>
+<td>Triggers</td>
+<td><code>gamepad1.left_trigger</code>, <code>gamepad1.right_trigger</code></td>
+</tr>
+</tbody></table></div>
+<p>This means the code should be written in a way the team can explain. For example:</p>
+<ul>
+<li><code>A</code> might mean shoot.</li>
+<li><code>B</code> might mean stop shooter.</li>
+<li>Right bumper might open the trigger.</li>
+<li>Left bumper might close the trigger.</li>
+<li>Right trigger might activate slow mode.</li>
+</ul>
+<p>The exact map is a team decision.</p>
+<h2 id="d-pad-control">D-Pad Control</h2>
+<p>D-pad control uses the cross-shaped direction pad.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>What It Helps</th>
+<th>What It Makes Harder</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Simple directions</td>
+<td>Smooth curves</td>
+</tr>
+<tr>
+<td>Beginner predictability</td>
+<td>Fine speed control</td>
+</tr>
+<tr>
+<td>Testing one movement at a time</td>
+<td>Natural driving feel</td>
+</tr>
+<tr>
+<td>Repeatable short moves</td>
+<td>Fast aiming adjustments</td>
+</tr>
+</tbody></table></div>
+<p>D-pad control can be good for first tests because it is clear: up means forward, down means backward, left means turn or slide left, and right means turn or slide right. It can also feel less natural when the driver needs smooth aiming or tiny corrections.</p>
+<h2 id="joystick-control">Joystick Control</h2>
+<p>Joystick control uses one or both analog sticks.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>What It Helps</th>
+<th>What It Makes Harder</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Smooth driving</td>
+<td>Beginner overcorrection</td>
+</tr>
+<tr>
+<td>Variable speed</td>
+<td>Consistent straight-line movement</td>
+</tr>
+<tr>
+<td>Natural video-game feel</td>
+<td>Debugging if directions are reversed</td>
+</tr>
+<tr>
+<td>Fast aiming corrections</td>
+<td>Avoiding sudden full-power movement</td>
+</tr>
+</tbody></table></div>
+<p>Joystick control often feels more like modern console or PC games. It can be powerful, but it may need dead zones, speed scaling, or a precision mode so the robot does not jump or turn too sharply.</p>
+<h2 id="speed-and-precision-modes">Speed and Precision Modes</h2>
+<p>A robot that is easy to drive at full speed may still be hard to aim. Teams can program control modes to help.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Mode</th>
+<th>What It Does</th>
+<th>When It Helps</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Normal mode</td>
+<td>Full driver control range</td>
+<td>Moving across the field</td>
+</tr>
+<tr>
+<td>Slow mode</td>
+<td>Reduces motor power</td>
+<td>Aiming, loading, parking, avoiding penalties</td>
+</tr>
+<tr>
+<td>Precision turn</td>
+<td>Reduces turning speed</td>
+<td>Lining up with a launch site</td>
+</tr>
+<tr>
+<td>Dead zone</td>
+<td>Ignores tiny stick movements</td>
+<td>Prevents drift when the stick is near center</td>
+</tr>
+</tbody></table></div>
+<p>Speed modes should be easy to remember. If slow mode is important, put it on a control the driver can reach without looking down.</p>
+<h2 id="mapping-mechanisms">Mapping Mechanisms</h2>
+<p>Driving controls should be the easiest to use because the robot is moving while the driver is thinking. Mechanism controls should also match the team&#x27;s routine.</p>
+<p>For a human-loaded ball launcher, the sequence might be:</p>
+<p>1. Drive to loading position. 2. Human operator loads up to three balls. 3. Driver moves to launch site. 4. Driver aims. 5. Driver spins up flywheel. 6. Driver opens trigger to release one ball or a controlled set of balls. 7. Driver repeats or returns to base.</p>
+<p>The controller map should support this sequence.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Robot Action</th>
+<th>Human-Centered Mapping Question</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Drive</td>
+<td>Can the driver move without looking down?</td>
+</tr>
+<tr>
+<td>Slow/precision mode</td>
+<td>Can the driver aim without accidentally driving too fast?</td>
+</tr>
+<tr>
+<td>Spin up flywheel</td>
+<td>Is the control hard to press by accident?</td>
+</tr>
+<tr>
+<td>Open trigger</td>
+<td>Is the control easy to press at the exact moment needed?</td>
+</tr>
+<tr>
+<td>Stop shooter</td>
+<td>Is there a clear safe stop action?</td>
+</tr>
+<tr>
+<td>Reset or unjam</td>
+<td>Is this protected from accidental use?</td>
+</tr>
+</tbody></table></div>
+<h2 id="safety-and-error-prevention">Safety and Error Prevention</h2>
+<p>Some controls should be easy. Some controls should be deliberate.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Control Type</th>
+<th>Good Design Choice</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Emergency stop or safe stop</td>
+<td>Easy to find and easy to explain.</td>
+</tr>
+<tr>
+<td>Driving</td>
+<td>Natural and practiced.</td>
+</tr>
+<tr>
+<td>Precision mode</td>
+<td>Easy to hold or toggle while aiming.</td>
+</tr>
+<tr>
+<td>Shooter spin-up</td>
+<td>Deliberate enough to avoid accidental activation.</td>
+</tr>
+<tr>
+<td>Trigger release</td>
+<td>Clear and consistent.</td>
+</tr>
+<tr>
+<td>Reset or reverse</td>
+<td>Protected from accidental presses.</td>
+</tr>
+</tbody></table></div>
+<p>A good question is: &quot;What is the worst mistake the driver could make with this button map?&quot; Then design the controls to make that mistake less likely.</p>
+<h2 id="training-matters">Training Matters</h2>
+<p>A good controller map is only good if the driver practices it.</p>
+<p>Teams should test:</p>
+<ul>
+<li>Can the driver explain every control without looking?</li>
+<li>Can the driver complete a loading, driving, aiming, and shooting cycle three times?</li>
+<li>Does the driver accidentally press the wrong button?</li>
+<li>Does the driver overcorrect while aiming?</li>
+<li>Does the human operator understand the driver&#x27;s signals?</li>
+<li>Can another teammate use the same map if the main driver is absent?</li>
+</ul>
+<h2 id="main-takeaway">Main Takeaway</h2>
+<p>Controller mapping is a human-centered design decision. The code should match the driver, the robot, the game strategy, and the team&#x27;s practice time.</p>
+<p>The best explanation sounds like this:</p>
+<blockquote>We chose this controller map because it matched our driver&#x27;s intuition, reduced mistakes under pressure, and helped us complete our scoring routine reliably.</blockquote>
+<h2 id="source-notes">Source Notes</h2>
+<p>This page is based on FTC controller programming conventions and Logitech F310 documentation. Logitech describes the F310 as a PC gamepad with XInput and DirectInput modes. FTC setup examples commonly use the F310 in XInput mode, which behaves like an Xbox-style controller and uses familiar A/B/X/Y button names.</p>
+      </article>
+
+    </main>
+  </body>
+</html>

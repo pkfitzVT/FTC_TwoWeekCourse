@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CAD Challenge: Design a Laser-Cut Adjustable Shooter Mount | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>CAD Challenge: Design a Laser-Cut Adjustable Shooter Mount</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../02_student_materials/challenge_by_choice/cad_challenge_adjustable_shooter_mount_handout.md">View source Markdown</a></p>
+        <h1 id="cad-challenge-design-a-laser-cut-adjustable-shooter-mount">CAD Challenge: Design a Laser-Cut Adjustable Shooter Mount</h1>
+<p>This challenge is one way to contribute to your team. It does not make you the only person responsible for CAD, fabrication, or the shooter mount. Share what you learn, invite others to try, and connect your work back to the team&#x27;s build.</p>
+<h2 id="purpose">Purpose</h2>
+<p>In this challenge, you will design a flat plywood side plate that can be cut on a laser cutter. The plate will help an aluminum shooter channel rotate around a fixed pivot point and lock at different launch angles.</p>
+<p>The goal is not just to “make a part.” The goal is to learn how a designer uses geometry, measurement, constraints, and testing to create a useful robot component.</p>
+<p>---</p>
+<h2 id="why-cad-matters">Why CAD Matters</h2>
+<p><strong>CAD</strong> stands for <strong>computer-aided design</strong>. CAD is how people turn an idea into a precise drawing, model, or manufactured part. In this robotics challenge, you are using CAD to design a laser-cut plywood plate with a pivot hole, a curved adjustment slot, and mounting holes. That may seem like a small part, but the same basic workflow is used by professionals who design cars, buildings, shoes, theater sets, video game environments, medical devices, furniture, robots, and spacecraft.</p>
+<p>CAD is used in many different careers. <strong>Mechanical engineers</strong> use CAD to design machines, engines, tools, robots, and manufactured parts. The U.S. Bureau of Labor Statistics reports that mechanical engineers had a median pay of about <strong>$102,320</strong> in 2024, with employment projected to grow about <strong>9% from 2024 to 2034</strong> (U.S. Bureau of Labor Statistics, 2025a). <strong>Architects</strong> use CAD and building information modeling to design buildings and spaces; architects had median pay of about <strong>$96,690</strong> in 2024, with projected growth of about <strong>4%</strong> (U.S. Bureau of Labor Statistics, 2025b). <strong>Drafters</strong> specialize in turning sketches and engineering ideas into technical drawings; drafters had median pay of about <strong>$65,380</strong> in 2024, with little or no projected employment change from 2024 to 2034 (U.S. Bureau of Labor Statistics, 2025c). <strong>Set and exhibit designers</strong> use CAD-like tools to design theater sets, museum exhibits, trade-show booths, and themed spaces; their median pay was about <strong>$66,280</strong> in 2024 (U.S. Bureau of Labor Statistics, 2025d). <strong>Fashion designers</strong>, <strong>industrial designers</strong>, <strong>interior designers</strong>, animators, and video game artists also use digital design tools to create objects, spaces, characters, products, and visual worlds.</p>
+<p>CAD is useful because it connects creativity with real-world making. Students who enjoy drawing, fashion, animation, architecture, robotics, games, sculpture, theater, or product design may find that CAD gives them a way to make their ideas precise enough to build.</p>
+<p>People who enjoy CAD often like a mix of art, geometry, and problem-solving. CAD can appeal to students with an artist’s eye because it involves proportion, balance, symmetry, shape, negative space, and visual judgment. It can also appeal to students who like math because every sketch depends on geometry: points, lines, circles, arcs, radius, diameter, angle, distance, parallel lines, perpendicular lines, constraints, and measurement. In CAD, geometry becomes something you can build. A circle is not just a circle; it might become a pivot hole. An arc is not just a curve; it might become a slot that controls launch angle.</p>
+<p>Career satisfaction varies. Some people love design work because it combines creativity, precision, teamwork, and problem-solving. Others find engineering or architecture stressful because real projects have deadlines, budgets, safety requirements, clients, and revisions. CareerExplorer survey data rates mechanical engineers at <strong>3.0 out of 5</strong> for career happiness and architects at <strong>3.1 out of 5</strong> (CareerExplorer, n.d.-a; CareerExplorer, n.d.-b). That does not mean these careers are bad. It means students should explore not only salary and demand, but also the daily work: Do you like solving hard problems? Do you like revising designs? Do you like making precise drawings? Do you like working between art, math, tools, and people? If yes, CAD may be a skill worth developing.</p>
+<p>---</p>
+<h2 id="cad-career-connections">CAD Career Connections</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Field</th>
+<th>How CAD or 3D Design Is Used</th>
+<th>2024 Median Pay / Outlook</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Mechanical engineering</td>
+<td>Machines, motors, robots, tools, manufactured parts</td>
+<td>$102,320; projected 9% growth</td>
+</tr>
+<tr>
+<td>Architecture</td>
+<td>Buildings, rooms, site plans, construction drawings</td>
+<td>$96,690; projected 4% growth</td>
+</tr>
+<tr>
+<td>Drafting</td>
+<td>Technical drawings from engineering or architectural plans</td>
+<td>$65,380; little or no projected employment change</td>
+</tr>
+<tr>
+<td>Set and exhibit design</td>
+<td>Theater sets, museum exhibits, trade-show spaces</td>
+<td>$66,280; limited growth, but ongoing openings as workers leave the field</td>
+</tr>
+<tr>
+<td>Fashion design</td>
+<td>Clothing patterns, digital prototypes, product design</td>
+<td>Projected 2% growth from 2024 to 2034</td>
+</tr>
+<tr>
+<td>Game art / animation</td>
+<td>Characters, props, environments, visual effects</td>
+<td>Special effects artists and animators: $99,800; limited growth, but ongoing openings</td>
+</tr>
+<tr>
+<td>Industrial design</td>
+<td>Products, tools, consumer goods, user-focused objects</td>
+<td>$79,450; design work connected to manufacturing and product development</td>
+</tr>
+</tbody></table></div>
+<p>---</p>
+<h2 id="nearby-college-and-training-connections">Nearby College and Training Connections</h2>
+<p>There are several nearby college pathways where students can continue learning CAD, design, engineering, architecture, or digital 3D art.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>School / Program</th>
+<th>Connection to CAD and Design</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>University of Vermont</td>
+<td>UVM offers engineering programs and an undergraduate certificate in <strong>Computer-Aided Engineering Technology</strong>. UVM describes CAET as computer-based tools used for development, communication, and evaluation of product and building designs. The certificate includes computerized automation techniques and three-dimensional form and location geometry (University of Vermont, n.d.-a).</td>
+</tr>
+<tr>
+<td>UVM Engineering Courses</td>
+<td>UVM’s engineering course catalog includes project-based engineering drawing and computer-aided drafting/design coursework (University of Vermont, n.d.-b).</td>
+</tr>
+<tr>
+<td>Norwich University</td>
+<td>Norwich offers architecture and design pathways. Its Design+Build work gives students experience designing and building full-scale projects, connecting design ideas to real construction (Norwich University, n.d.-a; Norwich University, n.d.-b).</td>
+</tr>
+<tr>
+<td>Vermont State University</td>
+<td>Vermont State University offers Architectural Engineering Technology programs where students learn architecture, design, engineering, construction, CAD, and BIM systems such as Autodesk Revit (Vermont State University, n.d.-a; Vermont State University, n.d.-b).</td>
+</tr>
+<tr>
+<td>Champlain College</td>
+<td>Champlain College offers game art and animation pathways where students build 2D and 3D art, environments, characters, and interactive media. This is a digital design pathway that connects artistic vision with technical tools.</td>
+</tr>
+</tbody></table></div>
+<p>These are different pathways, but they all connect to the same idea: design starts as a visual idea, becomes a measured model, and then becomes something people can build, test, improve, or experience.</p>
+<p>---</p>
+<h2 id="the-robot-part-you-are-designing">The Robot Part You Are Designing</h2>
+<p>You are designing an <strong>adjustable shooter side plate</strong>.</p>
+<p>The shooter itself is mounted to an <strong>aluminum channel</strong>. The channel holds the flywheel, motor, ramp, and possibly hopper pieces. The plywood plate does not directly hold the flywheel motor. Instead, the plywood plate lets the aluminum channel rotate and lock at different angles.</p>
+<p>The side plate needs:</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Feature</th>
+<th>Purpose</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Outer rectangle or custom outline</td>
+<td>Shape of the plywood part</td>
+</tr>
+<tr>
+<td>Pivot hole</td>
+<td>Fixed rotation point</td>
+</tr>
+<tr>
+<td>Curved slot</td>
+<td>Lets the aluminum channel rotate and lock</td>
+</tr>
+<tr>
+<td>Mounting hole pattern</td>
+<td>Lets the plywood plate attach to the robot structure</td>
+</tr>
+<tr>
+<td>Labels and angle tick marks</td>
+<td>Helps the team record launch-angle tests</td>
+</tr>
+</tbody></table></div>
+<p>The design idea is:</p>
+<p>1. A <strong>pivot bolt</strong> goes through the plywood plate and the aluminum channel. 2. A <strong>lock bolt</strong> goes through the curved slot and the aluminum channel. 3. When the lock bolt is loose, the channel rotates. 4. When the lock bolt is tightened with a washer and wing nut, the angle is locked.</p>
+<p>---</p>
+<h2 id="why-geometry-matters">Why Geometry Matters</h2>
+<p>The curved slot must be centered on the pivot hole.</p>
+<p>That means:</p>
+<blockquote>The pivot hole is the center of the circle.</blockquote>
+<blockquote>The curved slot follows part of that circle.</blockquote>
+<p>The radius of the slot is not random. It should match the center-to-center distance between the two holes you choose on the aluminum channel:</p>
+<blockquote><strong>slot radius = distance from pivot hole to lock-bolt hole on the aluminum channel</strong></blockquote>
+<p>If the radius does not match, the lock bolt will not slide smoothly through the slot.</p>
+<p>---</p>
+<h2 id="recommended-units">Recommended Units</h2>
+<p>Use <strong>metric units</strong> for this project.</p>
+<p>REV and goBILDA parts are based on metric patterns. Even if some of your bolts are inch-based, the robot building systems use millimeter spacing. Working in millimeters will make hole patterns easier.</p>
+<p>Useful conversions:</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Measurement</th>
+<th>Approximate metric value</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>1/4 inch plywood</td>
+<td>6.35 mm</td>
+</tr>
+<tr>
+<td>1 inch</td>
+<td>25.4 mm</td>
+</tr>
+<tr>
+<td>1/4 inch bolt clearance</td>
+<td>about 7.5–8.0 mm</td>
+</tr>
+<tr>
+<td>8 mm spacing</td>
+<td>about 0.315 inch</td>
+</tr>
+<tr>
+<td>16 mm spacing</td>
+<td>about 0.63 inch</td>
+</tr>
+</tbody></table></div>
+<p>---</p>
+<h2 id="rev-and-gobilda-hole-pattern-basics">REV and goBILDA Hole Pattern Basics</h2>
+<p>Many robot building systems use repeated hole patterns. This lets parts line up without custom drilling.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Build system</th>
+<th>Hardware</th>
+<th>Basic hole/grid idea</th>
+<th>Student CAD note</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>REV DUO</td>
+<td>M3 screws</td>
+<td>8 mm pitch/grid on many brackets and structural parts</td>
+<td>Use about 3.3–3.5 mm clearance holes for M3 bolts</td>
+</tr>
+<tr>
+<td>goBILDA</td>
+<td>M4 screws</td>
+<td>4 mm holes on an 8 mm grid; 16 mm spacing is common for stronger structural patterns</td>
+<td>Use about 4.3–4.5 mm clearance holes for M4 bolts</td>
+</tr>
+</tbody></table></div>
+<p>For laser-cut plywood, holes should usually be a little oversized because the laser removes material, plywood can vary, and student assembly is not perfect.</p>
+<p>---</p>
+<h2 id="pivot-to-lock-hole-distance-options">Pivot-to-Lock Hole Distance Options</h2>
+<p>The pivot-to-lock distance controls the radius of the curved slot. A longer distance usually makes the adjustment more stable because the lock bolt has more leverage.</p>
+<p>A good classroom rule:</p>
+<blockquote>Use at least <strong>three hole spaces</strong> between the pivot bolt and the lock bolt if possible.</blockquote>
+<p>If the holes are too close together, the angle may be harder to lock and the shooter may wobble more.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>System / spacing pattern</th>
+<th>2 spaces</th>
+<th>3 spaces</th>
+<th>4 spaces</th>
+<th>5 spaces</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>REV-style 8 mm pitch</td>
+<td>16 mm</td>
+<td>24 mm</td>
+<td>32 mm</td>
+<td>40 mm</td>
+</tr>
+<tr>
+<td>goBILDA 8 mm grid</td>
+<td>16 mm</td>
+<td>24 mm</td>
+<td>32 mm</td>
+<td>40 mm</td>
+</tr>
+<tr>
+<td>goBILDA common 16 mm structural spacing</td>
+<td>32 mm</td>
+<td>48 mm</td>
+<td>64 mm</td>
+<td>80 mm</td>
+</tr>
+</tbody></table></div>
+<p>For an adjustable shooter plate, a radius closer to <strong>48–80 mm</strong> is often more useful than a very short radius, if the channel geometry allows it.</p>
+<p>---</p>
+<h2 id="suggested-mounting-patterns">Suggested Mounting Patterns</h2>
+<h3 id="rev-friendly-mounting-row">REV-Friendly Mounting Row</h3>
+<p>Use M3 clearance holes on an 8 mm pitch.</p>
+<pre><code>o---8 mm---o---8 mm---o---8 mm---o</code></pre>
+<p>Suggested hole diameter:</p>
+<pre><code>3.3 mm to 3.5 mm</code></pre>
+<h3 id="gobilda-friendly-mounting-grid">goBILDA-Friendly Mounting Grid</h3>
+<p>Use M4 clearance holes on an 8 mm grid. For stronger mounting, emphasize 16 mm spacing.</p>
+<pre><code>o---16 mm---o---16 mm---o
+|           |           |
+16 mm      16 mm      16 mm
+|           |           |
+o---16 mm---o---16 mm---o</code></pre>
+<p>Suggested hole diameter:</p>
+<pre><code>4.3 mm to 4.5 mm</code></pre>
+<p>For a shooter support plate, use at least two mounting bolts. Four mounting bolts are better if the plate is holding load or resisting vibration.</p>
+<p>---</p>
+<h1 id="fusion-360-workflow">Fusion 360 Workflow</h1>
+<h2 id="step-1-create-a-new-design">Step 1: Create a New Design</h2>
+<p>Open Fusion 360 and create a new design.</p>
+<p>Set the units to millimeters.</p>
+<p>Suggested starting part size:</p>
+<pre><code>Plate width: 160 mm
+Plate height: 120 mm
+Material thickness: 6.35 mm if modeling 1/4 inch plywood</code></pre>
+<p>You can change these dimensions later.</p>
+<p>---</p>
+<h2 id="step-2-start-with-a-2d-sketch">Step 2: Start with a 2D Sketch</h2>
+<p>Create a new sketch on the front plane.</p>
+<p>CAD usually starts with a <strong>2D sketch</strong>. In the sketch, you use geometric tools organized into menus. These tools create rectangles, circles, arcs, slots, lines, and patterns.</p>
+<p>For this part, start by drawing the outside rectangle for the wood that will be cut.</p>
+<p>---</p>
+<h2 id="step-3-draw-the-outer-rectangle">Step 3: Draw the Outer Rectangle</h2>
+<p>Use the rectangle tool.</p>
+<p>Example:</p>
+<pre><code>160 mm × 120 mm</code></pre>
+<p>This represents the flat plywood plate.</p>
+<p>Make sure the rectangle is a closed shape.</p>
+<p>---</p>
+<h2 id="step-4-add-the-pivot-hole">Step 4: Add the Pivot Hole</h2>
+<p>Add a circle for the pivot point.</p>
+<p>The pivot hole is the center of rotation for the adjustable shooter channel.</p>
+<p>Suggested clearance holes:</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Bolt size</th>
+<th>Suggested CAD hole diameter</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>M3</td>
+<td>3.3–3.5 mm</td>
+</tr>
+<tr>
+<td>M4</td>
+<td>4.3–4.5 mm</td>
+</tr>
+<tr>
+<td>M5</td>
+<td>5.3–5.5 mm</td>
+</tr>
+<tr>
+<td>M6</td>
+<td>6.5–7.0 mm</td>
+</tr>
+<tr>
+<td>1/4 inch bolt</td>
+<td>about 7.5–8.0 mm</td>
+</tr>
+</tbody></table></div>
+<p>Important note:</p>
+<blockquote>The pivot hole should fit the bolt that will act as the rotation point. The pivot should not be loose enough to wobble badly, but it must be large enough for the bolt to pass through.</blockquote>
+<p>---</p>
+<h2 id="step-5-measure-the-aluminum-channel">Step 5: Measure the Aluminum Channel</h2>
+<p>Choose two holes on the aluminum channel:</p>
+<p>1. One hole for the pivot bolt. 2. One hole for the lock bolt.</p>
+<p>Measure the center-to-center distance between those holes.</p>
+<p>That measurement becomes the radius of the curved slot.</p>
+<p>Example:</p>
+<pre><code>Pivot-to-lock distance on channel = 64 mm
+Slot radius in CAD = 64 mm</code></pre>
+<p>---</p>
+<h2 id="step-6-create-the-curved-slot">Step 6: Create the Curved Slot</h2>
+<p>Use:</p>
+<pre><code>Create → Slot → Center Point Arc Slot</code></pre>
+<p>Click in this order:</p>
+<p>1. Click the center of the pivot hole. 2. Click where the slot should start. 3. Click where the slot should end. 4. Move the mouse to set the slot width, or type the slot width.</p>
+<p>Suggested slot widths:</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Lock bolt size</th>
+<th>Suggested slot width</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>M4</td>
+<td>4.5–5.0 mm</td>
+</tr>
+<tr>
+<td>M5</td>
+<td>5.5–6.0 mm</td>
+</tr>
+<tr>
+<td>M6</td>
+<td>6.8–7.2 mm</td>
+</tr>
+<tr>
+<td>1/4 inch bolt</td>
+<td>about 7.5–8.0 mm</td>
+</tr>
+</tbody></table></div>
+<p>The slot should be wider than the bolt so the bolt can slide smoothly.</p>
+<p>Important note:</p>
+<blockquote>The center of the slot must be the pivot hole. The slot radius must match the pivot-to-lock hole distance on the aluminum channel.</blockquote>
+<p>---</p>
+<h2 id="step-7-choose-the-angle-range">Step 7: Choose the Angle Range</h2>
+<p>Decide how much launch-angle adjustment your team needs.</p>
+<p>Possible starting range:</p>
+<pre><code>50° to 75°</code></pre>
+<p>The exact range depends on the shooter design, goal height, distance to the target, and whether the hopper still lines up as the shooter rotates.</p>
+<p>Design warning:</p>
+<blockquote>When the shooter angle changes, the ball path may also change. Make sure the hopper can still feed the ball into the flywheel across the useful angle range.</blockquote>
+<p>---</p>
+<h2 id="step-8-add-chassis-mounting-holes">Step 8: Add Chassis Mounting Holes</h2>
+<p>Choose one mounting pattern.</p>
+<h3 id="rev-option">REV option</h3>
+<p>Use M3 clearance holes:</p>
+<pre><code>Hole diameter: 3.3–3.5 mm
+Hole spacing: 8 mm</code></pre>
+<h3 id="gobilda-option">goBILDA option</h3>
+<p>Use M4 clearance holes:</p>
+<pre><code>Hole diameter: 4.3–4.5 mm
+Hole spacing: 8 mm grid or 16 mm structural spacing</code></pre>
+<p>Recommendation:</p>
+<blockquote>Use at least two mounting holes. Four mounting holes are better for a shooter support plate.</blockquote>
+<p>Do not put mounting holes too close to the edge of the plywood.</p>
+<p>---</p>
+<h2 id="step-9-add-labels-and-tick-marks">Step 9: Add Labels and Tick Marks</h2>
+<p>Use text or sketch lines for engraving.</p>
+<p>Possible labels:</p>
+<pre><code>PIVOT
+ANGLE LOCK
+50°
+55°
+60°
+65°
+70°
+75°</code></pre>
+<p>These should be engraved, not cut all the way through.</p>
+<p>Tick marks help the team record test data:</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Angle</th>
+<th>Flywheel power</th>
+<th>Distance</th>
+<th>Result</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>55°</td>
+<td>0.7</td>
+<td>36 in</td>
+<td>short</td>
+</tr>
+<tr>
+<td>60°</td>
+<td>0.7</td>
+<td>36 in</td>
+<td>hit rim</td>
+</tr>
+<tr>
+<td>65°</td>
+<td>0.7</td>
+<td>36 in</td>
+<td>scored</td>
+</tr>
+</tbody></table></div>
+<p>---</p>
+<h2 id="step-10-check-the-sketch">Step 10: Check the Sketch</h2>
+<p>Before exporting, check:</p>
+<ul>
+<li>Is the outer rectangle closed?</li>
+<li>Is the pivot hole inside the plate?</li>
+<li>Is the slot a closed slot shape, not just an arc line?</li>
+<li>Is the slot fully inside the plate?</li>
+<li>Are mounting holes far enough from the edge?</li>
+<li>Is there enough space for washers around the pivot and lock bolt?</li>
+<li>Will the aluminum channel have room to rotate?</li>
+<li>Will the robot still fit inside the required size limit?</li>
+<li>Will the hopper still line up with the shooter?</li>
+</ul>
+<p>---</p>
+<h2 id="step-11-optional-3d-extrusion">Step 11: Optional 3D Extrusion</h2>
+<p>You can extrude the sketch to visualize the part.</p>
+<p>For 1/4 inch plywood:</p>
+<pre><code>Extrusion thickness: 6.35 mm</code></pre>
+<p>This helps you check the shape, but the laser cutter usually needs the 2D sketch profile, not the 3D body.</p>
+<p>---</p>
+<h2 id="step-12-export-for-the-laser-cutter">Step 12: Export for the Laser Cutter</h2>
+<p>The usual workflow is:</p>
+<pre><code>Finish Sketch
+Right-click the sketch
+Save as DXF
+Import the DXF into the laser cutter software
+Assign cut and engrave settings
+Cut a cardboard test first
+Then cut plywood</code></pre>
+<p>Different laser cutters use different software. Ask which file type your school laser cutter prefers. Common formats include:</p>
+<pre><code>DXF
+SVG
+PDF
+AI</code></pre>
+<p>Fusion 360 commonly exports sketches as DXF.</p>
+<p>---</p>
+<h2 id="step-13-cut-a-test-piece-first">Step 13: Cut a Test Piece First</h2>
+<p>Do not cut a full class set first.</p>
+<p>Test with cardboard or scrap plywood.</p>
+<p>Check:</p>
+<ul>
+<li>Does the pivot bolt fit?</li>
+<li>Does the lock bolt slide in the curved slot?</li>
+<li>Does the aluminum channel rotate smoothly?</li>
+<li>Can the wing nut lock the angle?</li>
+<li>Are the mounting holes aligned?</li>
+<li>Does the shooter stay steady?</li>
+<li>Does the hopper still line up?</li>
+<li>Does the robot fit inside the size constraint?</li>
+</ul>
+<p>Then revise the CAD file if needed.</p>
+<p>---</p>
+<h2 id="3d-printing-option">3D Printing Option</h2>
+<p>A student could also add an extrusion and 3D print the part, but this should usually be treated as a prototype option, not the main support solution.</p>
+<p>A 1/4 inch plastic body might work for a small or light test piece, but it may not be strong enough to support the flywheel, hopper, vibration, and adjustment forces unless it is carefully designed.</p>
+<p>3D printed parts can fail because of:</p>
+<ul>
+<li>layer direction</li>
+<li>low infill</li>
+<li>weak material</li>
+<li>thin walls</li>
+<li>repeated vibration</li>
+<li>stress around holes</li>
+<li>heat or softening</li>
+<li>cracks near screws</li>
+</ul>
+<p>For this course, a good rule is:</p>
+<blockquote>Use plywood for flat adjustable side plates, aluminum channel for the main shooter structure, and 3D printing for small guides, spacers, servo brackets, or prototypes.</blockquote>
+<p>---</p>
+<h2 id="suggested-first-version">Suggested First Version</h2>
+<p>Use this as a starting design:</p>
+<pre><code>Units: millimeters
+Plate: 160 mm × 120 mm
+Material: 1/4 inch plywood, modeled as 6.35 mm
+Pivot bolt: M5, M6, or 1/4 inch depending on team hardware
+Slot radius: 64 mm or 80 mm if the channel geometry allows it
+Angle range: 50°–75°
+Slot width: bolt diameter + about 1 mm
+Mounting pattern: REV M3 row or goBILDA M4 grid</code></pre>
+<p>The CAD challenge is to modify the template to fit your team’s actual channel and shooter geometry.</p>
+<p>---</p>
+<h2 id="reflection-questions">Reflection Questions</h2>
+<p>1. What measurement controlled the radius of your curved slot? 2. How did geometry help you make a physical robot part? 3. What is one place where your design might fail or loosen? 4. What part of your CAD design feels more like math? 5. What part of your CAD design feels more like art? 6. If you had one more version, what would you improve?</p>
+<p>---</p>
+<h2 id="references">References</h2>
+<p>CareerExplorer. (n.d.-a). <em>Are architects happy?</em> CareerExplorer. https://www.careerexplorer.com/careers/architect/satisfaction/</p>
+<p>CareerExplorer. (n.d.-b). <em>Are mechanical engineers happy?</em> CareerExplorer. https://www.careerexplorer.com/careers/mechanical-engineer/satisfaction/</p>
+<p>Champlain College. (n.d.). <em>Game art degree: Bachelor of Fine Arts</em>. Champlain College. https://www.champlain.edu/academics/undergraduate-academics/degrees-programs/game-art/</p>
+<p>Norwich University. (n.d.-a). <em>Architectural studies</em>. Norwich University. https://home.norwich.edu/on/academics/programs/architecture-art</p>
+<p>Norwich University. (n.d.-b). <em>Design+Build Collaborative</em>. Norwich University. https://www.norwich.edu/academics/colleges-and-schools/college-professional-schools/designbuild-collaborative</p>
+<p>University of Vermont. (n.d.-a). <em>Computer-Aided Engineering Technology undergraduate certificate</em>. University of Vermont Catalogue. https://catalogue.uvm.edu/undergraduate/engineeringandmathematicalsciences/interdisciplinaryengineeringprograms/computeraidedengineeringtechnologycertificate/</p>
+<p>University of Vermont. (n.d.-b). <em>Engineering (ENGR) courses</em>. University of Vermont Catalogue. https://catalogue.uvm.edu/undergraduate/courses/courselist/engr/</p>
+<p>U.S. Bureau of Labor Statistics. (2025a). <em>Mechanical engineers: Occupational Outlook Handbook</em>. https://www.bls.gov/ooh/architecture-and-engineering/mechanical-engineers.htm</p>
+<p>U.S. Bureau of Labor Statistics. (2025b). <em>Architects: Occupational Outlook Handbook</em>. https://www.bls.gov/ooh/architecture-and-engineering/architects.htm</p>
+<p>U.S. Bureau of Labor Statistics. (2025c). <em>Drafters: Occupational Outlook Handbook</em>. https://www.bls.gov/ooh/architecture-and-engineering/drafters.htm</p>
+<p>U.S. Bureau of Labor Statistics. (2025d). <em>Set and exhibit designers: Occupational Outlook Handbook</em>. https://www.bls.gov/ooh/arts-and-design/set-and-exhibit-designers.htm</p>
+<p>U.S. Bureau of Labor Statistics. (2025e). <em>Fashion designers: Occupational Outlook Handbook</em>. https://www.bls.gov/ooh/arts-and-design/fashion-designers.htm</p>
+<p>U.S. Bureau of Labor Statistics. (2025f). <em>Special effects artists and animators: Occupational Outlook Handbook</em>. https://www.bls.gov/ooh/arts-and-design/multimedia-artists-and-animators.htm</p>
+<p>U.S. Bureau of Labor Statistics. (2025g). <em>Industrial designers: Occupational Outlook Handbook</em>. https://www.bls.gov/ooh/arts-and-design/industrial-designers.htm</p>
+<p>Vermont State University. (n.d.-a). <em>Architectural Engineering Technology, A.S.</em> Vermont State University. https://vermontstate.edu/academic-programs/architectural-engineering-technology-as/</p>
+<p>Vermont State University. (n.d.-b). <em>Architectural Engineering Technology, B.S.</em> Vermont State University. https://vermontstate.edu/academic-programs/architectural-engineering-technology-bs/</p>
+      </article>
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,997 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Course Content Inventory | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Course Content Inventory</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../docs/course_content_inventory.md">View source Markdown</a></p>
+        <h1 id="course-content-inventory">Course Content Inventory</h1>
+<p>This inventory maps the current Markdown and PDF files in the repository after the course-map, website-session, student-guide, and impact-study planning updates. It is organizational only.</p>
+<p>Status meanings:</p>
+<ul>
+<li><code>keep</code>: useful course material or organizing document.</li>
+<li><code>source candidate</code>: likely editable Markdown source for future course materials.</li>
+<li><code>generated export</code>: likely PDF generated from Markdown.</li>
+<li><code>duplicate candidate</code>: overlaps strongly with another file and needs a source-of-truth decision.</li>
+<li><code>utility</code>: support file rather than core course content.</li>
+<li><code>archive candidate</code>: likely not part of the course-content source set.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>File path</th>
+<th>Likely type</th>
+<th>Audience</th>
+<th>Related day/session</th>
+<th>Status</th>
+<th>Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>00_course_map/course_overview.md</code></td>
+<td>Course map</td>
+<td>Teacher / curriculum organizer</td>
+<td>Whole course</td>
+<td>keep</td>
+<td>Course overview organizing document.</td>
+</tr>
+<tr>
+<td><code>00_course_map/20_session_scope_sequence.md</code></td>
+<td>Scope and sequence</td>
+<td>Teacher / curriculum organizer</td>
+<td>Whole course</td>
+<td>keep</td>
+<td>20-session organizing map.</td>
+</tr>
+<tr>
+<td><code>docs/course_content_inventory.md</code></td>
+<td>Inventory</td>
+<td>Teacher / curriculum organizer</td>
+<td>Whole course</td>
+<td>keep</td>
+<td>Current inventory after course-map, session-page, student-guide, and impact-study planning updates.</td>
+</tr>
+<tr>
+<td><code>docs/source_file_policy.md</code></td>
+<td>Source policy</td>
+<td>Teacher / curriculum organizer</td>
+<td>Whole course</td>
+<td>keep</td>
+<td>Explains Markdown/PDF source policy.</td>
+</tr>
+<tr>
+<td><code>docs/proposed_file_move_plan.md</code></td>
+<td>Move plan</td>
+<td>Teacher / curriculum organizer</td>
+<td>Whole course</td>
+<td>keep</td>
+<td>Planning document used for safe-file reorganization.</td>
+</tr>
+<tr>
+<td><code>docs/reorganization_log.md</code></td>
+<td>Reorganization log</td>
+<td>Teacher / curriculum organizer</td>
+<td>Whole course</td>
+<td>keep</td>
+<td>Summary of moved files and remaining manual-review items.</td>
+</tr>
+<tr>
+<td><code>README.md</code></td>
+<td>Repository index</td>
+<td>Student / teacher / public</td>
+<td>Whole course</td>
+<td>keep</td>
+<td>Root entry point linking to the static course site and main documentation.</td>
+</tr>
+<tr>
+<td><code>91_utilities/build_static_site.py</code></td>
+<td>Build utility</td>
+<td>Repository maintainer</td>
+<td>Whole course</td>
+<td>utility</td>
+<td>Converts selected Markdown source files into browseable HTML under <code>site/generated/</code>.</td>
+</tr>
+<tr>
+<td><code>site/README.md</code></td>
+<td>Static site documentation</td>
+<td>Teacher / repository maintainer</td>
+<td>Whole course</td>
+<td>keep</td>
+<td>Explains preview, rebuild workflow, source files, and generated output.</td>
+</tr>
+<tr>
+<td><code>site/index.html</code></td>
+<td>Static site home</td>
+<td>Student / teacher / public</td>
+<td>Whole course</td>
+<td>generated export</td>
+<td>Generated static navigation entry point. Rebuild with <code>91_utilities/build_static_site.py</code>.</td>
+</tr>
+<tr>
+<td><code>site/students/index.html</code></td>
+<td>Static site student page</td>
+<td>Student / public</td>
+<td>Whole course</td>
+<td>generated export</td>
+<td>Generated student-facing navigation page.</td>
+</tr>
+<tr>
+<td><code>site/teachers/index.html</code></td>
+<td>Static site teacher page</td>
+<td>Teacher / public</td>
+<td>Whole course</td>
+<td>generated export</td>
+<td>Generated teacher-facing navigation page.</td>
+</tr>
+<tr>
+<td><code>site/sessions/index.html</code></td>
+<td>Static site session index</td>
+<td>Teacher / public</td>
+<td>Whole course</td>
+<td>generated export</td>
+<td>Generated index for pre-course and 20 official session pages.</td>
+</tr>
+<tr>
+<td><code>site/materials/index.html</code></td>
+<td>Static site materials index</td>
+<td>Student / teacher / public</td>
+<td>Whole course</td>
+<td>generated export</td>
+<td>Generated category-based materials index.</td>
+</tr>
+<tr>
+<td><code>site/generated/</code></td>
+<td>Generated HTML content</td>
+<td>Student / teacher / public</td>
+<td>Whole course</td>
+<td>generated export</td>
+<td>Generated browseable HTML copies of selected Markdown source files. Do not edit by hand.</td>
+</tr>
+<tr>
+<td><code>site/assets/css/styles.css</code></td>
+<td>Static site stylesheet</td>
+<td>Public site</td>
+<td>Whole course</td>
+<td>generated export</td>
+<td>Shared CSS generated by the static-site build script.</td>
+</tr>
+<tr>
+<td><code>docs/README.md</code></td>
+<td>Documentation index</td>
+<td>Teacher / repository maintainer</td>
+<td>Whole course</td>
+<td>keep</td>
+<td>Entry point for course documentation, maps, session pages, and impact-study planning.</td>
+</tr>
+<tr>
+<td><code>docs/teacher_facing_robotics_course_overview.md</code></td>
+<td>Teacher overview / site landing page</td>
+<td>Teacher / co-teacher</td>
+<td>Whole course</td>
+<td>keep</td>
+<td>Current website-ready teacher overview with 20-session table, resource map, and links to individual session pages.</td>
+</tr>
+<tr>
+<td><code>docs/teacher_facing_robotics_course_lesson_plan.md</code></td>
+<td>All-in-one teacher plan</td>
+<td>Teacher / curriculum organizer</td>
+<td>Whole course</td>
+<td>keep</td>
+<td>Preserved source/reference version of the teacher-facing lesson plan.</td>
+</tr>
+<tr>
+<td><code>docs/coteacher_weekend_review_packet.md</code></td>
+<td>Co-teacher review packet</td>
+<td>Teacher / co-teacher</td>
+<td>Whole course</td>
+<td>keep</td>
+<td>Compact review packet; should stay aligned with the current course sequence.</td>
+</tr>
+<tr>
+<td><code>docs/sessions/readme.md</code></td>
+<td>Session folder index</td>
+<td>Teacher / site maintainer</td>
+<td>Whole course</td>
+<td>keep</td>
+<td>Describes the pre-course page and the 20 individual session files.</td>
+</tr>
+<tr>
+<td><code>docs/sessions/pre_course_meet_the_teacher_robotics_intro.md</code></td>
+<td>Pre-course session plan</td>
+<td>Teacher / co-teacher</td>
+<td>Pre-course</td>
+<td>source candidate</td>
+<td>Optional meet-the-teacher course trailer; does not replace Day 1 Session 1.</td>
+</tr>
+<tr>
+<td><code>docs/sessions/day_01_session_01_first_ftc_safety_trust_goals.md</code></td>
+<td>Teacher session page</td>
+<td>Teacher / co-teacher</td>
+<td>Day 1 Session 1</td>
+<td>keep</td>
+<td>Website-ready lesson plan for course launch, FTC, safety, trust, and goals.</td>
+</tr>
+<tr>
+<td><code>docs/sessions/day_01_session_02_collaborative_engineering_teams.md</code></td>
+<td>Teacher session page</td>
+<td>Teacher / co-teacher</td>
+<td>Day 1 Session 2</td>
+<td>keep</td>
+<td>Website-ready lesson plan for team culture and contributions.</td>
+</tr>
+<tr>
+<td><code>docs/sessions/day_02_session_03_team_identity_and_norms.md</code></td>
+<td>Teacher session page</td>
+<td>Teacher / co-teacher</td>
+<td>Day 2 Session 3</td>
+<td>keep</td>
+<td>Website-ready lesson plan for team identity and team norms.</td>
+</tr>
+<tr>
+<td><code>docs/sessions/day_02_session_04_first_programming_session.md</code></td>
+<td>Teacher session page</td>
+<td>Teacher / co-teacher</td>
+<td>Day 2 Session 4</td>
+<td>keep</td>
+<td>Website-ready lesson plan for first programming session.</td>
+</tr>
+<tr>
+<td><code>docs/sessions/day_03_session_05_chassis_design_planning_and_build_start.md</code></td>
+<td>Teacher session page</td>
+<td>Teacher / co-teacher</td>
+<td>Day 3 Session 5</td>
+<td>keep</td>
+<td>Website-ready lesson plan for chassis design planning and build start.</td>
+</tr>
+<tr>
+<td><code>docs/sessions/day_03_session_06_chassis_continuation_and_readiness.md</code></td>
+<td>Teacher session page</td>
+<td>Teacher / co-teacher</td>
+<td>Day 3 Session 6</td>
+<td>keep</td>
+<td>Website-ready lesson plan for chassis continuation and readiness checks.</td>
+</tr>
+<tr>
+<td><code>docs/sessions/day_04_session_07_build_drivetrain_chassis.md</code></td>
+<td>Teacher session page</td>
+<td>Teacher / co-teacher</td>
+<td>Day 4 Session 7</td>
+<td>keep</td>
+<td>Website-ready lesson plan for drivetrain/chassis build.</td>
+</tr>
+<tr>
+<td><code>docs/sessions/day_04_session_08_wire_configure_and_test_drive.md</code></td>
+<td>Teacher session page</td>
+<td>Teacher / co-teacher</td>
+<td>Day 4 Session 8</td>
+<td>keep</td>
+<td>Website-ready lesson plan for wiring, configuration, and first drive.</td>
+</tr>
+<tr>
+<td><code>docs/sessions/day_05_session_09_flywheel_construction_basics.md</code></td>
+<td>Teacher session page</td>
+<td>Teacher / co-teacher</td>
+<td>Day 5 Session 9</td>
+<td>keep</td>
+<td>Website-ready lesson plan for flywheel construction basics.</td>
+</tr>
+<tr>
+<td><code>docs/sessions/day_05_session_10_projectile_motion_and_target_behavior.md</code></td>
+<td>Teacher session page</td>
+<td>Teacher / co-teacher</td>
+<td>Day 5 Session 10</td>
+<td>keep</td>
+<td>Website-ready lesson plan for projectile motion and target behavior.</td>
+</tr>
+<tr>
+<td><code>docs/sessions/day_06_session_11_gravity_fed_hopper_design.md</code></td>
+<td>Teacher session page</td>
+<td>Teacher / co-teacher</td>
+<td>Day 6 Session 11</td>
+<td>keep</td>
+<td>Website-ready lesson plan for gravity-fed hopper design.</td>
+</tr>
+<tr>
+<td><code>docs/sessions/day_06_session_12_servos_and_trigger_control.md</code></td>
+<td>Teacher session page</td>
+<td>Teacher / co-teacher</td>
+<td>Day 6 Session 12</td>
+<td>keep</td>
+<td>Website-ready lesson plan for servos and trigger control.</td>
+</tr>
+<tr>
+<td><code>docs/sessions/day_07_session_13_trigger_implementation_and_first_shots.md</code></td>
+<td>Teacher session page</td>
+<td>Teacher / co-teacher</td>
+<td>Day 7 Session 13</td>
+<td>keep</td>
+<td>Website-ready lesson plan for trigger implementation and first shots.</td>
+</tr>
+<tr>
+<td><code>docs/sessions/day_07_session_14_whole_system_operation_and_tuning.md</code></td>
+<td>Teacher session page</td>
+<td>Teacher / co-teacher</td>
+<td>Day 7 Session 14</td>
+<td>keep</td>
+<td>Website-ready lesson plan for whole-system operation and tuning.</td>
+</tr>
+<tr>
+<td><code>docs/sessions/day_08_session_15_robot_inspection_and_readiness.md</code></td>
+<td>Teacher session page</td>
+<td>Teacher / co-teacher</td>
+<td>Day 8 Session 15</td>
+<td>keep</td>
+<td>Website-ready lesson plan for robot inspection and readiness.</td>
+</tr>
+<tr>
+<td><code>docs/sessions/day_08_session_16_presentation_script_and_judging_prep.md</code></td>
+<td>Teacher session page</td>
+<td>Teacher / co-teacher</td>
+<td>Day 8 Session 16</td>
+<td>keep</td>
+<td>Website-ready lesson plan for presentation script and judging prep.</td>
+</tr>
+<tr>
+<td><code>docs/sessions/day_09_session_17_practice_challenge_and_evidence_collection.md</code></td>
+<td>Teacher session page</td>
+<td>Teacher / co-teacher</td>
+<td>Day 9 Session 17</td>
+<td>keep</td>
+<td>Website-ready lesson plan for practice challenge and evidence collection.</td>
+</tr>
+<tr>
+<td><code>docs/sessions/day_09_session_18_presentation_planning.md</code></td>
+<td>Teacher session page</td>
+<td>Teacher / co-teacher</td>
+<td>Day 9 Session 18</td>
+<td>keep</td>
+<td>Website-ready lesson plan for presentation planning.</td>
+</tr>
+<tr>
+<td><code>docs/sessions/day_10_session_19_final_presentation_rehearsal.md</code></td>
+<td>Teacher session page</td>
+<td>Teacher / co-teacher</td>
+<td>Day 10 Session 19</td>
+<td>keep</td>
+<td>Website-ready lesson plan for final presentation rehearsal.</td>
+</tr>
+<tr>
+<td><code>docs/sessions/day_10_session_20_final_demonstrations_and_reflection.md</code></td>
+<td>Teacher session page</td>
+<td>Teacher / co-teacher</td>
+<td>Day 10 Session 20</td>
+<td>keep</td>
+<td>Website-ready lesson plan for final demonstrations and reflection.</td>
+</tr>
+<tr>
+<td><code>docs/impact_study/robotics_course_impact_study_plan.md</code></td>
+<td>Impact-study plan</td>
+<td>Teacher / researcher</td>
+<td>Whole course</td>
+<td>keep</td>
+<td>Planning document for measuring robotics course impact.</td>
+</tr>
+<tr>
+<td><code>docs/impact_study/discussion_tool_impact_study_plan.md</code></td>
+<td>Impact-study plan</td>
+<td>Teacher / researcher</td>
+<td>Whole course</td>
+<td>keep</td>
+<td>Planning document for discussion-tool impact study.</td>
+</tr>
+<tr>
+<td><code>docs/impact_study/discussion_tool_compliance_planning_checklist.md</code></td>
+<td>Compliance checklist</td>
+<td>Teacher / researcher</td>
+<td>Whole course</td>
+<td>keep</td>
+<td>Compliance planning checklist for discussion-tool study.</td>
+</tr>
+<tr>
+<td><code>99_archive_or_local/day1_session1_first_ftc_handouts.md</code></td>
+<td>Archived duplicate handout</td>
+<td>Student / curriculum reference</td>
+<td>Day 1 Session 1</td>
+<td>archive candidate</td>
+<td>Archived combined FIRST/FTC draft. Modular readings are the source of truth.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day1_session1_what_is_first.md</code></td>
+<td>Background reading</td>
+<td>Student</td>
+<td>Day 1 Session 1</td>
+<td>source candidate</td>
+<td>Modular FIRST reading; source of truth for FIRST ecosystem background.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day1_session1_what_is_first_tech_challenge.md</code></td>
+<td>Background reading</td>
+<td>Student</td>
+<td>Day 1 Session 1</td>
+<td>source candidate</td>
+<td>Modular FTC reading; source of truth for FTC program background.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/engineering_notebook/day1_session1_student_bio_template.md</code></td>
+<td>Student template</td>
+<td>Student</td>
+<td>Day 1 Session 1</td>
+<td>source candidate</td>
+<td>Student bio/team-formation template stored with engineering notebook materials.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/future_human_controller_mapping_background.md</code></td>
+<td>Background reading</td>
+<td>Student</td>
+<td>Future programming/control session; mapped to Day 4 Session 7</td>
+<td>source candidate</td>
+<td>Student background reading for controller mapping and human-centered controls.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day1_session1_borrowed_equipment_expectations.md</code></td>
+<td>Background reading / norms handout</td>
+<td>Student</td>
+<td>Day 1 Session 1</td>
+<td>source candidate</td>
+<td>Supports borrowed equipment, community trust, and SLD 1.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day1_session1_robotics_safety_norms.md</code></td>
+<td>Safety norms handout</td>
+<td>Student</td>
+<td>Day 1 Session 1</td>
+<td>source candidate</td>
+<td>Supports safety expectations and student commitment.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day1_session2_collaborative_engineering_teams.md</code></td>
+<td>Background reading</td>
+<td>Student</td>
+<td>Day 1 Session 2</td>
+<td>source candidate</td>
+<td>Supports collaborative team formation and role awareness.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day2_session3_why_team_names_matter.md</code></td>
+<td>Background reading</td>
+<td>Student</td>
+<td>Day 2 Session 3</td>
+<td>source candidate</td>
+<td>Supports team identity/name decision.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day2_session4_decode_scoring_strategy_background.md</code></td>
+<td>Background reading</td>
+<td>Student</td>
+<td>Day 2 Session 4</td>
+<td>source candidate</td>
+<td>Supports game strategy, course constraints, scoring, autonomous goals, and evidence.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day2_session4_programming_background.md</code></td>
+<td>Background reading</td>
+<td>Student</td>
+<td>Day 2 Session 4</td>
+<td>source candidate</td>
+<td>Supports the first programming session, including OpModes, hardware names, and configuration.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day2_session4_reading_basic_teleop.md</code></td>
+<td>Background reading</td>
+<td>Student</td>
+<td>Day 2 Session 4</td>
+<td>source candidate</td>
+<td>Supports reading and modifying a basic TeleOp program.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day3_session5_chassis_physics_space_background.md</code></td>
+<td>Background reading</td>
+<td>Student</td>
+<td>Day 3 Session 5</td>
+<td>source candidate</td>
+<td>Supports chassis physics, space planning, and build-start constraints.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/principles_of_robot_assembly_day3.md</code></td>
+<td>Assembly guide / student handout</td>
+<td>Student</td>
+<td>Day 3 and build sessions</td>
+<td>source candidate</td>
+<td>Supports bracket use, fasteners, symmetry, access, stewardship, and careful assembly habits.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day4_session7_chassis_build_checklist.md</code></td>
+<td>Background reading / checklist</td>
+<td>Student</td>
+<td>Day 4 Session 7</td>
+<td>source candidate</td>
+<td>Supports chassis/drivetrain build vocabulary, tools, safety, and space planning.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day4_session7_mounting_motors_and_wheels.md</code></td>
+<td>Background reading</td>
+<td>Student</td>
+<td>Day 4 Session 7</td>
+<td>source candidate</td>
+<td>Supports motor, wheel, hub, axle, mounting, alignment, and friction concepts.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day4_session8_wiring_configuration_and_first_drive.md</code></td>
+<td>Background reading</td>
+<td>Student</td>
+<td>Day 4 Session 8</td>
+<td>source candidate</td>
+<td>Supports Control Hub wiring, configuration names, Java variables, and first-drive testing.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day4_session8_troubleshooting_basic_drive.md</code></td>
+<td>Background reading / troubleshooting guide</td>
+<td>Student</td>
+<td>Day 4 Session 8</td>
+<td>source candidate</td>
+<td>Supports debugging first-drive problems and using telemetry.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day5_session9_flywheel_motor_speed_compression.md</code></td>
+<td>Background reading</td>
+<td>Student</td>
+<td>Day 5 Session 9</td>
+<td>source candidate</td>
+<td>Supports flywheel shooter physics, motor speed, torque, load, compression, and wheel firmness.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day5_session9_flywheel_build_and_test_planning.md</code></td>
+<td>Background reading / test planning guide</td>
+<td>Student</td>
+<td>Day 5 Session 9</td>
+<td>source candidate</td>
+<td>Supports flywheel build planning, testable hypotheses, and safety.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day5_session10_projectile_motion_for_shooters.md</code></td>
+<td>Background reading</td>
+<td>Student</td>
+<td>Day 5 Session 10</td>
+<td>source candidate</td>
+<td>Supports projectile motion, launch angle, initial velocity, distance, and height reasoning.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day5_session10_target_impact_and_shot_consistency.md</code></td>
+<td>Background reading</td>
+<td>Student</td>
+<td>Day 5 Session 10</td>
+<td>source candidate</td>
+<td>Supports target impact, bounce, scoring window, and repeatability concepts.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day6_session11_gravity_fed_hopper_design.md</code></td>
+<td>Background reading</td>
+<td>Student</td>
+<td>Day 6 Session 11</td>
+<td>source candidate</td>
+<td>Supports hopper purpose, gravity-fed ball paths, one-ball feeding, and reliability.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day6_session11_hopper_jams_and_ball_path.md</code></td>
+<td>Background reading / troubleshooting guide</td>
+<td>Student</td>
+<td>Day 6 Session 11</td>
+<td>source candidate</td>
+<td>Supports hopper jam diagnosis and hand-testing ball paths.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day6_session12_intro_to_servos_positions.md</code></td>
+<td>Background reading</td>
+<td>Student</td>
+<td>Day 6 Session 12</td>
+<td>source candidate</td>
+<td>Supports servo vocabulary, position values, endpoints, and safe servo use.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day6_session12_servo_trigger_design_and_testing.md</code></td>
+<td>Background reading / code handout</td>
+<td>Student</td>
+<td>Day 6 Session 12</td>
+<td>source candidate</td>
+<td>Supports servo trigger design, sample test code, telemetry, and safe testing.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day7_session13_trigger_implementation_and_first_shots.md</code></td>
+<td>Background reading</td>
+<td>Student</td>
+<td>Day 7 Session 13</td>
+<td>source candidate</td>
+<td>Supports mounted trigger testing and first controlled shooter shots.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day7_session13_test_shooting_and_observation.md</code></td>
+<td>Background reading / observation guide</td>
+<td>Student</td>
+<td>Day 7 Session 13</td>
+<td>source candidate</td>
+<td>Supports evidence-based shot observation and one-change-at-a-time tuning.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day7_session14_whole_system_testing.md</code></td>
+<td>Background reading</td>
+<td>Student</td>
+<td>Day 7 Session 14</td>
+<td>source candidate</td>
+<td>Supports full robot subsystem interaction testing and operating sequences.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day7_session14_quick_adjustments_and_tuning.md</code></td>
+<td>Background reading</td>
+<td>Student</td>
+<td>Day 7 Session 14</td>
+<td>source candidate</td>
+<td>Supports temporary fixes, tuning, reliability, and safety rules for quick adjustments.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day8_session15_robot_inspection_and_safety.md</code></td>
+<td>Background reading</td>
+<td>Student</td>
+<td>Day 8 Session 15</td>
+<td>source candidate</td>
+<td>Supports inspection as safety and reliability practice.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day8_session15_robot_readiness_checklist.md</code></td>
+<td>Checklist / student handout</td>
+<td>Student</td>
+<td>Day 8 Session 15</td>
+<td>source candidate</td>
+<td>Supports internal robot readiness checks before demonstration.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day8_session16_presentation_story_and_script.md</code></td>
+<td>Background reading</td>
+<td>Student</td>
+<td>Day 8 Session 16</td>
+<td>source candidate</td>
+<td>Supports concise 4-minute presentation story and visual evidence.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/readings/day8_session16_awards_judging_and_growth_narrative.md</code></td>
+<td>Background reading</td>
+<td>Student</td>
+<td>Day 8 Session 16</td>
+<td>source candidate</td>
+<td>Supports award/recognition claims, evidence, judging questions, and growth narrative.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/guides/README.md</code></td>
+<td>Student guides index</td>
+<td>Student / teacher</td>
+<td>Course-wide</td>
+<td>keep</td>
+<td>Explains the reusable guides folder.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/guides/robotics_design_build_revise_process_handout.md</code></td>
+<td>Reusable student guide</td>
+<td>Student</td>
+<td>Course-wide / design-build sessions</td>
+<td>source candidate</td>
+<td>Supports intentional design, material checks, geometry, interference checks, and revision from evidence.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/guides/what_should_i_be_doing_right_now_robotics_work_ahead_menu.md</code></td>
+<td>Reusable student guide / work routine</td>
+<td>Student</td>
+<td>Course-wide / work sessions</td>
+<td>source candidate</td>
+<td>Supports productive downtime through programming, testing, design, documentation, driving practice, and tools/inventory tasks.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/decision_menus/day1_session1_individual_goal_menu.md</code></td>
+<td>Goal menu / workbook material</td>
+<td>Student</td>
+<td>Day 1 Session 1</td>
+<td>source candidate</td>
+<td>Contains goal areas, Must/Should/Could structure, and final reflection preview.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/decision_menus/day2_session3_team_name_menu.md</code></td>
+<td>Decision menu</td>
+<td>Student teams</td>
+<td>Day 2 Session 3</td>
+<td>source candidate</td>
+<td>Includes menu options, decision table, SLD connection, portfolio deliverable, and reflection.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/decision_menus/day2_session3_team_norms_menu.md</code></td>
+<td>Decision menu</td>
+<td>Student teams</td>
+<td>Day 2 Session 3</td>
+<td>source candidate</td>
+<td>Includes norm options, repair agreement, decision table, SLD connection, portfolio deliverable, and reflection.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/decision_menus/day2_session4_chassis_material_menu.md</code></td>
+<td>Design decision menu</td>
+<td>Student teams</td>
+<td>Day 2 Session 4</td>
+<td>source candidate</td>
+<td>Chassis material options, comparison, decision table, SLD connection, portfolio deliverable.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md</code></td>
+<td>Design decision menu</td>
+<td>Student teams</td>
+<td>Day 2 Session 4</td>
+<td>source candidate</td>
+<td>Chassis shape options, sketch requirement, decision table, SLD connection, portfolio deliverable.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md</code></td>
+<td>Design decision menu</td>
+<td>Student teams</td>
+<td>Day 2 Session 4</td>
+<td>source candidate</td>
+<td>Electronics and battery placement options, layout questions, decision table, SLD connection, portfolio deliverable.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md</code></td>
+<td>Strategy decision menu</td>
+<td>Student teams</td>
+<td>Day 2 Session 4</td>
+<td>source candidate</td>
+<td>Game strategy options, launch planning, decision table, SLD connection, portfolio deliverable.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/decision_menus/day2_session4_motor_placement_menu.md</code></td>
+<td>Design decision menu</td>
+<td>Student teams</td>
+<td>Day 2 Session 4</td>
+<td>source candidate</td>
+<td>Motor placement options, questions, decision table, SLD connection, portfolio deliverable.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md</code></td>
+<td>Design decision menu</td>
+<td>Student teams</td>
+<td>Day 2 Session 4</td>
+<td>source candidate</td>
+<td>Wheel factors/options, assembly checklist, decision table, SLD connection, portfolio deliverable.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/sld_prompts/day1_session1_sld_shared_materials_student.md</code></td>
+<td>Student-led discussion prompt</td>
+<td>Student</td>
+<td>Day 1 Session 1</td>
+<td>source candidate</td>
+<td>Student-facing SLD 1 prompt.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/engineering_notebook/student_engineering_notebook_master.md</code></td>
+<td>Engineering notebook master</td>
+<td>Student / teacher</td>
+<td>Whole course</td>
+<td>source candidate</td>
+<td>Master notebook/portfolio template with daily logs, decision records, test tables, code logs, photo evidence, final reflection, and presentation planning.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/challenge_by_choice/challenge_by_choice_README.md</code></td>
+<td>Challenge by Choice overview</td>
+<td>Student</td>
+<td>Course-wide</td>
+<td>source candidate</td>
+<td>Frames challenge pathways, low floor/high ceiling, course culture, and AI-use expectations.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/challenge_by_choice/challenge_by_choice_courses_and_careers.md</code></td>
+<td>Course/career connection guide</td>
+<td>Student</td>
+<td>Course-wide</td>
+<td>source candidate</td>
+<td>Connects robotics pathways to AP courses, STEM careers, and student interests.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/challenge_by_choice/using_ai_wisely_in_robotics_course.md</code></td>
+<td>AI-use guide</td>
+<td>Student</td>
+<td>Course-wide</td>
+<td>source candidate</td>
+<td>Supports responsible AI use in robotics without replacing student participation or physical testing.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/challenge_by_choice/cad_challenge_adjustable_shooter_mount_handout.md</code></td>
+<td>Super Challenge handout</td>
+<td>Student</td>
+<td>Optional extension</td>
+<td>source candidate</td>
+<td>CAD/fabrication challenge for adjustable shooter mount.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/challenge_by_choice/software_engineering_super_challenge_robot_shooter_code.md</code></td>
+<td>Super Challenge handout</td>
+<td>Student</td>
+<td>Optional extension</td>
+<td>source candidate</td>
+<td>Software engineering challenge for organizing shooter/trigger code.</td>
+</tr>
+<tr>
+<td><code>02_student_materials/challenge_by_choice/physics_super_challenge_projectile_motion_video_analysis.md</code></td>
+<td>Super Challenge handout</td>
+<td>Student</td>
+<td>Optional extension</td>
+<td>source candidate</td>
+<td>Physics/data challenge for projectile motion video analysis.</td>
+</tr>
+<tr>
+<td><code>03_teacher_materials/teacher_guides/day1_session1_sld_shared_materials_teacher_guide.md</code></td>
+<td>Teacher SLD guide</td>
+<td>Teacher / mentor</td>
+<td>Day 1 Session 1</td>
+<td>source candidate</td>
+<td>Teacher-facing SLD 1 guide with tracking and expected comments.</td>
+</tr>
+<tr>
+<td><code>04_research_and_design_rationale/research_brief_design_menu_cards.md</code></td>
+<td>Research/design rationale</td>
+<td>Teacher / curriculum designer</td>
+<td>Whole course</td>
+<td>keep</td>
+<td>Explains rationale for design menus and decision tables.</td>
+</tr>
+<tr>
+<td><code>04_research_and_design_rationale/research_brief_student_led_discussions.md</code></td>
+<td>Research/design rationale</td>
+<td>Teacher / curriculum designer</td>
+<td>Whole course</td>
+<td>keep</td>
+<td>Explains rationale for student-led discussions.</td>
+</tr>
+<tr>
+<td><code>05_print_packets/day2_session4_chassis_material_menu.pdf</code></td>
+<td>PDF export</td>
+<td>Student / teacher</td>
+<td>Day 2 Session 4</td>
+<td>generated export</td>
+<td>Likely generated from matching Markdown source.</td>
+</tr>
+<tr>
+<td><code>05_print_packets/background_documents_print_packet.pdf</code></td>
+<td>Print packet</td>
+<td>Student / teacher</td>
+<td>Early course; likely Day 1 and/or Day 2</td>
+<td>generated export</td>
+<td>Moved from root; source manifest still recommended.</td>
+</tr>
+<tr>
+<td><code>05_print_packets/chassis_menus_shape_material_motor_wheel_packet.pdf</code></td>
+<td>Print packet</td>
+<td>Student / teacher</td>
+<td>Day 2 Session 4</td>
+<td>generated export</td>
+<td>Moved from root; source manifest still recommended.</td>
+</tr>
+<tr>
+<td><code>05_print_packets/day2_session4_chassis_design_discussion_packet.pdf</code></td>
+<td>Print packet</td>
+<td>Student / teacher</td>
+<td>Day 2 Session 4</td>
+<td>generated export</td>
+<td>Moved from root; source manifest still recommended.</td>
+</tr>
+<tr>
+<td><code>05_print_packets/day3_session5_chassis_physics_space_background.pdf</code></td>
+<td>PDF export</td>
+<td>Student / teacher</td>
+<td>Day 3 Session 5</td>
+<td>generated export</td>
+<td>Likely generated from matching Markdown source.</td>
+</tr>
+<tr>
+<td><code>05_print_packets/day2_session4_chassis_shape_menu.pdf</code></td>
+<td>PDF export</td>
+<td>Student / teacher</td>
+<td>Day 2 Session 4</td>
+<td>generated export</td>
+<td>Likely generated from matching Markdown source.</td>
+</tr>
+<tr>
+<td><code>05_print_packets/day2_session4_decode_scoring_strategy_background.pdf</code></td>
+<td>PDF export</td>
+<td>Student / teacher</td>
+<td>Day 2 Session 4</td>
+<td>generated export</td>
+<td>Likely generated from matching Markdown source.</td>
+</tr>
+<tr>
+<td><code>05_print_packets/day2_session4_electronics_battery_placement_menu.pdf</code></td>
+<td>PDF export</td>
+<td>Student / teacher</td>
+<td>Day 2 Session 4</td>
+<td>generated export</td>
+<td>Likely generated from matching Markdown source.</td>
+</tr>
+<tr>
+<td><code>05_print_packets/day2_session4_game_strategy_goals_menu.pdf</code></td>
+<td>PDF export</td>
+<td>Student / teacher</td>
+<td>Day 2 Session 4</td>
+<td>generated export</td>
+<td>Likely generated from matching Markdown source.</td>
+</tr>
+<tr>
+<td><code>05_print_packets/day2_session4_motor_placement_menu.pdf</code></td>
+<td>PDF export</td>
+<td>Student / teacher</td>
+<td>Day 2 Session 4</td>
+<td>generated export</td>
+<td>Likely generated from matching Markdown source.</td>
+</tr>
+<tr>
+<td><code>05_print_packets/day2_session4_wheel_selection_menu.pdf</code></td>
+<td>PDF export</td>
+<td>Student / teacher</td>
+<td>Day 2 Session 4</td>
+<td>generated export</td>
+<td>Likely generated from matching Markdown source.</td>
+</tr>
+<tr>
+<td><code>05_print_packets/future_human_controller_mapping_background.pdf</code></td>
+<td>PDF export</td>
+<td>Student / teacher</td>
+<td>Future programming/control session; mapped to Day 4 Session 7</td>
+<td>generated export</td>
+<td>Likely generated from matching Markdown source.</td>
+</tr>
+<tr>
+<td><code>90_templates/menu_prompt_template.md</code></td>
+<td>Template</td>
+<td>Curriculum writer / teacher</td>
+<td>Whole course</td>
+<td>keep</td>
+<td>Template for future design menus and decision records.</td>
+</tr>
+<tr>
+<td><code>90_templates/research_brief_template.md</code></td>
+<td>Template</td>
+<td>Curriculum writer / teacher</td>
+<td>Whole course</td>
+<td>keep</td>
+<td>Template for future research briefs.</td>
+</tr>
+<tr>
+<td><code>90_templates/sld_prompt_template.md</code></td>
+<td>Template</td>
+<td>Curriculum writer / teacher</td>
+<td>Whole course</td>
+<td>keep</td>
+<td>Template for student-facing SLD prompts and teacher/mentor SLD guides.</td>
+</tr>
+<tr>
+<td><code>91_utilities/photo_rescue_notes.md</code></td>
+<td>Utility notes</td>
+<td>Teacher / repository maintainer</td>
+<td>Not course-session specific</td>
+<td>utility</td>
+<td>Describes video-to-photo rescue workflow; not core course content.</td>
+</tr>
+</tbody></table></div>
+      </article>
+
+    </main>
+  </body>
+</html>

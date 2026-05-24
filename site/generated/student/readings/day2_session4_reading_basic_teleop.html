@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Session 4 Reading: Reading a Basic TeleOp Program | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Session 4 Reading: Reading a Basic TeleOp Program</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../02_student_materials/readings/day2_session4_reading_basic_teleop.md">View source Markdown</a></p>
+        <h1 id="session-4-reading-reading-a-basic-teleop-program">Session 4 Reading: Reading a Basic TeleOp Program</h1>
+<h2 id="the-big-idea">The Big Idea</h2>
+<p>A TeleOp program listens to the gamepad and sends power commands to the robot’s motors.</p>
+<p>The program usually follows this pattern:</p>
+<p>1. Import the FTC tools the code needs. 2. Give the OpMode a name. 3. Create motor objects. 4. Connect the motor objects to the robot configuration. 5. Wait for the driver to press Start. 6. Repeatedly read the gamepad. 7. Send commands to the motors. 8. Stop the motors when no command is being given.</p>
+<p>---</p>
+<h2 id="the-package-line">The Package Line</h2>
+<p>At the top of the file, the code tells Java where this file belongs:</p>
+<pre><code>package org.firstinspires.ftc.teamcode;</code></pre>
+<p>For this course, students do not need to change this line.</p>
+<p>It helps organize the file inside the FTC robot app.</p>
+<p>---</p>
+<h2 id="import-lines">Import Lines</h2>
+<p>Import lines give the program access to FTC classes.</p>
+<p>For example:</p>
+<pre><code>import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import com.qualcomm.robotcore.hardware.DcMotor;</code></pre>
+<p>These imports let the program use FTC robot tools such as OpModes and motors.</p>
+<p>---</p>
+<h2 id="the-teleop-name">The TeleOp Name</h2>
+<p>This line controls the name that appears on the Driver Station:</p>
+<pre><code>@TeleOp(name = &quot;BasicDrive&quot;)</code></pre>
+<p>If the team selects <code>BasicDrive</code> on the Driver Station, this is the program that will run.</p>
+<p>A clear name matters. During a match, teams are often rushed or nervous. A simple OpMode name helps the team avoid mistakes.</p>
+<p>---</p>
+<h2 id="the-class">The Class</h2>
+<p>The class is the main container for the program:</p>
+<pre><code>public class BasicDrive extends LinearOpMode</code></pre>
+<p>For now, students should think of this as:</p>
+<p><strong>This file defines a robot program called <code>BasicDrive</code>.</strong></p>
+<p><code>extends LinearOpMode</code> means the code runs as a step-by-step FTC OpMode.</p>
+<p>---</p>
+<h2 id="motor-objects">Motor Objects</h2>
+<p>The program creates motor objects:</p>
+<pre><code>public DcMotor leftDrive = null;
+public DcMotor rightDrive = null;</code></pre>
+<p>These are software names for physical motors.</p>
+<p>At first, they are set to <code>null</code> because they have not yet been connected to the real configured hardware.</p>
+<p>---</p>
+<h2 id="hardware-map">Hardware Map</h2>
+<p>The hardware map connects software names to configured robot hardware:</p>
+<pre><code>leftDrive = hardwareMap.get(DcMotor.class, &quot;leftDrive&quot;);
+rightDrive = hardwareMap.get(DcMotor.class, &quot;rightDrive&quot;);</code></pre>
+<p>This is one of the most important parts of FTC programming.</p>
+<p>The names in quotation marks must match the robot configuration exactly.</p>
+<p>If the configuration says <code>leftDrive</code>, the code must also say <code>leftDrive</code>.</p>
+<p>---</p>
+<h2 id="waiting-for-start">Waiting for Start</h2>
+<p>This line pauses the program until the Driver Station starts the OpMode:</p>
+<pre><code>waitForStart();</code></pre>
+<p>Code before this line is setup code.</p>
+<p>Code after this line controls the robot during the active part of the OpMode.</p>
+<p>---</p>
+<h2 id="the-main-teleop-loop">The Main TeleOp Loop</h2>
+<p>Most TeleOp programs contain a loop like this:</p>
+<pre><code>while (opModeIsActive())</code></pre>
+<p>This means:</p>
+<p><strong>As long as the OpMode is running, keep checking the gamepad and controlling the robot.</strong></p>
+<p>Inside this loop, the robot repeatedly asks questions such as:</p>
+<ul>
+<li>Is the D-pad up pressed?</li>
+<li>Is the D-pad down pressed?</li>
+<li>Is a bumper pressed?</li>
+<li>Should the robot stop?</li>
+</ul>
+<p>---</p>
+<h2 id="gamepad-inputs">Gamepad Inputs</h2>
+<p>The program can use gamepad inputs such as:</p>
+<pre><code>gamepad1.dpad_up
+gamepad1.dpad_down
+gamepad1.left_bumper
+gamepad1.right_bumper</code></pre>
+<p>These are <strong>Boolean inputs</strong>. That means each one is either true or false.</p>
+<p>If <code>gamepad1.dpad_up</code> is true, the robot should drive forward.</p>
+<p>If no drive button is pressed, the robot should stop.</p>
+<p>---</p>
+<h2 id="helper-methods">Helper Methods</h2>
+<p>Instead of writing motor commands directly inside the loop every time, the program can use helper methods:</p>
+<pre><code>driveForward(power);
+driveBackward(power);
+turnLeft(power);
+turnRight(power);
+allStop();</code></pre>
+<p>These methods make the code easier to read.</p>
+<p>A driver thinks:</p>
+<p><strong>Go forward.</strong></p>
+<p>The code says:</p>
+<pre><code>driveForward(power);</code></pre>
+<p>That is much easier to understand than reading motor power numbers every time.</p>
+<p>---</p>
+<h2 id="motor-power">Motor Power</h2>
+<p>Motors are controlled with values from <code>-1.0</code> to <code>1.0</code>.</p>
+<p>Examples:</p>
+<ul>
+<li><code>0.0</code> means stopped.</li>
+<li><code>0.5</code> means half power in one direction.</li>
+<li><code>1.0</code> means full power in one direction.</li>
+<li><code>-0.5</code> means half power in the opposite direction.</li>
+</ul>
+<p>Because the left and right motors are often mounted facing opposite directions, one motor may need positive power while the other needs negative power for the robot to drive straight.</p>
+<p>---</p>
+<h2 id="all-stop">All Stop</h2>
+<p>Every TeleOp program needs a safe way to stop the robot.</p>
+<p>The <code>allStop()</code> method sets both drive motors to zero:</p>
+<pre><code>leftDrive.setPower(0);
+rightDrive.setPower(0);</code></pre>
+<p>Without this, the robot might keep moving after the driver releases the button.</p>
+<p>---</p>
+<h2 id="basicdrive-example">BasicDrive Example</h2>
+<pre><code>package org.firstinspires.ftc.teamcode;
+
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import com.qualcomm.robotcore.hardware.DcMotor;
+
+@TeleOp(name = &quot;BasicDrive&quot;)
+public class BasicDrive extends LinearOpMode {
+
+    public DcMotor leftDrive = null;
+    public DcMotor rightDrive = null;
+
+    public void runOpMode() {
+
+        leftDrive = hardwareMap.get(DcMotor.class, &quot;leftDrive&quot;);
+        rightDrive = hardwareMap.get(DcMotor.class, &quot;rightDrive&quot;);
+
+        double power = 0.5;
+
+        waitForStart();
+
+        while (opModeIsActive()) {
+
+            if (gamepad1.dpad_up) {
+                driveForward(power);
+            }
+            else if (gamepad1.dpad_down) {
+                driveBackward(power);
+            }
+            else if (gamepad1.left_bumper) {
+                turnLeft(power);
+            }
+            else if (gamepad1.right_bumper) {
+                turnRight(power);
+            }
+            else {
+                allStop();
+            }
+        }
+    }
+
+    public void driveForward(double power) {
+        leftDrive.setPower(-power);
+        rightDrive.setPower(power);
+    }
+
+    public void driveBackward(double power) {
+        leftDrive.setPower(power);
+        rightDrive.setPower(-power);
+    }
+
+    public void turnLeft(double power) {
+        leftDrive.setPower(power);
+        rightDrive.setPower(power);
+    }
+
+    public void turnRight(double power) {
+        leftDrive.setPower(-power);
+        rightDrive.setPower(-power);
+    }
+
+    public void allStop() {
+        leftDrive.setPower(0);
+        rightDrive.setPower(0);
+    }
+}</code></pre>
+<p>---</p>
+<h2 id="key-vocabulary">Key Vocabulary</h2>
+<p><strong>Import</strong> — a line that gives the program access to code from another class or library.</p>
+<p><strong>Class</strong> — the main container for a Java program.</p>
+<p><strong>Variable</strong> — a name that stores a value or object.</p>
+<p><strong>DcMotor</strong> — an FTC class used to control a DC motor.</p>
+<p><strong>hardwareMap</strong> — the FTC tool that connects code names to configured robot hardware.</p>
+<p><strong>Boolean</strong> — a value that is either true or false.</p>
+<p><strong>Loop</strong> — code that repeats.</p>
+<p><strong>Method</strong> — a named action or function in Java.</p>
+<p><strong>Motor power</strong> — a number from <code>-1.0</code> to <code>1.0</code> that tells a motor how fast and which direction to spin.</p>
+<p>---</p>
+<h2 id="think-about-it">Think About It</h2>
+<p>Why is <code>allStop()</code> just as important as <code>driveForward()</code>?</p>
+<p>---</p>
+<h2 id="engineering-notebook">Engineering Notebook</h2>
+<p>Record:</p>
+<ul>
+<li>the name of the TeleOp,</li>
+<li>which gamepad buttons control each movement,</li>
+<li>the motor names used in the code,</li>
+<li>one change your team made,</li>
+<li>what happened when you tested it,</li>
+<li>and whether the problem was caused by code, wiring, configuration, or driving.</li>
+</ul>
+      </article>
+
+    </main>
+  </body>
+</html>
