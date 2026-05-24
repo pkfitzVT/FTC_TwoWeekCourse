@@ -41,6 +41,7 @@ def collect_pages() -> list[Page]:
     patterns = [
         ("02_student_materials/readings/*.md", "student/readings", "Student Readings"),
         ("02_student_materials/guides/*.md", "student/guides", "Student Guides"),
+        ("02_student_materials/code_examples/**/*.md", "student/code_examples", "Code Examples"),
         (
             "02_student_materials/engineering_notebook/*.md",
             "student/engineering_notebook",
@@ -356,6 +357,9 @@ def write_static_pages(pages: list[Page]) -> None:
       <section class="section"><h2>Decision Menus and Challenge Pathways</h2><ul class="link-list">
 {list_items(section_pages(pages, "Decision Menus") + section_pages(pages, "Challenge by Choice"), SITE / "students")}
       </ul></section>
+      <section class="section"><h2>Code Examples</h2><ul class="link-list">
+{list_items(section_pages(pages, "Code Examples"), SITE / "students")}
+      </ul></section>
       <section class="section"><h2>Student Templates</h2><ul class="link-list">
 {list_items(section_pages(pages, "Templates"), SITE / "students")}
       </ul></section>
@@ -404,6 +408,7 @@ def write_static_pages(pages: list[Page]) -> None:
         "Student Readings",
         "Engineering Notebook",
         "Decision Menus",
+        "Code Examples",
         "SLD Prompts",
         "Challenge by Choice",
         "Sessions",

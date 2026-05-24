@@ -23,6 +23,7 @@ Prepare drivetrain parts, motor mounts, wheels, hubs, axles, brackets, tools, sa
 - [Chassis build checklist](../../02_student_materials/readings/day4_session7_chassis_build_checklist.md)
 - [Mounting motors and wheels](../../02_student_materials/readings/day4_session7_mounting_motors_and_wheels.md)
 - [Principles of robot assembly](../../02_student_materials/readings/principles_of_robot_assembly_day3.md)
+- [Human-centered controller mapping background](../../02_student_materials/readings/future_human_controller_mapping_background.md)
 - [Subsystem design cycle guide](../../02_student_materials/guides/subsystem_design_cycle_guide.md)
 
 ## Student-Led Discussion / Decision
@@ -33,7 +34,7 @@ Prompt: What part of our drivetrain is most likely to loosen, rub, or shift duri
 
 - Assembly: mount motors, wheels, hubs, axles, and supports as the current frame/drivetrain subsystem cycle.
 - Testing: hand-spin wheels, check rubbing, compare left/right sides.
-- Documentation: build photos and updated sketch.
+- Documentation: build photos, updated sketch, and controller-mapping tests to run after wiring.
 
 ## Must / Should / Could
 
@@ -64,6 +65,7 @@ Keep students attentive to set screws, hubs, and axle collars. Fast assembly wit
 
 - [Chassis build checklist](../../02_student_materials/readings/day4_session7_chassis_build_checklist.md)
 - [Mounting motors and wheels](../../02_student_materials/readings/day4_session7_mounting_motors_and_wheels.md)
+- [Controller mapping drive comparison activity](../../02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md)
 - [Subsystem Design Cycle template](../../90_templates/subsystem_design_cycle_template.md)
 - [What should I be doing right now? work-ahead menu](../../02_student_materials/guides/what_should_i_be_doing_right_now_robotics_work_ahead_menu.md)
 - [Engineering notebook](../../02_student_materials/engineering_notebook/student_engineering_notebook_master.md)

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OnBot Java Code Examples | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>OnBot Java Code Examples</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../02_student_materials/code_examples/onbot_java/README.md">View source Markdown</a></p>
+        <h1 id="onbot-java-code-examples">OnBot Java Code Examples</h1>
+<p>These files are example FTC OpModes for OnBot Java.</p>
+<p>Teams copy one Java file at a time into the Robot Controller OnBot Java TeamCode area. Keep the package line exactly as written:</p>
+<pre><code>package org.firstinspires.ftc.teamcode;</code></pre>
+<p>The Robot Controller configuration names must match the code exactly:</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Robot part</th>
+<th>Required configuration name</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Left drive motor</td>
+<td><code>leftDrive</code></td>
+</tr>
+<tr>
+<td>Right drive motor</td>
+<td><code>rightDrive</code></td>
+</tr>
+</tbody></table></div>
+<p>Start with one drive-only OpMode:</p>
+<ul>
+<li><a href="../../../../02_student_materials/code_examples/onbot_java/DemoDriveDPad.java"><code>DemoDriveDPad.java</code></a>: D-pad and bumper driving organized with helper methods.</li>
+<li><a href="../../../../02_student_materials/code_examples/onbot_java/DemoDriveJoy.java"><code>DemoDriveJoy.java</code></a>: joystick arcade drive with direct motor-power math in the main loop.</li>
+</ul>
+<p>Do not add shooter, hopper, trigger, or servo code until the drivetrain works. Test one subsystem at a time:</p>
+<p>1. Confirm the code builds. 2. Confirm the OpMode appears on the Driver Station. 3. Test with wheels lifted. 4. Record what the robot actually did. 5. Change one thing at a time.</p>
+<h2 id="student-challenge">Student Challenge</h2>
+<p>After testing both drive styles, rewrite <code>DemoDriveJoy</code> using helper methods so the main loop is easier to read.</p>
+<p>Possible helper methods:</p>
+<ul>
+<li><code>driveWithJoystick()</code></li>
+<li><code>setDrivePower(leftPower, rightPower)</code></li>
+<li><code>clipPower(power)</code></li>
+<li><code>showDriveTelemetry(drive, turn, leftPower, rightPower)</code></li>
+</ul>
+<p>The goal is not only to make the robot drive. The goal is to decide which control style supports your robot behavior goals and which code organization your team can safely modify.</p>
+      </article>
+
+    </main>
+  </body>
+</html>

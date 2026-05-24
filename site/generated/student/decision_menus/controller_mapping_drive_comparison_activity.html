@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Controller Mapping Drive Comparison Activity | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Controller Mapping Drive Comparison Activity</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md">View source Markdown</a></p>
+        <h1 id="controller-mapping-drive-comparison-activity">Controller Mapping Drive Comparison Activity</h1>
+<h2 id="purpose">Purpose</h2>
+<p>Use evidence to decide how your team should control the frame/drivetrain subsystem.</p>
+<p>You will compare two drive-only OpModes:</p>
+<ul>
+<li><a href="../../../../02_student_materials/code_examples/onbot_java/DemoDriveDPad.java"><code>DemoDriveDPad.java</code></a>: D-pad and bumper driving with helper methods.</li>
+<li><a href="../../../../02_student_materials/code_examples/onbot_java/DemoDriveJoy.java"><code>DemoDriveJoy.java</code></a>: joystick arcade driving with direct motor-power math.</li>
+</ul>
+<p>Use the <a href="../code_examples/README.html">OnBot Java code examples README</a> before copying either file.</p>
+<p>This is a controller-mapping decision. Your choice should support your Robot Behavior Specification, your Subsystem Design Cycle evidence, and your team strategy.</p>
+<h2 id="before-you-start">Before You Start</h2>
+<p>Make sure your team has:</p>
+<ul>
+<li>a frame/drivetrain subsystem that is mechanically safe to test,</li>
+<li>Robot Controller configuration names <code>leftDrive</code> and <code>rightDrive</code>,</li>
+<li>wheels lifted for the first powered test,</li>
+<li>a test area with clear boundaries,</li>
+<li>one driver, one safety watcher, and one recorder.</li>
+</ul>
+<p>Do not add shooter, hopper, trigger, or servo code during this activity. Test the drivetrain subsystem by itself first.</p>
+<h2 id="step-1-run-demodrivedpad">Step 1: Run <code>DemoDriveDPad</code></h2>
+<p>Copy <code>DemoDriveDPad.java</code> into OnBot Java, build it, and run it safely.</p>
+<p>Record what happens when the driver uses:</p>
+<ul>
+<li>D-pad up</li>
+<li>D-pad down</li>
+<li>left bumper</li>
+<li>right bumper</li>
+</ul>
+<h2 id="step-2-run-demodrivejoy">Step 2: Run <code>DemoDriveJoy</code></h2>
+<p>Copy <code>DemoDriveJoy.java</code> into OnBot Java, build it, and run it safely.</p>
+<p>Record what happens when the driver uses:</p>
+<ul>
+<li>left stick Y for forward/back</li>
+<li>right stick X for turning</li>
+</ul>
+<h2 id="drive-test-comparison">Drive Test Comparison</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Test</th>
+<th>D-pad Drive Result</th>
+<th>Joystick Drive Result</th>
+<th>Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Drive straight 6 feet</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Turn 90 degrees</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Line up with goal</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Park in target area</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Avoid contact zone</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="discussion-questions">Discussion Questions</h2>
+<p>Answer with evidence from testing.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Question</th>
+<th>Team Response</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Which control scheme was easier for new drivers?</td>
+<td></td>
+</tr>
+<tr>
+<td>Which control scheme was smoother?</td>
+<td></td>
+</tr>
+<tr>
+<td>Which control scheme made turning easier?</td>
+<td></td>
+</tr>
+<tr>
+<td>Which control scheme made aiming or lining up easier?</td>
+<td></td>
+</tr>
+<tr>
+<td>Which control scheme helped avoid contact?</td>
+<td></td>
+</tr>
+<tr>
+<td>Which control scheme better supports scoring loops?</td>
+<td></td>
+</tr>
+<tr>
+<td>Which code file was easier to read?</td>
+<td></td>
+</tr>
+<tr>
+<td>Which code file would be easier to modify?</td>
+<td></td>
+</tr>
+<tr>
+<td>What changes would your team make before using this in a match?</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="code-organization-challenge">Code Organization Challenge</h2>
+<p><code>DemoDriveDPad</code> uses helper methods such as <code>driveForward()</code> and <code>allStop()</code>.</p>
+<p><code>DemoDriveJoy</code> puts the joystick math directly inside the main loop.</p>
+<p>Challenge: rewrite <code>DemoDriveJoy</code> using helper methods so the main loop is easier to read.</p>
+<p>Possible helper methods:</p>
+<ul>
+<li><code>driveWithJoystick()</code></li>
+<li><code>setDrivePower(leftPower, rightPower)</code></li>
+<li><code>clipPower(power)</code></li>
+<li><code>showDriveTelemetry(drive, turn, leftPower, rightPower)</code></li>
+</ul>
+<h2 id="decision-statement">Decision Statement</h2>
+<p>Our team will use ______________________________ because ______________________________.</p>
+<p>Evidence from our tests:</p>
+<p>______________________________________________________________________________</p>
+<p>Control changes we need before match use:</p>
+<p>______________________________________________________________________________</p>
+      </article>
+
+    </main>
+  </body>
+</html>

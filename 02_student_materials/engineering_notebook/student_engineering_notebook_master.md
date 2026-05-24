@@ -204,11 +204,11 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 
 ## Session 4: First Programming Session
 
-- Today's goal: Connect a basic FTC TeleOp program to robot hardware names, gamepad input, and motor output.
-- Team decision or task: Read a basic TeleOp program and identify what it should make the robot do.
-- Notebook evidence required: TeleOp name, hardware names, motor ports, button mappings, one code change, and test result.
+- Today's goal: Connect drive-only FTC TeleOp examples to robot hardware names, gamepad input, and motor output.
+- Team decision or task: Compare the D-pad and joystick drive examples and identify what each should make the robot do.
+- Notebook evidence required: TeleOp name, hardware names, motor ports, button mappings, one code change or prediction, and test result.
 - Reflection prompt: Why must the names in the configuration file match the names in the program exactly?
-- Useful references: `02_student_materials/readings/day2_session4_programming_background.md`; `02_student_materials/readings/day2_session4_reading_basic_teleop.md`
+- Useful references: `02_student_materials/readings/day2_session4_programming_background.md`; `02_student_materials/readings/day2_session4_reading_basic_teleop.md`; `02_student_materials/code_examples/onbot_java/README.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 5: Chassis Build Start
@@ -235,16 +235,16 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 - Team decision or task: Draft a controller mapping plan connected to driver intuition and robot needs.
 - Notebook evidence required: Controller mapping plan or control-design reflection.
 - Reflection prompt: How should the controller match the driver's intuition under pressure?
-- Useful references: `02_student_materials/readings/future_human_controller_mapping_background.md`
+- Useful references: `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md`; `02_student_materials/code_examples/onbot_java/README.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 8: Basic TeleOp Programming and Drivetrain Test
 
-- Today's goal: Program or configure basic driver-controlled movement and test it safely.
-- Team decision or task: Program/control the frame/drivetrain subsystem, test whether the robot drives as expected, and decide what to adjust.
-- Notebook evidence required: Frame/drivetrain subsystem cycle update, TeleOp test record with observed behavior, code/config change, and result.
-- Reflection prompt: What should we change first when the robot does not drive the way we expected?
-- Useful references: `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `02_student_materials/readings/future_human_controller_mapping_background.md`
+- Today's goal: Program or configure basic driver-controlled movement and compare D-pad and joystick drive safely.
+- Team decision or task: Program/control the frame/drivetrain subsystem, test D-pad and joystick driving, and decide which mapping supports robot behavior goals.
+- Notebook evidence required: Frame/drivetrain subsystem cycle update, TeleOp test record, D-pad versus joystick comparison evidence, code/config change, and controller-mapping decision.
+- Reflection prompt: Which drive mapping best supports our robot behavior goals and why?
+- Useful references: `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/code_examples/onbot_java/README.md`; `02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 9: Strategy Check and Mechanism Planning

@@ -23,6 +23,7 @@ Prepare Robot Controller and Driver Station devices, OnBot Java access, example 
 
 - [Programming background](../../02_student_materials/readings/day2_session4_programming_background.md)
 - [Reading basic TeleOp](../../02_student_materials/readings/day2_session4_reading_basic_teleop.md)
+- [OnBot Java code examples](../../02_student_materials/code_examples/onbot_java/README.md)
 
 ## Student-Led Discussion / Decision
 
@@ -30,13 +31,13 @@ Prompt: Why must the names in the configuration file match the names in the prog
 
 ## Work Time Options
 
-- Programming: read and annotate a basic TeleOp.
+- Programming: read and annotate the drive-only D-pad and joystick TeleOp examples.
 - Testing: run only if hardware is ready and safely lifted.
 - Documentation: map hardware names, motor ports, variables, and controls.
 
 ## Must / Should / Could
 
-- **Must:** Identify OpMode, hardware names, variables, and gamepad inputs in a basic TeleOp.
+- **Must:** Identify OpMode, hardware names, variables, and gamepad inputs in a drive-only TeleOp.
 - **Should:** Make one small documented code or configuration change.
 - **Could:** Add telemetry or comments that make the code easier for a teammate to understand.
 
@@ -63,4 +64,5 @@ Keep first code changes small. Prioritize safe testing and conceptual understand
 
 - [Programming background](../../02_student_materials/readings/day2_session4_programming_background.md)
 - [Reading basic TeleOp](../../02_student_materials/readings/day2_session4_reading_basic_teleop.md)
+- [OnBot Java code examples](../../02_student_materials/code_examples/onbot_java/README.md)
 - [Engineering notebook](../../02_student_materials/engineering_notebook/student_engineering_notebook_master.md)
