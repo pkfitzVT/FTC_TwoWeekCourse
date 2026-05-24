@@ -16,6 +16,7 @@ Status meanings:
 | `00_course_map/course_overview.md` | Course map | Teacher / curriculum organizer | Whole course | keep | Course overview organizing document. |
 | `00_course_map/20_session_scope_sequence.md` | Scope and sequence | Teacher / curriculum organizer | Whole course | keep | 20-session organizing map. |
 | `docs/course_content_inventory.md` | Inventory | Teacher / curriculum organizer | Whole course | keep | Current inventory after course-map, session-page, student-guide, and impact-study planning updates. |
+| `docs/discussion_prompt_inventory.md` | Inventory | Teacher / curriculum organizer | Whole course | keep | Inventories student-led discussion, decision, reflection, and survey prompts across course materials; notes gaps, duplicates, and recommendations. |
 | `docs/source_file_policy.md` | Source policy | Teacher / curriculum organizer | Whole course | keep | Explains Markdown/PDF source policy. |
 | `docs/proposed_file_move_plan.md` | Move plan | Teacher / curriculum organizer | Whole course | keep | Planning document used for safe-file reorganization. |
 | `docs/reorganization_log.md` | Reorganization log | Teacher / curriculum organizer | Whole course | keep | Summary of moved files and remaining manual-review items. |
