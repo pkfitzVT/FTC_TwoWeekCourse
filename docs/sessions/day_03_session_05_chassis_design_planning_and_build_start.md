@@ -29,6 +29,8 @@ Prepare tools, safety glasses, frame parts, brackets, fasteners, wheels, motors,
 - [Principles of robot assembly](../../02_student_materials/readings/principles_of_robot_assembly_day3.md)
 - [Team Strategy Guide template](../../90_templates/team_strategy_guide_template.md)
 - [Robot Behavior Specification template](../../90_templates/robot_behavior_specification_template.md)
+- [Demo robot design observation activity](../../02_student_materials/decision_menus/demo_robot_design_observation_activity.md)
+- [Design Choice Menu Matrix](../design_choice_menu_matrix.md)
 - [Subsystem Design Cycle template](../../90_templates/subsystem_design_cycle_template.md)
 - [Student-Led Discussion Tally Sheet template](../../90_templates/student_led_discussion_tally_sheet_template.md)
 - [Chassis shape menu](../../02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md)
@@ -44,6 +46,7 @@ Prompt: Which design choice should we protect when the build gets difficult or s
 ## Work Time Options
 
 - Strategy: review the copied Team Strategy Guide and Robot Behavior Specification and start the frame/drivetrain subsystem cycle.
+- Observation: use demo robot photos/sketches to compare chassis, motor, wheel, and open-space choices.
 - Design: final top-view chassis sketch.
 - Assembly: frame, brackets, fasteners, wheel/motor fit checks.
 - Documentation: build photos and first issue note.
@@ -65,7 +68,7 @@ Prompt: Which design choice should we protect when the build gets difficult or s
 
 ## Engineering Portfolio Evidence
 
-Teams should add a strategy and behavior check note, frame/drivetrain subsystem cycle entry, chassis decision, sketch, parts used, first issue noticed, and next step.
+Teams should add a strategy and behavior check note, frame/drivetrain subsystem cycle entry, demo robot observation evidence if used, chassis decision, sketch, parts used, first issue noticed, and next step.
 
 ## Reflection / Share-Out
 
@@ -81,6 +84,8 @@ Coach careful assembly habits: count holes, start finger tight, use two fastener
 - [Subsystem design cycle guide](../../02_student_materials/guides/subsystem_design_cycle_guide.md)
 - [Team Strategy Guide template](../../90_templates/team_strategy_guide_template.md)
 - [Robot Behavior Specification template](../../90_templates/robot_behavior_specification_template.md)
+- [Demo robot design observation activity](../../02_student_materials/decision_menus/demo_robot_design_observation_activity.md)
+- [Design Choice Menu Matrix](../design_choice_menu_matrix.md)
 - [Subsystem Design Cycle template](../../90_templates/subsystem_design_cycle_template.md)
 - [Student-Led Discussion Tally Sheet template](../../90_templates/student_led_discussion_tally_sheet_template.md)
 - [What should I be doing right now? work-ahead menu](../../02_student_materials/guides/what_should_i_be_doing_right_now_robotics_work_ahead_menu.md)

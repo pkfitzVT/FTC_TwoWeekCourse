@@ -32,6 +32,7 @@ Related materials:
 - `02_student_materials/decision_menus/day2_session3_team_name_menu.md`
 - `02_student_materials/decision_menus/day2_session3_team_norms_menu.md`
 - `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`
+- `02_student_materials/decision_menus/demo_robot_design_observation_activity.md`
 - `02_student_materials/guides/subsystem_design_cycle_guide.md`
 - `90_templates/team_strategy_guide_template.md`
 - `90_templates/robot_behavior_specification_template.md`
@@ -79,6 +80,8 @@ Use this when your team builds, programs, tests, repairs, or makes a meaningful 
 
 Use this with decision menus in `02_student_materials/decision_menus/`.
 
+Student-led discussion helps the team make a decision, but the deliverable is the design choice the team records, builds toward, tests, and revises.
+
 Before major robot design decisions, also check your copied Team Strategy Guide:
 
 - What scoring strategy does this decision support?
@@ -88,6 +91,8 @@ Before major robot design decisions, also check your copied Team Strategy Guide:
 
 Related material:
 
+- `docs/design_choice_menu_matrix.md`
+- `02_student_materials/decision_menus/demo_robot_design_observation_activity.md`
 - `90_templates/student_led_discussion_tally_sheet_template.md`
 - `90_templates/team_strategy_guide_template.md`
 - `90_templates/robot_behavior_specification_template.md`
@@ -106,6 +111,20 @@ Use the student-led discussion tally sheet for short design discussions where th
 Related material:
 
 - `90_templates/student_led_discussion_tally_sheet_template.md`
+
+## Demo Robot Observation Record
+
+Use this when your team studies demonstration robots before finalizing design choices.
+
+| Demo robot | Subsystem observed | Design choice noticed | Copy / modify / avoid? | Photo or sketch reference |
+|---|---|---|---|---|
+|  |  |  |  |  |
+|  |  |  |  |  |
+
+Related material:
+
+- `02_student_materials/decision_menus/demo_robot_design_observation_activity.md`
+- `docs/design_choice_menu_matrix.md`
 
 ## Subsystem Design Cycle Template
 

@@ -17,7 +17,7 @@ Students can help choose a team name and team norms using reasons and trade-offs
 
 ## Teacher Preparation
 
-Prepare team assignments, the team name menu, the team norms menu, the Team Strategy Guide template, the Robot Behavior Specification template, and portfolio recording space.
+Prepare team assignments, the team name menu, the team norms menu, the Team Strategy Guide template, the Robot Behavior Specification template, and portfolio recording space. If demo robots are available, stage them for brief observation before teams finalize early design ideas.
 
 ## Student Background Reading / Preparation
 
@@ -27,6 +27,8 @@ Prepare team assignments, the team name menu, the team norms menu, the Team Stra
 - [Team norms menu](../../02_student_materials/decision_menus/day2_session3_team_norms_menu.md)
 - [Team Strategy Guide template](../../90_templates/team_strategy_guide_template.md)
 - [Robot Behavior Specification template](../../90_templates/robot_behavior_specification_template.md)
+- [Demo robot design observation activity](../../02_student_materials/decision_menus/demo_robot_design_observation_activity.md)
+- [Design Choice Menu Matrix](../design_choice_menu_matrix.md)
 - [Student-Led Discussion Tally Sheet template](../../90_templates/student_led_discussion_tally_sheet_template.md)
 
 ## Student-Led Discussion / Decision
@@ -41,6 +43,7 @@ Prompt: What should our team name and norms say about the team we want to become
 - Reading/discussion: connect structure and function to the idea that robot form should follow game strategy.
 - Strategy: copy the Team Strategy Guide into the team portfolio or shared document and complete the identity, norms connection, and first game-understanding sections.
 - Requirements: preview the Robot Behavior Specification so students see how strategy becomes robot actions and performance goals before design choices.
+- Observation: inspect demo robots, take photos or sketches, and name design choices that might support or conflict with the team's strategy.
 
 ## Must / Should / Could
 
@@ -56,10 +59,11 @@ Prompt: What should our team name and norms say about the team we want to become
 - Team agreement.
 - Started Team Strategy Guide copied into the team portfolio or shared document.
 - Robot Behavior Specification location or preview note.
+- Demo robot observation note or photo/sketch reference.
 
 ## Engineering Portfolio Evidence
 
-Teams should add the final name, selected norms, reasons, trade-offs, evidence for how they will know the norms are working, the first sections of the Team Strategy Guide, and a note about where the Robot Behavior Specification will live.
+Teams should add the final name, selected norms, reasons, trade-offs, evidence for how they will know the norms are working, the first sections of the Team Strategy Guide, and a note about where the Robot Behavior Specification will live. If demo robots are used, teams should also record one design idea to copy, one idea to modify, and one risk to avoid.
 
 ## Reflection / Share-Out
 
@@ -79,5 +83,7 @@ The strategy guide and behavior specification should be treated as living docume
 - [Structure, function, and robot strategy](../../02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md)
 - [Team Strategy Guide template](../../90_templates/team_strategy_guide_template.md)
 - [Robot Behavior Specification template](../../90_templates/robot_behavior_specification_template.md)
+- [Demo robot design observation activity](../../02_student_materials/decision_menus/demo_robot_design_observation_activity.md)
+- [Design Choice Menu Matrix](../design_choice_menu_matrix.md)
 - [Student-Led Discussion Tally Sheet template](../../90_templates/student_led_discussion_tally_sheet_template.md)
 - [Engineering notebook](../../02_student_materials/engineering_notebook/student_engineering_notebook_master.md)

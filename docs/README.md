@@ -19,6 +19,7 @@ Markdown files remain the editable source of truth. Generated HTML pages are wri
 ## Repository Maps and Maintenance
 
 - [`course_content_inventory.md`](course_content_inventory.md): current content inventory and file map.
+- [`design_choice_menu_matrix.md`](design_choice_menu_matrix.md): matrix of subsystem design choices, supporting resources, evidence, deliverables, and later choices affected.
 - [`discussion_prompt_inventory.md`](discussion_prompt_inventory.md): inventory of student-led discussion, decision, reflection, and survey prompts across the course.
 - [`discussion_support_coverage_matrix.md`](discussion_support_coverage_matrix.md): audit of student-facing support materials for major student-led discussion prompts.
 - [`source_file_policy.md`](source_file_policy.md): Markdown/PDF source-of-truth policy.

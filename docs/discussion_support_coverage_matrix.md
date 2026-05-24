@@ -14,7 +14,7 @@ Ratings:
 
 This is an audit document only. It does not rewrite existing prompts or create missing instructional materials.
 
-Reusable support now available: `90_templates/student_led_discussion_tally_sheet_template.md` can be used with any 5-10 minute student-led design discussion to track participation, evidence use, decision synthesis, and growth over time.
+Reusable support now available: `90_templates/student_led_discussion_tally_sheet_template.md` can be used with any 5-10 minute student-led design discussion to track participation, evidence use, decision synthesis, and growth over time. `docs/design_choice_menu_matrix.md` and `02_student_materials/decision_menus/demo_robot_design_observation_activity.md` connect those discussions to concrete design-choice deliverables.
 
 ## Coverage Matrix
 
