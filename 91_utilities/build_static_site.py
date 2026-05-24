@@ -355,6 +355,9 @@ def write_static_pages(pages: list[Page]) -> None:
       <section class="section"><h2>Decision Menus and Challenge Pathways</h2><ul class="link-list">
 {list_items(section_pages(pages, "Decision Menus") + section_pages(pages, "Challenge by Choice"), SITE / "students")}
       </ul></section>
+      <section class="section"><h2>Student Templates</h2><ul class="link-list">
+{list_items(section_pages(pages, "Templates"), SITE / "students")}
+      </ul></section>
 """
     (SITE / "students" / "index.html").write_text(
         html_shell("Student Materials", student_body, "../assets/css/styles.css", "../"),

@@ -31,6 +31,7 @@ Related materials:
 
 - `02_student_materials/decision_menus/day2_session3_team_name_menu.md`
 - `02_student_materials/decision_menus/day2_session3_team_norms_menu.md`
+- `90_templates/team_strategy_guide_template.md`
 
 ## Personal Goals
 
@@ -73,6 +74,16 @@ Use this when your team builds, programs, tests, repairs, or makes a meaningful 
 |  |  |  |  |  |
 
 Use this with decision menus in `02_student_materials/decision_menus/`.
+
+Before major robot design decisions, also check your copied Team Strategy Guide:
+
+- What scoring strategy does this decision support?
+- Will this improve the expected score enough to be worth the risk?
+- Does this decision match the team norms for disagreement, revision, and shared understanding?
+
+Related material:
+
+- `90_templates/team_strategy_guide_template.md`
 
 ## Test Data Table Template
 
@@ -159,10 +170,10 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 ## Session 3: Team Identity and Team Norms
 
 - Today's goal: Choose a team name and team norms that shape how the group will work.
-- Team decision or task: Decide on team name and team norms.
-- Notebook evidence required: Team name decision table, team norm decision table, reflection on trade-offs.
+- Team decision or task: Decide on team name and team norms, then start a copied Team Strategy Guide.
+- Notebook evidence required: Team name decision table, team norm decision table, first Team Strategy Guide entries, reflection on trade-offs.
 - Reflection prompt: What should our team name and norms say about the team we want to become?
-- Useful references: `02_student_materials/readings/day2_session3_why_team_names_matter.md`; `02_student_materials/decision_menus/day2_session3_team_name_menu.md`; `02_student_materials/decision_menus/day2_session3_team_norms_menu.md`
+- Useful references: `02_student_materials/readings/day2_session3_why_team_names_matter.md`; `02_student_materials/decision_menus/day2_session3_team_name_menu.md`; `02_student_materials/decision_menus/day2_session3_team_norms_menu.md`; `90_templates/team_strategy_guide_template.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 4: First Programming Session
@@ -177,10 +188,10 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 ## Session 5: Chassis Build Start
 
 - Today's goal: Begin building or modifying the drivetrain/chassis based on team decisions.
-- Team decision or task: Start building the chassis from documented decisions.
-- Notebook evidence required: Build log entry with photo/sketch, parts used, first issue noticed, and next step.
+- Team decision or task: Check the Team Strategy Guide, then start building the chassis from documented decisions.
+- Notebook evidence required: Strategy check note, build log entry with photo/sketch, parts used, first issue noticed, and next step.
 - Reflection prompt: Which design choice should we protect when the build gets difficult or slow?
-- Useful references: `02_student_materials/readings/day3_session5_chassis_physics_space_background.md`; `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md`; `02_student_materials/decision_menus/day2_session4_chassis_material_menu.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md`
+- Useful references: `90_templates/team_strategy_guide_template.md`; `02_student_materials/readings/day3_session5_chassis_physics_space_background.md`; `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md`; `02_student_materials/decision_menus/day2_session4_chassis_material_menu.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 6: Chassis Build Continuation and First Movement Checks
@@ -213,10 +224,10 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 ## Session 9: Strategy Check and Mechanism Planning
 
 - Today's goal: Decide what additional mechanism or scoring feature is realistic for the remaining time.
-- Team decision or task: Choose a simple robot improvement that fits strategy, time, and materials.
-- Notebook evidence required: Mechanism decision table, sketch, and build-risk note.
+- Team decision or task: Revisit the Team Strategy Guide, then choose a simple robot improvement that fits strategy, time, and materials.
+- Notebook evidence required: Strategy revision or confirmation, mechanism decision table, sketch, and build-risk note.
 - Reflection prompt: What is the simplest mechanism that could improve our strategy without risking the whole robot?
-- Useful references: `02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md`; `02_student_materials/readings/day2_session4_decode_scoring_strategy_background.md`
+- Useful references: `90_templates/team_strategy_guide_template.md`; `02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md`; `02_student_materials/readings/day2_session4_decode_scoring_strategy_background.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 10: Mechanism Build or Robot Improvement Sprint

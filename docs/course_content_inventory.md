@@ -129,5 +129,6 @@ Status meanings:
 | `05_print_packets/future_human_controller_mapping_background.pdf` | PDF export | Student / teacher | Future programming/control session; mapped to Day 4 Session 7 | generated export | Likely generated from matching Markdown source. |
 | `90_templates/menu_prompt_template.md` | Template | Curriculum writer / teacher | Whole course | keep | Template for future design menus and decision records. |
 | `90_templates/research_brief_template.md` | Template | Curriculum writer / teacher | Whole course | keep | Template for future research briefs. |
+| `90_templates/team_strategy_guide_template.md` | Team strategy template | Student teams / teacher | Day 2 Session 3; revisited before major design decisions | keep | Living team strategy guide connecting identity, norms, game understanding, competition observation, expected score, design implications, and revision log. |
 | `90_templates/sld_prompt_template.md` | Template | Curriculum writer / teacher | Whole course | keep | Template for student-facing SLD prompts and teacher/mentor SLD guides. |
 | `91_utilities/photo_rescue_notes.md` | Utility notes | Teacher / repository maintainer | Not course-session specific | utility | Describes video-to-photo rescue workflow; not core course content. |
