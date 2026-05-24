@@ -72,4 +72,5 @@ Require students to stop OpModes before changing wires. Normalize debugging as e
 - [Controller mapping drive comparison activity](../../02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md)
 - [OnBot Java code examples](../../02_student_materials/code_examples/onbot_java/README.md)
 - [Subsystem Design Cycle template](../../90_templates/subsystem_design_cycle_template.md)
+- [Student-Led Discussion Tally Sheet template](../../90_templates/student_led_discussion_tally_sheet_template.md)
 - [Engineering notebook](../../02_student_materials/engineering_notebook/student_engineering_notebook_master.md)

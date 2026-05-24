@@ -6,7 +6,7 @@
 - Big goal: Design and test a gravity-fed hopper that guides balls reliably toward the shooter.
 - Student-facing objective: I can explain how a hopper controls the ball path before the flywheel launches the ball.
 - Main deliverable: Hopper sketch/mockup and ball-path test.
-- Existing materials to use: `02_student_materials/readings/day6_session11_gravity_fed_hopper_design.md`; `02_student_materials/readings/day6_session11_hopper_jams_and_ball_path.md`; `02_student_materials/readings/day5_session9_flywheel_build_and_test_planning.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`
+- Existing materials to use: `02_student_materials/readings/day6_session11_gravity_fed_hopper_design.md`; `02_student_materials/readings/day6_session11_hopper_jams_and_ball_path.md`; `02_student_materials/readings/day5_session9_flywheel_build_and_test_planning.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `90_templates/student_led_discussion_tally_sheet_template.md`
 - Materials still needed: TODO: teacher hopper guide; hopper test-plan template; sample ball-path data table.
 
 ## Teacher Setup Before Class

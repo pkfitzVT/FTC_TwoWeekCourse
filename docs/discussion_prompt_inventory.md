@@ -38,7 +38,7 @@ It is an inventory and analysis document only. It does not rewrite source prompt
 | Student readings | `02_student_materials/readings/*.md` | Short reflection prompts tied to each reading | student-facing | individual reflection; team discussion |
 | Strategy template | `90_templates/team_strategy_guide_template.md` | Norms, strategy, autonomous/TeleOp/endgame, score, revision, decision checks | student-facing | team decision-making; engineering notebook documentation |
 | Behavior specification template | `90_templates/robot_behavior_specification_template.md` | Robot behaviors, performance goals, tests, decision checks | student-facing | robot behavior specification; testing/data |
-| SLD templates | `90_templates/sld_prompt_template.md`; `90_templates/menu_prompt_template.md` | Reusable SLD and menu prompt structures | teacher-facing / curriculum writer | teacher facilitation |
+| SLD templates | `90_templates/sld_prompt_template.md`; `90_templates/menu_prompt_template.md`; `90_templates/student_led_discussion_tally_sheet_template.md` | Reusable SLD prompt structures, menu structures, and live tally sheet | student-facing / teacher-facing / curriculum writer | student-led discussion; team decision-making; teacher facilitation |
 | Impact study | `docs/impact_study/*.md` | Course-impact and discussion-tool survey prompts | teacher/researcher-facing | impact study / survey |
 
 ## Prompts by Course Phase

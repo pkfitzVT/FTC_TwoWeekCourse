@@ -88,10 +88,24 @@ Before major robot design decisions, also check your copied Team Strategy Guide:
 
 Related material:
 
+- `90_templates/student_led_discussion_tally_sheet_template.md`
 - `90_templates/team_strategy_guide_template.md`
 - `90_templates/robot_behavior_specification_template.md`
 - `02_student_materials/guides/subsystem_design_cycle_guide.md`
 - `90_templates/subsystem_design_cycle_template.md`
+
+## Student-Led Discussion Tally Sheet
+
+Use the student-led discussion tally sheet for short design discussions where the team needs to make or revise an engineering decision.
+
+| Discussion topic | Decision made | Evidence used | Team score | Next discussion growth goal |
+|---|---|---|---:|---|
+|  |  |  |  |  |
+|  |  |  |  |  |
+
+Related material:
+
+- `90_templates/student_led_discussion_tally_sheet_template.md`
 
 ## Subsystem Design Cycle Template
 

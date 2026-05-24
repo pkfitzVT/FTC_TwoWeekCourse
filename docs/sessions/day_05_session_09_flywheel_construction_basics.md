@@ -66,5 +66,6 @@ Watch for unsafe spinning-wheel handling. Keep teams focused on testable prototy
 - [Flywheel motor speed and compression](../../02_student_materials/readings/day5_session9_flywheel_motor_speed_compression.md)
 - [Flywheel build and test planning](../../02_student_materials/readings/day5_session9_flywheel_build_and_test_planning.md)
 - [Subsystem Design Cycle template](../../90_templates/subsystem_design_cycle_template.md)
+- [Student-Led Discussion Tally Sheet template](../../90_templates/student_led_discussion_tally_sheet_template.md)
 - [Design, build, and revise process](../../02_student_materials/guides/robotics_design_build_revise_process_handout.md)
 - [Engineering notebook](../../02_student_materials/engineering_notebook/student_engineering_notebook_master.md)

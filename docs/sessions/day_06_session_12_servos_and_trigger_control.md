@@ -65,4 +65,5 @@ Stop teams immediately if servos buzz, strain, or hit the frame. Do not let stud
 - [Intro to servos and positions](../../02_student_materials/readings/day6_session12_intro_to_servos_positions.md)
 - [Servo trigger design and testing](../../02_student_materials/readings/day6_session12_servo_trigger_design_and_testing.md)
 - [Subsystem Design Cycle template](../../90_templates/subsystem_design_cycle_template.md)
+- [Student-Led Discussion Tally Sheet template](../../90_templates/student_led_discussion_tally_sheet_template.md)
 - [Programming background](../../02_student_materials/readings/day2_session4_programming_background.md)

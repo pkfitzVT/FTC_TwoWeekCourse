@@ -65,4 +65,5 @@ Require hand testing before servo testing. Treat jams as useful evidence, not fa
 - [Gravity-fed hopper design](../../02_student_materials/readings/day6_session11_gravity_fed_hopper_design.md)
 - [Hopper jams and ball path](../../02_student_materials/readings/day6_session11_hopper_jams_and_ball_path.md)
 - [Subsystem Design Cycle template](../../90_templates/subsystem_design_cycle_template.md)
+- [Student-Led Discussion Tally Sheet template](../../90_templates/student_led_discussion_tally_sheet_template.md)
 - [Engineering notebook](../../02_student_materials/engineering_notebook/student_engineering_notebook_master.md)

@@ -14,6 +14,8 @@ Ratings:
 
 This is an audit document only. It does not rewrite existing prompts or create missing instructional materials.
 
+Reusable support now available: `90_templates/student_led_discussion_tally_sheet_template.md` can be used with any 5-10 minute student-led design discussion to track participation, evidence use, decision synthesis, and growth over time.
+
 ## Coverage Matrix
 
 | Session / Context | Discussion Focus | Existing Prompt Source | Reading Support | Decision Tool | Notebook / Template Support | Teacher Notes | Static Site / Generated Link | Coverage Rating | Gap / Recommendation |

@@ -6,7 +6,7 @@
 - Big goal: Teams choose a name and norms that shape how they will work, then connect those norms to an initial game strategy.
 - Student-facing objective: I can help my team choose an identity and working agreements using reasons and trade-offs.
 - Main deliverable: Team name decision table, team norm decision table, started Team Strategy Guide, Robot Behavior Specification preview note, reflection on trade-offs.
-- Existing materials to use: `02_student_materials/readings/day2_session3_why_team_names_matter.md`; `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`; `02_student_materials/decision_menus/day2_session3_team_name_menu.md`; `02_student_materials/decision_menus/day2_session3_team_norms_menu.md`; `90_templates/team_strategy_guide_template.md`; `90_templates/robot_behavior_specification_template.md`
+- Existing materials to use: `02_student_materials/readings/day2_session3_why_team_names_matter.md`; `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`; `02_student_materials/decision_menus/day2_session3_team_name_menu.md`; `02_student_materials/decision_menus/day2_session3_team_norms_menu.md`; `90_templates/team_strategy_guide_template.md`; `90_templates/robot_behavior_specification_template.md`; `90_templates/student_led_discussion_tally_sheet_template.md`
 - Materials still needed: TODO: full session plan; teacher SLD guide; print packet/export; team agreement form.
 
 ## Teacher Setup Before Class

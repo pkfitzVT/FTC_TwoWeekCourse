@@ -66,4 +66,5 @@ Temporary fixes are for learning, not final safety solutions. Watch for wires, b
 - [Whole-system testing](../../02_student_materials/readings/day7_session14_whole_system_testing.md)
 - [Quick adjustments and tuning](../../02_student_materials/readings/day7_session14_quick_adjustments_and_tuning.md)
 - [Subsystem Design Cycle template](../../90_templates/subsystem_design_cycle_template.md)
+- [Student-Led Discussion Tally Sheet template](../../90_templates/student_led_discussion_tally_sheet_template.md)
 - [Engineering notebook](../../02_student_materials/engineering_notebook/student_engineering_notebook_master.md)

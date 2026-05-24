@@ -27,6 +27,7 @@ Prepare team assignments, the team name menu, the team norms menu, the Team Stra
 - [Team norms menu](../../02_student_materials/decision_menus/day2_session3_team_norms_menu.md)
 - [Team Strategy Guide template](../../90_templates/team_strategy_guide_template.md)
 - [Robot Behavior Specification template](../../90_templates/robot_behavior_specification_template.md)
+- [Student-Led Discussion Tally Sheet template](../../90_templates/student_led_discussion_tally_sheet_template.md)
 
 ## Student-Led Discussion / Decision
 
@@ -78,4 +79,5 @@ The strategy guide and behavior specification should be treated as living docume
 - [Structure, function, and robot strategy](../../02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md)
 - [Team Strategy Guide template](../../90_templates/team_strategy_guide_template.md)
 - [Robot Behavior Specification template](../../90_templates/robot_behavior_specification_template.md)
+- [Student-Led Discussion Tally Sheet template](../../90_templates/student_led_discussion_tally_sheet_template.md)
 - [Engineering notebook](../../02_student_materials/engineering_notebook/student_engineering_notebook_master.md)

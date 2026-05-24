@@ -6,7 +6,7 @@
 - Big goal: Understand servo positions and plan a simple servo trigger that feeds one ball at a time.
 - Student-facing objective: I can explain how servo position values move a trigger and why the mechanism must move freely.
 - Main deliverable: Servo trigger plan and simple servo test code.
-- Existing materials to use: `02_student_materials/readings/day6_session12_intro_to_servos_positions.md`; `02_student_materials/readings/day6_session12_servo_trigger_design_and_testing.md`; `02_student_materials/readings/day6_session11_hopper_jams_and_ball_path.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`
+- Existing materials to use: `02_student_materials/readings/day6_session12_intro_to_servos_positions.md`; `02_student_materials/readings/day6_session12_servo_trigger_design_and_testing.md`; `02_student_materials/readings/day6_session11_hopper_jams_and_ball_path.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `90_templates/student_led_discussion_tally_sheet_template.md`
 - Materials still needed: TODO: teacher servo guide; servo wiring/configuration screenshots; trigger test table; safety checklist.
 
 ## Teacher Setup Before Class
