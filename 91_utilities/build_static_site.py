@@ -237,6 +237,7 @@ def site_nav(prefix: str = "") -> str:
         <a href="{prefix}teachers/index.html">Teachers</a>
         <a href="{prefix}sessions/index.html">Sessions</a>
         <a href="{prefix}materials/index.html">Materials</a>
+        <a href="{prefix}print/index.html">Print</a>
       </nav>
     """
 
@@ -324,6 +325,7 @@ def write_static_pages(pages: list[Page]) -> None:
         <article class="card"><span class="tag">Teacher-facing</span><h2><a href="teachers/index.html">Teachers</a></h2><p>Course overviews, session plans, planning docs, impact-study materials, and teacher guides.</p></article>
         <article class="card"><span class="tag">10 days / 20 sessions</span><h2><a href="sessions/index.html">Sessions</a></h2><p>The pre-course page and all 20 teacher-facing session lesson plans.</p></article>
         <article class="card"><span class="tag">All materials</span><h2><a href="materials/index.html">Materials</a></h2><p>A category-based index for generated HTML pages and source materials.</p></article>
+        <article class="card"><span class="tag">Printable</span><h2><a href="print/index.html">Print Packets</a></h2><p>Browser-printable worksheet packets for in-person student design work.</p></article>
       </section>
 """
     (SITE / "index.html").write_text(
@@ -563,8 +565,27 @@ Source files live in folders such as:
 Generated HTML pages live in:
 
 - `site/generated/`
+- `site/print/`
 
 Each generated page includes a `View source Markdown` link.
+
+## Build Print-Friendly Pages
+
+Print-friendly worksheet pages are generated separately so the Markdown source files remain the source of truth.
+
+```powershell
+python 91_utilities/build_static_site.py
+python 91_utilities/build_print_packets.py
+python 91_utilities/build_static_site.py --check-links
+```
+
+Then preview:
+
+```text
+http://localhost:8000/site/print/
+```
+
+Use the browser print dialog or Save as PDF after checking the layout.
 """
 
 

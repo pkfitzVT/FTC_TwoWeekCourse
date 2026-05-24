@@ -50,5 +50,24 @@ Source files live in folders such as:
 Generated HTML pages live in:
 
 - `site/generated/`
+- `site/print/`
 
 Each generated page includes a `View source Markdown` link.
+
+## Build Print-Friendly Pages
+
+Print-friendly worksheet pages are generated separately so the Markdown source files remain the source of truth.
+
+```powershell
+python 91_utilities/build_static_site.py
+python 91_utilities/build_print_packets.py
+python 91_utilities/build_static_site.py --check-links
+```
+
+Then preview:
+
+```text
+http://localhost:8000/site/print/
+```
+
+Use the browser print dialog or Save as PDF after checking the layout.
