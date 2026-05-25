@@ -6,6 +6,8 @@ This document inventories student-led discussion prompts, decision prompts, refl
 
 It is an inventory and analysis document only. It does not rewrite source prompts. Session files in `docs/sessions/` often mirror shorter planning files in `01_session_plans/`; when prompts are duplicated across those two locations, the inventory treats the `docs/sessions/` version as the teacher-facing session source and notes the matching planning file where useful.
 
+For a session-by-session map from SLD prompts to concrete deliverables, evidence/resources, discussion types, and support gaps, see `docs/sld_prompt_deliverable_table.md`.
+
 ## Summary Table
 
 | Session / Context | File | Prompt Focus | Audience | Purpose |
