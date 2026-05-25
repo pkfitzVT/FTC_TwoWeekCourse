@@ -48,7 +48,7 @@ By the end of this SLD, complete or update the Robot Behavior Specification with
 - Modified game rules and scoring guide
 - Robot Behavior Specification template
 - Game strategy goals menu
-- Demo robot observation/evaluation notes
+- Demo Robot Design Analysis notes about which behaviors seemed easy, hard, reliable, or dependent on driver/operator coordination
 - Structure/function reading
 - Subsystem design cycle guide/template
 - SLD tally sheet
@@ -121,4 +121,3 @@ One discussion move our team should practice during the Chassis Design Choice SL
 ______________________________________________________________________________
 
 ______________________________________________________________________________
-

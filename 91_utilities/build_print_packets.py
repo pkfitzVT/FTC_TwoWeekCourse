@@ -24,6 +24,11 @@ PACKET_SOURCES = [
         "Use during short team design discussions.",
     ),
     (
+        "Demo Robot Design Analysis Activity",
+        "02_student_materials/decision_menus/demo_robot_design_analysis_activity.md",
+        "Use during early paired rotations to operate, observe, and analyze multiple demo robots.",
+    ),
+    (
         "Demo Robot Design Observation Activity",
         "02_student_materials/decision_menus/demo_robot_design_observation_activity.md",
         "Use while observing, sketching, photographing, and evaluating demo robot design choices.",

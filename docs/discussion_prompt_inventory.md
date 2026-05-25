@@ -41,6 +41,7 @@ For a session-by-session map from SLD prompts to concrete deliverables, evidence
 | Day 10 Session 20 | `docs/sessions/day_10_session_20_final_demonstrations_and_reflection.md` | What students learned about building, programming, testing, documenting, teamwork | teacher-facing | student-led discussion; reflection |
 | Engineering notebook | `02_student_materials/engineering_notebook/student_engineering_notebook_master.md` | Session reflection prompts for all 20 sessions | student-facing / teacher-facing | engineering notebook documentation; reflection |
 | Decision menus | `02_student_materials/decision_menus/*.md` | Team name, norms, strategy, chassis, material, motor, electronics, wheels | student-facing | team decision-making; student-led discussion |
+| Demo robot analysis | `02_student_materials/decision_menus/demo_robot_design_analysis_activity.md` | Operate and observe demo robots, rotate partners, analyze subsystems, and summarize design evidence | student-facing | design evidence; team decision-making; engineering notebook documentation |
 | Demo robot observation | `02_student_materials/decision_menus/demo_robot_design_observation_activity.md` | Observe demo robots, identify subsystem choices, and decide what to copy, modify, or avoid | student-facing | team decision-making; design observation; engineering notebook documentation |
 | Student readings | `02_student_materials/readings/*.md` | Short reflection prompts tied to each reading | student-facing | individual reflection; team discussion |
 | Strategy template | `90_templates/team_strategy_guide_template.md` | Norms, strategy, autonomous/TeleOp/endgame, score, revision, decision checks | student-facing | team decision-making; engineering notebook documentation |
@@ -92,6 +93,7 @@ For a session-by-session map from SLD prompts to concrete deliverables, evidence
 | `02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md` | Supporting Questions / Reflection | Realistic no-intake scoring; balls per loading cycle; legal launch site; alliance space; parking shape; safest autonomous goal; autonomous scoring risk; penalties; evidence before strategy changes. | student-facing | strategy | team decision-making; engineering notebook documentation |
 | `02_student_materials/sld_prompts/day2_session4_game_strategy_sld.md` | Main Discussion Question | "What strategy gives our team the best chance to score reliably, avoid penalties, and complete a working robot in the time available?" | student-facing | strategy | student-led discussion; Team Strategy Guide; engineering notebook documentation |
 | `02_student_materials/sld_prompts/day2_session4_strategy_to_robot_behavior_sld.md` | Main Discussion Question | "What specific robot behaviors must our robot perform to make our strategy possible?" | student-facing | robot behavior specification | student-led discussion; Robot Behavior Specification; design criteria |
+| `02_student_materials/decision_menus/demo_robot_design_analysis_activity.md` | Design Evidence Summary | One design feature to borrow, one to modify, one to avoid, one question before designing, and one photo/sketch for the portfolio. | student-facing | design evidence | team decision-making; engineering notebook documentation |
 | `docs/sessions/day_02_session_04_first_programming_session.md` | Student-Led Discussion / Decision | "Why must the names in the configuration file match the names in the program exactly?" | teacher-facing | build/troubleshooting | student-led discussion; engineering notebook documentation |
 
 ### Day 3: Chassis and Frame Design
@@ -221,10 +223,10 @@ For a session-by-session map from SLD prompts to concrete deliverables, evidence
 
 ## Count Summary
 
-This inventory identifies approximately **73 prompt sets**:
+This inventory identifies approximately **74 prompt sets**:
 
 - 20 official session-level Student-Led Discussion prompts in `docs/sessions/`
-- 12 student-facing decision-menu or SLD prompt files with main SLD prompts/supporting questions
+- 13 student-facing decision-menu, analysis, or SLD prompt files with main SLD prompts/supporting questions
 - 20 engineering-notebook session reflection prompts
 - 18 reading or guide reflection/discussion prompt sets
 - 5 impact-study or discussion-tool survey prompt sets

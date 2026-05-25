@@ -41,7 +41,7 @@ By the end of this SLD, complete or update the Team Strategy Guide with:
 - Modified game rules and scoring guide
 - Game strategy goals menu
 - Structure/function reading
-- Demo robot observation/evaluation notes
+- Demo Robot Design Analysis notes about reliability, difficulty, driver/operator roles, and design features
 - Team norms and team identity
 - Challenge by Choice expectations
 - Available materials
@@ -108,4 +108,3 @@ One discussion move our team should practice during the Strategy-to-Robot-Behavi
 ______________________________________________________________________________
 
 ______________________________________________________________________________
-

@@ -96,6 +96,7 @@ Before major robot design decisions, also check your copied Team Strategy Guide:
 Related material:
 
 - `docs/design_choice_menu_matrix.md`
+- `02_student_materials/decision_menus/demo_robot_design_analysis_activity.md`
 - `02_student_materials/decision_menus/demo_robot_design_observation_activity.md`
 - `90_templates/student_led_discussion_tally_sheet_template.md`
 - `90_templates/team_strategy_guide_template.md`
@@ -116,17 +117,18 @@ Related material:
 
 - `90_templates/student_led_discussion_tally_sheet_template.md`
 
-## Demo Robot Observation Record
+## Demo Robot Analysis / Observation Record
 
-Use this when your team studies demonstration robots before finalizing design choices.
+Use this when your team studies demonstration robots before finalizing design choices. Demo robot analysis creates design evidence for strategy, robot behavior, chassis, shooter, hopper, trigger, controls, and integration decisions.
 
-| Demo robot | Subsystem observed | Design choice noticed | Copy / modify / avoid? | Photo or sketch reference |
-|---|---|---|---|---|
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Demo robot | Partner / role | Subsystem observed | Design choice noticed | Copy / modify / avoid? | Photo or sketch reference |
+|---|---|---|---|---|---|
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
 
 Related material:
 
+- `02_student_materials/decision_menus/demo_robot_design_analysis_activity.md`
 - `02_student_materials/decision_menus/demo_robot_design_observation_activity.md`
 - `docs/design_choice_menu_matrix.md`
 
@@ -214,47 +216,47 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 
 ## Session 1: FIRST, FTC, Safety, Trust, and Personal Goals
 
-- Today's goal: Understand the course community, safety expectations, borrowed equipment responsibilities, and personal growth goals.
-- Team decision or task: Choose a personal goal and make a safety/community commitment.
-- Notebook evidence required: Personal goal choice, safety/community commitment, first SLD reflection, optional student bio.
+- Today's goal: Understand the course community, safety expectations, borrowed equipment responsibilities, personal growth goals, and first safe observations of demo robots.
+- Team decision or task: Choose a personal goal, make a safety/community commitment, and begin Demo Robot Design Analysis.
+- Notebook evidence required: Personal goal choice, safety/community commitment, first SLD reflection, first demo robot design analysis note, optional student bio.
 - Reflection prompt: What do we owe to the teams, mentors, and community members who made this robotics equipment available to us?
-- Useful references: `02_student_materials/readings/day1_session1_robotics_safety_norms.md`; `02_student_materials/readings/day1_session1_borrowed_equipment_expectations.md`; `02_student_materials/decision_menus/day1_session1_individual_goal_menu.md`; `02_student_materials/sld_prompts/day1_session1_sld_shared_materials_student.md`; `02_student_materials/engineering_notebook/day1_session1_student_bio_template.md`
+- Useful references: `02_student_materials/readings/day1_session1_robotics_safety_norms.md`; `02_student_materials/readings/day1_session1_borrowed_equipment_expectations.md`; `02_student_materials/decision_menus/day1_session1_individual_goal_menu.md`; `02_student_materials/decision_menus/demo_robot_design_analysis_activity.md`; `02_student_materials/sld_prompts/day1_session1_sld_shared_materials_student.md`; `02_student_materials/engineering_notebook/day1_session1_student_bio_template.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 2: Collaborative Engineering Teams
 
-- Today's goal: Identify how different strengths, roles, and communication styles support a robot team.
-- Team decision or task: Name ways each person can contribute to the team.
-- Notebook evidence required: Teamwork reflection or bio-based contribution note.
+- Today's goal: Identify how different strengths, roles, and communication styles support a robot team and affect demo robot operation.
+- Team decision or task: Name ways each person can contribute to the team and continue Demo Robot Design Analysis with partner rotations.
+- Notebook evidence required: Teamwork reflection or bio-based contribution note, partner/role rotation note, and continued demo robot design analysis evidence.
 - Reflection prompt: How should an engineering team make room for different kinds of contributors?
-- Useful references: `02_student_materials/readings/day1_session2_collaborative_engineering_teams.md`; `02_student_materials/engineering_notebook/day1_session1_student_bio_template.md`
+- Useful references: `02_student_materials/readings/day1_session2_collaborative_engineering_teams.md`; `02_student_materials/decision_menus/demo_robot_design_analysis_activity.md`; `02_student_materials/engineering_notebook/day1_session1_student_bio_template.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 3: Team Identity and Team Norms
 
 - Today's goal: Choose a team name and team norms that shape how the group will work.
 - Team decision or task: Use the Team Norms SLD first, then use the Team Identity / Team Name SLD to choose a name connected to the norms. Start a copied Team Strategy Guide and preview the Robot Behavior Specification.
-- Notebook evidence required: Team norms, disagreement plan, all-voices plan, reset/repair plan, team identity statement, team name decision table, first Team Strategy Guide entries, behavior specification preview note, reflection on trade-offs.
+- Notebook evidence required: Team norms, disagreement plan, all-voices plan, reset/repair plan, team identity statement, team name decision table, first Team Strategy Guide entries, behavior specification preview note, Demo Robot Design Analysis evidence, reflection on trade-offs.
 - Reflection prompt: How should our team norms shape the kind of team we want to become?
-- Useful references: `02_student_materials/sld_prompts/day2_session3_team_norms_sld.md`; `02_student_materials/sld_prompts/day2_session3_team_identity_name_sld.md`; `02_student_materials/readings/day2_session3_why_team_names_matter.md`; `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`; `02_student_materials/decision_menus/day2_session3_team_name_menu.md`; `02_student_materials/decision_menus/day2_session3_team_norms_menu.md`; `90_templates/student_led_discussion_tally_sheet_template.md`; `90_templates/team_strategy_guide_template.md`; `90_templates/robot_behavior_specification_template.md`
+- Useful references: `02_student_materials/sld_prompts/day2_session3_team_norms_sld.md`; `02_student_materials/sld_prompts/day2_session3_team_identity_name_sld.md`; `02_student_materials/readings/day2_session3_why_team_names_matter.md`; `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`; `02_student_materials/decision_menus/day2_session3_team_name_menu.md`; `02_student_materials/decision_menus/day2_session3_team_norms_menu.md`; `02_student_materials/decision_menus/demo_robot_design_analysis_activity.md`; `90_templates/student_led_discussion_tally_sheet_template.md`; `90_templates/team_strategy_guide_template.md`; `90_templates/robot_behavior_specification_template.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 4: First Programming Session
 
 - Today's goal: Connect drive-only FTC TeleOp examples to robot hardware names, gamepad input, and motor output.
-- Team decision or task: Complete or update the Team Strategy Guide and Robot Behavior Specification, then compare the D-pad and joystick drive examples and identify what each should make the robot do.
-- Notebook evidence required: Game Strategy SLD work product, Strategy-to-Robot-Behavior SLD work product, TeleOp name, hardware names, motor ports, button mappings, one code change or prediction, and test result.
+- Team decision or task: Complete or update the Team Strategy Guide and Robot Behavior Specification using demo robot evidence, then compare the D-pad and joystick drive examples and identify what each should make the robot do.
+- Notebook evidence required: Game Strategy SLD work product, Strategy-to-Robot-Behavior SLD work product, Demo Robot Design Analysis evidence used, TeleOp name, hardware names, motor ports, button mappings, one code change or prediction, and test result.
 - Reflection prompt: Why must the names in the configuration file match the names in the program exactly?
-- Useful references: `02_student_materials/sld_prompts/day2_session4_game_strategy_sld.md`; `02_student_materials/sld_prompts/day2_session4_strategy_to_robot_behavior_sld.md`; `02_student_materials/guides/modified_robotics_game_rules_and_scoring_guide.md`; `02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md`; `90_templates/team_strategy_guide_template.md`; `90_templates/robot_behavior_specification_template.md`; `90_templates/student_led_discussion_tally_sheet_template.md`; `02_student_materials/readings/day2_session4_programming_background.md`; `02_student_materials/readings/day2_session4_reading_basic_teleop.md`; `02_student_materials/code_examples/onbot_java/README.md`
+- Useful references: `02_student_materials/sld_prompts/day2_session4_game_strategy_sld.md`; `02_student_materials/sld_prompts/day2_session4_strategy_to_robot_behavior_sld.md`; `02_student_materials/guides/modified_robotics_game_rules_and_scoring_guide.md`; `02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md`; `02_student_materials/decision_menus/demo_robot_design_analysis_activity.md`; `90_templates/team_strategy_guide_template.md`; `90_templates/robot_behavior_specification_template.md`; `90_templates/student_led_discussion_tally_sheet_template.md`; `02_student_materials/readings/day2_session4_programming_background.md`; `02_student_materials/readings/day2_session4_reading_basic_teleop.md`; `02_student_materials/code_examples/onbot_java/README.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 5: Chassis Build Start
 
 - Today's goal: Begin building or modifying the drivetrain/chassis based on team strategy, robot behavior requirements, and team decisions.
-- Team decision or task: Check the Team Strategy Guide and Robot Behavior Specification, then start the frame/drivetrain subsystem cycle.
-- Notebook evidence required: Strategy and behavior check note, frame/drivetrain subsystem cycle entry, build log entry with photo/sketch, parts used, first issue noticed, and next step.
+- Team decision or task: Check the Team Strategy Guide, Robot Behavior Specification, and Demo Robot Design Analysis notes, then start the frame/drivetrain subsystem cycle.
+- Notebook evidence required: Strategy and behavior check note, Demo Robot Design Analysis readiness note, frame/drivetrain subsystem cycle entry, build log entry with photo/sketch, parts used, first issue noticed, and next step.
 - Reflection prompt: Which design choice should we protect when the build gets difficult or slow?
-- Useful references: `90_templates/team_strategy_guide_template.md`; `90_templates/robot_behavior_specification_template.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`; `02_student_materials/readings/day3_session5_chassis_physics_space_background.md`; `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md`; `02_student_materials/decision_menus/day2_session4_chassis_material_menu.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md`
+- Useful references: `90_templates/team_strategy_guide_template.md`; `90_templates/robot_behavior_specification_template.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `02_student_materials/decision_menus/demo_robot_design_analysis_activity.md`; `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`; `02_student_materials/readings/day3_session5_chassis_physics_space_background.md`; `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md`; `02_student_materials/decision_menus/day2_session4_chassis_material_menu.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 6: Chassis Build Continuation and First Movement Checks
