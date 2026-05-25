@@ -1617,6 +1617,7 @@ Behavior specification: Our robot must drive from the starting area to the scori
         <article class="worksheet-content">
 <h1 id="subsystem-design-cycle-template">Subsystem Design Cycle Template</h1>
 <p>Copy this template into your engineering portfolio or shared team document each time your team designs, revises, or integrates a subsystem.</p>
+<p>After a design SLD, your team should update this template with the design choice, evidence, physical build plan, and next test. SLD is the decision process. The subsystem design template is one of the work products.</p>
 <p>Use one copy for each subsystem:</p>
 <ul>
 <li>frame / drivetrain</li>
@@ -1721,11 +1722,19 @@ Behavior specification: Our robot must drive from the starting area to the scori
 </tr></thead>
 <tbody>
 <tr>
-<td>What parts or materials are we using?</td>
+<td>What design choice did we make after discussion?</td>
 <td></td>
 </tr>
 <tr>
-<td>Where will this subsystem attach?</td>
+<td>What evidence or resource supported this choice?</td>
+<td></td>
+</tr>
+<tr>
+<td>What parts or materials are we considering?</td>
+<td></td>
+</tr>
+<tr>
+<td>Where might this subsystem attach?</td>
 <td></td>
 </tr>
 <tr>
@@ -1741,10 +1750,172 @@ Behavior specification: Our robot must drive from the starting area to the scori
 <td></td>
 </tr>
 </tbody></table></div>
-<p>Sketch or photo location:</p>
+<p>First sketch, photo, or idea location:</p>
 <p>______________________________________________________________________________</p>
 <p>---</p>
-<h1 id="5-programming-controls">5. Programming / Controls</h1>
+<h1 id="5-physical-build-plan">5. Physical Build Plan</h1>
+<p>This section turns the design idea into something the team can actually build.</p>
+<h2 id="required-design-sketch-or-photo">Required Design Sketch or Photo</h2>
+<p>Draw a sketch, insert a photo, or link to a photo of the subsystem design.</p>
+<p>Label as many of these as apply:</p>
+<ul>
+<li>motors</li>
+<li>servos</li>
+<li>sensors</li>
+<li>wheels / shafts / moving parts</li>
+<li>brackets / connectors / mounts</li>
+<li>fasteners / collars / spacers</li>
+<li>wiring path</li>
+<li>Control Hub / Expansion Hub ports</li>
+<li>battery or Control Hub access</li>
+<li>where this subsystem attaches to the chassis</li>
+<li>space that must stay open for other subsystems</li>
+<li>possible collision, rubbing, or jam points</li>
+</ul>
+<p>Sketch / photo link:</p>
+<p>______________________________________________________________________________</p>
+<p>______________________________________________________________________________</p>
+<h2 id="parts-and-materials">Parts and Materials</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Item</th>
+<th>Team Response</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Major structural parts</td>
+<td></td>
+</tr>
+<tr>
+<td>Motors used</td>
+<td></td>
+</tr>
+<tr>
+<td>Servos used</td>
+<td></td>
+</tr>
+<tr>
+<td>Sensors used, if any</td>
+<td></td>
+</tr>
+<tr>
+<td>Wheels / shafts / gears / pulleys</td>
+<td></td>
+</tr>
+<tr>
+<td>Brackets / connectors / mounts</td>
+<td></td>
+</tr>
+<tr>
+<td>Fasteners / collars / spacers</td>
+<td></td>
+</tr>
+<tr>
+<td>Other important parts</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="attachment-and-mounting-plan">Attachment and Mounting Plan</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Prompt</th>
+<th>Team Response</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Where does this subsystem attach to the robot?</td>
+<td></td>
+</tr>
+<tr>
+<td>What parts hold it in place?</td>
+<td></td>
+</tr>
+<tr>
+<td>What needs to be square, level, centered, or aligned?</td>
+<td></td>
+</tr>
+<tr>
+<td>What might loosen, bend, rub, or shift?</td>
+<td></td>
+</tr>
+<tr>
+<td>How will we make this strong enough for testing?</td>
+<td></td>
+</tr>
+<tr>
+<td>How will we make this easy enough to repair or adjust?</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="wiring-ports-and-configuration-names">Wiring, Ports, and Configuration Names</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Hardware Item</th>
+<th>Port / Location</th>
+<th>Configuration Name</th>
+<th>Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Motor / Servo / Sensor 1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Motor / Servo / Sensor 2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Motor / Servo / Sensor 3</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Motor / Servo / Sensor 4</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>Configuration names must match the names used in the Java code exactly.</p>
+<h2 id="space-and-interference-check">Space and Interference Check</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Question</th>
+<th>Team Response</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>What space must stay open for this subsystem to work?</td>
+<td></td>
+</tr>
+<tr>
+<td>What other subsystem could block this subsystem?</td>
+<td></td>
+</tr>
+<tr>
+<td>What could this subsystem block?</td>
+<td></td>
+</tr>
+<tr>
+<td>Could wires, balls/artifacts, hands, tools, or moving parts interfere?</td>
+<td></td>
+</tr>
+<tr>
+<td>What will be hard to reach after this is attached?</td>
+<td></td>
+</tr>
+<tr>
+<td>What should we test before permanently tightening or finalizing?</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>---</p>
+<h1 id="6-programming-controls">6. Programming / Controls</h1>
 <div class="table-wrap"><table>
 <thead><tr>
 <th>Prompt</th>
@@ -1773,7 +1944,8 @@ Behavior specification: Our robot must drive from the starting area to the scori
 </tr>
 </tbody></table></div>
 <p>---</p>
-<h1 id="6-test-plan">6. Test Plan</h1>
+<h1 id="7-test-plan">7. Test Plan</h1>
+<p>Plan small tests before full-power or full-speed tests. Test fit, rubbing, wiring, and safe motion before final tightening when possible.</p>
 <div class="table-wrap"><table>
 <thead><tr>
 <th>Test</th>
@@ -1802,7 +1974,7 @@ Behavior specification: Our robot must drive from the starting area to the scori
 </tr>
 </tbody></table></div>
 <p>---</p>
-<h1 id="7-evidence">7. Evidence</h1>
+<h1 id="8-evidence">8. Evidence</h1>
 <div class="table-wrap"><table>
 <thead><tr>
 <th>Prompt</th>
@@ -1811,6 +1983,14 @@ Behavior specification: Our robot must drive from the starting area to the scori
 <tbody>
 <tr>
 <td>What photo, data table, video, or observation shows whether this worked?</td>
+<td></td>
+</tr>
+<tr>
+<td>What physical build evidence belongs in the portfolio?</td>
+<td></td>
+</tr>
+<tr>
+<td>What wiring, port, configuration, or code evidence belongs in the portfolio?</td>
 <td></td>
 </tr>
 <tr>
@@ -1823,7 +2003,7 @@ Behavior specification: Our robot must drive from the starting area to the scori
 </tr>
 </tbody></table></div>
 <p>---</p>
-<h1 id="8-integration-check">8. Integration Check</h1>
+<h1 id="9-integration-check">9. Integration Check</h1>
 <div class="table-wrap"><table>
 <thead><tr>
 <th>Prompt</th>
@@ -1836,6 +2016,14 @@ Behavior specification: Our robot must drive from the starting area to the scori
 </tr>
 <tr>
 <td>What could it block or interfere with?</td>
+<td></td>
+</tr>
+<tr>
+<td>What could block or interfere with this subsystem?</td>
+<td></td>
+</tr>
+<tr>
+<td>What must stay accessible for repair, battery changes, wiring, or Control Hub access?</td>
 <td></td>
 </tr>
 <tr>
@@ -1854,7 +2042,7 @@ Behavior specification: Our robot must drive from the starting area to the scori
 <li>[ ] Yes, after one more test: _____________________________________________</li>
 </ul>
 <p>---</p>
-<h1 id="9-revision-log">9. Revision Log</h1>
+<h1 id="10-revision-log">10. Revision Log</h1>
 <div class="table-wrap"><table>
 <thead><tr>
 <th>Date</th>

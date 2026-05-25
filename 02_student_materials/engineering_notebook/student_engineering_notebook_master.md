@@ -128,7 +128,7 @@ Related material:
 
 ## Subsystem Design Cycle Template
 
-Use one copy of the subsystem design cycle template for each major robot subsystem.
+Use one copy of the subsystem design cycle template for each major robot subsystem. After a design SLD, update the subsystem template with the decision, evidence, physical build plan, wiring/configuration names, test plan, and integration check.
 
 | Subsystem | Job | Current working version? | Last test result | Ready to integrate? |
 |---|---|---|---|---|

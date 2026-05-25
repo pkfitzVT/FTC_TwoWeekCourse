@@ -55,12 +55,13 @@ Each cycle should include:
 2. Connect it to the team strategy.
 3. Define Must / Should / Could goals.
 4. Make a rough design.
-5. Build a simple working version.
-6. Program or control it.
-7. Test it.
-8. Record evidence.
-9. Revise it.
-10. Decide whether it is ready to integrate.
+5. Make a physical build plan.
+6. Build a simple working version.
+7. Program or control it.
+8. Test it.
+9. Record evidence.
+10. Revise it.
+11. Decide whether it is ready to integrate.
 
 Use `90_templates/subsystem_design_cycle_template.md` each time your team starts or revises a subsystem.
 

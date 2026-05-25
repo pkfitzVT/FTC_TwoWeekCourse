@@ -2,6 +2,8 @@
 
 Copy this template into your engineering portfolio or shared team document each time your team designs, revises, or integrates a subsystem.
 
+After a design SLD, your team should update this template with the design choice, evidence, physical build plan, and next test. SLD is the decision process. The subsystem design template is one of the work products.
+
 Use one copy for each subsystem:
 
 - frame / drivetrain
@@ -57,19 +59,98 @@ Decide -> Build -> Program -> Test -> Document -> Integrate
 
 | Prompt | Team Response |
 |---|---|
-| What parts or materials are we using? |  |
-| Where will this subsystem attach? |  |
+| What design choice did we make after discussion? |  |
+| What evidence or resource supported this choice? |  |
+| What parts or materials are we considering? |  |
+| Where might this subsystem attach? |  |
 | What space must stay open? |  |
 | What other subsystem might this affect? |  |
 | What design tradeoffs are we making? |  |
 
-Sketch or photo location:
+First sketch, photo, or idea location:
 
 ______________________________________________________________________________
 
 ---
 
-# 5. Programming / Controls
+# 5. Physical Build Plan
+
+This section turns the design idea into something the team can actually build.
+
+## Required Design Sketch or Photo
+
+Draw a sketch, insert a photo, or link to a photo of the subsystem design.
+
+Label as many of these as apply:
+
+- motors
+- servos
+- sensors
+- wheels / shafts / moving parts
+- brackets / connectors / mounts
+- fasteners / collars / spacers
+- wiring path
+- Control Hub / Expansion Hub ports
+- battery or Control Hub access
+- where this subsystem attaches to the chassis
+- space that must stay open for other subsystems
+- possible collision, rubbing, or jam points
+
+Sketch / photo link:
+
+______________________________________________________________________________
+
+______________________________________________________________________________
+
+## Parts and Materials
+
+| Item | Team Response |
+|---|---|
+| Major structural parts |  |
+| Motors used |  |
+| Servos used |  |
+| Sensors used, if any |  |
+| Wheels / shafts / gears / pulleys |  |
+| Brackets / connectors / mounts |  |
+| Fasteners / collars / spacers |  |
+| Other important parts |  |
+
+## Attachment and Mounting Plan
+
+| Prompt | Team Response |
+|---|---|
+| Where does this subsystem attach to the robot? |  |
+| What parts hold it in place? |  |
+| What needs to be square, level, centered, or aligned? |  |
+| What might loosen, bend, rub, or shift? |  |
+| How will we make this strong enough for testing? |  |
+| How will we make this easy enough to repair or adjust? |  |
+
+## Wiring, Ports, and Configuration Names
+
+| Hardware Item | Port / Location | Configuration Name | Notes |
+|---|---|---|---|
+| Motor / Servo / Sensor 1 |  |  |  |
+| Motor / Servo / Sensor 2 |  |  |  |
+| Motor / Servo / Sensor 3 |  |  |  |
+| Motor / Servo / Sensor 4 |  |  |  |
+
+Configuration names must match the names used in the Java code exactly.
+
+## Space and Interference Check
+
+| Question | Team Response |
+|---|---|
+| What space must stay open for this subsystem to work? |  |
+| What other subsystem could block this subsystem? |  |
+| What could this subsystem block? |  |
+| Could wires, balls/artifacts, hands, tools, or moving parts interfere? |  |
+| What will be hard to reach after this is attached? |  |
+| What should we test before permanently tightening or finalizing? |  |
+
+---
+
+# 6. Programming / Controls
 
 | Prompt | Team Response |
 |---|---|
@@ -81,7 +162,9 @@ ______________________________________________________________________________
 
 ---
 
-# 6. Test Plan
+# 7. Test Plan
+
+Plan small tests before full-power or full-speed tests. Test fit, rubbing, wiring, and safe motion before final tightening when possible.
 
 | Test | Success Criteria | Result | What changed next? |
 |---|---|---|---|
@@ -91,22 +174,26 @@ ______________________________________________________________________________
 
 ---
 
-# 7. Evidence
+# 8. Evidence
 
 | Prompt | Team Response |
 |---|---|
 | What photo, data table, video, or observation shows whether this worked? |  |
+| What physical build evidence belongs in the portfolio? |  |
+| What wiring, port, configuration, or code evidence belongs in the portfolio? |  |
 | What did we learn? |  |
 | What should we revise? |  |
 
 ---
 
-# 8. Integration Check
+# 9. Integration Check
 
 | Prompt | Team Response |
 |---|---|
 | Is this subsystem ready to connect to the full robot? |  |
 | What could it block or interfere with? |  |
+| What could block or interfere with this subsystem? |  |
+| What must stay accessible for repair, battery changes, wiring, or Control Hub access? |  |
 | Does code from this subsystem need to combine with other code? |  |
 | What should we test after integration? |  |
 
@@ -118,7 +205,7 @@ Ready to integrate?
 
 ---
 
-# 9. Revision Log
+# 10. Revision Log
 
 | Date | Change | Evidence / Reason | Result |
 |---|---|---|---|
