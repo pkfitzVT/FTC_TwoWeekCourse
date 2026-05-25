@@ -29,6 +29,8 @@ Prepare tools, safety glasses, frame parts, brackets, fasteners, wheels, motors,
 - [Principles of robot assembly](../../02_student_materials/readings/principles_of_robot_assembly_day3.md)
 - [Team Strategy Guide template](../../90_templates/team_strategy_guide_template.md)
 - [Robot Behavior Specification template](../../90_templates/robot_behavior_specification_template.md)
+- [Game Strategy SLD](../../02_student_materials/sld_prompts/day2_session4_game_strategy_sld.md)
+- [Strategy-to-Robot-Behavior SLD](../../02_student_materials/sld_prompts/day2_session4_strategy_to_robot_behavior_sld.md)
 - [Demo robot design observation activity](../../02_student_materials/decision_menus/demo_robot_design_observation_activity.md)
 - [Design Choice Menu Matrix](../design_choice_menu_matrix.md)
 - [Subsystem Design Cycle template](../../90_templates/subsystem_design_cycle_template.md)
@@ -45,7 +47,7 @@ Prompt: Which design choice should we protect when the build gets difficult or s
 
 ## Work Time Options
 
-- Strategy: review the copied Team Strategy Guide and Robot Behavior Specification and start the frame/drivetrain subsystem cycle.
+- Strategy: review the copied Team Strategy Guide and Robot Behavior Specification, then start the frame/drivetrain subsystem cycle.
 - Observation: use demo robot photos/sketches to compare chassis, motor, wheel, and open-space choices.
 - Design: final top-view chassis sketch.
 - Assembly: frame, brackets, fasteners, wheel/motor fit checks.
@@ -84,6 +86,8 @@ Coach careful assembly habits: count holes, start finger tight, use two fastener
 - [Subsystem design cycle guide](../../02_student_materials/guides/subsystem_design_cycle_guide.md)
 - [Team Strategy Guide template](../../90_templates/team_strategy_guide_template.md)
 - [Robot Behavior Specification template](../../90_templates/robot_behavior_specification_template.md)
+- [Game Strategy SLD](../../02_student_materials/sld_prompts/day2_session4_game_strategy_sld.md)
+- [Strategy-to-Robot-Behavior SLD](../../02_student_materials/sld_prompts/day2_session4_strategy_to_robot_behavior_sld.md)
 - [Demo robot design observation activity](../../02_student_materials/decision_menus/demo_robot_design_observation_activity.md)
 - [Design Choice Menu Matrix](../design_choice_menu_matrix.md)
 - [Subsystem Design Cycle template](../../90_templates/subsystem_design_cycle_template.md)

@@ -17,7 +17,11 @@ For a session-by-session map from SLD prompts to concrete deliverables, evidence
 | Day 1 Session 1 | `03_teacher_materials/teacher_guides/day1_session1_sld_shared_materials_teacher_guide.md` | Teacher guide for shared materials, borrowed equipment, and trust SLD | teacher-facing | teacher facilitation |
 | Day 1 Session 1 | `docs/sessions/day_01_session_01_first_ftc_safety_trust_goals.md` | Shared materials and community trust | teacher-facing | student-led discussion; team norms |
 | Day 1 Session 2 | `docs/sessions/day_01_session_02_collaborative_engineering_teams.md` | Making room for different contributors | teacher-facing | student-led discussion; team norms |
-| Day 2 Session 3 | `docs/sessions/day_02_session_03_team_identity_and_norms.md` | Team name and norms | teacher-facing | student-led discussion; team decision-making |
+| Day 2 Session 3 | `02_student_materials/sld_prompts/day2_session3_team_norms_sld.md` | Norms for including everyone, fair decision-making, disagreement, and reset/repair | student-facing | student-led discussion; team norms; team decision-making |
+| Day 2 Session 3 | `02_student_materials/sld_prompts/day2_session3_team_identity_name_sld.md` | Team identity statement and team name connected to selected norms | student-facing | student-led discussion; team identity; team decision-making |
+| Day 2 Session 3 | `docs/sessions/day_02_session_03_team_identity_and_norms.md` | Team norms first, then team identity/name | teacher-facing | student-led discussion; team decision-making |
+| Day 2 Session 4 | `02_student_materials/sld_prompts/day2_session4_game_strategy_sld.md` | Practical game strategy that can be built, tested, practiced, and explained | student-facing | student-led discussion; strategy; team decision-making |
+| Day 2 Session 4 | `02_student_materials/sld_prompts/day2_session4_strategy_to_robot_behavior_sld.md` | Translate game strategy into required autonomous, TeleOp, and endgame robot behaviors | student-facing | student-led discussion; robot behavior specification; design criteria |
 | Day 2 Session 4 | `docs/sessions/day_02_session_04_first_programming_session.md` | Hardware/configuration names matching code | teacher-facing | student-led discussion; programming reasoning |
 | Day 3 Session 5 | `docs/sessions/day_03_session_05_chassis_design_planning_and_build_start.md` | Design choice to protect during build | teacher-facing | student-led discussion; chassis/frame decision |
 | Day 3 Session 6 | `docs/sessions/day_03_session_06_chassis_continuation_and_readiness.md` | Evidence that chassis is ready for powered testing | teacher-facing | student-led discussion; testing/data |
@@ -72,8 +76,10 @@ For a session-by-session map from SLD prompts to concrete deliverables, evidence
 |---|---|---|---|---|---|
 | `docs/sessions/day_01_session_02_collaborative_engineering_teams.md` | Student-Led Discussion / Decision | "How should an engineering team make room for different kinds of contributors?" | teacher-facing | team norms | student-led discussion; team decision-making |
 | `docs/sessions/day_01_session_02_collaborative_engineering_teams.md` | Reflection / Share-Out | One kind of work students want to try during the course. | teacher-facing | reflection | individual reflection |
-| `docs/sessions/day_02_session_03_team_identity_and_norms.md` | Student-Led Discussion / Decision | "What should our team name and norms say about the team we want to become?" | teacher-facing | team norms | student-led discussion; team decision-making |
+| `docs/sessions/day_02_session_03_team_identity_and_norms.md` | Student-Led Discussion / Decision | Two SLDs: team norms first, then team identity/name. | teacher-facing | team norms | student-led discussion; team decision-making |
 | `docs/sessions/day_02_session_03_team_identity_and_norms.md` | Reflection / Share-Out | Which norm will be hardest to keep when robot does not work; how team name connects to desired team identity. | teacher-facing | team norms | team decision-making; reflection |
+| `02_student_materials/sld_prompts/day2_session3_team_norms_sld.md` | Main Discussion Question | "What norms will help our team include everyone, make decisions fairly, and keep a working robot moving forward?" | student-facing | team norms | student-led discussion; team decision-making; engineering notebook documentation |
+| `02_student_materials/sld_prompts/day2_session3_team_identity_name_sld.md` | Main Discussion Question | "What kind of team do we want to become, and what name represents that identity?" | student-facing | team norms | student-led discussion; team decision-making; engineering notebook documentation |
 | `02_student_materials/decision_menus/day2_session3_team_name_menu.md` | Main SLD Prompt | "Should a team name describe who the team already is, or who the team wants to become?" | student-facing | team norms | student-led discussion; team decision-making |
 | `02_student_materials/decision_menus/day2_session3_team_name_menu.md` | Supporting Questions / Reflection | What others should understand from the name; connection to norms; inclusion; whether name emphasizes performance, creativity, teamwork, coding, resilience, or community; whether everyone can support it. | student-facing | team norms | team decision-making; engineering notebook documentation |
 | `02_student_materials/decision_menus/day2_session3_team_norms_menu.md` | Main SLD Prompt | "Which team norms will help us become the kind of team we want to be, and what trade-offs are we accepting by choosing them?" | student-facing | team norms | student-led discussion; team decision-making |
@@ -84,6 +90,8 @@ For a session-by-session map from SLD prompts to concrete deliverables, evidence
 | `02_student_materials/guides/modified_robotics_game_rules_and_scoring_guide.md` | Strategy Planning / Final Design Rule | Autonomous, TeleOp, endgame, safety questions; final design checks about scoring strategy, features, expected score, and risk. | student-facing | strategy | team decision-making; engineering notebook documentation |
 | `02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md` | Main SLD Prompt | "Should our team prioritize reliable three-ball scoring, multiple scoring cycles, alliance-friendly parking, or autonomous challenge points?" | student-facing | strategy | student-led discussion; team decision-making |
 | `02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md` | Supporting Questions / Reflection | Realistic no-intake scoring; balls per loading cycle; legal launch site; alliance space; parking shape; safest autonomous goal; autonomous scoring risk; penalties; evidence before strategy changes. | student-facing | strategy | team decision-making; engineering notebook documentation |
+| `02_student_materials/sld_prompts/day2_session4_game_strategy_sld.md` | Main Discussion Question | "What strategy gives our team the best chance to score reliably, avoid penalties, and complete a working robot in the time available?" | student-facing | strategy | student-led discussion; Team Strategy Guide; engineering notebook documentation |
+| `02_student_materials/sld_prompts/day2_session4_strategy_to_robot_behavior_sld.md` | Main Discussion Question | "What specific robot behaviors must our robot perform to make our strategy possible?" | student-facing | robot behavior specification | student-led discussion; Robot Behavior Specification; design criteria |
 | `docs/sessions/day_02_session_04_first_programming_session.md` | Student-Led Discussion / Decision | "Why must the names in the configuration file match the names in the program exactly?" | teacher-facing | build/troubleshooting | student-led discussion; engineering notebook documentation |
 
 ### Day 3: Chassis and Frame Design
@@ -200,7 +208,7 @@ For a session-by-session map from SLD prompts to concrete deliverables, evidence
 - **Day 3 design menus:** Chassis shape, material, motor placement, wheel selection, and electronics placement all have strong SLD prompts, but they live in separate menus. Consider a short teacher-facing sequencing note that tells teams which menu to use first and how to avoid making contradictory decisions.
 - **Day 4 controller mapping:** `future_human_controller_mapping_background.md` has strong questions, but the official session sequence has no dedicated generated teacher session for controller mapping beyond the existing build/drive pages. Consider making the controller-map discussion prompt more explicit in the relevant session plan.
 - **Mechanism sessions after Day 5:** Shooter, hopper, trigger, and whole-system sessions have good SLD prompts and reading reflections. There are fewer decision-menu-style comparison prompts for mechanism architecture than for chassis architecture.
-- **Student-facing SLD sheets:** Only Day 1 Session 1 has a standalone student-facing SLD prompt sheet in `02_student_materials/sld_prompts/`. Later SLD prompts mostly appear in teacher-facing session files or decision menus. Consider creating student-facing SLD sheets for the highest-value discussions: team norms, game strategy, chassis architecture, testing evidence, and final presentation story.
+- **Student-facing SLD sheets:** Day 1 Session 1, Day 2 Session 3, and the Day 2 strategy/behavior bridge now have standalone student-facing SLD prompt sheets in `02_student_materials/sld_prompts/`. Later SLD prompts mostly appear in teacher-facing session files or decision menus. Consider creating student-facing SLD sheets for the next highest-value discussions: chassis architecture, controller mapping, testing evidence, and final presentation story.
 - **Reflection consistency:** Reading reflection prompts vary in specificity. Some ask for clear evidence and next action; others are broad. Consider aligning future reflection prompts to "claim, evidence, next step" when the purpose is engineering documentation.
 
 ## Possible Duplicates or Inconsistencies
@@ -213,10 +221,10 @@ For a session-by-session map from SLD prompts to concrete deliverables, evidence
 
 ## Count Summary
 
-This inventory identifies approximately **69 prompt sets**:
+This inventory identifies approximately **73 prompt sets**:
 
 - 20 official session-level Student-Led Discussion prompts in `docs/sessions/`
-- 8 student-facing decision-menu or SLD prompt files with main SLD prompts/supporting questions
+- 12 student-facing decision-menu or SLD prompt files with main SLD prompts/supporting questions
 - 20 engineering-notebook session reflection prompts
 - 18 reading or guide reflection/discussion prompt sets
 - 5 impact-study or discussion-tool survey prompt sets

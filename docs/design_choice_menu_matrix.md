@@ -10,6 +10,16 @@ Student-led discussion helps the team make a decision, but the deliverable is th
 
 A design choice is not final because the team said it. A design choice becomes stronger when the team can explain it, build toward it, test it, and revise it based on evidence.
 
+The strategy-to-design bridge should stay visible during every design choice:
+
+```text
+Strategy chooses the game plan.
+Robot behaviors describe what the robot must do.
+Subsystem designs explain how the robot will do it.
+```
+
+Later design choices should point back to the Team Strategy Guide and Robot Behavior Specification. If a design choice does not support the strategy or a required robot behavior, the team should revise the design choice or revise the strategy/behavior plan with evidence.
+
 ## Course Design Process
 
 ```text
@@ -28,6 +38,7 @@ Modified game rules
 | Subsystem | Design Choice | When to Decide | Resources to Use | Evidence to Consider | Student Deliverable | Later Choices Affected |
 |---|---|---|---|---|---|---|
 | Team Strategy / Game Plan | Primary scoring strategy | After modified game rules, structure/function reading, and team norms | Modified game rules; structure/function reading; `90_templates/team_strategy_guide_template.md`; `02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md` | Game scoring opportunities; expected score model; competition video observations; team skill and time | Team Strategy Guide entry with primary strategy and evidence | Robot behavior goals; chassis space; shooter/hopper priorities; driver practice |
+| Team Strategy / Game Plan | Strategy-to-robot-behavior translation | After primary strategy and before chassis choices | `02_student_materials/sld_prompts/day2_session4_strategy_to_robot_behavior_sld.md`; Robot Behavior Specification; Team Strategy Guide | Required autonomous, TeleOp, and endgame behaviors; testability; subsystem responsibility | Robot Behavior Specification with behavior-to-subsystem notes | Chassis geometry; controls; shooter/hopper/trigger design; tests |
 | Team Strategy / Game Plan | Backup strategy | Before major build decisions | Team Strategy Guide; Robot Behavior Specification | Risk, time, material limits, reliability concerns | Backup strategy note | Simplification decisions; features to remove |
 | Team Strategy / Game Plan | Autonomous priority | Before programming priorities and chassis testing | Modified game rules; Team Strategy Guide; Robot Behavior Specification | Available time; field setup consistency; reliability of simplest autonomous action | Autonomous plan and priority level | Starting position; code tasks; driver setup |
 | Team Strategy / Game Plan | TeleOp scoring approach | Before chassis and mechanism layout | Game strategy menu; Robot Behavior Specification; demo robot observations | Scoring loop time; loading plan; likely driver skill; penalties | TeleOp behavior plan | Shooter placement; hopper access; controls |

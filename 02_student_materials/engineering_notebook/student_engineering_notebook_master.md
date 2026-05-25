@@ -31,6 +31,10 @@ Related materials:
 
 - `02_student_materials/decision_menus/day2_session3_team_name_menu.md`
 - `02_student_materials/decision_menus/day2_session3_team_norms_menu.md`
+- `02_student_materials/sld_prompts/day2_session3_team_norms_sld.md`
+- `02_student_materials/sld_prompts/day2_session3_team_identity_name_sld.md`
+- `02_student_materials/sld_prompts/day2_session4_game_strategy_sld.md`
+- `02_student_materials/sld_prompts/day2_session4_strategy_to_robot_behavior_sld.md`
 - `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`
 - `02_student_materials/decision_menus/demo_robot_design_observation_activity.md`
 - `02_student_materials/guides/subsystem_design_cycle_guide.md`
@@ -229,24 +233,24 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 ## Session 3: Team Identity and Team Norms
 
 - Today's goal: Choose a team name and team norms that shape how the group will work.
-- Team decision or task: Decide on team name and team norms, start a copied Team Strategy Guide, and preview the Robot Behavior Specification.
-- Notebook evidence required: Team name decision table, team norm decision table, first Team Strategy Guide entries, behavior specification preview note, reflection on trade-offs.
-- Reflection prompt: What should our team name and norms say about the team we want to become?
-- Useful references: `02_student_materials/readings/day2_session3_why_team_names_matter.md`; `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`; `02_student_materials/decision_menus/day2_session3_team_name_menu.md`; `02_student_materials/decision_menus/day2_session3_team_norms_menu.md`; `90_templates/team_strategy_guide_template.md`; `90_templates/robot_behavior_specification_template.md`
+- Team decision or task: Use the Team Norms SLD first, then use the Team Identity / Team Name SLD to choose a name connected to the norms. Start a copied Team Strategy Guide and preview the Robot Behavior Specification.
+- Notebook evidence required: Team norms, disagreement plan, all-voices plan, reset/repair plan, team identity statement, team name decision table, first Team Strategy Guide entries, behavior specification preview note, reflection on trade-offs.
+- Reflection prompt: How should our team norms shape the kind of team we want to become?
+- Useful references: `02_student_materials/sld_prompts/day2_session3_team_norms_sld.md`; `02_student_materials/sld_prompts/day2_session3_team_identity_name_sld.md`; `02_student_materials/readings/day2_session3_why_team_names_matter.md`; `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`; `02_student_materials/decision_menus/day2_session3_team_name_menu.md`; `02_student_materials/decision_menus/day2_session3_team_norms_menu.md`; `90_templates/student_led_discussion_tally_sheet_template.md`; `90_templates/team_strategy_guide_template.md`; `90_templates/robot_behavior_specification_template.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 4: First Programming Session
 
 - Today's goal: Connect drive-only FTC TeleOp examples to robot hardware names, gamepad input, and motor output.
-- Team decision or task: Compare the D-pad and joystick drive examples and identify what each should make the robot do.
-- Notebook evidence required: TeleOp name, hardware names, motor ports, button mappings, one code change or prediction, and test result.
+- Team decision or task: Complete or update the Team Strategy Guide and Robot Behavior Specification, then compare the D-pad and joystick drive examples and identify what each should make the robot do.
+- Notebook evidence required: Game Strategy SLD work product, Strategy-to-Robot-Behavior SLD work product, TeleOp name, hardware names, motor ports, button mappings, one code change or prediction, and test result.
 - Reflection prompt: Why must the names in the configuration file match the names in the program exactly?
-- Useful references: `02_student_materials/readings/day2_session4_programming_background.md`; `02_student_materials/readings/day2_session4_reading_basic_teleop.md`; `02_student_materials/code_examples/onbot_java/README.md`
+- Useful references: `02_student_materials/sld_prompts/day2_session4_game_strategy_sld.md`; `02_student_materials/sld_prompts/day2_session4_strategy_to_robot_behavior_sld.md`; `02_student_materials/guides/modified_robotics_game_rules_and_scoring_guide.md`; `02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md`; `90_templates/team_strategy_guide_template.md`; `90_templates/robot_behavior_specification_template.md`; `90_templates/student_led_discussion_tally_sheet_template.md`; `02_student_materials/readings/day2_session4_programming_background.md`; `02_student_materials/readings/day2_session4_reading_basic_teleop.md`; `02_student_materials/code_examples/onbot_java/README.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 5: Chassis Build Start
 
-- Today's goal: Begin building or modifying the drivetrain/chassis based on team decisions.
+- Today's goal: Begin building or modifying the drivetrain/chassis based on team strategy, robot behavior requirements, and team decisions.
 - Team decision or task: Check the Team Strategy Guide and Robot Behavior Specification, then start the frame/drivetrain subsystem cycle.
 - Notebook evidence required: Strategy and behavior check note, frame/drivetrain subsystem cycle entry, build log entry with photo/sketch, parts used, first issue noticed, and next step.
 - Reflection prompt: Which design choice should we protect when the build gets difficult or slow?
