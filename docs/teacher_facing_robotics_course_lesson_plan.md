@@ -427,6 +427,7 @@ Student Background Reading / Preparation:
 - `02_student_materials/readings/day3_session5_chassis_physics_space_background.md`
 - `02_student_materials/readings/future_human_controller_mapping_background.md`
 - `02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md`
+- `02_student_materials/sld_prompts/day3_session6_controller_mapping_sld.md`
 - `02_student_materials/code_examples/onbot_java/DemoDriveDPad.java`
 - `02_student_materials/code_examples/onbot_java/DemoDriveJoy.java`
 - `90_templates/robot_behavior_specification_template.md`
@@ -435,7 +436,7 @@ Student Background Reading / Preparation:
 Student-Led Discussion / Decision:
 
 - Readiness prompt: What evidence will show that our chassis is ready for powered testing?
-- Controller Mapping SLD placeholder: Which control mapping best helps our drivers make the robot perform the behaviors in our Robot Behavior Specification?
+- Controller Mapping SLD: Which control mapping best helps our drivers make the robot perform the behaviors in our Robot Behavior Specification?
 - Drive Power / Speed Tuning SLD placeholder: What drive power or speed setting gives our team the best balance of control, accuracy, speed, and safety?
 
 Work Time Options:

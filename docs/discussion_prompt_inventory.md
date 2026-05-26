@@ -25,6 +25,7 @@ For a session-by-session map from SLD prompts to concrete deliverables, evidence
 | Day 2 Session 4 | `docs/sessions/day_02_session_04_first_programming_session.md` | Hardware/configuration names matching code | teacher-facing | student-led discussion; programming reasoning |
 | Day 3 Session 5 | `02_student_materials/sld_prompts/day3_session5_chassis_design_choice_sld.md` | First chassis design choice using strategy, robot behavior, demo robot evidence, materials, and future subsystem needs | student-facing | student-led discussion; chassis/frame decision; subsystem design cycle |
 | Day 3 Session 5 | `docs/sessions/day_03_session_05_chassis_design_planning_and_build_start.md` | Design choice to protect during build | teacher-facing | student-led discussion; chassis/frame decision |
+| Day 3 Session 6 | `02_student_materials/sld_prompts/day3_session6_controller_mapping_sld.md` | Evidence-based choice among D-pad, joystick, or hybrid drive after safe chassis testing | student-facing | student-led discussion; controller mapping; testing/data |
 | Day 3 Session 6 | `docs/sessions/day_03_session_06_chassis_continuation_and_readiness.md` | Chassis readiness, D-pad vs joystick comparison, controller mapping, and drive power/speed tuning | teacher-facing | student-led discussion; testing/data; controller mapping |
 | Day 4 Session 7 | `docs/sessions/day_04_session_07_build_drivetrain_chassis.md` | Drivetrain part likely to loosen, rub, or shift | teacher-facing | student-led discussion; build/troubleshooting |
 | Day 4 Session 8 | `docs/sessions/day_04_session_08_wire_configure_and_test_drive.md` | What to change first when drive behavior is wrong | teacher-facing | student-led discussion; troubleshooting |
@@ -106,7 +107,8 @@ For a session-by-session map from SLD prompts to concrete deliverables, evidence
 | `02_student_materials/sld_prompts/day3_session5_chassis_design_choice_sld.md` | Mini-Decision Rounds | Chassis needs, frame shape, material/connectors, motor/wheel placement, electronics/battery placement, reserved mechanism space, and first build/test plan. | student-facing | chassis/frame decision | team decision-making; engineering notebook documentation |
 | `docs/sessions/day_03_session_05_chassis_design_planning_and_build_start.md` | Reflection / Share-Out | What design choice became harder once the team started building? | teacher-facing | reflection | team decision-making; teacher facilitation |
 | `docs/sessions/day_03_session_06_chassis_continuation_and_readiness.md` | Readiness prompt | "What evidence will show that our chassis is ready for powered testing?" | teacher-facing | testing/data | student-led discussion; engineering notebook documentation |
-| `docs/sessions/day_03_session_06_chassis_continuation_and_readiness.md` | Controller Mapping SLD placeholder | "Which control mapping best helps our drivers make the robot perform the behaviors in our Robot Behavior Specification?" | teacher-facing | robot behavior specification | student-led discussion; team decision-making; engineering notebook documentation |
+| `02_student_materials/sld_prompts/day3_session6_controller_mapping_sld.md` | Main Discussion Question | "Which control mapping best helps our drivers make the robot perform the behaviors in our Robot Behavior Specification?" | student-facing | robot behavior specification | student-led discussion; controller mapping; testing/data; engineering notebook documentation |
+| `docs/sessions/day_03_session_06_chassis_continuation_and_readiness.md` | Controller Mapping SLD | "Which control mapping best helps our drivers make the robot perform the behaviors in our Robot Behavior Specification?" | teacher-facing | robot behavior specification | student-led discussion; team decision-making; engineering notebook documentation |
 | `docs/sessions/day_03_session_06_chassis_continuation_and_readiness.md` | Drive Power / Speed Tuning SLD placeholder | "What drive power or speed setting gives our team the best balance of control, accuracy, speed, and safety?" | teacher-facing | testing/data | student-led discussion; team decision-making; engineering notebook documentation |
 | `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md` | Main SLD Prompt | "Should our chassis be simple and strong, or open and flexible for future mechanisms?" | student-facing | chassis/frame decision | student-led discussion; team decision-making |
 | `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md` | Supporting Questions / Reflection | What robot must do first; where artifacts move; battery/electronics placement; shape for quick working robot; future mechanisms; material constraints; shape tradeoff. | student-facing | chassis/frame decision | team decision-making; engineering notebook documentation |
@@ -213,9 +215,9 @@ For a session-by-session map from SLD prompts to concrete deliverables, evidence
 
 - **Day 2 strategy-to-design transition:** The new Team Strategy Guide and Robot Behavior Specification templates now provide prompts, but the official Day 2 Session 4 teacher page is still framed primarily as first programming. Consider adding a clear teacher-facing moment for "strategy becomes robot behavior requirements" before chassis decisions.
 - **Day 3 design menus:** Chassis shape, material, motor placement, wheel selection, and electronics placement all have strong SLD prompts, but they live in separate menus. Consider a short teacher-facing sequencing note that tells teams which menu to use first and how to avoid making contradictory decisions.
-- **Controller mapping handouts:** Session 6 now gives controller mapping and drive power/speed tuning a clearer teacher-facing home, but the two SLDs still need standalone student-facing handouts.
+- **Drive tuning handout:** Session 6 now has a student-facing Controller Mapping SLD handout, but the Drive Power / Speed Tuning SLD still needs a standalone student-facing handout.
 - **Mechanism sessions after Day 5:** Shooter, hopper, trigger, and whole-system sessions have good SLD prompts and reading reflections. There are fewer decision-menu-style comparison prompts for mechanism architecture than for chassis architecture.
-- **Student-facing SLD sheets:** Day 1 Session 1, Day 2 Session 3, Day 2 strategy/behavior bridge, and Day 3 chassis design now have standalone student-facing SLD prompt sheets in `02_student_materials/sld_prompts/`. Later SLD prompts mostly appear in teacher-facing session files or decision menus. Consider creating student-facing SLD sheets for the next highest-value discussions: controller mapping, testing evidence, and final presentation story.
+- **Student-facing SLD sheets:** Day 1 Session 1, Day 2 Session 3, Day 2 strategy/behavior bridge, Day 3 chassis design, and Day 3 controller mapping now have standalone student-facing SLD prompt sheets in `02_student_materials/sld_prompts/`. Later SLD prompts mostly appear in teacher-facing session files or decision menus. Consider creating student-facing SLD sheets for the next highest-value discussions: drive tuning, testing evidence, and final presentation story.
 - **Reflection consistency:** Reading reflection prompts vary in specificity. Some ask for clear evidence and next action; others are broad. Consider aligning future reflection prompts to "claim, evidence, next step" when the purpose is engineering documentation.
 
 ## Possible Duplicates or Inconsistencies
@@ -228,10 +230,10 @@ For a session-by-session map from SLD prompts to concrete deliverables, evidence
 
 ## Count Summary
 
-This inventory identifies approximately **77 prompt sets**:
+This inventory identifies approximately **78 prompt sets**:
 
 - 20 official session-level Student-Led Discussion prompts in `docs/sessions/`
-- 14 student-facing decision-menu, analysis, or SLD prompt files with main SLD prompts/supporting questions
+- 15 student-facing decision-menu, analysis, or SLD prompt files with main SLD prompts/supporting questions
 - 20 engineering-notebook session reflection prompts
 - 18 reading or guide reflection/discussion prompt sets
 - 5 impact-study or discussion-tool survey prompt sets

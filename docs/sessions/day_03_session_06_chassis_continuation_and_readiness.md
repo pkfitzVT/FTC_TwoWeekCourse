@@ -28,6 +28,7 @@ Prepare safe test area, batteries, basic inspection criteria, repair supplies, s
 - [Subsystem design cycle guide](../../02_student_materials/guides/subsystem_design_cycle_guide.md)
 - [Human-centered controller mapping background](../../02_student_materials/readings/future_human_controller_mapping_background.md)
 - [Controller mapping drive comparison activity](../../02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md)
+- [Controller Mapping SLD handout](../../02_student_materials/sld_prompts/day3_session6_controller_mapping_sld.md)
 - [OnBot Java code examples](../../02_student_materials/code_examples/onbot_java/README.md)
 - [DemoDriveDPad.java](../../02_student_materials/code_examples/onbot_java/DemoDriveDPad.java)
 - [DemoDriveJoy.java](../../02_student_materials/code_examples/onbot_java/DemoDriveJoy.java)
@@ -41,11 +42,11 @@ Before comparing D-pad and joystick controls, teams must confirm that the chassi
 
 Readiness prompt: What evidence will show that our chassis is ready for powered testing?
 
-Controller Mapping SLD placeholder: Which control mapping best helps our drivers make the robot perform the behaviors in our Robot Behavior Specification?
+Controller Mapping SLD: Which control mapping best helps our drivers make the robot perform the behaviors in our Robot Behavior Specification?
 
 Drive Power / Speed Tuning SLD placeholder: What drive power or speed setting gives our team the best balance of control, accuracy, speed, and safety?
 
-These two SLDs should become student-facing handouts later. For now, use the controller mapping comparison activity, SLD tally sheet, and engineering notebook to record the decision.
+Use the student-facing Controller Mapping SLD handout with the controller mapping comparison activity, SLD tally sheet, and engineering notebook to record the first control decision. The Drive Power / Speed Tuning SLD should become a student-facing handout later.
 
 Core idea:
 
@@ -147,6 +148,7 @@ Do not let teams power robots until wheels, motors, battery, hub, switch, and wi
 - [Motor placement menu](../../02_student_materials/decision_menus/day2_session4_motor_placement_menu.md)
 - [Electronics and battery placement menu](../../02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md)
 - [Controller mapping drive comparison activity](../../02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md)
+- [Controller Mapping SLD handout](../../02_student_materials/sld_prompts/day3_session6_controller_mapping_sld.md)
 - [Human-centered controller mapping background](../../02_student_materials/readings/future_human_controller_mapping_background.md)
 - [OnBot Java code examples](../../02_student_materials/code_examples/onbot_java/README.md)
 - [DemoDriveDPad.java](../../02_student_materials/code_examples/onbot_java/DemoDriveDPad.java)

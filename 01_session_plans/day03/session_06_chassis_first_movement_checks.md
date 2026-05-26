@@ -6,8 +6,8 @@
 - Big goal: Move from a safe chassis to evidence-based first drive, controller mapping, and initial drive-speed decisions.
 - Student-facing objective: I can help my team check chassis readiness, compare D-pad and joystick driving, collect evidence, and choose a first controller mapping and drive power/speed setting.
 - Main deliverable: Chassis readiness checklist, D-pad vs joystick comparison evidence, controller mapping decision, drive power/speed tuning decision, and next test.
-- Existing materials to use: `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md`; `02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md`; `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/code_examples/onbot_java/README.md`; `02_student_materials/code_examples/onbot_java/DemoDriveDPad.java`; `02_student_materials/code_examples/onbot_java/DemoDriveJoy.java`; `90_templates/robot_behavior_specification_template.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `90_templates/student_led_discussion_tally_sheet_template.md`
-- Materials still needed: TODO: full student-facing Controller Mapping SLD handout; Drive Power / Speed Tuning SLD handout; teacher troubleshooting guide; test area norms.
+- Existing materials to use: `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md`; `02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md`; `02_student_materials/sld_prompts/day3_session6_controller_mapping_sld.md`; `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/code_examples/onbot_java/README.md`; `02_student_materials/code_examples/onbot_java/DemoDriveDPad.java`; `02_student_materials/code_examples/onbot_java/DemoDriveJoy.java`; `90_templates/robot_behavior_specification_template.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `90_templates/student_led_discussion_tally_sheet_template.md`
+- Materials still needed: TODO: Drive Power / Speed Tuning SLD handout; teacher troubleshooting guide; test area norms.
 
 ## Teacher Setup Before Class
 
@@ -40,11 +40,11 @@ Examples:
 
 Readiness prompt: What evidence will show that our chassis is ready for powered testing?
 
-Controller Mapping SLD placeholder: Which control mapping best helps our drivers make the robot perform the behaviors in our Robot Behavior Specification?
+Controller Mapping SLD: Which control mapping best helps our drivers make the robot perform the behaviors in our Robot Behavior Specification?
 
 Drive Power / Speed Tuning SLD placeholder: What drive power or speed setting gives our team the best balance of control, accuracy, speed, and safety?
 
-These two SLDs need standalone student-facing handouts later. For now, use the controller mapping comparison activity, SLD tally sheet, and engineering notebook to record the decision.
+Use the student-facing Controller Mapping SLD handout with the controller mapping comparison activity, SLD tally sheet, and engineering notebook to record the first control decision. The Drive Power / Speed Tuning SLD still needs a standalone student-facing handout later.
 
 ## Team Task
 
