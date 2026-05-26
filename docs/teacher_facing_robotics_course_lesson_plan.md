@@ -428,6 +428,7 @@ Student Background Reading / Preparation:
 - `02_student_materials/readings/future_human_controller_mapping_background.md`
 - `02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md`
 - `02_student_materials/sld_prompts/day3_session6_controller_mapping_sld.md`
+- `02_student_materials/sld_prompts/day3_session6_drive_power_tuning_sld.md`
 - `02_student_materials/code_examples/onbot_java/DemoDriveDPad.java`
 - `02_student_materials/code_examples/onbot_java/DemoDriveJoy.java`
 - `90_templates/robot_behavior_specification_template.md`
@@ -437,7 +438,7 @@ Student-Led Discussion / Decision:
 
 - Readiness prompt: What evidence will show that our chassis is ready for powered testing?
 - Controller Mapping SLD: Which control mapping best helps our drivers make the robot perform the behaviors in our Robot Behavior Specification?
-- Drive Power / Speed Tuning SLD placeholder: What drive power or speed setting gives our team the best balance of control, accuracy, speed, and safety?
+- Drive Power / Motor Tuning SLD: What motor power settings give our team the best balance of control, accuracy, speed, and safety for the robot behaviors we need?
 
 Work Time Options:
 
@@ -461,12 +462,12 @@ Deliverables:
 - Issue/fix list.
 - D-pad vs joystick comparison evidence.
 - Controller mapping decision.
-- Initial drive power/speed setting and next tuning target.
+- Starting motor power settings and next tuning target.
 - Engineering portfolio entry.
 
 Engineering Portfolio Evidence:
 
-- What was checked, what failed readiness, D-pad vs joystick trial evidence, controller mapping decision, drive power/speed tuning decision, what was fixed, and what remains.
+- What was checked, what failed readiness, D-pad vs joystick trial evidence, controller mapping decision, drive power / motor tuning decision, what was fixed, and what remains.
 
 Reflection / Share-Out:
 

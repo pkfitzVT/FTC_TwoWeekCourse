@@ -148,7 +148,7 @@ Use `90_templates/student_led_discussion_tally_sheet_template.md` or the generat
 
 Use the SLD tally sheet to track discussion moves: Q, C, E, B, O, D, X.
 
-At the end, record one discussion strength and one target for the Drive Power / Speed Tuning SLD.
+At the end, record one discussion strength and one target for the Drive Power / Motor Tuning SLD.
 
 ## Portfolio Connection
 
@@ -162,9 +162,9 @@ Add the Controller Mapping Decision Record to the engineering portfolio. Include
 
 Update the controls/programming or chassis/drivetrain copy of the Subsystem Design Cycle Template if the control decision changes how the robot will be programmed, tested, or driven.
 
-## Growth Target for Drive Power / Speed Tuning SLD
+## Growth Target for Drive Power / Motor Tuning SLD
 
-During the Drive Power / Speed Tuning SLD, our team should improve by:
+During the Drive Power / Motor Tuning SLD, our team should improve by:
 
 - using more data
 - comparing tradeoffs more clearly
