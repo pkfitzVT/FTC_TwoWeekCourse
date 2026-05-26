@@ -23,6 +23,7 @@ For a session-by-session map from SLD prompts to concrete deliverables, evidence
 | Day 2 Session 4 | `02_student_materials/sld_prompts/day2_session4_game_strategy_sld.md` | Practical game strategy that can be built, tested, practiced, and explained | student-facing | student-led discussion; strategy; team decision-making |
 | Day 2 Session 4 | `02_student_materials/sld_prompts/day2_session4_strategy_to_robot_behavior_sld.md` | Translate game strategy into required autonomous, TeleOp, and endgame robot behaviors | student-facing | student-led discussion; robot behavior specification; design criteria |
 | Day 2 Session 4 | `docs/sessions/day_02_session_04_first_programming_session.md` | Hardware/configuration names matching code | teacher-facing | student-led discussion; programming reasoning |
+| Day 3 Session 5 | `02_student_materials/sld_prompts/day3_session5_chassis_design_choice_sld.md` | First chassis design choice using strategy, robot behavior, demo robot evidence, materials, and future subsystem needs | student-facing | student-led discussion; chassis/frame decision; subsystem design cycle |
 | Day 3 Session 5 | `docs/sessions/day_03_session_05_chassis_design_planning_and_build_start.md` | Design choice to protect during build | teacher-facing | student-led discussion; chassis/frame decision |
 | Day 3 Session 6 | `docs/sessions/day_03_session_06_chassis_continuation_and_readiness.md` | Evidence that chassis is ready for powered testing | teacher-facing | student-led discussion; testing/data |
 | Day 4 Session 7 | `docs/sessions/day_04_session_07_build_drivetrain_chassis.md` | Drivetrain part likely to loosen, rub, or shift | teacher-facing | student-led discussion; build/troubleshooting |
@@ -101,6 +102,8 @@ For a session-by-session map from SLD prompts to concrete deliverables, evidence
 | File | Title or Section | Prompt Text / Paraphrase | Audience | Category | Supports |
 |---|---|---|---|---|---|
 | `docs/sessions/day_03_session_05_chassis_design_planning_and_build_start.md` | Student-Led Discussion / Decision | "Which design choice should we protect when the build gets difficult or slow?" | teacher-facing | chassis/frame decision | student-led discussion; team decision-making |
+| `02_student_materials/sld_prompts/day3_session5_chassis_design_choice_sld.md` | Main Discussion Question | "Which chassis design best supports our team strategy, robot behavior plan, available materials, and future subsystem needs?" | student-facing | chassis/frame decision | student-led discussion; subsystem design cycle; engineering notebook documentation |
+| `02_student_materials/sld_prompts/day3_session5_chassis_design_choice_sld.md` | Mini-Decision Rounds | Chassis needs, frame shape, material/connectors, motor/wheel placement, electronics/battery placement, reserved mechanism space, and first build/test plan. | student-facing | chassis/frame decision | team decision-making; engineering notebook documentation |
 | `docs/sessions/day_03_session_05_chassis_design_planning_and_build_start.md` | Reflection / Share-Out | What design choice became harder once the team started building? | teacher-facing | reflection | team decision-making; teacher facilitation |
 | `docs/sessions/day_03_session_06_chassis_continuation_and_readiness.md` | Student-Led Discussion / Decision | "What evidence will show that our chassis is ready for powered testing?" | teacher-facing | testing/data | student-led discussion; engineering notebook documentation |
 | `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md` | Main SLD Prompt | "Should our chassis be simple and strong, or open and flexible for future mechanisms?" | student-facing | chassis/frame decision | student-led discussion; team decision-making |
@@ -210,7 +213,7 @@ For a session-by-session map from SLD prompts to concrete deliverables, evidence
 - **Day 3 design menus:** Chassis shape, material, motor placement, wheel selection, and electronics placement all have strong SLD prompts, but they live in separate menus. Consider a short teacher-facing sequencing note that tells teams which menu to use first and how to avoid making contradictory decisions.
 - **Day 4 controller mapping:** `future_human_controller_mapping_background.md` has strong questions, but the official session sequence has no dedicated generated teacher session for controller mapping beyond the existing build/drive pages. Consider making the controller-map discussion prompt more explicit in the relevant session plan.
 - **Mechanism sessions after Day 5:** Shooter, hopper, trigger, and whole-system sessions have good SLD prompts and reading reflections. There are fewer decision-menu-style comparison prompts for mechanism architecture than for chassis architecture.
-- **Student-facing SLD sheets:** Day 1 Session 1, Day 2 Session 3, and the Day 2 strategy/behavior bridge now have standalone student-facing SLD prompt sheets in `02_student_materials/sld_prompts/`. Later SLD prompts mostly appear in teacher-facing session files or decision menus. Consider creating student-facing SLD sheets for the next highest-value discussions: chassis architecture, controller mapping, testing evidence, and final presentation story.
+- **Student-facing SLD sheets:** Day 1 Session 1, Day 2 Session 3, Day 2 strategy/behavior bridge, and Day 3 chassis design now have standalone student-facing SLD prompt sheets in `02_student_materials/sld_prompts/`. Later SLD prompts mostly appear in teacher-facing session files or decision menus. Consider creating student-facing SLD sheets for the next highest-value discussions: controller mapping, testing evidence, and final presentation story.
 - **Reflection consistency:** Reading reflection prompts vary in specificity. Some ask for clear evidence and next action; others are broad. Consider aligning future reflection prompts to "claim, evidence, next step" when the purpose is engineering documentation.
 
 ## Possible Duplicates or Inconsistencies
@@ -223,10 +226,10 @@ For a session-by-session map from SLD prompts to concrete deliverables, evidence
 
 ## Count Summary
 
-This inventory identifies approximately **74 prompt sets**:
+This inventory identifies approximately **75 prompt sets**:
 
 - 20 official session-level Student-Led Discussion prompts in `docs/sessions/`
-- 13 student-facing decision-menu, analysis, or SLD prompt files with main SLD prompts/supporting questions
+- 14 student-facing decision-menu, analysis, or SLD prompt files with main SLD prompts/supporting questions
 - 20 engineering-notebook session reflection prompts
 - 18 reading or guide reflection/discussion prompt sets
 - 5 impact-study or discussion-tool survey prompt sets

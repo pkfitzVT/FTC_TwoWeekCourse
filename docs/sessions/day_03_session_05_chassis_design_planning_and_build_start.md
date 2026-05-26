@@ -29,6 +29,7 @@ Prepare tools, safety glasses, frame parts, brackets, fasteners, wheels, motors,
 - [Principles of robot assembly](../../02_student_materials/readings/principles_of_robot_assembly_day3.md)
 - [Team Strategy Guide template](../../90_templates/team_strategy_guide_template.md)
 - [Robot Behavior Specification template](../../90_templates/robot_behavior_specification_template.md)
+- [Chassis Design Choice SLD](../../02_student_materials/sld_prompts/day3_session5_chassis_design_choice_sld.md)
 - [Game Strategy SLD](../../02_student_materials/sld_prompts/day2_session4_game_strategy_sld.md)
 - [Strategy-to-Robot-Behavior SLD](../../02_student_materials/sld_prompts/day2_session4_strategy_to_robot_behavior_sld.md)
 - [Demo Robot Design Analysis activity](../../02_student_materials/decision_menus/demo_robot_design_analysis_activity.md)
@@ -48,9 +49,11 @@ Prompt: Which design choice should we protect when the build gets difficult or s
 
 Readiness rule: Before finalizing a chassis design, each team must review Demo Robot Design Analysis notes and identify at least one design feature to borrow, one design feature to modify or avoid, and one question or test before building.
 
+Use the Chassis Design Choice SLD to break the decision into mini-rounds for chassis needs, frame shape, material/connectors, motor/wheel placement, electronics/battery placement, reserved mechanism space, and first build/test plan.
+
 ## Work Time Options
 
-- Strategy: review the copied Team Strategy Guide and Robot Behavior Specification, then start the frame/drivetrain subsystem cycle.
+- Strategy: use the Chassis Design Choice SLD to review the copied Team Strategy Guide and Robot Behavior Specification, then start the frame/drivetrain subsystem cycle.
 - Observation: use Demo Robot Design Analysis notes and photos/sketches to compare chassis, motor, wheel, electronics/battery, and open-space choices.
 - Design: final top-view chassis sketch.
 - Assembly: frame, brackets, fasteners, wheel/motor fit checks.
@@ -92,6 +95,7 @@ Protect the readiness rule before teams tighten the frame permanently. The goal 
 - [Subsystem design cycle guide](../../02_student_materials/guides/subsystem_design_cycle_guide.md)
 - [Team Strategy Guide template](../../90_templates/team_strategy_guide_template.md)
 - [Robot Behavior Specification template](../../90_templates/robot_behavior_specification_template.md)
+- [Chassis Design Choice SLD](../../02_student_materials/sld_prompts/day3_session5_chassis_design_choice_sld.md)
 - [Game Strategy SLD](../../02_student_materials/sld_prompts/day2_session4_game_strategy_sld.md)
 - [Strategy-to-Robot-Behavior SLD](../../02_student_materials/sld_prompts/day2_session4_strategy_to_robot_behavior_sld.md)
 - [Demo Robot Design Analysis activity](../../02_student_materials/decision_menus/demo_robot_design_analysis_activity.md)

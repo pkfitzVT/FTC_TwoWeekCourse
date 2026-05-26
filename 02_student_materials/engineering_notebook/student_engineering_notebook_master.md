@@ -35,6 +35,7 @@ Related materials:
 - `02_student_materials/sld_prompts/day2_session3_team_identity_name_sld.md`
 - `02_student_materials/sld_prompts/day2_session4_game_strategy_sld.md`
 - `02_student_materials/sld_prompts/day2_session4_strategy_to_robot_behavior_sld.md`
+- `02_student_materials/sld_prompts/day3_session5_chassis_design_choice_sld.md`
 - `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`
 - `02_student_materials/decision_menus/demo_robot_design_observation_activity.md`
 - `02_student_materials/guides/subsystem_design_cycle_guide.md`
@@ -253,10 +254,10 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 ## Session 5: Chassis Build Start
 
 - Today's goal: Begin building or modifying the drivetrain/chassis based on team strategy, robot behavior requirements, and team decisions.
-- Team decision or task: Check the Team Strategy Guide, Robot Behavior Specification, and Demo Robot Design Analysis notes, then start the frame/drivetrain subsystem cycle.
-- Notebook evidence required: Strategy and behavior check note, Demo Robot Design Analysis readiness note, frame/drivetrain subsystem cycle entry, build log entry with photo/sketch, parts used, first issue noticed, and next step.
+- Team decision or task: Use the Chassis Design Choice SLD to check the Team Strategy Guide, Robot Behavior Specification, and Demo Robot Design Analysis notes, then start the frame/drivetrain subsystem cycle.
+- Notebook evidence required: Chassis decision record, strategy and behavior check note, Demo Robot Design Analysis readiness note, frame/drivetrain subsystem cycle entry, first chassis sketch, first chassis test plan, build log entry with photo/sketch, parts used, first issue noticed, and next step.
 - Reflection prompt: Which design choice should we protect when the build gets difficult or slow?
-- Useful references: `90_templates/team_strategy_guide_template.md`; `90_templates/robot_behavior_specification_template.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `02_student_materials/decision_menus/demo_robot_design_analysis_activity.md`; `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`; `02_student_materials/readings/day3_session5_chassis_physics_space_background.md`; `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md`; `02_student_materials/decision_menus/day2_session4_chassis_material_menu.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md`
+- Useful references: `02_student_materials/sld_prompts/day3_session5_chassis_design_choice_sld.md`; `90_templates/team_strategy_guide_template.md`; `90_templates/robot_behavior_specification_template.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `02_student_materials/decision_menus/demo_robot_design_analysis_activity.md`; `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`; `02_student_materials/readings/day3_session5_chassis_physics_space_background.md`; `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md`; `02_student_materials/decision_menus/day2_session4_chassis_material_menu.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 6: Chassis Build Continuation and First Movement Checks
