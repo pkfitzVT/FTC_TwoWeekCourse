@@ -125,6 +125,7 @@ For a session-by-session map from SLD prompts to concrete deliverables, evidence
 | `02_student_materials/readings/day3_session5_chassis_physics_space_background.md` | Think About It | "What should your team prioritize in the chassis: strength, open space, turning control, repair access, or room for future mechanisms?" | student-facing | chassis/frame decision | individual reflection; team decision-making |
 | `02_student_materials/readings/day4_session7_chassis_build_checklist.md` | Reflection | "What is one design choice your team made, and what tradeoff came with that choice?" | student-facing | chassis/frame decision | reflection; engineering notebook documentation |
 | `02_student_materials/readings/day4_session7_mounting_motors_and_wheels.md` | Reflection | "What part of your drivetrain seems most likely to fail or loosen during testing? How can your team reduce that risk?" | student-facing | build/troubleshooting | individual reflection; testing/data |
+| `02_student_materials/readings/day4_session7_autonomous_encoder_experiment_background.md` | Before You Start checklist | Explain what encoders measure, why ticks are not inches, why direct measurement matters, how drift differs from forward error, and how a function helps autonomous code. | student-facing | testing/data | autonomous preparation; experimental design; engineering notebook documentation |
 
 ### Day 4: Driving and Programming
 
@@ -232,12 +233,12 @@ For a session-by-session map from SLD prompts to concrete deliverables, evidence
 
 ## Count Summary
 
-This inventory identifies approximately **79 prompt sets**:
+This inventory identifies approximately **80 prompt sets**:
 
 - 20 official session-level Student-Led Discussion prompts in `docs/sessions/`
 - 16 student-facing decision-menu, analysis, or SLD prompt files with main SLD prompts/supporting questions
 - 20 engineering-notebook session reflection prompts
-- 18 reading or guide reflection/discussion prompt sets
+- 19 reading or guide reflection/discussion prompt sets
 - 5 impact-study or discussion-tool survey prompt sets
 - 6 reusable template or optional challenge prompt sets
 

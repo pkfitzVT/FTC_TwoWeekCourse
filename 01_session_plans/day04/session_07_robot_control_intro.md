@@ -6,7 +6,7 @@
 - Big goal: Build or assemble the drivetrain/chassis from the team's documented design choices.
 - Student-facing objective: I can identify basic chassis parts and use a build checklist to start a safe drivetrain assembly.
 - Main deliverable: Physical chassis started or assembled.
-- Existing materials to use: `02_student_materials/readings/day4_session7_chassis_build_checklist.md`; `02_student_materials/readings/day4_session7_mounting_motors_and_wheels.md`; `02_student_materials/readings/day3_session5_chassis_physics_space_background.md`; `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`
+- Existing materials to use: `02_student_materials/readings/day4_session7_chassis_build_checklist.md`; `02_student_materials/readings/day4_session7_mounting_motors_and_wheels.md`; `02_student_materials/readings/day4_session7_autonomous_encoder_experiment_background.md`; `02_student_materials/readings/day3_session5_chassis_physics_space_background.md`; `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`
 - Materials still needed: TODO: teacher build guide; tool safety checklist; materials checkout process; chassis inspection checklist.
 
 ## Teacher Setup Before Class
@@ -28,6 +28,8 @@ Prompt: What part of our drivetrain is most likely to loosen, rub, or shift duri
 ## Team Task
 
 Teams review their chassis plan and frame/drivetrain subsystem cycle entry, gather parts, and begin building the drivetrain/chassis while previewing the controller-mapping tests they will run next.
+
+Teams with a ready chassis may preview the Autonomous Encoder Experiment Background reading to prepare for a straight-line autonomous challenge using encoder ticks, distance measurements, a linear model, and code.
 
 ## Build / Program / Test Time
 
