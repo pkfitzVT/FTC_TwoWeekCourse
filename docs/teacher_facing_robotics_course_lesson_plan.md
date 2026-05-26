@@ -403,62 +403,80 @@ Teacher Notes:
 - Coach careful assembly habits: count holes, start finger tight, use two fasteners for permanent structures, and avoid crushing plastic brackets.
 - Keep teams from building around inaccessible electronics.
 
-### Day 3, Session 6: Chassis Continuation and First Movement Readiness
+### Day 3, Session 6: Chassis Readiness, Controller Mapping, and Drive Tuning
 
-Purpose: Continue chassis assembly and inspect before powered testing.
+Purpose: Use chassis readiness as the entry condition for safe first drive, then compare D-pad and joystick controls, collect driving evidence, and make a first controller mapping and drive power/speed decision.
 
-Learning Target: Students can check whether the chassis is mechanically ready for safe powered testing.
+Learning Target: Students can check whether the chassis is mechanically ready for safe powered testing, compare D-pad and joystick drive approaches, collect simple driving data, and choose a first controller mapping and drive power/speed setting.
 
 Success Criteria:
 
 - Motors and wheels are secure.
 - Wires and electronics have planned space.
 - Teams identify readiness issues before turning on the robot.
+- Teams compare D-pad and joystick driving with controlled trials.
+- Teams record a first control decision, drive power/speed tuning decision, and next test.
 
 Teacher Preparation:
 
-- Prepare safe test area, batteries, basic inspection criteria, repair supplies, and storage procedure.
+- Prepare safe test area, batteries, basic inspection criteria, repair supplies, storage procedure, Driver Station/Robot Controller devices, D-pad and joystick demo OpModes, controller mapping comparison activity, and timing/measurement tools.
 
 Student Background Reading / Preparation:
 
 - `02_student_materials/readings/principles_of_robot_assembly_day3.md`
 - `02_student_materials/readings/day3_session5_chassis_physics_space_background.md`
+- `02_student_materials/readings/future_human_controller_mapping_background.md`
+- `02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md`
+- `02_student_materials/code_examples/onbot_java/DemoDriveDPad.java`
+- `02_student_materials/code_examples/onbot_java/DemoDriveJoy.java`
+- `90_templates/robot_behavior_specification_template.md`
 - Relevant chassis decision menus.
 
 Student-Led Discussion / Decision:
 
-- Prompt: What evidence will show that our chassis is ready for powered testing?
+- Readiness prompt: What evidence will show that our chassis is ready for powered testing?
+- Controller Mapping SLD placeholder: Which control mapping best helps our drivers make the robot perform the behaviors in our Robot Behavior Specification?
+- Drive Power / Speed Tuning SLD placeholder: What drive power or speed setting gives our team the best balance of control, accuracy, speed, and safety?
 
 Work Time Options:
 
 - Assembly: finish drivetrain/chassis structure.
 - Testing: hand-spin wheels, check rubbing, inspect fasteners.
-- Documentation: readiness checklist and issue list.
+- Safe first drive: test on blocks first, then controlled floor tests after approval.
+- Controller comparison: test D-pad drive and joystick drive.
+- Data collection: record loop time, turning, parking/line-up accuracy, and driver confidence.
+- Documentation: readiness checklist, issue list, test data, control decision, speed setting, and next test.
 
 Must / Should / Could:
 
-- Must: Complete a mechanical readiness check before powered testing.
-- Should: Fix at least one identified issue and document the change.
-- Could: Create a short inspection routine another team could use.
+- Must: Complete a mechanical readiness check before powered testing, run safe first-drive evidence if approved, and record one D-pad vs joystick comparison.
+- Should: Use the Robot Behavior Specification to justify a first controller mapping and drive power/speed setting.
+- Could: Test more than one driver, compare slow mode or reduced power, or create a short inspection/control-test routine another team could use.
 
 Deliverables:
 
 - Build photos.
 - Chassis readiness checklist.
 - Issue/fix list.
+- D-pad vs joystick comparison evidence.
+- Controller mapping decision.
+- Initial drive power/speed setting and next tuning target.
 - Engineering portfolio entry.
 
 Engineering Portfolio Evidence:
 
-- What was checked, what failed readiness, what was fixed, and what remains.
+- What was checked, what failed readiness, D-pad vs joystick trial evidence, controller mapping decision, drive power/speed tuning decision, what was fixed, and what remains.
 
 Reflection / Share-Out:
 
 - What issue did the team catch before it became a powered-test problem?
+- Which control choice is currently supported by the best evidence?
+- What speed/control adjustment should the team test next?
 
 Teacher Notes:
 
 - Do not let teams power robots until wheels, motors, battery, hub, switch, and wires are reasonably safe.
+- Keep first drive slow and controlled; the goal is evidence for a control decision, not fast driving.
 - Keep the tone professional: inspection is normal engineering, not punishment.
 
 ### Day 4, Session 7: Build Drivetrain/Chassis

@@ -260,13 +260,13 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 - Useful references: `02_student_materials/sld_prompts/day3_session5_chassis_design_choice_sld.md`; `90_templates/team_strategy_guide_template.md`; `90_templates/robot_behavior_specification_template.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `02_student_materials/decision_menus/demo_robot_design_analysis_activity.md`; `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`; `02_student_materials/readings/day3_session5_chassis_physics_space_background.md`; `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md`; `02_student_materials/decision_menus/day2_session4_chassis_material_menu.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md`
 - TODO: Develop the specific printable student page for this session.
 
-## Session 6: Chassis Build Continuation and First Movement Checks
+## Session 6: Chassis Readiness, Controller Mapping, and Drive Tuning
 
-- Today's goal: Continue chassis assembly and prepare for basic movement.
-- Team decision or task: Inspect the chassis and decide whether it is ready for powered testing.
-- Notebook evidence required: Chassis readiness checklist and issue list.
-- Reflection prompt: What evidence will show that our chassis is ready for powered testing?
-- Useful references: `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md`
+- Today's goal: Check chassis readiness, compare D-pad and joystick driving, and choose a first controller mapping and drive power/speed setting.
+- Team decision or task: Confirm the chassis is safe enough for powered testing, run controlled D-pad and joystick trials, use data to choose D-pad, joystick, or hybrid control, and choose the next speed/tuning target.
+- Notebook evidence required: Chassis readiness checklist, issue/fix list, D-pad vs joystick trial data, driver/operator notes, controller mapping decision, initial drive power/speed setting, slow mode decision if applicable, and next test.
+- Reflection prompt: Which control mapping best helps our drivers make the robot perform the behaviors in our Robot Behavior Specification?
+- Useful references: `02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md`; `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/code_examples/onbot_java/README.md`; `02_student_materials/code_examples/onbot_java/DemoDriveDPad.java`; `02_student_materials/code_examples/onbot_java/DemoDriveJoy.java`; `90_templates/robot_behavior_specification_template.md`; `90_templates/subsystem_design_cycle_template.md`; `90_templates/student_led_discussion_tally_sheet_template.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 7: Robot Control Introduction
