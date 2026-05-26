@@ -6,7 +6,7 @@
 - Big goal: Build or assemble the drivetrain/chassis from the team's documented design choices.
 - Student-facing objective: I can identify basic chassis parts and use a build checklist to start a safe drivetrain assembly.
 - Main deliverable: Physical chassis started or assembled.
-- Existing materials to use: `02_student_materials/readings/day4_session7_chassis_build_checklist.md`; `02_student_materials/readings/day4_session7_mounting_motors_and_wheels.md`; `02_student_materials/readings/day4_session7_autonomous_encoder_experiment_background.md`; `02_student_materials/readings/day3_session5_chassis_physics_space_background.md`; `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`
+- Existing materials to use: `02_student_materials/readings/day4_session7_chassis_build_checklist.md`; `02_student_materials/readings/day4_session7_mounting_motors_and_wheels.md`; `02_student_materials/readings/day4_session7_autonomous_encoder_experiment_background.md`; `02_student_materials/sld_prompts/day4_session7_autonomous_encoder_experiment_design_sld.md`; `02_student_materials/guides/day4_session7_autonomous_straight_line_challenge_activity.md`; `02_student_materials/readings/day3_session5_chassis_physics_space_background.md`; `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`
 - Materials still needed: TODO: teacher build guide; tool safety checklist; materials checkout process; chassis inspection checklist.
 
 ## Teacher Setup Before Class
@@ -25,11 +25,13 @@ Use the chassis build checklist and mounting motors/wheels readings to introduce
 
 Prompt: What part of our drivetrain is most likely to loosen, rub, or shift during testing?
 
+Ready-team autonomous prompt: What data should we collect so our robot can use a model to drive a target distance as accurately and straight as possible?
+
 ## Team Task
 
 Teams review their chassis plan and frame/drivetrain subsystem cycle entry, gather parts, and begin building the drivetrain/chassis while previewing the controller-mapping tests they will run next.
 
-Teams with a ready chassis may preview the Autonomous Encoder Experiment Background reading to prepare for a straight-line autonomous challenge using encoder ticks, distance measurements, a linear model, and code.
+Teams with a ready chassis may use the Autonomous Encoder Experiment Background reading, Autonomous Encoder Experiment Design SLD, and Autonomous Straight-Line Challenge Guided Activity to plan the experiment, collect encoder-distance data, build an inches-to-ticks model, test autonomous distance accuracy, and revise.
 
 ## Build / Program / Test Time
 
@@ -37,7 +39,7 @@ Teams assemble the chassis or drivetrain, checking motor and wheel mounting befo
 
 ## Engineering Notebook Evidence
 
-Teams record parts used, build progress, photos/sketches, problems noticed, subsystem cycle evidence, and any design revisions.
+Teams record parts used, build progress, photos/sketches, problems noticed, subsystem cycle evidence, and any design revisions. Ready teams also record autonomous experiment plans, encoder-distance data, model equations, code snippets, test error, drift, and revision notes.
 
 ## Share-Out / Reflection
 

@@ -28,6 +28,7 @@ For a session-by-session map from SLD prompts to concrete deliverables, evidence
 | Day 3 Session 6 | `02_student_materials/sld_prompts/day3_session6_controller_mapping_sld.md` | Evidence-based choice among D-pad, joystick, or hybrid drive after safe chassis testing | student-facing | student-led discussion; controller mapping; testing/data |
 | Day 3 Session 6 | `02_student_materials/sld_prompts/day3_session6_drive_power_tuning_sld.md` | Evidence-based choice of starting motor power settings after controller mapping and power-level trials | student-facing | student-led discussion; drive tuning; testing/data |
 | Day 3 Session 6 | `docs/sessions/day_03_session_06_chassis_continuation_and_readiness.md` | Chassis readiness, D-pad vs joystick comparison, controller mapping, and drive power/speed tuning | teacher-facing | student-led discussion; testing/data; controller mapping |
+| Day 4 Session 7 | `02_student_materials/sld_prompts/day4_session7_autonomous_encoder_experiment_design_sld.md` | Experimental-design choices before collecting encoder-distance data for autonomous straight-line challenge | student-facing | student-led discussion; autonomous preparation; testing/data |
 | Day 4 Session 7 | `docs/sessions/day_04_session_07_build_drivetrain_chassis.md` | Drivetrain part likely to loosen, rub, or shift | teacher-facing | student-led discussion; build/troubleshooting |
 | Day 4 Session 8 | `docs/sessions/day_04_session_08_wire_configure_and_test_drive.md` | What to change first when drive behavior is wrong | teacher-facing | student-led discussion; troubleshooting |
 | Day 5 Session 9 | `docs/sessions/day_05_session_09_flywheel_construction_basics.md` | First shooter variable to test | teacher-facing | student-led discussion; testing/data |
@@ -46,6 +47,7 @@ For a session-by-session map from SLD prompts to concrete deliverables, evidence
 | Decision menus | `02_student_materials/decision_menus/*.md` | Team name, norms, strategy, chassis, material, motor, electronics, wheels | student-facing | team decision-making; student-led discussion |
 | Demo robot analysis | `02_student_materials/decision_menus/demo_robot_design_analysis_activity.md` | Operate and observe demo robots, rotate partners, analyze subsystems, and summarize design evidence | student-facing | design evidence; team decision-making; engineering notebook documentation |
 | Demo robot observation | `02_student_materials/decision_menus/demo_robot_design_observation_activity.md` | Observe demo robots, identify subsystem choices, and decide what to copy, modify, or avoid | student-facing | team decision-making; design observation; engineering notebook documentation |
+| Autonomous straight-line challenge | `02_student_materials/guides/day4_session7_autonomous_straight_line_challenge_activity.md` | Design experiment, collect encoder-distance data, build function, program model, test error/drift, and revise | student-facing | testing/data; autonomous preparation; engineering notebook documentation |
 | Student readings | `02_student_materials/readings/*.md` | Short reflection prompts tied to each reading | student-facing | individual reflection; team discussion |
 | Strategy template | `90_templates/team_strategy_guide_template.md` | Norms, strategy, autonomous/TeleOp/endgame, score, revision, decision checks | student-facing | team decision-making; engineering notebook documentation |
 | Behavior specification template | `90_templates/robot_behavior_specification_template.md` | Robot behaviors, performance goals, tests, decision checks | student-facing | robot behavior specification; testing/data |
@@ -126,6 +128,8 @@ For a session-by-session map from SLD prompts to concrete deliverables, evidence
 | `02_student_materials/readings/day4_session7_chassis_build_checklist.md` | Reflection | "What is one design choice your team made, and what tradeoff came with that choice?" | student-facing | chassis/frame decision | reflection; engineering notebook documentation |
 | `02_student_materials/readings/day4_session7_mounting_motors_and_wheels.md` | Reflection | "What part of your drivetrain seems most likely to fail or loosen during testing? How can your team reduce that risk?" | student-facing | build/troubleshooting | individual reflection; testing/data |
 | `02_student_materials/readings/day4_session7_autonomous_encoder_experiment_background.md` | Before You Start checklist | Explain what encoders measure, why ticks are not inches, why direct measurement matters, how drift differs from forward error, and how a function helps autonomous code. | student-facing | testing/data | autonomous preparation; experimental design; engineering notebook documentation |
+| `02_student_materials/sld_prompts/day4_session7_autonomous_encoder_experiment_design_sld.md` | Main Discussion Question | "What data should we collect so our robot can use a model to drive a target distance as accurately and straight as possible?" | student-facing | testing/data | student-led discussion; autonomous preparation; experimental design; engineering notebook documentation |
+| `02_student_materials/guides/day4_session7_autonomous_straight_line_challenge_activity.md` | Phase 6 revision questions | What the model predicted well, what it did not predict well, drift direction, overshoot/undershoot, power level, revision target, and next test. | student-facing | testing/data | autonomous preparation; experimental design; engineering notebook documentation |
 
 ### Day 4: Driving and Programming
 
@@ -233,10 +237,10 @@ For a session-by-session map from SLD prompts to concrete deliverables, evidence
 
 ## Count Summary
 
-This inventory identifies approximately **80 prompt sets**:
+This inventory identifies approximately **82 prompt sets**:
 
 - 20 official session-level Student-Led Discussion prompts in `docs/sessions/`
-- 16 student-facing decision-menu, analysis, or SLD prompt files with main SLD prompts/supporting questions
+- 18 student-facing decision-menu, analysis, guide, or SLD prompt files with main prompts/supporting questions
 - 20 engineering-notebook session reflection prompts
 - 19 reading or guide reflection/discussion prompt sets
 - 5 impact-study or discussion-tool survey prompt sets

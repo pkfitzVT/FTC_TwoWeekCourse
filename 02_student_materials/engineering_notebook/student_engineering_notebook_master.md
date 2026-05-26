@@ -272,10 +272,10 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 ## Session 7: Robot Control Introduction
 
 - Today's goal: Build or continue the drivetrain/chassis and prepare ready teams for encoder-based autonomous testing.
-- Team decision or task: Secure drivetrain parts, identify what might loosen or rub, and preview the autonomous encoder experiment if the chassis is ready.
-- Notebook evidence required: Build photos, motor/wheel checklist, updated chassis/drivetrain sketch, issue list, and optional autonomous encoder experiment preparation notes.
+- Team decision or task: Secure drivetrain parts, identify what might loosen or rub, and use the Autonomous Encoder Experiment Design SLD before beginning the Autonomous Straight-Line Challenge if the chassis is ready.
+- Notebook evidence required: Build photos, motor/wheel checklist, updated chassis/drivetrain sketch, issue list, optional Autonomous Encoder Experiment Plan, and optional autonomous straight-line challenge evidence.
 - Reflection prompt: What part of our drivetrain is most likely to loosen, rub, or shift during testing?
-- Useful references: `02_student_materials/readings/day4_session7_chassis_build_checklist.md`; `02_student_materials/readings/day4_session7_mounting_motors_and_wheels.md`; `02_student_materials/readings/day4_session7_autonomous_encoder_experiment_background.md`; `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md`; `02_student_materials/code_examples/onbot_java/README.md`
+- Useful references: `02_student_materials/readings/day4_session7_chassis_build_checklist.md`; `02_student_materials/readings/day4_session7_mounting_motors_and_wheels.md`; `02_student_materials/readings/day4_session7_autonomous_encoder_experiment_background.md`; `02_student_materials/sld_prompts/day4_session7_autonomous_encoder_experiment_design_sld.md`; `02_student_materials/guides/day4_session7_autonomous_straight_line_challenge_activity.md`; `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md`; `02_student_materials/code_examples/onbot_java/README.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 8: Basic TeleOp Programming and Drivetrain Test
