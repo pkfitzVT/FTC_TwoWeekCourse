@@ -278,13 +278,13 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 - Useful references: `02_student_materials/readings/day4_session7_chassis_build_checklist.md`; `02_student_materials/readings/day4_session7_mounting_motors_and_wheels.md`; `02_student_materials/readings/day4_session7_autonomous_encoder_experiment_background.md`; `02_student_materials/sld_prompts/day4_session7_autonomous_encoder_experiment_design_sld.md`; `02_student_materials/guides/day4_session7_autonomous_straight_line_challenge_activity.md`; `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md`; `02_student_materials/code_examples/onbot_java/README.md`
 - TODO: Develop the specific printable student page for this session.
 
-## Session 8: Basic TeleOp Programming and Drivetrain Test
+## Session 8: Wire, Configure, Test Drive, and Round-Robin Challenge
 
-- Today's goal: Program or configure basic driver-controlled movement and compare D-pad and joystick drive safely.
-- Team decision or task: Program/control the frame/drivetrain subsystem, test D-pad and joystick driving, and decide which mapping supports robot behavior goals.
-- Notebook evidence required: Frame/drivetrain subsystem cycle update, TeleOp test record, D-pad versus joystick comparison evidence, code/config change, and controller-mapping decision.
-- Reflection prompt: Which drive mapping best supports our robot behavior goals and why?
-- Useful references: `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/code_examples/onbot_java/README.md`; `02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md`
+- Today's goal: Wire, configure, and test safe TeleOp driving, then use a two-robot timed challenge when ready to test reliability, communication, and control decisions.
+- Team decision or task: Continue wiring/configuration or drive tuning as needed; ready teams run the Drive Reliability Round-Robin Challenge and use evidence to revise controls, chassis reliability, or drive-team roles.
+- Notebook evidence required: Frame/drivetrain subsystem cycle update, TeleOp test record, code/config change, controller-mapping or drive-tuning evidence, race times, penalties, adjustment log, role decision record, photo/video evidence if available, and one chassis/control/driver-practice revision.
+- Reflection prompt: What did the driving challenge reveal about our chassis, controls, drive tuning, and driver communication?
+- Useful references: `02_student_materials/guides/day4_session8_drive_reliability_round_robin_challenge.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `02_student_materials/readings/day4_session8_wiring_configuration_and_first_drive.md`; `02_student_materials/readings/day4_session8_troubleshooting_basic_drive.md`; `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/code_examples/onbot_java/README.md`; `02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md`; `02_student_materials/sld_prompts/day3_session6_controller_mapping_sld.md`; `02_student_materials/sld_prompts/day3_session6_drive_power_tuning_sld.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 9: Strategy Check and Mechanism Planning

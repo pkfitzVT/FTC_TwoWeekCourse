@@ -90,7 +90,7 @@ Use the templates in `02_student_materials/engineering_notebook/student_engineer
 | 3 | 5 | Chassis design planning and build start | Begin chassis construction from documented design choices. | Review chassis physics, shape/material/wheel/motor/electronics menus, sketch layout, begin frame. | `02_student_materials/readings/day3_session5_chassis_physics_space_background.md`; `02_student_materials/readings/principles_of_robot_assembly_day3.md`; `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md`; `02_student_materials/decision_menus/day2_session4_chassis_material_menu.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md` | SLD decision, chassis sketch, build photos, build log. | Chassis choice, trade-off, parts used, first issue, next step. | Which design choice should we protect when the build gets difficult? |
 | 3 | 6 | Chassis continuation and first movement readiness | Continue assembly and inspect before power-on. | Check symmetry, brackets, fasteners, motor mounting, wheel alignment, wiring access. | `02_student_materials/readings/principles_of_robot_assembly_day3.md`; Day 2 chassis decision menus; `02_student_materials/readings/day3_session5_chassis_physics_space_background.md` | Chassis readiness checklist and issue list. | Photos, issue list, fix priorities, readiness status. | What evidence shows our chassis is ready for powered testing? |
 | 4 | 7 | Build drivetrain/chassis | Build or assemble the drivetrain and wheel/motor system. | Identify chassis parts/tools, mount motors and wheels, check rubbing, alignment, and clearance. | `02_student_materials/readings/day4_session7_chassis_build_checklist.md`; `02_student_materials/readings/day4_session7_mounting_motors_and_wheels.md`; `02_student_materials/readings/principles_of_robot_assembly_day3.md` | Physical chassis started or assembled; build photos; updated sketch. | Parts used, build progress, revisions, risk points. | What part of the drivetrain is most likely to loosen, rub, or shift? |
-| 4 | 8 | Wire, configure, and test drive | Wire motors to the Control Hub and test basic TeleOp safely. | Configure motor names, connect Driver Station, test on blocks, debug one issue at a time. | `02_student_materials/readings/day4_session8_wiring_configuration_and_first_drive.md`; `02_student_materials/readings/day4_session8_troubleshooting_basic_drive.md`; Day 2 programming readings | TeleOp test record, wiring/config table, code/config notes. | Motor ports, configuration names, Java variable names, test results, bug fixes. | What should we check first when the robot does not drive as expected? |
+| 4 | 8 | Wire, configure, test drive, and round-robin challenge | Wire motors safely, test TeleOp, and use a two-robot timed challenge when teams are ready. | Configure motor names, test on blocks, debug one issue at a time, run differentiated readiness pathways, collect timed challenge evidence, adjust between runs. | `02_student_materials/readings/day4_session8_wiring_configuration_and_first_drive.md`; `02_student_materials/readings/day4_session8_troubleshooting_basic_drive.md`; `02_student_materials/guides/day4_session8_drive_reliability_round_robin_challenge.md`; Day 2 programming readings | TeleOp test record, wiring/config table, race run record, adjustment log, role decision record, code/config notes. | Motor ports, configuration names, Java variable names, test results, bug fixes, run times, penalties, adjustments, drive-team role evidence. | What did the driving challenge reveal about our chassis, controls, drive tuning, and driver communication? |
 | 5 | 9 | Flywheel construction basics | Understand shooter system chain and build a first testable flywheel mockup. | Sketch shooter, choose compression plan, mount flywheel safely, define first variable. | `02_student_materials/readings/day5_session9_flywheel_motor_speed_compression.md`; `02_student_materials/readings/day5_session9_flywheel_build_and_test_planning.md`; `02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md` | Shooter sketch, compression plan, first mockup/build, test hypothesis. | Motor/wheel placement, compression gap, first variable, expected result, build risk. | What first shooter variable should we test, and why? |
 | 5 | 10 | Projectile motion and target behavior | Reason about launch angle, speed, distance, height, and impact behavior. | Choose first test distance, launch angle, power range, and shot observation plan. | `02_student_materials/readings/day5_session10_projectile_motion_for_shooters.md`; `02_student_materials/readings/day5_session10_target_impact_and_shot_consistency.md`; `day5_session9_flywheel_build_and_test_planning.md` | Shot-test plan, launch angle/velocity reasoning, target evidence plan. | Expected path, distance, angle, motor power range, miss patterns to watch. | What miss pattern would tell us what to change? |
 | 6 | 11 | Gravity-fed hopper design | Design a hopper that guides balls reliably toward the shooter. | Sketch/mock up hopper, hand-test ball path, identify jams and feed issues. | `02_student_materials/readings/day6_session11_gravity_fed_hopper_design.md`; `02_student_materials/readings/day6_session11_hopper_jams_and_ball_path.md` | Hopper sketch/mockup, ball-path test, redesign note. | Ball path, jam point evidence, what changed, next redesign. | Where is the hopper most likely to jam? |
@@ -539,59 +539,119 @@ Teacher Notes:
 - Keep students from treating set screws, hubs, and axle collars casually.
 - Remind teams that fast assembly without inspection often costs time later.
 
-### Day 4, Session 8: Wire, Configure, and Test Drive
+### Day 4, Session 8: Wire, Configure, Test Drive, and Round-Robin Challenge
 
-Purpose: Connect physical wiring and robot configuration to Java TeleOp control.
+Purpose: Connect physical wiring and robot configuration to Java TeleOp control, then use a two-robot timed challenge to test drive reliability, communication, and control decisions.
 
-Learning Target: Students can explain how motor ports, configuration names, hardware map names, and Java variables connect during first-drive testing.
+Learning Target: Students can use driving evidence to improve chassis reliability, controller mapping, drive tuning, and drive-team communication.
 
 Success Criteria:
 
 - Robot is tested on blocks before floor driving.
 - Configuration names match code.
 - Teams debug one issue at a time and record results.
+- Ready teams complete a two-robot timed run and record time, penalties, adjustments, and driver/operator role evidence.
 
 Teacher Preparation:
 
-- Prepare charged batteries, Driver Stations, Robot Controllers/Control Hubs, motor wires, safe blocks, test space, and a troubleshooting routine.
+- Prepare charged batteries, Driver Stations, Robot Controllers/Control Hubs, motor wires, safe blocks, test space, cones or markers, starting zones, timer, and a troubleshooting routine.
 
 Student Background Reading / Preparation:
 
 - `02_student_materials/readings/day4_session8_wiring_configuration_and_first_drive.md`
 - `02_student_materials/readings/day4_session8_troubleshooting_basic_drive.md`
+- `02_student_materials/guides/day4_session8_drive_reliability_round_robin_challenge.md`
+- `02_student_materials/sld_prompts/day3_session6_controller_mapping_sld.md`
+- `02_student_materials/sld_prompts/day3_session6_drive_power_tuning_sld.md`
 - Day 2 programming readings.
 
 Student-Led Discussion / Decision:
 
-- Prompt: What should we change first when the robot does not drive the way we expected?
+- Troubleshooting prompt: What should we change first when the robot does not drive the way we expected?
+- Drive-team role prompt: How should our team assign and rotate drive-team roles so we are competitive, fair, and prepared if someone is absent?
+- Post-challenge reflection prompt: What did the driving challenge reveal about our chassis, controls, drive tuning, and driver communication?
 
 Work Time Options:
 
 - Wiring: connect motors and manage wires safely.
 - Programming: confirm hardwareMap names and TeleOp.
 - Testing: on-block test, then controlled floor test if safe.
-- Documentation: test table and code/config notes.
+- Challenge: ready teams run a two-robot round-robin timed course.
+- Documentation: test table, code/config notes, race run record, adjustment log, and role decision record.
+
+Differentiated Session Pathways:
+
+| Team Status | Session 8 Pathway |
+|---|---|
+| Robot not safely driving | Wiring, configuration, chassis repair, first drive |
+| Robot drives but is unreliable | Controller mapping, power tuning, practice laps |
+| Robot drives reliably | Two-robot round-robin timed challenge |
+| Advanced team | Revise tuning, rotate drivers, improve clean-run score |
+
+Round-Robin Format:
+
+| Round | Match |
+|---|---|
+| 1 | Team A vs Team B |
+| 2 | Team C vs Team D |
+| 3 | Team A vs Team C |
+| 4 | Team B vs Team D |
+| 5 | Team A vs Team D |
+| 6 | Team B vs Team C |
+
+Each team gets three runs if time allows. If time is short, use one practice run, one official timed run, and one improvement run if possible.
+
+Course / Track Rules:
+
+- Two robots start from marked starting zones.
+- Both robots follow the same general route or complete the same loop.
+- Robots must avoid cones/markers, boundaries, and each other.
+- Drivers may need to pass, wait, or adjust speed.
+- Unsafe driving results in a reset, penalty, stop, rerun, or disqualification at teacher discretion.
+- The teacher may modify the course for space and safety.
+
+This is a controlled driving challenge, not bumper cars. The goal is fast, clean, controlled driving.
+
+Scoring:
+
+```text
+final score = time + penalties
+```
+
+| Event | Penalty |
+|---|---|
+| Touches cone / marker / boundary | +5 seconds |
+| Needs a reset | +10 seconds |
+| Robot-to-robot contact | +10 seconds |
+| Unsafe driving | Stop, rerun, or disqualification at teacher discretion |
+
+Between runs, teams should change only one or two things at a time and record what changed.
 
 Must / Should / Could:
 
 - Must: Test basic drivetrain motion safely with wheels lifted first.
 - Should: Record at least one symptom, likely cause, check, change, and result.
-- Could: Add telemetry or a clearer driver-control note.
+- Could: Complete a two-robot timed challenge, rotate drivers, improve clean-run score, or revise tuning based on run evidence.
 
 Deliverables:
 
 - Code/config notes.
 - Testing results.
 - Wiring/config table.
+- Race run record, if ready.
+- Adjustment log, if ready.
+- Drive-team role decision record.
 - Engineering portfolio entry.
 
 Engineering Portfolio Evidence:
 
-- Motor port table, configuration names, Java variable names, test behavior, and fix.
+- Motor port table, configuration names, Java variable names, test behavior, fixes, race times, penalties, adjustment log, role decision record, photo/video evidence if available, and one chassis/control/driver-practice revision.
 
 Reflection / Share-Out:
 
 - What bug or mismatch did the team diagnose?
+- What adjustment did the team make between runs?
+- What did the challenge reveal about chassis reliability, controls, tuning, or driver/operator communication?
 
 Teacher Notes:
 
