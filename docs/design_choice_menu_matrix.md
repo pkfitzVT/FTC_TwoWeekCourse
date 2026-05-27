@@ -24,6 +24,8 @@ Demo robot analysis creates design evidence. Students use that evidence during s
 
 ## Course Design Process
 
+For the full repeated course process, see `02_student_materials/guides/subsystem_design_operation_testing_cycle_guide.md`.
+
 ```text
 Modified game rules
 -> Structure/function reading

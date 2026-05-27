@@ -137,6 +137,7 @@ Optional pre-course page:
 
 ### SLD Templates
 
+- [Subsystem Design, Operation, Testing, and Tuning Cycle guide](../02_student_materials/guides/subsystem_design_operation_testing_cycle_guide.md)
 - [Day 1 shared materials SLD student prompt](../02_student_materials/sld_prompts/day1_session1_sld_shared_materials_student.md)
 - [Day 1 shared materials SLD teacher guide](../03_teacher_materials/teacher_guides/day1_session1_sld_shared_materials_teacher_guide.md)
 - [Reusable Robot Operations Role Plan SLD](../02_student_materials/sld_prompts/reusable_robot_operations_role_plan_sld.md)

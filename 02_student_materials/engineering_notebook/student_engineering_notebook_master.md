@@ -38,6 +38,7 @@ Related materials:
 - `02_student_materials/sld_prompts/day3_session5_chassis_design_choice_sld.md`
 - `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`
 - `02_student_materials/decision_menus/demo_robot_design_observation_activity.md`
+- `02_student_materials/guides/subsystem_design_operation_testing_cycle_guide.md`
 - `02_student_materials/guides/subsystem_design_cycle_guide.md`
 - `90_templates/team_strategy_guide_template.md`
 - `90_templates/robot_behavior_specification_template.md`
@@ -99,6 +100,7 @@ Related material:
 - `docs/design_choice_menu_matrix.md`
 - `02_student_materials/decision_menus/demo_robot_design_analysis_activity.md`
 - `02_student_materials/decision_menus/demo_robot_design_observation_activity.md`
+- `02_student_materials/guides/subsystem_design_operation_testing_cycle_guide.md`
 - `90_templates/student_led_discussion_tally_sheet_template.md`
 - `90_templates/team_strategy_guide_template.md`
 - `90_templates/robot_behavior_specification_template.md`
@@ -174,6 +176,8 @@ Related material:
 
 Use one copy of the subsystem design cycle template for each major robot subsystem. After a design SLD, update the subsystem template with the decision, evidence, physical build plan, wiring/configuration names, test plan, and integration check.
 
+Use the Subsystem Design, Operation, Testing, and Tuning Cycle guide to connect each subsystem's design decision to operation roles, integrated performance testing, postmortem/tuning decisions, acceptable performance range, and portfolio evidence.
+
 | Subsystem | Job | Current working version? | Last test result | Ready to integrate? |
 |---|---|---|---|---|
 | Frame / drivetrain |  |  |  |  |
@@ -185,6 +189,7 @@ Use one copy of the subsystem design cycle template for each major robot subsyst
 
 Related materials:
 
+- `02_student_materials/guides/subsystem_design_operation_testing_cycle_guide.md`
 - `02_student_materials/guides/subsystem_design_cycle_guide.md`
 - `90_templates/subsystem_design_cycle_template.md`
 
