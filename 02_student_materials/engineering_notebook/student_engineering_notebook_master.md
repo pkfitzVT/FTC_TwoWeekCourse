@@ -117,6 +117,24 @@ Use the student-led discussion tally sheet for short design discussions where th
 Related material:
 
 - `90_templates/student_led_discussion_tally_sheet_template.md`
+- `02_student_materials/sld_prompts/reusable_robot_operations_role_plan_sld.md`
+- `90_templates/robot_operations_role_plan_sld_template.md`
+
+## Robot Operations Role Plan
+
+Use the Robot Operations Role Plan SLD before a driving challenge, subsystem test, practice match, qualification round, or between-round role adjustment.
+
+| Role | Primary Student | Backup Student | Evidence / Reason | Practice Goal |
+|---|---|---|---|---|
+| Driver |  |  |  |  |
+| Operator |  |  |  |  |
+| Coach / spotter |  |  |  |  |
+| Human operator / loader |  |  |  |  |
+| Pit repair lead |  |  |  |  |
+| Software / code lead |  |  |  |  |
+| Evidence / portfolio recorder |  |  |  |  |
+
+Role decisions should be based on evidence, fairness, growth, safety, and team needs. The best role plan includes backups.
 
 ## Demo Robot Analysis / Observation Record
 
@@ -284,7 +302,7 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 - Team decision or task: Continue wiring/configuration or drive tuning as needed; ready teams run the Drive Reliability Round-Robin Challenge and use evidence to revise controls, chassis reliability, or drive-team roles.
 - Notebook evidence required: Frame/drivetrain subsystem cycle update, TeleOp test record, code/config change, controller-mapping or drive-tuning evidence, race times, penalties, adjustment log, role decision record, photo/video evidence if available, and one chassis/control/driver-practice revision.
 - Reflection prompt: What did the driving challenge reveal about our chassis, controls, drive tuning, and driver communication?
-- Useful references: `02_student_materials/guides/day4_session8_drive_reliability_round_robin_challenge.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `02_student_materials/readings/day4_session8_wiring_configuration_and_first_drive.md`; `02_student_materials/readings/day4_session8_troubleshooting_basic_drive.md`; `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/code_examples/onbot_java/README.md`; `02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md`; `02_student_materials/sld_prompts/day3_session6_controller_mapping_sld.md`; `02_student_materials/sld_prompts/day3_session6_drive_power_tuning_sld.md`
+- Useful references: `02_student_materials/guides/day4_session8_drive_reliability_round_robin_challenge.md`; `02_student_materials/sld_prompts/reusable_robot_operations_role_plan_sld.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `02_student_materials/readings/day4_session8_wiring_configuration_and_first_drive.md`; `02_student_materials/readings/day4_session8_troubleshooting_basic_drive.md`; `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/code_examples/onbot_java/README.md`; `02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md`; `02_student_materials/sld_prompts/day3_session6_controller_mapping_sld.md`; `02_student_materials/sld_prompts/day3_session6_drive_power_tuning_sld.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 9: Strategy Check and Mechanism Planning

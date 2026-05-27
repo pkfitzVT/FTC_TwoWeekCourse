@@ -77,6 +77,10 @@ Possible adjustments:
 
 Competition roles should be based on evidence, fairness, growth, and team needs. The best role plan includes backups.
 
+Use the reusable Robot Operations Role Plan SLD when your team needs a fuller role decision:
+
+`02_student_materials/sld_prompts/reusable_robot_operations_role_plan_sld.md`
+
 Consider:
 
 - Who drives most accurately?

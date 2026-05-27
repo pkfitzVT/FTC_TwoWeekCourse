@@ -30,6 +30,7 @@ Prepare charged batteries, Driver Stations, Robot Controllers/Control Hubs, moto
 - [Controller mapping drive comparison activity](../../02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md)
 - [Controller Mapping SLD](../../02_student_materials/sld_prompts/day3_session6_controller_mapping_sld.md)
 - [Drive Power / Motor Tuning SLD](../../02_student_materials/sld_prompts/day3_session6_drive_power_tuning_sld.md)
+- [Robot Operations Role Plan SLD](../../02_student_materials/sld_prompts/reusable_robot_operations_role_plan_sld.md)
 - [Drive Reliability Round-Robin Challenge](../../02_student_materials/guides/day4_session8_drive_reliability_round_robin_challenge.md)
 - [Subsystem design cycle guide](../../02_student_materials/guides/subsystem_design_cycle_guide.md)
 
@@ -45,7 +46,7 @@ This is a controlled driving challenge, not bumper cars. The goal is fast, clean
 ## Student-Led Discussion / Decision
 
 - Troubleshooting prompt: What should we change first when the robot does not drive the way we expected?
-- Drive-team role prompt: How should our team assign and rotate drive-team roles so we are competitive, fair, and prepared if someone is absent?
+- Robot Operations Role Plan SLD prompt: How should our team assign and practice robot operation roles so we are safe, fair, competitive, and prepared if someone is absent?
 - Post-challenge reflection prompt: What did the driving challenge reveal about our chassis, controls, drive tuning, and driver communication?
 
 Competition roles should be based on evidence, fairness, growth, and team needs. The best role plan includes backups.
@@ -174,6 +175,7 @@ Require students to stop OpModes before changing wires. Normalize debugging as e
 - [Controller mapping drive comparison activity](../../02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md)
 - [Controller Mapping SLD](../../02_student_materials/sld_prompts/day3_session6_controller_mapping_sld.md)
 - [Drive Power / Motor Tuning SLD](../../02_student_materials/sld_prompts/day3_session6_drive_power_tuning_sld.md)
+- [Robot Operations Role Plan SLD](../../02_student_materials/sld_prompts/reusable_robot_operations_role_plan_sld.md)
 - [Drive Reliability Round-Robin Challenge](../../02_student_materials/guides/day4_session8_drive_reliability_round_robin_challenge.md)
 - [OnBot Java code examples](../../02_student_materials/code_examples/onbot_java/README.md)
 - [Subsystem Design Cycle template](../../90_templates/subsystem_design_cycle_template.md)
