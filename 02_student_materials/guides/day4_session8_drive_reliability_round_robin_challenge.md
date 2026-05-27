@@ -127,6 +127,10 @@ After the challenge:
 
 > What did the driving challenge reveal about our chassis, controls, drive tuning, and driver communication?
 
+Use the reusable Performance Testing Postmortem SLD when your team needs a fuller post-run diagnosis:
+
+`02_student_materials/sld_prompts/reusable_performance_testing_postmortem_sld.md`
+
 ## Portfolio Checklist
 
 - [ ] Race times and penalties

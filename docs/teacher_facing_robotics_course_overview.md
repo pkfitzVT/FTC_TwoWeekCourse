@@ -141,6 +141,8 @@ Optional pre-course page:
 - [Day 1 shared materials SLD teacher guide](../03_teacher_materials/teacher_guides/day1_session1_sld_shared_materials_teacher_guide.md)
 - [Reusable Robot Operations Role Plan SLD](../02_student_materials/sld_prompts/reusable_robot_operations_role_plan_sld.md)
 - [Robot Operations Role Plan SLD template](../90_templates/robot_operations_role_plan_sld_template.md)
+- [Reusable Performance Testing Postmortem SLD](../02_student_materials/sld_prompts/reusable_performance_testing_postmortem_sld.md)
+- [Performance Testing Postmortem SLD template](../90_templates/performance_testing_postmortem_sld_template.md)
 - [SLD prompt template](../90_templates/sld_prompt_template.md)
 
 ### Design Resources
