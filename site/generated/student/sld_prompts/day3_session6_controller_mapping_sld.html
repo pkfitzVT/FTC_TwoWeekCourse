@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Controller Mapping SLD | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Controller Mapping SLD</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+        <a href="../../../print/index.html">Print</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../02_student_materials/sld_prompts/day3_session6_controller_mapping_sld.md">View source Markdown</a></p>
+        <h1 id="controller-mapping-sld">Controller Mapping SLD</h1>
+<h2 id="session-course-phase">Session / Course Phase</h2>
+<p>Day 3, Session 6: Chassis Readiness, Controller Mapping, and Drive Tuning</p>
+<h2 id="why-this-discussion-matters">Why This Discussion Matters</h2>
+<p>Your team has started turning the chassis into a driving robot. Now you need to decide how humans should control it during TeleOp.</p>
+<pre><code>Strategy chooses the game plan.
+Robot behaviors describe what the robot must do.
+Controller mapping helps humans make the robot do those behaviors reliably.</code></pre>
+<p>This is not a vote for the control style one person likes best. This is a design decision based on evidence from driving tests, robot behavior goals, and driver/operator experience.</p>
+<p>SLD is the process. The deliverable is the work product that comes out of the discussion.</p>
+<h2 id="main-discussion-question">Main Discussion Question</h2>
+<p>Which control mapping best helps our drivers make the robot perform the behaviors in our Robot Behavior Specification?</p>
+<p>Student version:</p>
+<p>Should our team use D-pad drive, joystick drive, or a hybrid approach, and why?</p>
+<h2 id="what-this-discussion-must-produce">What This Discussion Must Produce</h2>
+<p>By the end of this SLD, your team should record a Controller Mapping Decision that includes:</p>
+<ul>
+<li>chosen control approach: D-pad, joystick, or hybrid</li>
+<li>evidence from D-pad trials</li>
+<li>evidence from joystick trials</li>
+<li>driver/operator notes</li>
+<li>which robot behaviors the mapping supports</li>
+<li><code>gamepad1</code> driver controls</li>
+<li>any <code>gamepad2</code> operator controls already known</li>
+<li>one concern or tradeoff</li>
+<li>one next test or revision</li>
+<li>whether the team needs a later speed/power tuning discussion</li>
+</ul>
+<h2 id="evidence-resources-to-use">Evidence / Resources to Use</h2>
+<p>Use evidence from at least three sources. Do not choose based only on preference.</p>
+<ul>
+<li>Robot Behavior Specification</li>
+<li>Team Strategy Guide</li>
+<li>D-pad test trials</li>
+<li>joystick test trials</li>
+<li>Controller Mapping Drive Comparison Activity</li>
+<li><code>DemoDriveDPad.java</code></li>
+<li><code>DemoDriveJoy.java</code></li>
+<li>driver/operator observations</li>
+<li>loop time data</li>
+<li>turning or obstacle data</li>
+<li>parking or line-up accuracy data</li>
+<li>SLD tally sheet</li>
+</ul>
+<h2 id="suggested-data-review">Suggested Data Review</h2>
+<p>Before discussing the final choice, review what actually happened during testing.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Evidence Source</th>
+<th>D-pad Result / Notes</th>
+<th>Joystick Result / Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Loop time</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Drive straight</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Turn around obstacle</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Line up with target</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Park accurately</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Driver confidence</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Partner/operator communication</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Mistakes or control confusion</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Driver</th>
+<th>Which control felt more reliable?</th>
+<th>Evidence or reason</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Driver 1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Driver 2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Driver 3, if used</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="discussion-roles">Discussion Roles</h2>
+<p>One person may hold more than one role if your team is small.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Role</th>
+<th>Job</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Facilitator</td>
+<td>Keeps the team focused on evidence, not just preferences.</td>
+</tr>
+<tr>
+<td>Tally keeper</td>
+<td>Uses the SLD tally sheet.</td>
+</tr>
+<tr>
+<td>Recorder</td>
+<td>Records the Controller Mapping Decision.</td>
+</tr>
+<tr>
+<td>Data checker</td>
+<td>Points to test results before claims are accepted.</td>
+</tr>
+<tr>
+<td>Driver representative</td>
+<td>Explains what the robot felt like to control.</td>
+</tr>
+<tr>
+<td>Behavior checker</td>
+<td>Asks whether the mapping supports the Robot Behavior Specification.</td>
+</tr>
+</tbody></table></div>
+<h2 id="sentence-stems">Sentence Stems</h2>
+<p>Use these stems to make claims, use evidence, and name tradeoffs.</p>
+<pre><code>The D-pad worked well when ___.
+The joystick worked well when ___.
+The data shows ___.
+As a driver, I felt more confident when ___ because ___.
+This control style supports our robot behavior plan because ___.
+If we need to line up accurately, then ___ might be better because ___.
+If we need to complete scoring loops quickly, then ___ might be better because ___.
+One risk of D-pad drive is ___.
+One risk of joystick drive is ___.
+A hybrid approach might make sense if ___.
+I could support this mapping if ___.
+Before we finalize, we should test ___.</code></pre>
+<h2 id="decision-record-work-product">Decision Record / Work Product</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Controller Mapping Decision</th>
+<th>Team Response</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Chosen control approach: D-pad / joystick / hybrid</td>
+<td></td>
+</tr>
+<tr>
+<td>Why this supports our Robot Behavior Specification</td>
+<td></td>
+</tr>
+<tr>
+<td>D-pad evidence used</td>
+<td></td>
+</tr>
+<tr>
+<td>Joystick evidence used</td>
+<td></td>
+</tr>
+<tr>
+<td>Driver/operator observations</td>
+<td></td>
+</tr>
+<tr>
+<td><code>gamepad1</code> driver controls</td>
+<td></td>
+</tr>
+<tr>
+<td><code>gamepad2</code> operator controls, if known</td>
+<td></td>
+</tr>
+<tr>
+<td>Biggest concern or tradeoff</td>
+<td></td>
+</tr>
+<tr>
+<td>Next control test or revision</td>
+<td></td>
+</tr>
+<tr>
+<td>Should we tune speed/power next?</td>
+<td></td>
+</tr>
+<tr>
+<td>Can all team members support this starting control plan?</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="controller-mapping-readiness-check">Controller Mapping Readiness Check</h2>
+<p>Before recording our decision, our team has:</p>
+<ul>
+<li>[ ] Confirmed the chassis was safe enough for powered testing.</li>
+<li>[ ] Tested D-pad drive.</li>
+<li>[ ] Tested joystick drive.</li>
+<li>[ ] Collected at least one type of driving data.</li>
+<li>[ ] Heard from more than one driver if possible.</li>
+<li>[ ] Checked the Robot Behavior Specification.</li>
+<li>[ ] Discussed driver/operator communication.</li>
+<li>[ ] Named one concern or tradeoff.</li>
+<li>[ ] Recorded the control mapping decision.</li>
+<li>[ ] Named the next test or tuning target.</li>
+</ul>
+<h2 id="sld-tally-sheet-reminder">SLD Tally Sheet Reminder</h2>
+<p>Use <code>90_templates/student_led_discussion_tally_sheet_template.md</code> or the generated site version of that template.</p>
+<p>Use the SLD tally sheet to track discussion moves: Q, C, E, B, O, D, X.</p>
+<p>At the end, record one discussion strength and one target for the Drive Power / Motor Tuning SLD.</p>
+<h2 id="portfolio-connection">Portfolio Connection</h2>
+<p>Add the Controller Mapping Decision Record to the engineering portfolio. Include:</p>
+<ul>
+<li>test data</li>
+<li>final mapping decision</li>
+<li>driver/operator notes</li>
+<li>tradeoff accepted</li>
+<li>next tuning target</li>
+</ul>
+<p>Update the controls/programming or chassis/drivetrain copy of the Subsystem Design Cycle Template if the control decision changes how the robot will be programmed, tested, or driven.</p>
+<h2 id="growth-target-for-drive-power-motor-tuning-sld">Growth Target for Drive Power / Motor Tuning SLD</h2>
+<p>During the Drive Power / Motor Tuning SLD, our team should improve by:</p>
+<ul>
+<li>using more data</li>
+<li>comparing tradeoffs more clearly</li>
+<li>inviting quieter voices</li>
+<li>listening to driver/operator experience</li>
+<li>recording decisions more clearly</li>
+<li>connecting controls to robot behaviors</li>
+</ul>
+      </article>
+
+    </main>
+  </body>
+</html>

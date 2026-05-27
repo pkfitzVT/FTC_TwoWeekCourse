@@ -178,13 +178,13 @@
 <tr>
 <td>4</td>
 <td>8</td>
-<td>Wire, configure, and test drive</td>
-<td>Wire motors to the Control Hub and test basic TeleOp safely.</td>
-<td>Configure motor names, connect Driver Station, test on blocks, debug one issue at a time.</td>
-<td><code>02_student_materials/readings/day4_session8_wiring_configuration_and_first_drive.md</code>; <code>02_student_materials/readings/day4_session8_troubleshooting_basic_drive.md</code>; Day 2 programming readings</td>
-<td>TeleOp test record, wiring/config table, code/config notes.</td>
-<td>Motor ports, configuration names, Java variable names, test results, bug fixes.</td>
-<td>What should we check first when the robot does not drive as expected?</td>
+<td>Wire, configure, test drive, and round-robin challenge</td>
+<td>Wire motors safely, test TeleOp, and use a two-robot timed challenge when teams are ready.</td>
+<td>Configure motor names, test on blocks, debug one issue at a time, run differentiated readiness pathways, collect timed challenge evidence, use the Robot Operations Role Plan SLD, use the Performance Testing Postmortem SLD, adjust between runs.</td>
+<td><code>02_student_materials/readings/day4_session8_wiring_configuration_and_first_drive.md</code>; <code>02_student_materials/readings/day4_session8_troubleshooting_basic_drive.md</code>; <code>02_student_materials/guides/day4_session8_drive_reliability_round_robin_challenge.md</code>; <code>02_student_materials/sld_prompts/reusable_robot_operations_role_plan_sld.md</code>; <code>02_student_materials/sld_prompts/reusable_performance_testing_postmortem_sld.md</code>; Day 2 programming readings</td>
+<td>TeleOp test record, wiring/config table, race run record, adjustment log, role decision record, performance postmortem record, code/config notes.</td>
+<td>Motor ports, configuration names, Java variable names, test results, bug fixes, run times, penalties, adjustments, drive-team role evidence, issue category, next change, owner, retest plan.</td>
+<td>What did the driving challenge reveal about our chassis, controls, drive tuning, and driver communication?</td>
 </tr>
 <tr>
 <td>5</td>
@@ -602,59 +602,79 @@
 <li>Coach careful assembly habits: count holes, start finger tight, use two fasteners for permanent structures, and avoid crushing plastic brackets.</li>
 <li>Keep teams from building around inaccessible electronics.</li>
 </ul>
-<h3 id="day-3-session-6-chassis-continuation-and-first-movement-readiness">Day 3, Session 6: Chassis Continuation and First Movement Readiness</h3>
-<p>Purpose: Continue chassis assembly and inspect before powered testing.</p>
-<p>Learning Target: Students can check whether the chassis is mechanically ready for safe powered testing.</p>
+<h3 id="day-3-session-6-chassis-readiness-controller-mapping-and-drive-tuning">Day 3, Session 6: Chassis Readiness, Controller Mapping, and Drive Tuning</h3>
+<p>Purpose: Use chassis readiness as the entry condition for safe first drive, then compare D-pad and joystick controls, collect driving evidence, and make a first controller mapping and drive power/speed decision.</p>
+<p>Learning Target: Students can check whether the chassis is mechanically ready for safe powered testing, compare D-pad and joystick drive approaches, collect simple driving data, and choose a first controller mapping and drive power/speed setting.</p>
 <p>Success Criteria:</p>
 <ul>
 <li>Motors and wheels are secure.</li>
 <li>Wires and electronics have planned space.</li>
 <li>Teams identify readiness issues before turning on the robot.</li>
+<li>Teams compare D-pad and joystick driving with controlled trials.</li>
+<li>Teams record a first control decision, drive power/speed tuning decision, and next test.</li>
 </ul>
 <p>Teacher Preparation:</p>
 <ul>
-<li>Prepare safe test area, batteries, basic inspection criteria, repair supplies, and storage procedure.</li>
+<li>Prepare safe test area, batteries, basic inspection criteria, repair supplies, storage procedure, Driver Station/Robot Controller devices, D-pad and joystick demo OpModes, controller mapping comparison activity, and timing/measurement tools.</li>
 </ul>
 <p>Student Background Reading / Preparation:</p>
 <ul>
 <li><code>02_student_materials/readings/principles_of_robot_assembly_day3.md</code></li>
 <li><code>02_student_materials/readings/day3_session5_chassis_physics_space_background.md</code></li>
+<li><code>02_student_materials/readings/future_human_controller_mapping_background.md</code></li>
+<li><code>02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md</code></li>
+<li><code>02_student_materials/sld_prompts/day3_session6_controller_mapping_sld.md</code></li>
+<li><code>02_student_materials/sld_prompts/day3_session6_drive_power_tuning_sld.md</code></li>
+<li><code>02_student_materials/code_examples/onbot_java/DemoDriveDPad.java</code></li>
+<li><code>02_student_materials/code_examples/onbot_java/DemoDriveJoy.java</code></li>
+<li><code>90_templates/robot_behavior_specification_template.md</code></li>
 <li>Relevant chassis decision menus.</li>
 </ul>
 <p>Student-Led Discussion / Decision:</p>
 <ul>
-<li>Prompt: What evidence will show that our chassis is ready for powered testing?</li>
+<li>Readiness prompt: What evidence will show that our chassis is ready for powered testing?</li>
+<li>Controller Mapping SLD: Which control mapping best helps our drivers make the robot perform the behaviors in our Robot Behavior Specification?</li>
+<li>Drive Power / Motor Tuning SLD: What motor power settings give our team the best balance of control, accuracy, speed, and safety for the robot behaviors we need?</li>
 </ul>
 <p>Work Time Options:</p>
 <ul>
 <li>Assembly: finish drivetrain/chassis structure.</li>
 <li>Testing: hand-spin wheels, check rubbing, inspect fasteners.</li>
-<li>Documentation: readiness checklist and issue list.</li>
+<li>Safe first drive: test on blocks first, then controlled floor tests after approval.</li>
+<li>Controller comparison: test D-pad drive and joystick drive.</li>
+<li>Data collection: record loop time, turning, parking/line-up accuracy, and driver confidence.</li>
+<li>Documentation: readiness checklist, issue list, test data, control decision, speed setting, and next test.</li>
 </ul>
 <p>Must / Should / Could:</p>
 <ul>
-<li>Must: Complete a mechanical readiness check before powered testing.</li>
-<li>Should: Fix at least one identified issue and document the change.</li>
-<li>Could: Create a short inspection routine another team could use.</li>
+<li>Must: Complete a mechanical readiness check before powered testing, run safe first-drive evidence if approved, and record one D-pad vs joystick comparison.</li>
+<li>Should: Use the Robot Behavior Specification to justify a first controller mapping and drive power/speed setting.</li>
+<li>Could: Test more than one driver, compare slow mode or reduced power, or create a short inspection/control-test routine another team could use.</li>
 </ul>
 <p>Deliverables:</p>
 <ul>
 <li>Build photos.</li>
 <li>Chassis readiness checklist.</li>
 <li>Issue/fix list.</li>
+<li>D-pad vs joystick comparison evidence.</li>
+<li>Controller mapping decision.</li>
+<li>Starting motor power settings and next tuning target.</li>
 <li>Engineering portfolio entry.</li>
 </ul>
 <p>Engineering Portfolio Evidence:</p>
 <ul>
-<li>What was checked, what failed readiness, what was fixed, and what remains.</li>
+<li>What was checked, what failed readiness, D-pad vs joystick trial evidence, controller mapping decision, drive power / motor tuning decision, what was fixed, and what remains.</li>
 </ul>
 <p>Reflection / Share-Out:</p>
 <ul>
 <li>What issue did the team catch before it became a powered-test problem?</li>
+<li>Which control choice is currently supported by the best evidence?</li>
+<li>What speed/control adjustment should the team test next?</li>
 </ul>
 <p>Teacher Notes:</p>
 <ul>
 <li>Do not let teams power robots until wheels, motors, battery, hub, switch, and wires are reasonably safe.</li>
+<li>Keep first drive slow and controlled; the goal is evidence for a control decision, not fast driving.</li>
 <li>Keep the tone professional: inspection is normal engineering, not punishment.</li>
 </ul>
 <h3 id="day-4-session-7-build-drivetrain-chassis">Day 4, Session 7: Build Drivetrain/Chassis</h3>
@@ -712,56 +732,164 @@
 <li>Keep students from treating set screws, hubs, and axle collars casually.</li>
 <li>Remind teams that fast assembly without inspection often costs time later.</li>
 </ul>
-<h3 id="day-4-session-8-wire-configure-and-test-drive">Day 4, Session 8: Wire, Configure, and Test Drive</h3>
-<p>Purpose: Connect physical wiring and robot configuration to Java TeleOp control.</p>
-<p>Learning Target: Students can explain how motor ports, configuration names, hardware map names, and Java variables connect during first-drive testing.</p>
+<h3 id="day-4-session-8-wire-configure-test-drive-and-round-robin-challenge">Day 4, Session 8: Wire, Configure, Test Drive, and Round-Robin Challenge</h3>
+<p>Purpose: Connect physical wiring and robot configuration to Java TeleOp control, then use a two-robot timed challenge to test drive reliability, communication, and control decisions.</p>
+<p>Learning Target: Students can use driving evidence to improve chassis reliability, controller mapping, drive tuning, and drive-team communication.</p>
 <p>Success Criteria:</p>
 <ul>
 <li>Robot is tested on blocks before floor driving.</li>
 <li>Configuration names match code.</li>
 <li>Teams debug one issue at a time and record results.</li>
+<li>Ready teams complete a two-robot timed run and record time, penalties, adjustments, and driver/operator role evidence.</li>
 </ul>
 <p>Teacher Preparation:</p>
 <ul>
-<li>Prepare charged batteries, Driver Stations, Robot Controllers/Control Hubs, motor wires, safe blocks, test space, and a troubleshooting routine.</li>
+<li>Prepare charged batteries, Driver Stations, Robot Controllers/Control Hubs, motor wires, safe blocks, test space, cones or markers, starting zones, timer, and a troubleshooting routine.</li>
 </ul>
 <p>Student Background Reading / Preparation:</p>
 <ul>
 <li><code>02_student_materials/readings/day4_session8_wiring_configuration_and_first_drive.md</code></li>
 <li><code>02_student_materials/readings/day4_session8_troubleshooting_basic_drive.md</code></li>
+<li><code>02_student_materials/guides/day4_session8_drive_reliability_round_robin_challenge.md</code></li>
+<li><code>02_student_materials/sld_prompts/reusable_robot_operations_role_plan_sld.md</code></li>
+<li><code>02_student_materials/sld_prompts/reusable_performance_testing_postmortem_sld.md</code></li>
+<li><code>02_student_materials/sld_prompts/day3_session6_controller_mapping_sld.md</code></li>
+<li><code>02_student_materials/sld_prompts/day3_session6_drive_power_tuning_sld.md</code></li>
 <li>Day 2 programming readings.</li>
 </ul>
 <p>Student-Led Discussion / Decision:</p>
 <ul>
-<li>Prompt: What should we change first when the robot does not drive the way we expected?</li>
+<li>Troubleshooting prompt: What should we change first when the robot does not drive the way we expected?</li>
+<li>Robot Operations Role Plan SLD prompt: How should our team assign and practice robot operation roles so we are safe, fair, competitive, and prepared if someone is absent?</li>
+<li>Performance Testing Postmortem SLD prompt: What did this test or match reveal, what type of issue did we observe, and what should we change before the next run?</li>
+<li>Post-challenge reflection prompt: What did the driving challenge reveal about our chassis, controls, drive tuning, and driver communication?</li>
 </ul>
 <p>Work Time Options:</p>
 <ul>
 <li>Wiring: connect motors and manage wires safely.</li>
 <li>Programming: confirm hardwareMap names and TeleOp.</li>
 <li>Testing: on-block test, then controlled floor test if safe.</li>
-<li>Documentation: test table and code/config notes.</li>
+<li>Challenge: ready teams run a two-robot round-robin timed course.</li>
+<li>Documentation: test table, code/config notes, race run record, adjustment log, and role decision record.</li>
 </ul>
+<p>Differentiated Session Pathways:</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Team Status</th>
+<th>Session 8 Pathway</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Robot not safely driving</td>
+<td>Wiring, configuration, chassis repair, first drive</td>
+</tr>
+<tr>
+<td>Robot drives but is unreliable</td>
+<td>Controller mapping, power tuning, practice laps</td>
+</tr>
+<tr>
+<td>Robot drives reliably</td>
+<td>Two-robot round-robin timed challenge</td>
+</tr>
+<tr>
+<td>Advanced team</td>
+<td>Revise tuning, rotate drivers, improve clean-run score</td>
+</tr>
+</tbody></table></div>
+<p>Round-Robin Format:</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Round</th>
+<th>Match</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Team A vs Team B</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Team C vs Team D</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Team A vs Team C</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Team B vs Team D</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Team A vs Team D</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Team B vs Team C</td>
+</tr>
+</tbody></table></div>
+<p>Each team gets three runs if time allows. If time is short, use one practice run, one official timed run, and one improvement run if possible.</p>
+<p>Course / Track Rules:</p>
+<ul>
+<li>Two robots start from marked starting zones.</li>
+<li>Both robots follow the same general route or complete the same loop.</li>
+<li>Robots must avoid cones/markers, boundaries, and each other.</li>
+<li>Drivers may need to pass, wait, or adjust speed.</li>
+<li>Unsafe driving results in a reset, penalty, stop, rerun, or disqualification at teacher discretion.</li>
+<li>The teacher may modify the course for space and safety.</li>
+</ul>
+<p>This is a controlled driving challenge, not bumper cars. The goal is fast, clean, controlled driving.</p>
+<p>Scoring:</p>
+<pre><code>final score = time + penalties</code></pre>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Event</th>
+<th>Penalty</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Touches cone / marker / boundary</td>
+<td>+5 seconds</td>
+</tr>
+<tr>
+<td>Needs a reset</td>
+<td>+10 seconds</td>
+</tr>
+<tr>
+<td>Robot-to-robot contact</td>
+<td>+10 seconds</td>
+</tr>
+<tr>
+<td>Unsafe driving</td>
+<td>Stop, rerun, or disqualification at teacher discretion</td>
+</tr>
+</tbody></table></div>
+<p>Between runs, teams should change only one or two things at a time and record what changed.</p>
 <p>Must / Should / Could:</p>
 <ul>
 <li>Must: Test basic drivetrain motion safely with wheels lifted first.</li>
 <li>Should: Record at least one symptom, likely cause, check, change, and result.</li>
-<li>Could: Add telemetry or a clearer driver-control note.</li>
+<li>Could: Complete a two-robot timed challenge, rotate drivers, improve clean-run score, or revise tuning based on run evidence.</li>
 </ul>
 <p>Deliverables:</p>
 <ul>
 <li>Code/config notes.</li>
 <li>Testing results.</li>
 <li>Wiring/config table.</li>
+<li>Race run record, if ready.</li>
+<li>Adjustment log, if ready.</li>
+<li>Drive-team role decision record.</li>
 <li>Engineering portfolio entry.</li>
 </ul>
 <p>Engineering Portfolio Evidence:</p>
 <ul>
-<li>Motor port table, configuration names, Java variable names, test behavior, and fix.</li>
+<li>Motor port table, configuration names, Java variable names, test behavior, fixes, race times, penalties, adjustment log, role decision record, photo/video evidence if available, and one chassis/control/driver-practice revision.</li>
 </ul>
 <p>Reflection / Share-Out:</p>
 <ul>
 <li>What bug or mismatch did the team diagnose?</li>
+<li>What adjustment did the team make between runs?</li>
+<li>What did the challenge reveal about chassis reliability, controls, tuning, or driver/operator communication?</li>
 </ul>
 <p>Teacher Notes:</p>
 <ul>

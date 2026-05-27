@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Autonomous Straight-Line Challenge Guided Activity | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Autonomous Straight-Line Challenge Guided Activity</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+        <a href="../../../print/index.html">Print</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../02_student_materials/guides/day4_session7_autonomous_straight_line_challenge_activity.md">View source Markdown</a></p>
+        <h1 id="autonomous-straight-line-challenge-guided-activity">Autonomous Straight-Line Challenge Guided Activity</h1>
+<p>Your team will collect data from your robot, build a function that converts inches to encoder ticks, use the function in autonomous code, and test how close your robot gets to a target distance.</p>
+<pre><code>Experiment -&gt; Data -&gt; Function -&gt; Code -&gt; Test -&gt; Revise</code></pre>
+<p>Use this activity after reading <code>02_student_materials/readings/day4_session7_autonomous_encoder_experiment_background.md</code>.</p>
+<h2 id="1-readiness-check">1. Readiness Check</h2>
+<p>Before starting the challenge, confirm:</p>
+<ul>
+<li>[ ] Our chassis can move safely.</li>
+<li>[ ] Our motors are configured correctly.</li>
+<li>[ ] Our robot can drive forward.</li>
+<li>[ ] We know which motor power setting we will use for the first model.</li>
+<li>[ ] We have a tape measure or measuring tool.</li>
+<li>[ ] We have a clear starting line.</li>
+<li>[ ] We know how we will measure forward distance.</li>
+<li>[ ] We know how we will measure sideways drift.</li>
+<li>[ ] We have read or reviewed the autonomous encoder background reading.</li>
+</ul>
+<p>If your chassis is not ready, your Session 7 pathway is to keep working on chassis readiness, controller mapping, or drive tuning.</p>
+<h2 id="2-challenge-by-choice">2. Challenge by Choice</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Level</th>
+<th>Goal</th>
+<th>Evidence / Work Product</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Must</td>
+<td>Collect encoder-distance data and make a prediction.</td>
+<td>Data table and predicted ticks for a target distance</td>
+</tr>
+<tr>
+<td>Should</td>
+<td>Use Desmos to build a linear model.</td>
+<td>Equation or screenshot of model</td>
+</tr>
+<tr>
+<td>Could</td>
+<td>Use the model in autonomous code.</td>
+<td><code>inchesToTicks()</code> or <code>moveForwardInches()</code> code snippet</td>
+</tr>
+<tr>
+<td>Super Challenge</td>
+<td>Improve accuracy or straightness.</td>
+<td>Drift data, revised model, power comparison, or correction strategy</td>
+</tr>
+</tbody></table></div>
+<h2 id="3-phase-1-design-the-experiment">3. Phase 1: Design the Experiment</h2>
+<p>Recommended beginner approach:</p>
+<blockquote>Choose several encoder tick targets, run the robot, and measure how far it travels. Then use the data to build a model that predicts ticks from inches.</blockquote>
+<p>You may also choose fixed target distances and record the encoder ticks needed, if your teacher gives that option.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Experiment Choice</th>
+<th>Team Plan</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Motor power for first model</td>
+<td></td>
+</tr>
+<tr>
+<td>Short encoder target or distance</td>
+<td></td>
+</tr>
+<tr>
+<td>Medium encoder target or distance</td>
+<td></td>
+</tr>
+<tr>
+<td>Long encoder target or distance</td>
+<td></td>
+</tr>
+<tr>
+<td>Number of trials at each setting</td>
+<td></td>
+</tr>
+<tr>
+<td>Where we measure from on the robot</td>
+<td></td>
+</tr>
+<tr>
+<td>How we measure forward distance</td>
+<td></td>
+</tr>
+<tr>
+<td>How we measure sideways drift</td>
+<td></td>
+</tr>
+<tr>
+<td>Who runs the robot</td>
+<td></td>
+</tr>
+<tr>
+<td>Who measures distance</td>
+<td></td>
+</tr>
+<tr>
+<td>Who records data</td>
+<td></td>
+</tr>
+<tr>
+<td>Who enters data into Desmos</td>
+<td></td>
+</tr>
+<tr>
+<td>Who edits or reviews code</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>Keep motor power constant for the first model. If you change power, you may need a new model.</p>
+<h2 id="4-phase-2-collect-data">4. Phase 2: Collect Data</h2>
+<p>Start from the same line each time.</p>
+<p>Measure from the same point on the robot each time.</p>
+<p>Record sideways drift separately from forward distance.</p>
+<p>Write notes about slipping, turning, stopping late, or starting crooked.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Trial</th>
+<th>Encoder Ticks</th>
+<th>Motor Power</th>
+<th>Distance Traveled (inches)</th>
+<th>Sideways Drift (inches)</th>
+<th>Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="5-phase-3-build-the-function">5. Phase 3: Build the Function</h2>
+<p>The input is the target distance in inches. The output is the encoder ticks the robot should move.</p>
+<p>Coding-focused model:</p>
+<pre><code>ticks = m x inches + b</code></pre>
+<p>Simpler proportional model:</p>
+<pre><code>ticks = ticks_per_inch x inches</code></pre>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Model Item</th>
+<th>Team Response</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Model type: proportional or linear regression</td>
+<td></td>
+</tr>
+<tr>
+<td>Slope <code>m</code> or ticks per inch</td>
+<td></td>
+</tr>
+<tr>
+<td>Intercept <code>b</code>, if used</td>
+<td></td>
+</tr>
+<tr>
+<td>Our function for ticks from inches</td>
+<td></td>
+</tr>
+<tr>
+<td>Desmos equation or screenshot location</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="6-phase-4-program-the-function">6. Phase 4: Program the Function</h2>
+<p>Record your model values and code plan before editing the autonomous program.</p>
+<pre><code>public int inchesToTicks(double inches) {
+    double m = ___;  // ticks per inch from our model
+    double b = ___;  // intercept, or 0 if not using one
+    return (int)Math.round(m * inches + b);
+}</code></pre>
+<p>Then use the function:</p>
+<pre><code>int targetTicks = inchesToTicks(36);</code></pre>
+<p>Or use a movement method:</p>
+<pre><code>moveForwardInches(36);</code></pre>
+<p>Use the OnBot Java examples in <code>02_student_materials/code_examples/onbot_java/</code> as code-organization references. This activity does not require a full new OpMode by itself.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Code Item</th>
+<th>Team Response</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Method name we are using</td>
+<td></td>
+</tr>
+<tr>
+<td>Value of <code>m</code></td>
+<td></td>
+</tr>
+<tr>
+<td>Value of <code>b</code></td>
+<td></td>
+</tr>
+<tr>
+<td>Motor power used in autonomous</td>
+<td></td>
+</tr>
+<tr>
+<td>Target test distance</td>
+<td></td>
+</tr>
+<tr>
+<td>Predicted encoder ticks</td>
+<td></td>
+</tr>
+<tr>
+<td>Code file / OpMode used</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="7-phase-5-test-the-function">7. Phase 5: Test the Function</h2>
+<p>Use your function to predict ticks for a target distance, then test the robot.</p>
+<pre><code>error = actual distance - target distance
+absolute error = |actual distance - target distance|</code></pre>
+<p>Optional challenge score:</p>
+<pre><code>challenge score = absolute distance error + sideways drift</code></pre>
+<p>Your teacher may choose whether drift is part of the contest score.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Target Distance (inches)</th>
+<th>Predicted Ticks</th>
+<th>Actual Distance</th>
+<th>Distance Error</th>
+<th>Absolute Error</th>
+<th>Sideways Drift</th>
+<th>Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="8-phase-6-revise">8. Phase 6: Revise</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Question</th>
+<th>Team Response</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>What did our model predict well?</td>
+<td></td>
+</tr>
+<tr>
+<td>What did our model not predict well?</td>
+<td></td>
+</tr>
+<tr>
+<td>Did the robot drift? Which direction?</td>
+<td></td>
+</tr>
+<tr>
+<td>Did the robot overshoot or stop short?</td>
+<td></td>
+</tr>
+<tr>
+<td>Did power level seem too high, too low, or about right?</td>
+<td></td>
+</tr>
+<tr>
+<td>What should we revise: data, model, code, power, alignment, or robot build?</td>
+<td></td>
+</tr>
+<tr>
+<td>What is our next test?</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="9-engineering-portfolio-evidence">9. Engineering Portfolio Evidence</h2>
+<p>Add the work from this challenge to the engineering portfolio.</p>
+<h2 id="portfolio-checklist">Portfolio Checklist</h2>
+<ul>
+<li>[ ] Experiment plan</li>
+<li>[ ] Encoder-distance data table</li>
+<li>[ ] Desmos model or equation</li>
+<li>[ ] <code>inchesToTicks()</code> or autonomous code snippet</li>
+<li>[ ] Challenge test result</li>
+<li>[ ] Error and drift measurement</li>
+<li>[ ] Revision note</li>
+<li>[ ] Photo/video evidence if available</li>
+</ul>
+<h2 id="10-optional-competition-rules">10. Optional Competition Rules</h2>
+<p>Your teacher may give a mystery target distance. Your team will use your model to calculate encoder ticks and run one autonomous attempt. The closest robot wins.</p>
+<p>Optional scoring:</p>
+<pre><code>distance-only score = absolute distance error
+distance + drift score = absolute distance error + sideways drift</code></pre>
+      </article>
+
+    </main>
+  </body>
+</html>

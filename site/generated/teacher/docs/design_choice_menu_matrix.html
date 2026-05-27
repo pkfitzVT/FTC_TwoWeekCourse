@@ -31,6 +31,12 @@
 <p>Design menus are not extra worksheets. Design menus are how teams turn discussion into design choices.</p>
 <p>Student-led discussion helps the team make a decision, but the deliverable is the design choice the team records, builds toward, tests, and revises.</p>
 <p>A design choice is not final because the team said it. A design choice becomes stronger when the team can explain it, build toward it, test it, and revise it based on evidence.</p>
+<p>The strategy-to-design bridge should stay visible during every design choice:</p>
+<pre><code>Strategy chooses the game plan.
+Robot behaviors describe what the robot must do.
+Subsystem designs explain how the robot will do it.</code></pre>
+<p>Later design choices should point back to the Team Strategy Guide and Robot Behavior Specification. If a design choice does not support the strategy or a required robot behavior, the team should revise the design choice or revise the strategy/behavior plan with evidence.</p>
+<p>Demo robot analysis creates design evidence. Students use that evidence during strategy, robot behavior, and chassis design discussions.</p>
 <h2 id="course-design-process">Course Design Process</h2>
 <pre><code>Modified game rules
 -&gt; Structure/function reading
@@ -40,6 +46,7 @@
 -&gt; Design menus / design choices
 -&gt; Build toward a generative design
 -&gt; Revise based on materials, space, assembly constraints, testing, and evidence</code></pre>
+<p>Before finalizing a chassis design, each team must review Demo Robot Design Analysis notes and identify at least one design feature to borrow, one design feature to modify or avoid, and one question or test before building.</p>
 <h2 id="matrix">Matrix</h2>
 <div class="table-wrap"><table>
 <thead><tr>
@@ -55,11 +62,20 @@
 <tr>
 <td>Team Strategy / Game Plan</td>
 <td>Primary scoring strategy</td>
-<td>After modified game rules, structure/function reading, and team norms</td>
-<td>Modified game rules; structure/function reading; <code>90_templates/team_strategy_guide_template.md</code>; <code>02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md</code></td>
-<td>Game scoring opportunities; expected score model; competition video observations; team skill and time</td>
+<td>After modified game rules, structure/function reading, team norms, and demo robot rotations</td>
+<td>Modified game rules; structure/function reading; <code>90_templates/team_strategy_guide_template.md</code>; <code>02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md</code>; <code>02_student_materials/decision_menus/demo_robot_design_analysis_activity.md</code></td>
+<td>Game scoring opportunities; expected score model; competition video observations; demo robot reliability/difficulty evidence; driver/operator role evidence; team skill and time</td>
 <td>Team Strategy Guide entry with primary strategy and evidence</td>
 <td>Robot behavior goals; chassis space; shooter/hopper priorities; driver practice</td>
+</tr>
+<tr>
+<td>Team Strategy / Game Plan</td>
+<td>Strategy-to-robot-behavior translation</td>
+<td>After primary strategy and before chassis choices</td>
+<td><code>02_student_materials/sld_prompts/day2_session4_strategy_to_robot_behavior_sld.md</code>; Robot Behavior Specification; Team Strategy Guide; Demo Robot Design Analysis notes</td>
+<td>Required autonomous, TeleOp, and endgame behaviors; testability; subsystem responsibility; behaviors that seemed easy, hard, reliable, or operator-dependent on demo robots</td>
+<td>Robot Behavior Specification with behavior-to-subsystem notes</td>
+<td>Chassis geometry; controls; shooter/hopper/trigger design; tests</td>
 </tr>
 <tr>
 <td>Team Strategy / Game Plan</td>
@@ -74,9 +90,9 @@
 <td>Team Strategy / Game Plan</td>
 <td>Autonomous priority</td>
 <td>Before programming priorities and chassis testing</td>
-<td>Modified game rules; Team Strategy Guide; Robot Behavior Specification</td>
-<td>Available time; field setup consistency; reliability of simplest autonomous action</td>
-<td>Autonomous plan and priority level</td>
+<td>Modified game rules; Team Strategy Guide; Robot Behavior Specification; <code>02_student_materials/readings/day4_session7_autonomous_encoder_experiment_background.md</code>; <code>02_student_materials/sld_prompts/day4_session7_autonomous_encoder_experiment_design_sld.md</code>; <code>02_student_materials/guides/day4_session7_autonomous_straight_line_challenge_activity.md</code></td>
+<td>Available time; field setup consistency; reliability of simplest autonomous action; encoder-distance data; drift and distance error; variable-control plan</td>
+<td>Autonomous plan and priority level; optional autonomous encoder experiment plan, straight-line challenge model, code snippet, and test result</td>
 <td>Starting position; code tasks; driver setup</td>
 </tr>
 <tr>
@@ -110,9 +126,9 @@
 <td>Frame / Drivetrain</td>
 <td>Chassis geometry</td>
 <td>Before frame assembly</td>
-<td><code>02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md</code>; chassis physics reading; demo robot observation activity</td>
-<td>Robot behavior goals; available materials; field movement; future mechanisms</td>
-<td>Labeled top-view chassis sketch and decision record</td>
+<td><code>02_student_materials/sld_prompts/day3_session5_chassis_design_choice_sld.md</code>; <code>02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md</code>; chassis physics reading; Demo Robot Design Analysis activity; demo robot observation activity</td>
+<td>Robot behavior goals; available materials; field movement; future mechanisms; design feature to borrow; design feature to modify or avoid; question/test before building</td>
+<td>Chassis decision record, labeled top-view chassis sketch, and first chassis test plan</td>
 <td>Motor placement; wheel placement; shooter/hopper space</td>
 </tr>
 <tr>
@@ -180,11 +196,11 @@
 </tr>
 <tr>
 <td>Controller Mapping / Driver Controls</td>
-<td>D-pad drive or joystick drive</td>
-<td>After drivetrain can move safely</td>
-<td><code>02_student_materials/code_examples/onbot_java/DemoDriveDPad.java</code>; <code>02_student_materials/code_examples/onbot_java/DemoDriveJoy.java</code>; controller mapping comparison activity</td>
-<td>Driver comfort; smoothness; lineup accuracy; avoiding contact; test results</td>
-<td>Controller mapping decision statement</td>
+<td>D-pad drive, joystick drive, or hybrid drive</td>
+<td>After chassis readiness check and safe first drive</td>
+<td><code>02_student_materials/sld_prompts/day3_session6_controller_mapping_sld.md</code>; <code>02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md</code>; <code>02_student_materials/readings/future_human_controller_mapping_background.md</code>; <code>02_student_materials/code_examples/onbot_java/DemoDriveDPad.java</code>; <code>02_student_materials/code_examples/onbot_java/DemoDriveJoy.java</code>; Robot Behavior Specification</td>
+<td>Driver comfort; smoothness; lineup accuracy; parking accuracy; avoiding contact; loop time; driver/operator notes; test results</td>
+<td>Controller Mapping Decision Record with D-pad evidence, joystick evidence, gamepad controls, tradeoff, and next test</td>
 <td>Driver practice; scoring loop timing; code organization</td>
 </tr>
 <tr>
@@ -207,12 +223,30 @@
 </tr>
 <tr>
 <td>Controller Mapping / Driver Controls</td>
-<td>Slow mode or normal mode</td>
-<td>During drivetrain and scoring tests</td>
-<td>Controller mapping activity; drivetrain tests</td>
-<td>Aiming accuracy; parking accuracy; overcorrection</td>
-<td>Slow-mode decision or stretch goal</td>
+<td>Drive power / motor tuning and slow mode</td>
+<td>During first drive tests and scoring tests, after the controller mapping decision</td>
+<td><code>02_student_materials/sld_prompts/day3_session6_drive_power_tuning_sld.md</code>; controller mapping activity; drivetrain tests; Robot Behavior Specification; Controller Mapping SLD decision</td>
+<td>Aiming accuracy; parking accuracy; overcorrection; loop time; safety; driver confidence; power-level trial data</td>
+<td>Starting power settings for forward/backward driving, turning, and precision movement or slow mode if used; slow-mode decision if applicable; next tuning target</td>
 <td>Code complexity; driver practice</td>
+</tr>
+<tr>
+<td>Controller Mapping / Driver Controls</td>
+<td>Robot operations role plan and backups</td>
+<td>During Session 8 drive reliability challenge and later practice runs, subsystem tests, practice matches, or qualification rounds</td>
+<td><code>02_student_materials/sld_prompts/reusable_robot_operations_role_plan_sld.md</code>; <code>90_templates/robot_operations_role_plan_sld_template.md</code>; <code>02_student_materials/guides/day4_session8_drive_reliability_round_robin_challenge.md</code>; Controller Mapping SLD; Drive Power / Motor Tuning SLD; engineering notebook</td>
+<td>Timed runs; penalties; driver/operator notes; communication quality; accuracy under pressure; ability to recover from mistakes; safety, fairness, growth needs, absence risks</td>
+<td>Robot Operations Role Plan with primary roles, backups, rotation plan, practice goals, evidence/reasons, and role review conditions</td>
+<td>Driver practice; TeleOp routine; subsystem operation; match readiness; qualification-round planning; final presentation evidence</td>
+</tr>
+<tr>
+<td>Integration / Whole Robot</td>
+<td>Performance postmortem and next change</td>
+<td>After a subsystem test, driving challenge, autonomous challenge, whole-robot scoring loop, practice match, or qualification round</td>
+<td><code>02_student_materials/sld_prompts/reusable_performance_testing_postmortem_sld.md</code>; <code>90_templates/performance_testing_postmortem_sld_template.md</code>; engineering notebook; test data; photos/video</td>
+<td>Human operation evidence; mechanical evidence; software/control evidence; strategy/communication evidence; score/time/penalties; driver/operator notes; failure/fix data</td>
+<td>Performance Postmortem Record with main issue category, one or two next changes, owner, retest plan, and portfolio evidence</td>
+<td>Repair priorities; code changes; role plan revisions; strategy simplification; next test plan</td>
 </tr>
 <tr>
 <td>Controller Mapping / Driver Controls</td>

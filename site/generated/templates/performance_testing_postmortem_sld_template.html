@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Performance Testing Postmortem SLD Template | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Performance Testing Postmortem SLD Template</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../index.html">Home</a>
+        <a href="../../students/index.html">Students</a>
+        <a href="../../teachers/index.html">Teachers</a>
+        <a href="../../sessions/index.html">Sessions</a>
+        <a href="../../materials/index.html">Materials</a>
+        <a href="../../print/index.html">Print</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../index.html">Back to site home</a> | <a href="../../../90_templates/performance_testing_postmortem_sld_template.md">View source Markdown</a></p>
+        <h1 id="performance-testing-postmortem-sld-template">Performance Testing Postmortem SLD Template</h1>
+<h2 id="use-this-when">Use This When</h2>
+<p>Use this SLD after a performance test, practice run, subsystem test, driving challenge, autonomous challenge, practice match, qualification round, elimination round, or whole-robot integration test.</p>
+<p>This template can support:</p>
+<ul>
+<li>drive reliability challenge</li>
+<li>autonomous straight-line challenge</li>
+<li>flywheel / shooter testing</li>
+<li>hopper testing</li>
+<li>trigger / servo testing</li>
+<li>whole-robot scoring loop testing</li>
+<li>TeleOp practice</li>
+<li>autonomous practice</li>
+<li>qualification-round reflection</li>
+<li>between-round repair and strategy decisions</li>
+<li>pit repair decisions</li>
+</ul>
+<h2 id="required-framing">Required Framing</h2>
+<p>A postmortem is not about blame. A postmortem is about understanding what happened so the team can improve.</p>
+<p>Robot performance comes from a system: human operation, mechanical design, software/controls, and strategy/communication.</p>
+<p>The same result may involve more than one category. The goal is to identify the most useful next change.</p>
+<p>Do not change everything at once. Choose one or two evidence-based changes, assign responsibility, and retest.</p>
+<p>SLD is the discussion process. The Performance Postmortem Record is the work product.</p>
+<h2 id="main-discussion-question">Main Discussion Question</h2>
+<p>What did this test or match reveal, what type of issue did we observe, and what should we change before the next run?</p>
+<p>Simpler student version:</p>
+<p>What happened, why did it happen, and what is the next change we should make?</p>
+<h2 id="four-standard-categories">Four Standard Categories</h2>
+<p>Use these four categories in every postmortem:</p>
+<pre><code>Human Operation
+Mechanical System
+Software / Controls
+Strategy / Communication</code></pre>
+<p>Categories may overlap, but teams should still choose one main issue category for the next revision.</p>
+<h2 id="category-guidance">Category Guidance</h2>
+<h3 id="human-operation">Human Operation</h3>
+<p>Examples:</p>
+<ul>
+<li>overcorrecting</li>
+<li>panic under pressure</li>
+<li>poor field awareness</li>
+<li>missed timing</li>
+<li>not listening to partner</li>
+<li>driver/operator confusion</li>
+<li>needing more practice</li>
+<li>weak communication between driver and operator</li>
+<li>driver loses orientation when the robot turns around</li>
+</ul>
+<p>Driving becomes harder when the robot turns around because the robot&#x27;s front may no longer face the same direction as the driver. Forward, backward, left, and right may feel different depending on robot orientation.</p>
+<p>Possible changes:</p>
+<ul>
+<li>set a driver practice target</li>
+<li>drive more slowly in turns</li>
+<li>add a visual front marker</li>
+<li>add coach/spotter callouts</li>
+<li>practice with the robot facing different directions</li>
+<li>revise driver/operator communication</li>
+</ul>
+<h3 id="mechanical-system">Mechanical System</h3>
+<p>Examples:</p>
+<ul>
+<li>loose wheel</li>
+<li>rubbing part</li>
+<li>frame flex</li>
+<li>battery shifting</li>
+<li>wire snagging</li>
+<li>poor traction</li>
+<li>wheel slip</li>
+<li>uneven weight distribution</li>
+<li>loose connector</li>
+<li>hopper jam</li>
+<li>trigger sticking</li>
+<li>flywheel mount moving</li>
+<li>ball path blocked</li>
+<li>mechanism hard to repair or reload</li>
+</ul>
+<p>Possible changes:</p>
+<ul>
+<li>tighten fasteners</li>
+<li>improve wire management</li>
+<li>move battery</li>
+<li>reinforce frame</li>
+<li>reduce rubbing</li>
+<li>adjust hopper angle</li>
+<li>improve trigger clearance</li>
+<li>add guide rails or supports</li>
+</ul>
+<h3 id="software-controls">Software / Controls</h3>
+<p>Examples:</p>
+<ul>
+<li>speed too high</li>
+<li>turning too sensitive</li>
+<li>no slow mode</li>
+<li>confusing button mapping</li>
+<li>motor direction mismatch</li>
+<li>servo range too large or too small</li>
+<li>autonomous target wrong</li>
+<li>encoder conversion inaccurate</li>
+<li>code does not match configuration name</li>
+<li>flywheel power not consistent</li>
+<li>trigger timing not reliable</li>
+</ul>
+<p>Possible changes:</p>
+<ul>
+<li>reduce drive power</li>
+<li>add slow mode</li>
+<li>revise controller mapping</li>
+<li>change servo positions</li>
+<li>adjust motor power</li>
+<li>update autonomous target</li>
+<li>retest encoder model</li>
+<li>fix configuration names</li>
+</ul>
+<h3 id="strategy-communication">Strategy / Communication</h3>
+<p>Examples:</p>
+<ul>
+<li>unclear role plan</li>
+<li>no recovery plan</li>
+<li>poor driver/operator communication</li>
+<li>no passing/waiting plan</li>
+<li>trying to do too much</li>
+<li>changing too many things at once</li>
+<li>unclear strategy</li>
+<li>no backup driver/operator</li>
+<li>not knowing when to abandon a plan</li>
+<li>pit/field communication issue</li>
+<li>team made a change but did not tell the driver/operator</li>
+</ul>
+<p>Possible changes:</p>
+<ul>
+<li>revise role plan</li>
+<li>set a recovery plan</li>
+<li>simplify strategy</li>
+<li>assign a coach/spotter</li>
+<li>write pit-to-field checklist</li>
+<li>change one thing at a time</li>
+<li>create backup role plan</li>
+<li>update team communication norms</li>
+</ul>
+<h2 id="discussion-roles">Discussion Roles</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Role</th>
+<th>Job</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Facilitator</td>
+<td>Keeps the team focused on evidence and next action.</td>
+</tr>
+<tr>
+<td>Tally keeper</td>
+<td>Uses the SLD tally sheet.</td>
+</tr>
+<tr>
+<td>Recorder</td>
+<td>Writes the postmortem record.</td>
+</tr>
+<tr>
+<td>Evidence checker</td>
+<td>Asks what evidence supports each claim.</td>
+</tr>
+<tr>
+<td>Category checker</td>
+<td>Asks whether each issue is human, mechanical, software/control, or strategy/communication.</td>
+</tr>
+<tr>
+<td>Action checker</td>
+<td>Asks whether the next change is specific and testable.</td>
+</tr>
+</tbody></table></div>
+<p>For smaller teams, one student may hold more than one role.</p>
+<h2 id="sentence-stems">Sentence Stems</h2>
+<pre><code>The evidence from the test shows ___.
+This looks like a human operation issue because ___.
+This looks like a mechanical issue because ___.
+This looks like a software/control issue because ___.
+This looks like a strategy/communication issue because ___.
+The robot turned around and the driver orientation changed when ___.
+The issue may overlap categories because ___.
+One change we should make next is ___.
+We should not change ___ yet because ___.
+The person responsible for this fix should be ___ because ___.
+We will know the change worked if ___.</code></pre>
+<h2 id="test-match-summary">Test / Match Summary</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Field</th>
+<th>Team Response</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Test or match reviewed</td>
+<td></td>
+</tr>
+<tr>
+<td>Date / session</td>
+<td></td>
+</tr>
+<tr>
+<td>Subsystem or whole robot tested</td>
+<td></td>
+</tr>
+<tr>
+<td>Goal of the test</td>
+<td></td>
+</tr>
+<tr>
+<td>Result / score / time</td>
+<td></td>
+</tr>
+<tr>
+<td>Best evidence from the test</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="category-classification-table">Category Classification Table</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Category</th>
+<th>Evidence / What We Observed</th>
+<th>Possible Change</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Human Operation</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Mechanical System</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Software / Controls</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Strategy / Communication</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="postmortem-decision-table">Postmortem Decision Table</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Postmortem Decision</th>
+<th>Team Response</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>What worked well?</td>
+<td></td>
+</tr>
+<tr>
+<td>What did not work?</td>
+<td></td>
+</tr>
+<tr>
+<td>Main issue category</td>
+<td>Human / Mechanical / Software / Strategy</td>
+</tr>
+<tr>
+<td>One change we will make before the next run</td>
+<td></td>
+</tr>
+<tr>
+<td>Who owns this change?</td>
+<td></td>
+</tr>
+<tr>
+<td>How will we retest?</td>
+<td></td>
+</tr>
+<tr>
+<td>What evidence belongs in the portfolio?</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="change-log">Change Log</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Test / Run</th>
+<th>Change Made</th>
+<th>Reason for Change</th>
+<th>Result</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>After Run 1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>After Run 2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>After Run 3</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="2-minute-pit-postmortem">2-Minute Pit Postmortem</h2>
+<p>Use this fast version for quick between-round decisions.</p>
+<p>1. What happened? 2. What category was the main issue? - Human Operation - Mechanical System - Software / Controls - Strategy / Communication 3. What is the one change we can make before the next run? 4. Who owns it? 5. Can we test it before the next match?</p>
+<p>Use the full version for classroom reflection or portfolio work.</p>
+<h2 id="tally-sheet-connection">Tally Sheet Connection</h2>
+<p>Use <code>90_templates/student_led_discussion_tally_sheet_template.md</code>.</p>
+<p>Use the SLD tally sheet to track discussion moves: Q, C, E, B, O, D, X.</p>
+<p>At the end, record one discussion strength and one target for the next test or match discussion.</p>
+<h2 id="portfolio-connection">Portfolio Connection</h2>
+<p>Students should add the Performance Postmortem Record to the engineering portfolio.</p>
+<p>Portfolio evidence should include:</p>
+<ul>
+<li>test or match result</li>
+<li>photo/video if available</li>
+<li>data table, score, time, or observation</li>
+<li>issue classification</li>
+<li>change made</li>
+<li>person responsible</li>
+<li>retest result</li>
+<li>revision note</li>
+</ul>
+      </article>
+
+    </main>
+  </body>
+</html>

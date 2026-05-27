@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Day 4, Session 8: Wire, Configure, and Test Drive | FTC/YES Robotics Course</title>
+    <title>Day 4, Session 8: Wire, Configure, Test Drive, and Round-Robin Challenge | FTC/YES Robotics Course</title>
     <link rel="stylesheet" href="../../assets/css/styles.css">
   </head>
   <body>
     <header class="site-header">
-      <h1>Day 4, Session 8: Wire, Configure, and Test Drive</h1>
+      <h1>Day 4, Session 8: Wire, Configure, Test Drive, and Round-Robin Challenge</h1>
       
       
       <nav class="nav" aria-label="Main navigation">
@@ -25,19 +25,20 @@
 
       <article class="document">
         <p class="breadcrumb"><a href="../../index.html">Back to site home</a> | <a href="../../../docs/sessions/day_04_session_08_wire_configure_and_test_drive.md">View source Markdown</a></p>
-        <h1 id="day-4-session-8-wire-configure-and-test-drive">Day 4, Session 8: Wire, Configure, and Test Drive</h1>
+        <h1 id="day-4-session-8-wire-configure-test-drive-and-round-robin-challenge">Day 4, Session 8: Wire, Configure, Test Drive, and Round-Robin Challenge</h1>
 <h2 id="purpose">Purpose</h2>
-<p>Connect physical wiring and robot configuration to Java TeleOp control.</p>
+<p>Connect physical wiring and robot configuration to Java TeleOp control, then use a two-robot timed challenge to test drive reliability, communication, and control decisions.</p>
 <h2 id="learning-target">Learning Target</h2>
-<p>Students can explain how motor ports, configuration names, hardware map names, and Java variables connect during first-drive testing.</p>
+<p>Students can use driving evidence to improve chassis reliability, controller mapping, drive tuning, and drive-team communication.</p>
 <h2 id="success-criteria">Success Criteria</h2>
 <ul>
 <li>Robot is tested on blocks before floor driving.</li>
 <li>Configuration names match code.</li>
 <li>Teams debug one issue at a time and record results.</li>
+<li>Ready teams complete a two-robot timed run and record time, penalties, adjustments, and driver/operator role evidence.</li>
 </ul>
 <h2 id="teacher-preparation">Teacher Preparation</h2>
-<p>Prepare charged batteries, Driver Stations, Robot Controllers/Control Hubs, motor wires, safe blocks, test space, and a troubleshooting routine.</p>
+<p>Prepare charged batteries, Driver Stations, Robot Controllers/Control Hubs, motor wires, safe blocks, test space, cones or markers, starting zones, timer, and a troubleshooting routine.</p>
 <h2 id="student-background-reading-preparation">Student Background Reading / Preparation</h2>
 <ul>
 <li><a href="../student/readings/day4_session8_wiring_configuration_and_first_drive.html">Wiring, configuration, and first drive</a></li>
@@ -47,43 +48,275 @@
 <li><a href="../student/readings/future_human_controller_mapping_background.html">Human-centered controller mapping background</a></li>
 <li><a href="../student/code_examples/README.html">OnBot Java code examples</a></li>
 <li><a href="../student/decision_menus/controller_mapping_drive_comparison_activity.html">Controller mapping drive comparison activity</a></li>
+<li><a href="../student/sld_prompts/day3_session6_controller_mapping_sld.html">Controller Mapping SLD</a></li>
+<li><a href="../student/sld_prompts/day3_session6_drive_power_tuning_sld.html">Drive Power / Motor Tuning SLD</a></li>
+<li><a href="../student/sld_prompts/reusable_robot_operations_role_plan_sld.html">Robot Operations Role Plan SLD</a></li>
+<li><a href="../student/sld_prompts/reusable_performance_testing_postmortem_sld.html">Performance Testing Postmortem SLD</a></li>
+<li><a href="../student/guides/day4_session8_drive_reliability_round_robin_challenge.html">Drive Reliability Round-Robin Challenge</a></li>
 <li><a href="../student/guides/subsystem_design_cycle_guide.html">Subsystem design cycle guide</a></li>
 </ul>
+<h2 id="key-idea">Key Idea</h2>
+<pre><code>A robot that works alone may behave differently when another robot is sharing the field.
+Good drive teams manage speed, space, timing, communication, and recovery from mistakes.</code></pre>
+<p>This is a controlled driving challenge, not bumper cars. The goal is fast, clean, controlled driving.</p>
 <h2 id="student-led-discussion-decision">Student-Led Discussion / Decision</h2>
-<p>Prompt: What should we change first when the robot does not drive the way we expected?</p>
+<ul>
+<li>Troubleshooting prompt: What should we change first when the robot does not drive the way we expected?</li>
+<li>Robot Operations Role Plan SLD prompt: How should our team assign and practice robot operation roles so we are safe, fair, competitive, and prepared if someone is absent?</li>
+<li>Post-challenge reflection prompt: What did the driving challenge reveal about our chassis, controls, drive tuning, and driver communication?</li>
+<li>Performance Testing Postmortem SLD prompt: What did this test or match reveal, what type of issue did we observe, and what should we change before the next run?</li>
+</ul>
+<p>Competition roles should be based on evidence, fairness, growth, and team needs. The best role plan includes backups.</p>
+<h2 id="differentiated-session-pathways">Differentiated Session Pathways</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Team Status</th>
+<th>Session 8 Pathway</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Robot not safely driving</td>
+<td>Wiring, configuration, chassis repair, first drive</td>
+</tr>
+<tr>
+<td>Robot drives but is unreliable</td>
+<td>Controller mapping, power tuning, practice laps</td>
+</tr>
+<tr>
+<td>Robot drives reliably</td>
+<td>Two-robot round-robin timed challenge</td>
+</tr>
+<tr>
+<td>Advanced team</td>
+<td>Revise tuning, rotate drivers, improve clean-run score</td>
+</tr>
+</tbody></table></div>
+<p>Teams enter the challenge when they are ready. Teams that are not ready to race should still aim for at least a practice run or readiness check.</p>
 <h2 id="work-time-options">Work Time Options</h2>
 <ul>
 <li>Wiring: connect motors and manage wires safely.</li>
 <li>Programming: confirm hardwareMap names and compare drive-only D-pad and joystick TeleOp examples.</li>
 <li>Testing: first drivetrain subsystem test on blocks, then controlled D-pad and joystick floor tests if safe.</li>
-<li>Documentation: test table and code/config notes.</li>
+<li>Challenge: run a two-robot round-robin timed course when the robot is ready.</li>
+<li>Documentation: test table, code/config notes, race run record, adjustment log, and role decision record.</li>
 </ul>
+<h2 id="two-robot-round-robin-challenge">Two-Robot Round-Robin Challenge</h2>
+<p>Use this structure with four teams if time allows:</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Round</th>
+<th>Match</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Team A vs Team B</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Team C vs Team D</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Team A vs Team C</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Team B vs Team D</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Team A vs Team D</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Team B vs Team C</td>
+</tr>
+</tbody></table></div>
+<p>Each team gets three runs if time allows. If time is short, use one practice run, one official timed run, and one improvement run if possible.</p>
+<p>Course rules:</p>
+<ul>
+<li>Two robots start from marked starting zones.</li>
+<li>Both robots follow the same general route or complete the same loop.</li>
+<li>Robots must avoid cones/markers, boundaries, and each other.</li>
+<li>Drivers may need to pass, wait, or adjust speed.</li>
+<li>Unsafe driving results in a reset, penalty, stop, rerun, or disqualification at teacher discretion.</li>
+<li>The teacher may modify the course for space and safety.</li>
+</ul>
+<p>Scoring:</p>
+<pre><code>final score = time + penalties</code></pre>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Event</th>
+<th>Penalty</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Touches cone / marker / boundary</td>
+<td>+5 seconds</td>
+</tr>
+<tr>
+<td>Needs a reset</td>
+<td>+10 seconds</td>
+</tr>
+<tr>
+<td>Robot-to-robot contact</td>
+<td>+10 seconds</td>
+</tr>
+<tr>
+<td>Unsafe driving</td>
+<td>Stop, rerun, or disqualification at teacher discretion</td>
+</tr>
+</tbody></table></div>
+<p>Positive award categories: fastest clean run, best controlled driving, best driver/operator communication, best improvement between runs, best recovery from a mistake, and best evidence-based adjustment.</p>
+<p>Between runs, teams should change only one or two things at a time and record what changed. Teams may adjust drive power, slow mode, controller mapping, driver/operator communication, starting strategy, passing/waiting strategy, wire management, loose parts, battery placement, or chassis alignment.</p>
+<h2 id="data-tables">Data Tables</h2>
+<p>Race Run Record:</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Run</th>
+<th>Opponent</th>
+<th>Driver</th>
+<th>Operator</th>
+<th>Time</th>
+<th>Penalties</th>
+<th>Final Score</th>
+<th>Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Practice</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>Adjustment Log:</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Between Runs</th>
+<th>What We Changed</th>
+<th>Why We Changed It</th>
+<th>Result</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>After practice</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>After Run 1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>After Run 2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>Role Decision Record:</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Role</th>
+<th>Student</th>
+<th>Evidence / Reason</th>
+<th>Backup</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Driver</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Operator</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Coach / spotter, if used</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
 <h2 id="must-should-could">Must / Should / Could</h2>
 <ul>
 <li><strong>Must:</strong> Test basic drivetrain subsystem motion safely with wheels lifted first.</li>
 <li><strong>Should:</strong> Record at least one symptom, likely cause, check, change, and result.</li>
-<li><strong>Could:</strong> Refactor joystick drive into helper methods or add a clearer driver-control note.</li>
+<li><strong>Could:</strong> Complete a two-robot timed challenge, rotate drivers, improve clean-run score, or revise tuning based on run evidence.</li>
 </ul>
 <h2 id="deliverables">Deliverables</h2>
 <ul>
 <li>Code/config notes.</li>
 <li>Wiring/configuration table.</li>
 <li>Testing results.</li>
+<li>Race run record, if ready.</li>
+<li>Adjustment log, if ready.</li>
+<li>Drive-team role decision record.</li>
 <li>Engineering portfolio entry.</li>
 </ul>
 <h2 id="engineering-portfolio-evidence">Engineering Portfolio Evidence</h2>
-<p>Teams should add motor port table, configuration names, Java variable names, subsystem test behavior, D-pad versus joystick comparison evidence, controller-mapping decision, and fix.</p>
+<p>Teams should add motor port table, configuration names, Java variable names, subsystem test behavior, D-pad versus joystick comparison evidence, controller-mapping decision, timed run results, penalties, adjustment log, role decision record, photo/video evidence if available, and one chassis/control/driver-practice revision.</p>
 <h2 id="reflection-share-out">Reflection / Share-Out</h2>
 <ul>
 <li>What bug or mismatch did the team diagnose?</li>
+<li>What adjustment did the team make between runs?</li>
+<li>What did the challenge reveal about chassis reliability, controls, tuning, or driver/operator communication?</li>
 </ul>
 <h2 id="teacher-notes">Teacher Notes</h2>
-<p>Require students to stop OpModes before changing wires. Normalize debugging as engineering.</p>
+<p>Require students to stop OpModes before changing wires. Normalize debugging as engineering. Teams that are not ready for the full challenge should continue wiring, configuration, chassis repair, controller mapping, or drive tuning so they can participate in at least a practice run or readiness check.</p>
 <h2 id="linked-resources">Linked Resources</h2>
 <ul>
 <li><a href="../student/readings/day4_session8_wiring_configuration_and_first_drive.html">Wiring, configuration, and first drive</a></li>
 <li><a href="../student/readings/day4_session8_troubleshooting_basic_drive.html">Troubleshooting basic drive</a></li>
 <li><a href="../student/decision_menus/controller_mapping_drive_comparison_activity.html">Controller mapping drive comparison activity</a></li>
+<li><a href="../student/sld_prompts/day3_session6_controller_mapping_sld.html">Controller Mapping SLD</a></li>
+<li><a href="../student/sld_prompts/day3_session6_drive_power_tuning_sld.html">Drive Power / Motor Tuning SLD</a></li>
+<li><a href="../student/sld_prompts/reusable_robot_operations_role_plan_sld.html">Robot Operations Role Plan SLD</a></li>
+<li><a href="../student/sld_prompts/reusable_performance_testing_postmortem_sld.html">Performance Testing Postmortem SLD</a></li>
+<li><a href="../student/guides/day4_session8_drive_reliability_round_robin_challenge.html">Drive Reliability Round-Robin Challenge</a></li>
 <li><a href="../student/code_examples/README.html">OnBot Java code examples</a></li>
 <li><a href="../templates/subsystem_design_cycle_template.html">Subsystem Design Cycle template</a></li>
 <li><a href="../templates/student_led_discussion_tally_sheet_template.html">Student-Led Discussion Tally Sheet template</a></li>

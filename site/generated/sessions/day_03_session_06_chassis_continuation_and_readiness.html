@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Day 3, Session 6: Chassis Continuation and Readiness | FTC/YES Robotics Course</title>
+    <title>Day 3, Session 6: Chassis Readiness, Controller Mapping, and Drive Tuning | FTC/YES Robotics Course</title>
     <link rel="stylesheet" href="../../assets/css/styles.css">
   </head>
   <body>
     <header class="site-header">
-      <h1>Day 3, Session 6: Chassis Continuation and Readiness</h1>
+      <h1>Day 3, Session 6: Chassis Readiness, Controller Mapping, and Drive Tuning</h1>
       
       
       <nav class="nav" aria-label="Main navigation">
@@ -25,62 +25,247 @@
 
       <article class="document">
         <p class="breadcrumb"><a href="../../index.html">Back to site home</a> | <a href="../../../docs/sessions/day_03_session_06_chassis_continuation_and_readiness.md">View source Markdown</a></p>
-        <h1 id="day-3-session-6-chassis-continuation-and-readiness">Day 3, Session 6: Chassis Continuation and Readiness</h1>
+        <h1 id="day-3-session-6-chassis-readiness-controller-mapping-and-drive-tuning">Day 3, Session 6: Chassis Readiness, Controller Mapping, and Drive Tuning</h1>
 <h2 id="purpose">Purpose</h2>
-<p>Continue chassis assembly and inspect the drivetrain before powered testing.</p>
+<p>Use chassis readiness as the entry condition for safe first drive, then compare D-pad and joystick controls, collect driving evidence, and make a first controller mapping and drive power/speed decision.</p>
 <h2 id="learning-target">Learning Target</h2>
-<p>Students can check whether the chassis is mechanically ready for safe powered testing.</p>
+<p>Students can check whether the chassis is mechanically ready for safe powered testing, compare D-pad and joystick drive approaches, collect simple driving data, and choose a first controller mapping and drive power/speed setting.</p>
 <h2 id="success-criteria">Success Criteria</h2>
 <ul>
 <li>Motors and wheels are secure.</li>
 <li>Wires and electronics have planned space.</li>
 <li>Teams identify readiness issues before turning on the robot.</li>
+<li>Teams compare <code>DemoDriveDPad.java</code> and <code>DemoDriveJoy.java</code> with controlled trials.</li>
+<li>Teams connect controller mapping to the Robot Behavior Specification.</li>
+<li>Teams record a first control decision, drive power/speed tuning decision, and next test.</li>
 </ul>
 <h2 id="teacher-preparation">Teacher Preparation</h2>
-<p>Prepare safe test area, batteries, basic inspection criteria, repair supplies, and storage procedure.</p>
+<p>Prepare safe test area, batteries, basic inspection criteria, repair supplies, storage procedure, Driver Station/Robot Controller devices, OnBot Java access, D-pad and joystick demo OpModes, controller mapping comparison activity, timing/measurement tools, and clear test boundaries.</p>
 <h2 id="student-background-reading-preparation">Student Background Reading / Preparation</h2>
 <ul>
 <li><a href="../student/readings/principles_of_robot_assembly_day3.html">Principles of robot assembly</a></li>
 <li><a href="../student/readings/day3_session5_chassis_physics_space_background.html">Chassis physics and space background</a></li>
 <li><a href="../student/guides/subsystem_design_cycle_guide.html">Subsystem design cycle guide</a></li>
+<li><a href="../student/readings/future_human_controller_mapping_background.html">Human-centered controller mapping background</a></li>
+<li><a href="../student/decision_menus/controller_mapping_drive_comparison_activity.html">Controller mapping drive comparison activity</a></li>
+<li><a href="../student/sld_prompts/day3_session6_controller_mapping_sld.html">Controller Mapping SLD handout</a></li>
+<li><a href="../student/sld_prompts/day3_session6_drive_power_tuning_sld.html">Drive Power / Motor Tuning SLD handout</a></li>
+<li><a href="../student/code_examples/README.html">OnBot Java code examples</a></li>
+<li><a href="../../../02_student_materials/code_examples/onbot_java/DemoDriveDPad.java">DemoDriveDPad.java</a></li>
+<li><a href="../../../02_student_materials/code_examples/onbot_java/DemoDriveJoy.java">DemoDriveJoy.java</a></li>
+<li><a href="../templates/robot_behavior_specification_template.html">Robot Behavior Specification template</a></li>
+<li><a href="../templates/student_led_discussion_tally_sheet_template.html">Student-Led Discussion Tally Sheet template</a></li>
 <li>Relevant Day 2 chassis decision menus.</li>
 </ul>
 <h2 id="student-led-discussion-decision">Student-Led Discussion / Decision</h2>
-<p>Prompt: What evidence will show that our chassis is ready for powered testing?</p>
+<p>Before comparing D-pad and joystick controls, teams must confirm that the chassis is safe enough for powered testing.</p>
+<p>Readiness prompt: What evidence will show that our chassis is ready for powered testing?</p>
+<p>Controller Mapping SLD: Which control mapping best helps our drivers make the robot perform the behaviors in our Robot Behavior Specification?</p>
+<p>Drive Power / Motor Tuning SLD: What motor power settings give our team the best balance of control, accuracy, speed, and safety for the robot behaviors we need?</p>
+<p>Use the student-facing Controller Mapping SLD handout with the controller mapping comparison activity, SLD tally sheet, and engineering notebook to record the first control decision. Then use the Drive Power / Motor Tuning SLD handout to choose starting power settings for forward/backward driving, turning, and precision movement or slow mode if used.</p>
+<p>Core idea:</p>
+<pre><code>Robot behaviors describe what the robot must do.
+Controller mapping helps humans make the robot do those behaviors reliably.
+Drive tuning helps the robot balance speed, control, accuracy, and safety.</code></pre>
 <h2 id="work-time-options">Work Time Options</h2>
 <ul>
 <li>Assembly: finish drivetrain/chassis structure.</li>
 <li>Testing: hand-spin wheels, check rubbing, inspect fasteners, and update the frame/drivetrain subsystem cycle.</li>
-<li>Documentation: readiness checklist and issue list.</li>
+<li>Safe first drive: test on blocks first, then run controlled floor tests only after teacher/mentor approval.</li>
+<li>Controller comparison: test D-pad drive using <code>DemoDriveDPad.java</code> and joystick drive using <code>DemoDriveJoy.java</code>.</li>
+<li>Data collection: record loop time, turning, parking/line-up accuracy, driver confidence, and notes from more than one driver if possible.</li>
+<li>SLD: decide D-pad, joystick, or hybrid and choose an initial drive power/speed setting.</li>
+<li>Documentation: readiness checklist, issue list, test data, control decision, speed setting, and next test.</li>
 </ul>
+<h2 id="suggested-activity-flow">Suggested Activity Flow</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Time</th>
+<th>Activity</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>5-10 min</td>
+<td>Chassis readiness and safety check</td>
+</tr>
+<tr>
+<td>10-15 min</td>
+<td>Test D-pad drive using <code>DemoDriveDPad.java</code></td>
+</tr>
+<tr>
+<td>10-15 min</td>
+<td>Test joystick drive using <code>DemoDriveJoy.java</code></td>
+</tr>
+<tr>
+<td>10 min</td>
+<td>Collect driving data: loop time, turning, parking/line-up accuracy, driver confidence</td>
+</tr>
+<tr>
+<td>10 min</td>
+<td>Controller Mapping SLD: D-pad, joystick, or hybrid?</td>
+</tr>
+<tr>
+<td>10 min</td>
+<td>Drive Power / Motor Tuning SLD: what motor power settings balance control, accuracy, speed, and safety?</td>
+</tr>
+<tr>
+<td>5 min</td>
+<td>Record decision, evidence, and next test in the portfolio</td>
+</tr>
+</tbody></table></div>
+<p>Shortened version if time is tight: test one driver with D-pad, test one driver with joystick, record observations, and choose what to keep testing next.</p>
+<h2 id="data-collection-expectations">Data Collection Expectations</h2>
+<p>Run three short trials for each mapping approach when possible. If time allows, test more than one driver.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Driver</th>
+<th>Control Type</th>
+<th>Trial 1</th>
+<th>Trial 2</th>
+<th>Trial 3</th>
+<th>Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Driver A</td>
+<td>D-pad</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Driver A</td>
+<td>Joystick</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Driver B</td>
+<td>D-pad</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Driver B</td>
+<td>Joystick</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Skill</th>
+<th>Control Type</th>
+<th>Result / Score</th>
+<th>Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Drive straight</td>
+<td>D-pad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Drive straight</td>
+<td>Joystick</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Turn around obstacle</td>
+<td>D-pad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Turn around obstacle</td>
+<td>Joystick</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Line up with target</td>
+<td>D-pad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Line up with target</td>
+<td>Joystick</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Park accurately</td>
+<td>D-pad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Park accurately</td>
+<td>Joystick</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p>This data should inform the SLD rather than replace discussion.</p>
 <h2 id="must-should-could">Must / Should / Could</h2>
 <ul>
-<li><strong>Must:</strong> Complete a mechanical readiness check and frame/drivetrain subsystem test note before powered testing.</li>
-<li><strong>Should:</strong> Fix at least one identified issue and document the change.</li>
-<li><strong>Could:</strong> Create a short inspection routine another team could use.</li>
+<li><strong>Must:</strong> Complete a mechanical readiness check before powered testing, run safe first-drive evidence if approved, and record one D-pad vs joystick comparison.</li>
+<li><strong>Should:</strong> Use the Robot Behavior Specification to justify a first controller mapping and drive power/speed setting.</li>
+<li><strong>Could:</strong> Test more than one driver, compare slow mode or reduced power, or create a short inspection/control-test routine another team could use.</li>
 </ul>
 <h2 id="deliverables">Deliverables</h2>
 <ul>
 <li>Build photos.</li>
 <li>Chassis readiness checklist.</li>
 <li>Issue/fix list.</li>
+<li>D-pad vs joystick comparison evidence.</li>
+<li>Controller Mapping SLD work product: chosen D-pad, joystick, or hybrid approach; test evidence; driver/operator notes; gamepad mapping decision; next test or revision.</li>
+<li>Drive Power / Motor Tuning SLD work product: starting power settings for forward/backward driving, turning, and precision movement or slow mode if used; speed/control tradeoff reasoning; trial evidence; slow mode decision if applicable; next tuning target.</li>
 <li>Engineering portfolio entry.</li>
 </ul>
 <h2 id="engineering-portfolio-evidence">Engineering Portfolio Evidence</h2>
-<p>Teams should add what was checked, what failed readiness, frame/drivetrain subsystem evidence, what was fixed, and what remains.</p>
+<p>Teams should add what was checked, what failed readiness, frame/drivetrain subsystem evidence, D-pad vs joystick trial evidence, controller mapping decision, drive power/speed tuning decision, what was fixed, and what remains.</p>
+<p>Controls should connect to robot behaviors:</p>
+<ul>
+<li>If the robot must line up accurately with the goal, the controls must support precise turning and small adjustments.</li>
+<li>If the robot must make multiple scoring loops, the controls must support quick but reliable driving.</li>
+<li>If the robot must park safely, the controls must support predictable final positioning.</li>
+<li>If driver/operator roles matter, the controls must be clear enough for two students to coordinate.</li>
+</ul>
 <h2 id="reflection-share-out">Reflection / Share-Out</h2>
 <ul>
 <li>What issue did the team catch before it became a powered-test problem?</li>
+<li>Which control choice is currently supported by the best evidence?</li>
+<li>What speed/control adjustment should the team test next?</li>
 </ul>
 <h2 id="teacher-notes">Teacher Notes</h2>
-<p>Do not let teams power robots until wheels, motors, battery, hub, switch, and wires are reasonably safe. Frame inspection as normal engineering.</p>
+<p>Do not let teams power robots until wheels, motors, battery, hub, switch, and wires are reasonably safe. Frame inspection as normal engineering. Keep first drive slow and controlled; the goal is evidence for a control decision, not fast driving.</p>
 <h2 id="linked-resources">Linked Resources</h2>
 <ul>
 <li><a href="../student/readings/principles_of_robot_assembly_day3.html">Principles of robot assembly</a></li>
 <li><a href="../student/decision_menus/day2_session4_wheel_selection_menu.html">Wheel selection menu</a></li>
 <li><a href="../student/decision_menus/day2_session4_motor_placement_menu.html">Motor placement menu</a></li>
 <li><a href="../student/decision_menus/day2_session4_electronics_battery_placement_menu.html">Electronics and battery placement menu</a></li>
+<li><a href="../student/decision_menus/controller_mapping_drive_comparison_activity.html">Controller mapping drive comparison activity</a></li>
+<li><a href="../student/sld_prompts/day3_session6_controller_mapping_sld.html">Controller Mapping SLD handout</a></li>
+<li><a href="../student/sld_prompts/day3_session6_drive_power_tuning_sld.html">Drive Power / Motor Tuning SLD handout</a></li>
+<li><a href="../student/readings/future_human_controller_mapping_background.html">Human-centered controller mapping background</a></li>
+<li><a href="../student/code_examples/README.html">OnBot Java code examples</a></li>
+<li><a href="../../../02_student_materials/code_examples/onbot_java/DemoDriveDPad.java">DemoDriveDPad.java</a></li>
+<li><a href="../../../02_student_materials/code_examples/onbot_java/DemoDriveJoy.java">DemoDriveJoy.java</a></li>
+<li><a href="../templates/robot_behavior_specification_template.html">Robot Behavior Specification template</a></li>
 <li><a href="../templates/subsystem_design_cycle_template.html">Subsystem Design Cycle template</a></li>
+<li><a href="../templates/student_led_discussion_tally_sheet_template.html">Student-Led Discussion Tally Sheet template</a></li>
 <li><a href="../student/engineering_notebook/student_engineering_notebook_master.html">Engineering notebook</a></li>
 </ul>
       </article>

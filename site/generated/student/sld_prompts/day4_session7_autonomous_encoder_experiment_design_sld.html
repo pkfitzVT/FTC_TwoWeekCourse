@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Autonomous Encoder Experiment Design SLD | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Autonomous Encoder Experiment Design SLD</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+        <a href="../../../print/index.html">Print</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../02_student_materials/sld_prompts/day4_session7_autonomous_encoder_experiment_design_sld.md">View source Markdown</a></p>
+        <h1 id="autonomous-encoder-experiment-design-sld">Autonomous Encoder Experiment Design SLD</h1>
+<h2 id="session-course-phase">Session / Course Phase</h2>
+<p>Day 4, Session 7: Build Drivetrain/Chassis and Ready-Team Autonomous Extension</p>
+<h2 id="why-this-discussion-matters">Why This Discussion Matters</h2>
+<p>Autonomous code needs a model.</p>
+<p>A model needs data.</p>
+<p>Good data starts with a good experiment plan.</p>
+<p>This SLD is not about arguing over the perfect experiment. It is about making a clear, testable plan so your team can collect useful data quickly.</p>
+<p>SLD is the decision process. The experiment plan is the work product.</p>
+<h2 id="main-discussion-question">Main Discussion Question</h2>
+<p>What data should we collect so our robot can use a model to drive a target distance as accurately and straight as possible?</p>
+<p>Student version:</p>
+<p>What experiment should we run so our robot can learn how many encoder ticks match a target distance?</p>
+<h2 id="what-this-discussion-must-produce">What This Discussion Must Produce</h2>
+<p>By the end of this SLD, your team should complete an Autonomous Encoder Experiment Plan that includes:</p>
+<ul>
+<li>motor power setting for the first model</li>
+<li>short test value</li>
+<li>medium test value</li>
+<li>long test value</li>
+<li>whether the team is using encoder targets or distance targets first</li>
+<li>number of trials</li>
+<li>measurement method for forward distance</li>
+<li>measurement method for sideways drift</li>
+<li>how the team will keep variables controlled</li>
+<li>team roles</li>
+<li>what will count as good enough evidence to start building the model</li>
+<li>first Desmos/modeling plan</li>
+<li>first autonomous challenge test plan</li>
+</ul>
+<h2 id="evidence-resources-to-use">Evidence / Resources to Use</h2>
+<p>Use evidence from:</p>
+<ul>
+<li>Autonomous Encoder Experiment Background Reading</li>
+<li>Autonomous Straight-Line Challenge Guided Activity</li>
+<li>Robot Behavior Specification</li>
+<li>Drive Power / Motor Tuning SLD decision</li>
+<li>Controller Mapping SLD decision</li>
+<li>current chassis performance evidence</li>
+<li>SLD tally sheet</li>
+</ul>
+<p>Do not change many variables at once.</p>
+<p>For the first model, keep motor power constant. If you change power, you may need a new model.</p>
+<h2 id="discussion-roles">Discussion Roles</h2>
+<p>One person may hold more than one role if your team is small.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Role</th>
+<th>Job</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Facilitator</td>
+<td>Keeps the team focused on creating an experiment plan.</td>
+</tr>
+<tr>
+<td>Tally keeper</td>
+<td>Uses the SLD tally sheet.</td>
+</tr>
+<tr>
+<td>Recorder</td>
+<td>Writes the experiment plan.</td>
+</tr>
+<tr>
+<td>Measurement checker</td>
+<td>Asks how distance and drift will be measured.</td>
+</tr>
+<tr>
+<td>Variable-control checker</td>
+<td>Asks what the team will keep the same each trial.</td>
+</tr>
+<tr>
+<td>Driver/programmer representative</td>
+<td>Checks whether the plan is realistic for the robot and code.</td>
+</tr>
+</tbody></table></div>
+<h2 id="sentence-stems">Sentence Stems</h2>
+<p>Use these stems to make claims, use evidence, and keep the experiment focused.</p>
+<pre><code>The data we need most is ___ because ___.
+For our short test, we should use ___ because ___.
+For our medium test, we should use ___ because ___.
+For our long test, we should use ___ because ___.
+We should keep ___ constant because ___.
+If we change ___, it might affect the distance because ___.
+We should measure forward distance by ___.
+We should measure drift by ___.
+A source of error we need to watch for is ___.
+This plan gives us enough evidence because ___.
+Before we collect data, we need to check ___.
+I could support this experiment plan if ___.</code></pre>
+<h2 id="short-medium-long-test-planning">Short / Medium / Long Test Planning</h2>
+<p>Your teacher may suggest values based on the space available. The goal is to collect data across a useful range, not just one distance.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Test Level</th>
+<th>Encoder Target or Distance</th>
+<th>Why This Value?</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Short</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Medium</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Long</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="variable-control-plan">Variable Control Plan</h2>
+<p>Changing too many things at once makes it hard to know what caused the result.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Variable</th>
+<th>What We Will Keep the Same</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Motor power</td>
+<td></td>
+</tr>
+<tr>
+<td>Starting line</td>
+<td></td>
+</tr>
+<tr>
+<td>Starting robot alignment</td>
+<td></td>
+</tr>
+<tr>
+<td>Floor surface</td>
+<td></td>
+</tr>
+<tr>
+<td>Measurement point on robot</td>
+<td></td>
+</tr>
+<tr>
+<td>Measuring tool</td>
+<td></td>
+</tr>
+<tr>
+<td>Code / OpMode</td>
+<td></td>
+</tr>
+<tr>
+<td>Battery condition, if possible</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="measurement-plan">Measurement Plan</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Measurement Question</th>
+<th>Team Plan</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>How will we measure forward distance?</td>
+<td></td>
+</tr>
+<tr>
+<td>What point on the robot will we measure from?</td>
+<td></td>
+</tr>
+<tr>
+<td>How will we measure sideways drift?</td>
+<td></td>
+</tr>
+<tr>
+<td>Who will measure?</td>
+<td></td>
+</tr>
+<tr>
+<td>Who will record?</td>
+<td></td>
+</tr>
+<tr>
+<td>What notes will we record after each trial?</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="roles-for-data-collection">Roles for Data Collection</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Role</th>
+<th>Student</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Robot runner / driver</td>
+<td></td>
+</tr>
+<tr>
+<td>Safety watcher</td>
+<td></td>
+</tr>
+<tr>
+<td>Distance measurer</td>
+<td></td>
+</tr>
+<tr>
+<td>Drift measurer</td>
+<td></td>
+</tr>
+<tr>
+<td>Data recorder</td>
+<td></td>
+</tr>
+<tr>
+<td>Desmos/modeling lead</td>
+<td></td>
+</tr>
+<tr>
+<td>Code reviewer/editor</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="decision-record-work-product">Decision Record / Work Product</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Experiment Design Decision</th>
+<th>Team Response</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Are we starting with encoder targets or distance targets?</td>
+<td></td>
+</tr>
+<tr>
+<td>Motor power setting for first model</td>
+<td></td>
+</tr>
+<tr>
+<td>Short test value</td>
+<td></td>
+</tr>
+<tr>
+<td>Medium test value</td>
+<td></td>
+</tr>
+<tr>
+<td>Long test value</td>
+<td></td>
+</tr>
+<tr>
+<td>Number of trials</td>
+<td></td>
+</tr>
+<tr>
+<td>Forward distance measurement method</td>
+<td></td>
+</tr>
+<tr>
+<td>Sideways drift measurement method</td>
+<td></td>
+</tr>
+<tr>
+<td>Variables we will keep constant</td>
+<td></td>
+</tr>
+<tr>
+<td>Biggest source of error we expect</td>
+<td></td>
+</tr>
+<tr>
+<td>What counts as enough data to build our model?</td>
+<td></td>
+</tr>
+<tr>
+<td>First Desmos/modeling step</td>
+<td></td>
+</tr>
+<tr>
+<td>First autonomous challenge target or test</td>
+<td></td>
+</tr>
+<tr>
+<td>Can all team members support this experiment plan?</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="experiment-design-readiness-check">Experiment Design Readiness Check</h2>
+<p>Before collecting data, our team has:</p>
+<ul>
+<li>[ ] Confirmed the chassis can move safely.</li>
+<li>[ ] Reviewed the background reading.</li>
+<li>[ ] Reviewed the guided activity sheet.</li>
+<li>[ ] Chosen a motor power setting to keep constant.</li>
+<li>[ ] Chosen short, medium, and long test values.</li>
+<li>[ ] Decided how many trials to run.</li>
+<li>[ ] Decided how to measure forward distance.</li>
+<li>[ ] Decided how to measure sideways drift.</li>
+<li>[ ] Assigned roles.</li>
+<li>[ ] Named one likely source of error.</li>
+<li>[ ] Decided what counts as enough evidence to build the model.</li>
+</ul>
+<h2 id="sld-tally-sheet-reminder">SLD Tally Sheet Reminder</h2>
+<p>Use <code>90_templates/student_led_discussion_tally_sheet_template.md</code> or the generated site version of that template.</p>
+<p>Use the SLD tally sheet to track discussion moves: Q, C, E, B, O, D, X.</p>
+<p>At the end, record one discussion strength and one target for the next testing or revision discussion.</p>
+<h2 id="portfolio-connection">Portfolio Connection</h2>
+<p>Add the experiment plan to the engineering portfolio.</p>
+<p>The experiment plan is the first piece of evidence for your autonomous challenge. It shows that your team made a plan before collecting data.</p>
+<p>Later, add:</p>
+<ul>
+<li>data table</li>
+<li>Desmos model or equation</li>
+<li>code snippet</li>
+<li>challenge result</li>
+<li>error and drift measurement</li>
+<li>revision note</li>
+</ul>
+<h2 id="growth-target-for-data-collection-and-testing">Growth Target for Data Collection and Testing</h2>
+<p>During data collection and testing, our team should improve by:</p>
+<ul>
+<li>following the plan carefully</li>
+<li>recording data clearly</li>
+<li>keeping variables controlled</li>
+<li>noticing sources of error</li>
+<li>using evidence before changing the model or code</li>
+</ul>
+      </article>
+
+    </main>
+  </body>
+</html>

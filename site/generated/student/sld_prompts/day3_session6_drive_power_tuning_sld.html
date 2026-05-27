@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drive Power / Motor Tuning SLD | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Drive Power / Motor Tuning SLD</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+        <a href="../../../print/index.html">Print</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../02_student_materials/sld_prompts/day3_session6_drive_power_tuning_sld.md">View source Markdown</a></p>
+        <h1 id="drive-power-motor-tuning-sld">Drive Power / Motor Tuning SLD</h1>
+<h2 id="session-course-phase">Session / Course Phase</h2>
+<p>Day 3, Session 6: Chassis Readiness, Controller Mapping, and Drive Tuning</p>
+<h2 id="why-this-discussion-matters">Why This Discussion Matters</h2>
+<p>Your team has chosen or narrowed how the robot should be controlled. Now you need to decide how strongly the robot should respond when the driver uses those controls.</p>
+<pre><code>Controller mapping decides what the buttons/sticks do.
+Motor tuning decides how strongly the robot responds.</code></pre>
+<p>A robot that is too fast may be hard to control. A robot that is too slow may be easy to control but too slow for scoring loops. A good starting value balances control, accuracy, safety, and speed.</p>
+<p>This is a design decision based on evidence, not just a guess or a choice to use maximum power.</p>
+<p>SLD is the process. The deliverable is the work product that comes out of the discussion.</p>
+<h2 id="main-discussion-question">Main Discussion Question</h2>
+<p>What motor power settings give our team the best balance of control, accuracy, speed, and safety for the robot behaviors we need?</p>
+<p>Student version:</p>
+<p>How fast should the robot move for each driving behavior so our drivers can control it well?</p>
+<h2 id="what-this-discussion-must-produce">What This Discussion Must Produce</h2>
+<p>By the end of this SLD, your team should record a Drive Power / Motor Tuning Decision that includes:</p>
+<ul>
+<li>starting power level for forward/backward driving</li>
+<li>starting power level for turning</li>
+<li>starting power level for precision movement or slow mode, if used</li>
+<li>whether the team wants one speed or multiple speed modes</li>
+<li>evidence from power-level trials</li>
+<li>driver/operator notes</li>
+<li>which robot behaviors the power settings support</li>
+<li>biggest concern or tradeoff</li>
+<li>next tuning test or code revision</li>
+</ul>
+<p>Your team may choose different power settings for different movements. Examples include:</p>
+<ul>
+<li>forward/backward power</li>
+<li>turning power</li>
+<li>slow/precision mode power</li>
+<li>lining-up power</li>
+<li>parking power</li>
+</ul>
+<p>You do not need all of these today. Use them as a starting framework.</p>
+<h2 id="evidence-resources-to-use">Evidence / Resources to Use</h2>
+<p>Use evidence from at least three sources. Do not choose maximum speed just because it seems powerful.</p>
+<ul>
+<li>Robot Behavior Specification</li>
+<li>Team Strategy Guide</li>
+<li>Controller Mapping SLD decision</li>
+<li>D-pad or joystick test trials</li>
+<li>motor power test data</li>
+<li>loop time data</li>
+<li>turning accuracy data</li>
+<li>line-up or parking accuracy data</li>
+<li>driver confidence notes</li>
+<li>driver/operator observations</li>
+<li><code>DemoDriveDPad.java</code> or <code>DemoDriveJoy.java</code></li>
+<li>SLD tally sheet</li>
+</ul>
+<h2 id="suggested-motor-power-test-data">Suggested Motor Power Test Data</h2>
+<p>Before discussing the final choice, review what happened at different power levels. The example values below are <code>0.4</code>, <code>0.6</code>, and <code>0.8</code>, but your team may use different values depending on the code and teacher directions.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Movement / Skill</th>
+<th>Power Setting</th>
+<th>Trial 1</th>
+<th>Trial 2</th>
+<th>Trial 3</th>
+<th>Driver Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Drive straight</td>
+<td>0.4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Drive straight</td>
+<td>0.6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Drive straight</td>
+<td>0.8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Turn left/right</td>
+<td>0.4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Turn left/right</td>
+<td>0.6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Turn left/right</td>
+<td>0.8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Line up with target</td>
+<td>0.4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Line up with target</td>
+<td>0.6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Line up with target</td>
+<td>0.8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Park accurately</td>
+<td>0.4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Park accurately</td>
+<td>0.6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Park accurately</td>
+<td>0.8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="tradeoff-review">Tradeoff Review</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Power Setting</th>
+<th>What worked well?</th>
+<th>What was hard to control?</th>
+<th>Best use</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Low power</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Medium power</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>High power</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="discussion-roles">Discussion Roles</h2>
+<p>One person may hold more than one role if your team is small.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Role</th>
+<th>Job</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Facilitator</td>
+<td>Keeps the team focused on evidence and the decision record.</td>
+</tr>
+<tr>
+<td>Tally keeper</td>
+<td>Uses the SLD tally sheet.</td>
+</tr>
+<tr>
+<td>Recorder</td>
+<td>Records the power/tuning decision.</td>
+</tr>
+<tr>
+<td>Data checker</td>
+<td>Points to power trial results before claims are accepted.</td>
+</tr>
+<tr>
+<td>Driver representative</td>
+<td>Explains what the robot felt like at different speeds.</td>
+</tr>
+<tr>
+<td>Safety checker</td>
+<td>Asks whether any setting makes the robot unsafe or hard to stop.</td>
+</tr>
+<tr>
+<td>Behavior checker</td>
+<td>Asks which power settings support the Robot Behavior Specification.</td>
+</tr>
+</tbody></table></div>
+<h2 id="sentence-stems">Sentence Stems</h2>
+<p>Use these stems to make claims, use evidence, and name tradeoffs.</p>
+<pre><code>At low power, the robot was easier/harder to control because ___.
+At medium power, the robot ___.
+At high power, the robot ___.
+The data shows that ___.
+For driving straight, I think we should use ___ because ___.
+For turning, I think we should use ___ because ___.
+For lining up or parking, I think we should use ___ because ___.
+A slow mode would help when ___.
+A higher speed would help when ___.
+One risk of using too much power is ___.
+One risk of using too little power is ___.
+This power setting supports our robot behavior plan because ___.
+Before we finalize, we should test ___.
+I could support this tuning choice if ___.</code></pre>
+<h2 id="decision-record-work-product">Decision Record / Work Product</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Drive Power / Motor Tuning Decision</th>
+<th>Team Response</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Controller mapping used for this tuning decision</td>
+<td></td>
+</tr>
+<tr>
+<td>Forward/backward power setting</td>
+<td></td>
+</tr>
+<tr>
+<td>Turning power setting</td>
+<td></td>
+</tr>
+<tr>
+<td>Slow/precision mode power setting, if used</td>
+<td></td>
+</tr>
+<tr>
+<td>Lining-up or parking power setting, if different</td>
+<td></td>
+</tr>
+<tr>
+<td>Do we need one speed or multiple speed modes?</td>
+<td></td>
+</tr>
+<tr>
+<td>Best evidence from low-power trials</td>
+<td></td>
+</tr>
+<tr>
+<td>Best evidence from medium-power trials</td>
+<td></td>
+</tr>
+<tr>
+<td>Best evidence from high-power trials</td>
+<td></td>
+</tr>
+<tr>
+<td>Driver/operator observations</td>
+<td></td>
+</tr>
+<tr>
+<td>Biggest speed/control tradeoff</td>
+<td></td>
+</tr>
+<tr>
+<td>Safety concern, if any</td>
+<td></td>
+</tr>
+<tr>
+<td>Next tuning test or code revision</td>
+<td></td>
+</tr>
+<tr>
+<td>Can all team members support this starting tuning plan?</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="motor-tuning-readiness-check">Motor Tuning Readiness Check</h2>
+<p>Before recording our decision, our team has:</p>
+<ul>
+<li>[ ] Confirmed the chassis was safe enough for powered testing.</li>
+<li>[ ] Chosen or narrowed a controller mapping approach.</li>
+<li>[ ] Tested at least two power levels.</li>
+<li>[ ] Tested forward/backward movement.</li>
+<li>[ ] Tested turning.</li>
+<li>[ ] Tested one precision task such as lining up or parking.</li>
+<li>[ ] Collected at least one type of driving data.</li>
+<li>[ ] Heard from at least one driver.</li>
+<li>[ ] Checked the Robot Behavior Specification.</li>
+<li>[ ] Named one speed/control tradeoff.</li>
+<li>[ ] Recorded the starting power settings.</li>
+<li>[ ] Named the next tuning test or code revision.</li>
+</ul>
+<h2 id="sld-tally-sheet-reminder">SLD Tally Sheet Reminder</h2>
+<p>Use <code>90_templates/student_led_discussion_tally_sheet_template.md</code> or the generated site version of that template.</p>
+<p>Use the SLD tally sheet to track discussion moves: Q, C, E, B, O, D, X.</p>
+<p>At the end, record one discussion strength and one target for the next design or testing SLD.</p>
+<h2 id="portfolio-connection">Portfolio Connection</h2>
+<p>Add the Drive Power / Motor Tuning Decision Record to the engineering portfolio. Include:</p>
+<ul>
+<li>power test data</li>
+<li>final starting power settings</li>
+<li>driver/operator notes</li>
+<li>speed/control tradeoff accepted</li>
+<li>slow mode decision, if any</li>
+<li>next tuning target</li>
+</ul>
+<p>Update the controls/programming or chassis/drivetrain copy of the Subsystem Design Cycle Template if the tuning decision changes how the robot will be programmed, tested, or driven.</p>
+<h2 id="growth-target-for-next-design-or-testing-sld">Growth Target for Next Design or Testing SLD</h2>
+<p>During the next design or testing SLD, our team should improve by:</p>
+<ul>
+<li>using more data</li>
+<li>comparing tradeoffs more clearly</li>
+<li>inviting quieter voices</li>
+<li>listening to driver/operator experience</li>
+<li>recording decisions more clearly</li>
+<li>connecting tuning choices to robot behaviors</li>
+</ul>
+      </article>
+
+    </main>
+  </body>
+</html>

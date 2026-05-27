@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Autonomous Encoder Experiment Background | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Autonomous Encoder Experiment Background</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+        <a href="../../../print/index.html">Print</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../02_student_materials/readings/day4_session7_autonomous_encoder_experiment_background.md">View source Markdown</a></p>
+        <h1 id="autonomous-encoder-experiment-background">Autonomous Encoder Experiment Background</h1>
+<h2 id="why-this-matters">Why This Matters</h2>
+<p>In TeleOp, the driver sends commands with the gamepad.</p>
+<p>In autonomous, the code tells the robot what to do.</p>
+<p>For the Autonomous Straight-Line Challenge, your team will give the robot a target distance. The code will convert that distance into encoder ticks. Then the motors will run until they reach the target encoder position.</p>
+<p>The goal is not just to make the robot move. The goal is to use data, a model, and code to make the robot drive a target distance as accurately and straight as possible.</p>
+<p>The pipeline looks like this:</p>
+<pre><code>robot motion
+-&gt; motor encoder data
+-&gt; distance measurement
+-&gt; experimental design
+-&gt; linear function
+-&gt; Desmos regression
+-&gt; inches-to-ticks conversion
+-&gt; autonomous method
+-&gt; test and revise</code></pre>
+<h2 id="what-autonomous-code-does">What Autonomous Code Does</h2>
+<p>Autonomous code runs without the driver holding the controller. A simple autonomous program might tell the robot:</p>
+<p>1. Reset the motor encoders. 2. Set a target encoder position. 3. Turn on the motors. 4. Stop when the target position is reached.</p>
+<p>This can make the robot more repeatable than human driving, but it is not automatically perfect. The robot can still slip, drift, overshoot, or stop short.</p>
+<h2 id="what-motor-encoders-measure">What Motor Encoders Measure</h2>
+<p>A motor encoder counts rotation.</p>
+<p>The encoder does not directly measure how far the robot moved across the floor. It counts motor movement.</p>
+<p>Depending on the motor and system, the encoder may count rotations or partial rotations of the motor shaft. That count is often called ticks or counts.</p>
+<p>If the motor turns more, the encoder count changes more. But that does not automatically tell us the exact number of inches the robot traveled.</p>
+<h2 id="wheels-gears-and-distance">Wheels, Gears, and Distance</h2>
+<p>Wheel size matters. A wheel with a larger diameter travels farther in one rotation than a smaller wheel. Wheel circumference is approximately pi times diameter.</p>
+<p>Gears also matter. Some motors or drivetrains use gears. Gears can change how motor rotation relates to wheel rotation.</p>
+<p>In theory, you could calculate distance from:</p>
+<ul>
+<li>encoder ticks per motor rotation</li>
+<li>gear ratio</li>
+<li>wheel diameter</li>
+<li>wheel circumference</li>
+</ul>
+<p>That theory is useful, but the real robot is messier. Motors, gears, wheels, friction, battery level, floor surface, and slipping all affect the result.</p>
+<p>Because motors, gears, wheels, friction, and slipping all affect the result, this activity uses direct measurement. We compare encoder ticks to the actual distance the robot travels.</p>
+<p>Theory helps us understand what should happen. Data tells us what our robot actually does.</p>
+<h2 id="the-function-we-need">The Function We Need</h2>
+<p>For coding, think about the problem as an input and an output.</p>
+<pre><code>Input: target distance in inches
+Output: encoder ticks needed</code></pre>
+<p>A common model is a linear function:</p>
+<pre><code>ticks = m x inches + b</code></pre>
+<p>In this equation:</p>
+<ul>
+<li><code>m</code> is the slope, or about how many encoder ticks are needed per inch.</li>
+<li><code>b</code> is the intercept, or a small adjustment in the model.</li>
+</ul>
+<p>Some teams may use a simpler proportional model:</p>
+<pre><code>ticks = ticks_per_inch x inches</code></pre>
+<p>A linear model makes sense because traveling about twice as far usually requires about twice as many encoder ticks.</p>
+<h2 id="planning-the-experiment">Planning the Experiment</h2>
+<p>Plan the experiment before collecting data. Changing too many things at once makes it hard to know what caused the result.</p>
+<p>Good experiment choices:</p>
+<ul>
+<li>Choose short, medium, and long test distances or encoder targets.</li>
+<li>Keep motor power constant for the first model.</li>
+<li>Start from the same line each time.</li>
+<li>Measure from the same point on the robot each time.</li>
+<li>Keep the floor surface the same.</li>
+<li>Repeat trials when possible.</li>
+<li>Record notes about slipping, turning, or inconsistent starts.</li>
+<li>Measure sideways drift separately from forward distance.</li>
+</ul>
+<p>For the first model, change only the encoder target or distance. Keep power, start location, robot setup, and measurement method as consistent as possible.</p>
+<h2 id="sources-of-error">Sources of Error</h2>
+<p>Error means the robot did not move exactly the way the model predicted.</p>
+<p>Common sources of error include:</p>
+<ul>
+<li>wheel slip</li>
+<li>floor friction</li>
+<li>carpet/tile differences</li>
+<li>battery power</li>
+<li>different motor power settings</li>
+<li>robot not starting straight</li>
+<li>loose wheels or loose chassis parts</li>
+<li>unequal left/right motor behavior</li>
+<li>wheel diameter differences</li>
+<li>weight distribution</li>
+<li>momentum after the code tells the motor to stop</li>
+<li>lag between reaching an encoder target and the robot physically stopping</li>
+<li>measuring from a different point on the robot each time</li>
+</ul>
+<p>If repeated trials give similar results, we can be more confident in the model.</p>
+<p>If the robot travels different distances each time, we should be less confident and collect more data or fix the robot.</p>
+<h2 id="power-momentum-and-overshoot">Power, Momentum, and Overshoot</h2>
+<p>Motor power affects the model.</p>
+<p>High power may cause:</p>
+<ul>
+<li>more wheel slip</li>
+<li>more overshoot</li>
+<li>more drift</li>
+<li>less precise stopping</li>
+</ul>
+<p>Low power may cause:</p>
+<ul>
+<li>better control</li>
+<li>less overshoot</li>
+<li>slower movement</li>
+<li>inconsistent starts if the power is too low</li>
+</ul>
+<p>Use one power setting while building the first model. If you change power, you may need a new model.</p>
+<h2 id="drift-and-straightness">Drift and Straightness</h2>
+<p>The robot can travel the right forward distance but still drift sideways.</p>
+<p>Measure two things:</p>
+<pre><code>forward distance traveled
+sideways drift from the intended straight path</code></pre>
+<p>Forward distance tells you whether the inches-to-ticks model is close.</p>
+<p>Sideways drift tells you whether the robot is driving straight.</p>
+<p>Treat drift as a separate problem from distance prediction. If the forward distance is close but the robot drifts right, the team may keep the distance model and investigate wheel alignment, motor balance, weight distribution, or floor friction.</p>
+<h2 id="completed-example-data-to-code">Completed Example: Data to Code</h2>
+<p>This sample team tested different encoder targets at the same motor power. They measured how far the robot actually traveled.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Trial</th>
+<th>Encoder Ticks</th>
+<th>Power</th>
+<th>Distance Traveled (inches)</th>
+<th>Sideways Drift (inches)</th>
+<th>Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>500</td>
+<td>0.5</td>
+<td>10.5</td>
+<td>0.5</td>
+<td>slight right drift</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1000</td>
+<td>0.5</td>
+<td>21.3</td>
+<td>0.8</td>
+<td>fairly straight</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1500</td>
+<td>0.5</td>
+<td>31.8</td>
+<td>1.4</td>
+<td>more right drift</td>
+</tr>
+<tr>
+<td>4</td>
+<td>2000</td>
+<td>0.5</td>
+<td>42.6</td>
+<td>2.0</td>
+<td>slight overshoot</td>
+</tr>
+</tbody></table></div>
+<p>The team wants a model:</p>
+<pre><code>ticks = m x inches + b</code></pre>
+<p>After graphing the data and using a regression in Desmos, the team gets this example model:</p>
+<pre><code>ticks = 46.8 x inches + 8</code></pre>
+<p>For a 36-inch target:</p>
+<pre><code>ticks = 46.8 x 36 + 8
+ticks = 1692.8</code></pre>
+<p>So the team would use about:</p>
+<pre><code>1693 encoder ticks</code></pre>
+<h2 id="turning-the-model-into-code">Turning the Model Into Code</h2>
+<p>The model can become a method in Java:</p>
+<pre><code>public int inchesToTicks(double inches) {
+    double m = 46.8;  // encoder ticks per inch from our model
+    double b = 8.0;   // intercept from our model
+    return (int)Math.round(m * inches + b);
+}</code></pre>
+<p>Then the autonomous code can use the method:</p>
+<pre><code>int targetTicks = inchesToTicks(36);</code></pre>
+<p>Or a team might create a method that hides the conversion inside the movement command:</p>
+<pre><code>moveForwardInches(36);</code></pre>
+<p>The important idea is that the code is using the team&#x27;s data model, not just a guess.</p>
+<h2 id="checking-the-result">Checking the Result</h2>
+<p>Suppose the team tests the 36-inch target.</p>
+<pre><code>target distance = 36 inches
+actual distance = 35 inches
+error = actual - target = -1 inch
+absolute error = 1 inch
+sideways drift = 1.5 inches</code></pre>
+<p>The robot was close in forward distance, but it still drifted sideways.</p>
+<p>The team might keep the distance model but investigate the cause of drift.</p>
+<p>Possible next questions:</p>
+<ul>
+<li>Did one wheel slip more than the other?</li>
+<li>Are the left and right motors behaving the same way?</li>
+<li>Is one wheel rubbing?</li>
+<li>Is the robot starting straight?</li>
+<li>Is weight balanced unevenly?</li>
+<li>Does lower power reduce drift or overshoot?</li>
+</ul>
+<h2 id="before-you-start-the-challenge">Before You Start the Challenge</h2>
+<p>Make sure your team can explain:</p>
+<ul>
+<li>[ ] What an encoder measures.</li>
+<li>[ ] Why encoder ticks are not the same as inches.</li>
+<li>[ ] Why gears, wheel size, friction, and slipping can affect the result.</li>
+<li>[ ] Why we compare encoder ticks to measured distance.</li>
+<li>[ ] Why short, medium, and long trials help.</li>
+<li>[ ] Why motor power should stay constant for the first model.</li>
+<li>[ ] How drift is different from forward distance error.</li>
+<li>[ ] What the input and output of the function are.</li>
+<li>[ ] How the function helps the autonomous program.</li>
+</ul>
+      </article>
+
+    </main>
+  </body>
+</html>
