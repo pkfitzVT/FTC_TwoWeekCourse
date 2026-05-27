@@ -137,6 +137,7 @@ Optional pre-course page:
 
 ### SLD Templates
 
+- [Student-Led Discussion reference guide](../02_student_materials/guides/student_led_discussion_reference_guide.md)
 - [Subsystem Design, Operation, Testing, and Tuning Cycle guide](../02_student_materials/guides/subsystem_design_operation_testing_cycle_guide.md)
 - [Day 1 shared materials SLD student prompt](../02_student_materials/sld_prompts/day1_session1_sld_shared_materials_student.md)
 - [Day 1 shared materials SLD teacher guide](../03_teacher_materials/teacher_guides/day1_session1_sld_shared_materials_teacher_guide.md)

@@ -79,6 +79,8 @@ The SLD document captures the team's decision-making process. The engineering po
 
 The repeated subsystem process is summarized in `02_student_materials/guides/subsystem_design_operation_testing_cycle_guide.md`: game goals -> robot behavior targets -> Design SLD -> build/adapt -> programming/configuration -> subsystem test -> Operations Role SLD -> integrated performance test -> Postmortem / Tuning SLD -> revision or acceptable performance range -> documentation.
 
+The student-facing purpose of SLD is summarized in `02_student_materials/guides/student_led_discussion_reference_guide.md`: SLD is the process teams use to turn individual ideas into shared, documented decisions.
+
 Use the templates in `02_student_materials/engineering_notebook/student_engineering_notebook_master.md` as the working portfolio structure. Useful recurring templates include the daily engineering log, design decision record, test data table, code change log, failure/fix record, photo evidence checklist, final reflection, and presentation planning pages.
 
 ## 6. Ten-Day / Twenty-Session Overview Table

@@ -97,6 +97,7 @@ Before major robot design decisions, also check your copied Team Strategy Guide:
 
 Related material:
 
+- `02_student_materials/guides/student_led_discussion_reference_guide.md`
 - `docs/design_choice_menu_matrix.md`
 - `02_student_materials/decision_menus/demo_robot_design_analysis_activity.md`
 - `02_student_materials/decision_menus/demo_robot_design_observation_activity.md`
@@ -118,6 +119,7 @@ Use the student-led discussion tally sheet for short design discussions where th
 
 Related material:
 
+- `02_student_materials/guides/student_led_discussion_reference_guide.md`
 - `90_templates/student_led_discussion_tally_sheet_template.md`
 - `02_student_materials/sld_prompts/reusable_robot_operations_role_plan_sld.md`
 - `02_student_materials/sld_prompts/reusable_performance_testing_postmortem_sld.md`
