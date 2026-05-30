@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Subsystem Design, Operation, Testing, and Tuning Cycle | FTC/YES Robotics Course</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Subsystem Design, Operation, Testing, and Tuning Cycle</h1>
+      
+      
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../students/index.html">Students</a>
+        <a href="../../../teachers/index.html">Teachers</a>
+        <a href="../../../sessions/index.html">Sessions</a>
+        <a href="../../../materials/index.html">Materials</a>
+        <a href="../../../print/index.html">Print</a>
+      </nav>
+    
+    </header>
+    <main>
+
+      <article class="document">
+        <p class="breadcrumb"><a href="../../../index.html">Back to site home</a> | <a href="../../../../02_student_materials/guides/subsystem_design_operation_testing_cycle_guide.md">View source Markdown</a></p>
+        <h1 id="subsystem-design-operation-testing-and-tuning-cycle">Subsystem Design, Operation, Testing, and Tuning Cycle</h1>
+<h2 id="big-idea">Big Idea</h2>
+<p>In this course, teams use a repeated design pattern. The pattern starts with the game goals and robot behavior targets. Those behavior targets tell the team what the robot needs to do. Each subsystem is then designed to help the robot perform those behaviors.</p>
+<p>A subsystem connects hardware, software, and human operation. The hardware gives the robot a physical ability. The software or controls allow the robot or operator to activate that ability. The human operator uses the system during testing or competition. The team uses data and postmortem discussions to improve the system.</p>
+<p>SLDs are not extra activities. They are part of the engineering process.</p>
+<pre><code>Game Goals
+-&gt; Robot Behavior Targets
+-&gt; Design SLD
+-&gt; Build / Adapt with Available Parts
+-&gt; Programming / Configuration
+-&gt; Subsystem Test
+-&gt; Operations Role SLD
+-&gt; Integrated Performance Test
+-&gt; Postmortem / Tuning SLD
+-&gt; Revision or Acceptable Performance Range
+-&gt; Documentation</code></pre>
+<p>This process repeats for the chassis / drivetrain, flywheel shooter, hopper, trigger / servo, and whole-robot integration. Autonomous work adds another layer if time permits.</p>
+<h2 id="what-counts-as-a-subsystem">What Counts as a Subsystem?</h2>
+<p>The subsystem is not just a physical mechanism. A subsystem includes hardware, software/control, human operation, testing evidence, and documentation.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Subsystem</th>
+<th>More Than the Physical Part</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Chassis / drivetrain</td>
+<td>Frame, wheels, drive controls, power tuning, driver skill, field awareness</td>
+</tr>
+<tr>
+<td>Flywheel shooter</td>
+<td>Motor, wheel, launch angle, motor power, ball contact, operator timing, scoring strategy</td>
+</tr>
+<tr>
+<td>Hopper</td>
+<td>Container, stability while driving, reload process, ball feeding, operator interaction</td>
+</tr>
+<tr>
+<td>Trigger / servo</td>
+<td>Servo, release timing, servo range, button mapping, consistency</td>
+</tr>
+<tr>
+<td>Whole robot</td>
+<td>Subsystem placement, code integration, role communication, scoring loop, repair access</td>
+</tr>
+</tbody></table></div>
+<h2 id="the-repeated-cycle">The Repeated Cycle</h2>
+<h3 id="1-start-with-game-goals">1. Start with Game Goals</h3>
+<p>Identify what the game rewards and what the team wants the robot to accomplish.</p>
+<p>Ask:</p>
+<ul>
+<li>What scores points?</li>
+<li>What avoids penalties?</li>
+<li>What can we realistically build, test, and explain?</li>
+<li>What strategy does our team want to protect?</li>
+</ul>
+<h3 id="2-translate-goals-into-robot-behavior-targets">2. Translate Goals into Robot Behavior Targets</h3>
+<p>Describe what the robot must actually do.</p>
+<p>Examples:</p>
+<ul>
+<li>drive straight</li>
+<li>turn reliably</li>
+<li>push or collect a ball</li>
+<li>store balls</li>
+<li>launch balls</li>
+<li>release one ball at a time</li>
+<li>park</li>
+<li>avoid collisions</li>
+<li>complete a scoring loop</li>
+</ul>
+<p>Game goals define what the robot needs to accomplish. Robot behavior targets describe what the robot must do. Subsystems connect hardware, software, and human operation so the robot can perform those behaviors.</p>
+<h3 id="3-use-reading-menus-and-evidence">3. Use Reading, Menus, and Evidence</h3>
+<p>Before designing, use:</p>
+<ul>
+<li>background readings</li>
+<li>design menus</li>
+<li>demo robot evidence</li>
+<li>data from earlier tests</li>
+<li>available parts</li>
+<li>strategy and behavior documents</li>
+</ul>
+<p>Evidence keeps the team from choosing based only on what looks cool or what one person prefers.</p>
+<h3 id="4-design-sld">4. Design SLD</h3>
+<p>Purpose:</p>
+<pre><code>Turn evidence into a design decision.</code></pre>
+<p>Main question:</p>
+<blockquote>What design should we build first, and what evidence supports that choice?</blockquote>
+<p>Work product:</p>
+<ul>
+<li>design decision</li>
+<li>sketch or diagram</li>
+<li>parts/material plan</li>
+<li>software/control need</li>
+<li>success criteria</li>
+<li>first test</li>
+</ul>
+<h3 id="5-build-and-adapt-with-available-parts">5. Build and Adapt with Available Parts</h3>
+<p>Try to build the design, but expect to adapt.</p>
+<p>Teams may need to adjust for:</p>
+<ul>
+<li>available materials</li>
+<li>space constraints</li>
+<li>ease of assembly</li>
+<li>fasteners and brackets</li>
+<li>repair access</li>
+<li>wire routing</li>
+<li>interference with other subsystems</li>
+</ul>
+<p>Changing the design during building is normal. If the change affects the design, code, safety, or strategy, document it.</p>
+<h3 id="6-program-and-configure">6. Program and Configure</h3>
+<p>Connect the subsystem to code and controls.</p>
+<p>Examples:</p>
+<ul>
+<li>motor configuration names</li>
+<li>servo names</li>
+<li>button mapping</li>
+<li>drive power</li>
+<li>flywheel power</li>
+<li>trigger servo range</li>
+<li>autonomous method</li>
+</ul>
+<p>Configuration names in the robot setup must match the names used in code.</p>
+<h3 id="7-test-against-success-criteria">7. Test Against Success Criteria</h3>
+<p>Before testing, define what good enough means.</p>
+<p>Examples:</p>
+<ul>
+<li>chassis completes the course with fewer than two penalties</li>
+<li>flywheel scores 7 out of 10 shots from a target zone</li>
+<li>hopper holds balls during three driving loops</li>
+<li>trigger releases one ball at a time 8 out of 10 attempts</li>
+<li>autonomous drive lands within a target error range</li>
+</ul>
+<p>The test should match the behavior target. If the target is reliable scoring, test more than one lucky attempt.</p>
+<h3 id="8-operations-role-sld">8. Operations Role SLD</h3>
+<p>Use this before performance testing.</p>
+<p>Purpose:</p>
+<pre><code>Decide who operates the system, who backs them up, and how the team will practice.</code></pre>
+<p>Main question:</p>
+<blockquote>Who should operate this system, who is the backup, and what evidence supports our plan?</blockquote>
+<p>Work product:</p>
+<ul>
+<li>primary operator</li>
+<li>backup operator</li>
+<li>driver/operator/coach roles</li>
+<li>practice rotation</li>
+<li>absence plan</li>
+<li>role review conditions</li>
+</ul>
+<p>Reference:</p>
+<p><code>02_student_materials/sld_prompts/reusable_robot_operations_role_plan_sld.md</code></p>
+<h3 id="9-integrated-performance-test">9. Integrated Performance Test</h3>
+<p>Test the subsystem as part of the larger robot.</p>
+<p>Examples:</p>
+<ul>
+<li>chassis with driver controls</li>
+<li>flywheel mounted on the chassis</li>
+<li>hopper feeding the flywheel</li>
+<li>trigger releasing balls from the hopper</li>
+<li>whole robot completing a scoring cycle</li>
+</ul>
+<p>A subsystem can work alone and still fail when integrated. Integration tests reveal those interactions.</p>
+<h3 id="10-postmortem-tuning-sld">10. Postmortem / Tuning SLD</h3>
+<p>Use this after testing.</p>
+<p>Purpose:</p>
+<pre><code>Classify what happened, choose limited changes, assign responsibility, and plan a retest.</code></pre>
+<p>Main question:</p>
+<blockquote>What happened, what type of issue did we observe, and what should we change before the next run?</blockquote>
+<p>Use the four categories:</p>
+<ul>
+<li>Human Operation</li>
+<li>Mechanical System</li>
+<li>Software / Controls</li>
+<li>Strategy / Communication</li>
+</ul>
+<p>Reference:</p>
+<p><code>02_student_materials/sld_prompts/reusable_performance_testing_postmortem_sld.md</code></p>
+<h3 id="11-tune-within-an-acceptable-range">11. Tune Within an Acceptable Range</h3>
+<p>Make limited, evidence-based adjustments.</p>
+<pre><code>Change one or two things at a time.
+Look for patterns across multiple trials.
+Stop tuning when performance is inside the acceptable range.</code></pre>
+<h3 id="12-document-the-full-cycle">12. Document the Full Cycle</h3>
+<p>Documentation happens throughout the process, not only at the end.</p>
+<p>Document:</p>
+<ul>
+<li>design decision</li>
+<li>sketch/photo</li>
+<li>parts used</li>
+<li>configuration names</li>
+<li>code snippet</li>
+<li>test data</li>
+<li>operator notes</li>
+<li>postmortem classification</li>
+<li>revision made</li>
+<li>final acceptable range</li>
+</ul>
+<h2 id="micro-decisions-during-work">Micro-Decisions During Work</h2>
+<p>Not every conversation is a full SLD. Teams also make many small work-session decisions:</p>
+<ul>
+<li>Who is doing what right now?</li>
+<li>Which bracket fits best?</li>
+<li>Is this wire route safe?</li>
+<li>Should we tighten this now or test-fit first?</li>
+<li>Is this part blocking the next subsystem?</li>
+<li>Do we need to pause and ask the team?</li>
+<li>Should this change be recorded in the notebook?</li>
+</ul>
+<p>These micro-decisions are essential. If the decision changes the design, code, safety, or strategy, document it.</p>
+<h2 id="the-tuning-trap-do-not-chase-your-tail">The Tuning Trap: Do Not Chase Your Tail</h2>
+<p>Tuning is necessary, but it can become endless.</p>
+<pre><code>Tuning can become a trap. If your team changes angle, power, bracket position, code, and operator timing after every run, you are chasing your tail.</code></pre>
+<h3 id="drive-tuning">Drive Tuning</h3>
+<p>Drive tuning problems might include:</p>
+<ul>
+<li>drive power too high</li>
+<li>turns too sensitive</li>
+<li>slow mode too slow</li>
+<li>robot hard to control when facing the driver</li>
+</ul>
+<p>If you change drive power, controller mapping, driver, course route, and wheel placement at the same time, you will not know which change helped.</p>
+<h3 id="flywheel-tuning">Flywheel Tuning</h3>
+<p>Flywheel tuning has many variables:</p>
+<ul>
+<li>launch angle</li>
+<li>flywheel power</li>
+<li>ball compression</li>
+<li>ball contact point</li>
+<li>hopper angle</li>
+<li>trigger timing</li>
+<li>shooting distance</li>
+<li>robot alignment</li>
+<li>battery level</li>
+<li>wheel wear/slip</li>
+<li>ball condition</li>
+</ul>
+<pre><code>If the team changes launch angle, motor power, ball position, and trigger timing after every shot, the team will not know which change caused the result.</code></pre>
+<p>Recommended rule:</p>
+<pre><code>Choose one test variable.
+Run several trials.
+Record the result.
+Then decide whether to keep tuning that variable or move to a different one.</code></pre>
+<h2 id="how-the-cycle-applies-to-each-subsystem">How the Cycle Applies to Each Subsystem</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Subsystem</th>
+<th>What It Must Do</th>
+<th>Example Design SLD Focus</th>
+<th>Example Test</th>
+<th>Example Postmortem Categories</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Chassis / Drivetrain</td>
+<td>Move, turn, park, share space</td>
+<td>Frame shape, motor placement, controls</td>
+<td>Round-robin drive challenge</td>
+<td>Human driving, wheel slip, control tuning, passing strategy</td>
+</tr>
+<tr>
+<td>Flywheel Shooter</td>
+<td>Launch balls consistently</td>
+<td>Angle, wheel type, motor power, compression</td>
+<td>Shots from target zone</td>
+<td>Operator timing, mount flex, motor power, shooting strategy</td>
+</tr>
+<tr>
+<td>Hopper</td>
+<td>Store and feed balls</td>
+<td>Angle, capacity, stability, loading</td>
+<td>Drive loops with balls loaded</td>
+<td>Human loading, ball jams, feed path, reload communication</td>
+</tr>
+<tr>
+<td>Trigger / Servo</td>
+<td>Release one ball at a time</td>
+<td>Servo placement, horn/pusher, range</td>
+<td>Repeated release trials</td>
+<td>Operator timing, servo range, sticking, firing sequence</td>
+</tr>
+<tr>
+<td>Whole Robot</td>
+<td>Complete scoring loops</td>
+<td>Integration and space management</td>
+<td>Full scoring cycle</td>
+<td>Role communication, subsystem interference, control mapping, strategy</td>
+</tr>
+</tbody></table></div>
+<h2 id="acceptable-performance-range">Acceptable Performance Range</h2>
+<p>A subsystem is ready when it performs inside an acceptable range for the team&#x27;s strategy.</p>
+<p>Systems do not need to be perfect. They need to be reliable enough for the team goal.</p>
+<p>Examples:</p>
+<ul>
+<li>drive system: controlled enough to complete the course safely</li>
+<li>flywheel: accurate enough from a known distance</li>
+<li>hopper: stable enough during normal driving</li>
+<li>trigger: consistent enough to release one ball at a time</li>
+<li>autonomous: close enough to be useful in the challenge</li>
+</ul>
+<p>Decide the acceptable range before or during testing. Revisit it during the postmortem. If the strategy changes, the acceptable range may change too.</p>
+<h2 id="documentation-happens-the-whole-time">Documentation Happens the Whole Time</h2>
+<p>The engineering portfolio should not be written only at the end. It should grow as the team makes decisions, tests, revises, and learns.</p>
+<h2 id="portfolio-evidence-checklist">Portfolio Evidence Checklist</h2>
+<ul>
+<li>[ ] Game goal or robot behavior target</li>
+<li>[ ] Design SLD decision</li>
+<li>[ ] Sketch, diagram, or photo</li>
+<li>[ ] Parts/materials used</li>
+<li>[ ] Configuration names</li>
+<li>[ ] Code snippet or control mapping</li>
+<li>[ ] Test plan</li>
+<li>[ ] Test data</li>
+<li>[ ] Operator/driver notes</li>
+<li>[ ] Postmortem category</li>
+<li>[ ] Revision made</li>
+<li>[ ] Retest result</li>
+<li>[ ] Final acceptable range or next step</li>
+</ul>
+<h2 id="teacher-note">Teacher Note</h2>
+<p>This guide can be reused throughout the course. Each subsystem does not need a completely new process. Teachers can refer students back to this cycle and then provide subsystem-specific readings, design menus, and SLD prompts.</p>
+<p>The cycle helps students see that robotics is not just building. It is designing, programming, operating, testing, diagnosing, tuning, and documenting.</p>
+      </article>
+
+    </main>
+  </body>
+</html>

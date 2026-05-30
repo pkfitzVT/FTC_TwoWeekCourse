@@ -30,6 +30,7 @@
 <p>This course uses robotics as an entry point into advanced STEM learning. Students work in teams to design, build, program, test, and present a robot while connecting their work to engineering, computer science, mathematics, physics, data analysis, careers, and their own strengths. The course emphasizes curiosity, collaboration, risk-taking, iteration, and student-led problem solving.</p>
 <p>This is a 10-day, 20-session modified FIRST Tech Challenge course. It is not intended to recreate a full FTC season in two weeks. Instead, it gives students a compact, authentic experience with FTC-style teamwork, robot design, Java programming, testing, troubleshooting, documentation, presentation, and shared-material stewardship. Students should leave the course more confident trying unfamiliar STEM work and better able to see how robotics connects to AP Computer Science A, AP Physics, AP Calculus, AP Statistics, engineering, design, programming, fabrication, data analysis, and future robotics-team participation.</p>
 <p>The course culture is low-floor and high-ceiling. Every student should participate in building, testing, coding, documenting, and presenting in some way. Challenge by Choice pathways give students ways to go deeper without locking them into permanent specialist roles.</p>
+<p>The student-facing entry overview is <code>02_student_materials/guides/how_this_robotics_course_works.md</code>; use it before the more detailed SLD and subsystem-cycle reference guides.</p>
 <h2 id="2-course-design-principles">2. Course Design Principles</h2>
 <ul>
 <li>Student-led problem solving: students discuss, decide, test, and revise instead of only following teacher directions.</li>
@@ -83,6 +84,8 @@
 <li>Engineering portfolio entry: a short written entry explaining what the team did, what decision they made, what evidence they used, and what they need to do next.</li>
 </ul>
 <p>The SLD document captures the team&#x27;s decision-making process. The engineering portfolio is the final organized record of the team&#x27;s work. Students may create separate SLD notes, sketches, photos, code, and test results during the session, but the important evidence should eventually be summarized or linked in the engineering portfolio.</p>
+<p>The repeated subsystem process is summarized in <code>02_student_materials/guides/subsystem_design_operation_testing_cycle_guide.md</code>: game goals -&gt; robot behavior targets -&gt; Design SLD -&gt; build/adapt -&gt; programming/configuration -&gt; subsystem test -&gt; Operations Role SLD -&gt; integrated performance test -&gt; Postmortem / Tuning SLD -&gt; revision or acceptable performance range -&gt; documentation.</p>
+<p>The student-facing purpose of SLD is summarized in <code>02_student_materials/guides/student_led_discussion_reference_guide.md</code>: SLD is the process teams use to turn individual ideas into shared, documented decisions.</p>
 <p>Use the templates in <code>02_student_materials/engineering_notebook/student_engineering_notebook_master.md</code> as the working portfolio structure. Useful recurring templates include the daily engineering log, design decision record, test data table, code change log, failure/fix record, photo evidence checklist, final reflection, and presentation planning pages.</p>
 <h2 id="6-ten-day-twenty-session-overview-table">6. Ten-Day / Twenty-Session Overview Table</h2>
 <div class="table-wrap"><table>
@@ -181,7 +184,7 @@
 <td>Wire, configure, test drive, and round-robin challenge</td>
 <td>Wire motors safely, test TeleOp, and use a two-robot timed challenge when teams are ready.</td>
 <td>Configure motor names, test on blocks, debug one issue at a time, run differentiated readiness pathways, collect timed challenge evidence, use the Robot Operations Role Plan SLD, use the Performance Testing Postmortem SLD, adjust between runs.</td>
-<td><code>02_student_materials/readings/day4_session8_wiring_configuration_and_first_drive.md</code>; <code>02_student_materials/readings/day4_session8_troubleshooting_basic_drive.md</code>; <code>02_student_materials/guides/day4_session8_drive_reliability_round_robin_challenge.md</code>; <code>02_student_materials/sld_prompts/reusable_robot_operations_role_plan_sld.md</code>; <code>02_student_materials/sld_prompts/reusable_performance_testing_postmortem_sld.md</code>; Day 2 programming readings</td>
+<td><code>02_student_materials/readings/day4_session8_wiring_configuration_and_first_drive.md</code>; <code>02_student_materials/readings/day4_session8_troubleshooting_basic_drive.md</code>; <code>02_student_materials/activities/drive_reliability_round_robin/drive_reliability_round_robin_challenge.md</code>; <code>02_student_materials/sld_prompts/reusable_robot_operations_role_plan_sld.md</code>; <code>02_student_materials/sld_prompts/reusable_performance_testing_postmortem_sld.md</code>; Day 2 programming readings</td>
 <td>TeleOp test record, wiring/config table, race run record, adjustment log, role decision record, performance postmortem record, code/config notes.</td>
 <td>Motor ports, configuration names, Java variable names, test results, bug fixes, run times, penalties, adjustments, drive-team role evidence, issue category, next change, owner, retest plan.</td>
 <td>What did the driving challenge reveal about our chassis, controls, drive tuning, and driver communication?</td>
@@ -622,7 +625,7 @@
 <li><code>02_student_materials/readings/principles_of_robot_assembly_day3.md</code></li>
 <li><code>02_student_materials/readings/day3_session5_chassis_physics_space_background.md</code></li>
 <li><code>02_student_materials/readings/future_human_controller_mapping_background.md</code></li>
-<li><code>02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md</code></li>
+<li><code>02_student_materials/activities/controller_mapping_drive_comparison/controller_mapping_drive_comparison_activity.md</code></li>
 <li><code>02_student_materials/sld_prompts/day3_session6_controller_mapping_sld.md</code></li>
 <li><code>02_student_materials/sld_prompts/day3_session6_drive_power_tuning_sld.md</code></li>
 <li><code>02_student_materials/code_examples/onbot_java/DemoDriveDPad.java</code></li>
@@ -750,7 +753,7 @@
 <ul>
 <li><code>02_student_materials/readings/day4_session8_wiring_configuration_and_first_drive.md</code></li>
 <li><code>02_student_materials/readings/day4_session8_troubleshooting_basic_drive.md</code></li>
-<li><code>02_student_materials/guides/day4_session8_drive_reliability_round_robin_challenge.md</code></li>
+<li><code>02_student_materials/activities/drive_reliability_round_robin/drive_reliability_round_robin_challenge.md</code></li>
 <li><code>02_student_materials/sld_prompts/reusable_robot_operations_role_plan_sld.md</code></li>
 <li><code>02_student_materials/sld_prompts/reusable_performance_testing_postmortem_sld.md</code></li>
 <li><code>02_student_materials/sld_prompts/day3_session6_controller_mapping_sld.md</code></li>

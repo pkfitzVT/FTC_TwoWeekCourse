@@ -41,6 +41,7 @@ def collect_pages() -> list[Page]:
     patterns = [
         ("02_student_materials/readings/*.md", "student/readings", "Student Readings"),
         ("02_student_materials/guides/*.md", "student/guides", "Student Guides"),
+        ("02_student_materials/activities/**/*.md", "student/activities", "Activities"),
         ("02_student_materials/code_examples/**/*.md", "student/code_examples", "Code Examples"),
         (
             "02_student_materials/engineering_notebook/*.md",
@@ -321,7 +322,7 @@ def write_static_pages(pages: list[Page]) -> None:
         <p>This Phase 2 site converts selected Markdown source files into browseable HTML pages. Markdown remains the editable source of truth; generated pages live under <code>site/generated/</code>.</p>
       </section>
       <section class="grid" aria-label="Course entry points">
-        <article class="card"><span class="tag">Student-facing</span><h2><a href="students/index.html">Students</a></h2><p>Readings, reusable guides, decision menus, engineering notebook materials, and Challenge by Choice pathways.</p></article>
+        <article class="card"><span class="tag">Student-facing</span><h2><a href="students/index.html">Students</a></h2><p>Readings, reusable guides, activities, decision menus, engineering notebook materials, and Challenge by Choice pathways.</p></article>
         <article class="card"><span class="tag">Teacher-facing</span><h2><a href="teachers/index.html">Teachers</a></h2><p>Course overviews, session plans, planning docs, impact-study materials, and teacher guides.</p></article>
         <article class="card"><span class="tag">10 days / 20 sessions</span><h2><a href="sessions/index.html">Sessions</a></h2><p>The pre-course page and all 20 teacher-facing session lesson plans.</p></article>
         <article class="card"><span class="tag">All materials</span><h2><a href="materials/index.html">Materials</a></h2><p>A category-based index for generated HTML pages and source materials.</p></article>
@@ -344,6 +345,7 @@ def write_static_pages(pages: list[Page]) -> None:
         "02_student_materials/guides/robotics_design_build_revise_process_handout.md",
         "02_student_materials/guides/subsystem_design_cycle_guide.md",
         "02_student_materials/guides/robot_troubleshooting_checklist.md",
+        "02_student_materials/activities/README.md",
         "02_student_materials/engineering_notebook/student_engineering_notebook_master.md",
         "02_student_materials/readings/day1_session1_what_is_first.md",
         "02_student_materials/readings/day1_session1_what_is_first_tech_challenge.md",
@@ -352,6 +354,9 @@ def write_static_pages(pages: list[Page]) -> None:
     student_body = f"""
       <section class="section"><h2>Start Here</h2><ul class="link-list">
 {list_items([page_by_source(pages, source) for source in student_sources], SITE / "students")}
+      </ul></section>
+      <section class="section"><h2>Activities</h2><ul class="link-list">
+{list_items(section_pages(pages, "Activities"), SITE / "students")}
       </ul></section>
       <section class="section"><h2>All Student Readings</h2><ul class="link-list">
 {list_items(section_pages(pages, "Student Readings"), SITE / "students")}
@@ -407,6 +412,7 @@ def write_static_pages(pages: list[Page]) -> None:
 
     sections = [
         "Student Guides",
+        "Activities",
         "Student Readings",
         "Engineering Notebook",
         "Decision Menus",

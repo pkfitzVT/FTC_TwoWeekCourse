@@ -39,7 +39,7 @@ Related materials:
 - `02_student_materials/sld_prompts/day2_session4_strategy_to_robot_behavior_sld.md`
 - `02_student_materials/sld_prompts/day3_session5_chassis_design_choice_sld.md`
 - `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`
-- `02_student_materials/decision_menus/demo_robot_design_observation_activity.md`
+- `02_student_materials/activities/demo_robot_design_analysis/demo_robot_design_observation_activity.md`
 - `02_student_materials/guides/subsystem_design_operation_testing_cycle_guide.md`
 - `02_student_materials/guides/subsystem_design_cycle_guide.md`
 - `90_templates/team_strategy_guide_template.md`
@@ -101,8 +101,8 @@ Related material:
 
 - `02_student_materials/guides/student_led_discussion_reference_guide.md`
 - `docs/design_choice_menu_matrix.md`
-- `02_student_materials/decision_menus/demo_robot_design_analysis_activity.md`
-- `02_student_materials/decision_menus/demo_robot_design_observation_activity.md`
+- `02_student_materials/activities/demo_robot_design_analysis/demo_robot_design_analysis_activity.md`
+- `02_student_materials/activities/demo_robot_design_analysis/demo_robot_design_observation_activity.md`
 - `02_student_materials/guides/subsystem_design_operation_testing_cycle_guide.md`
 - `90_templates/student_led_discussion_tally_sheet_template.md`
 - `90_templates/team_strategy_guide_template.md`
@@ -172,8 +172,8 @@ Use this when your team studies demonstration robots before finalizing design ch
 
 Related material:
 
-- `02_student_materials/decision_menus/demo_robot_design_analysis_activity.md`
-- `02_student_materials/decision_menus/demo_robot_design_observation_activity.md`
+- `02_student_materials/activities/demo_robot_design_analysis/demo_robot_design_analysis_activity.md`
+- `02_student_materials/activities/demo_robot_design_analysis/demo_robot_design_observation_activity.md`
 - `docs/design_choice_menu_matrix.md`
 
 ## Subsystem Design Cycle Template
@@ -267,7 +267,7 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 - Team decision or task: Choose a personal goal, make a safety/community commitment, and begin Demo Robot Design Analysis.
 - Notebook evidence required: Personal goal choice, safety/community commitment, first SLD reflection, first demo robot design analysis note, optional student bio.
 - Reflection prompt: What do we owe to the teams, mentors, and community members who made this robotics equipment available to us?
-- Useful references: `02_student_materials/readings/day1_session1_robotics_safety_norms.md`; `02_student_materials/readings/day1_session1_borrowed_equipment_expectations.md`; `02_student_materials/decision_menus/day1_session1_individual_goal_menu.md`; `02_student_materials/decision_menus/demo_robot_design_analysis_activity.md`; `02_student_materials/sld_prompts/day1_session1_sld_shared_materials_student.md`; `02_student_materials/engineering_notebook/day1_session1_student_bio_template.md`
+- Useful references: `02_student_materials/readings/day1_session1_robotics_safety_norms.md`; `02_student_materials/readings/day1_session1_borrowed_equipment_expectations.md`; `02_student_materials/decision_menus/day1_session1_individual_goal_menu.md`; `02_student_materials/activities/demo_robot_design_analysis/demo_robot_design_analysis_activity.md`; `02_student_materials/sld_prompts/day1_session1_sld_shared_materials_student.md`; `02_student_materials/engineering_notebook/day1_session1_student_bio_template.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 2: Collaborative Engineering Teams
@@ -276,7 +276,7 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 - Team decision or task: Name ways each person can contribute to the team and continue Demo Robot Design Analysis with partner rotations.
 - Notebook evidence required: Teamwork reflection or bio-based contribution note, partner/role rotation note, and continued demo robot design analysis evidence.
 - Reflection prompt: How should an engineering team make room for different kinds of contributors?
-- Useful references: `02_student_materials/readings/day1_session2_collaborative_engineering_teams.md`; `02_student_materials/decision_menus/demo_robot_design_analysis_activity.md`; `02_student_materials/engineering_notebook/day1_session1_student_bio_template.md`
+- Useful references: `02_student_materials/readings/day1_session2_collaborative_engineering_teams.md`; `02_student_materials/activities/demo_robot_design_analysis/demo_robot_design_analysis_activity.md`; `02_student_materials/engineering_notebook/day1_session1_student_bio_template.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 3: Team Identity and Team Norms
@@ -285,7 +285,7 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 - Team decision or task: Use the Team Norms SLD first, then use the Team Identity / Team Name SLD to choose a name connected to the norms. Start a copied Team Strategy Guide and preview the Robot Behavior Specification.
 - Notebook evidence required: Team norms, disagreement plan, all-voices plan, reset/repair plan, team identity statement, team name decision table, first Team Strategy Guide entries, behavior specification preview note, Demo Robot Design Analysis evidence, reflection on trade-offs.
 - Reflection prompt: How should our team norms shape the kind of team we want to become?
-- Useful references: `02_student_materials/sld_prompts/day2_session3_team_norms_sld.md`; `02_student_materials/sld_prompts/day2_session3_team_identity_name_sld.md`; `02_student_materials/readings/day2_session3_why_team_names_matter.md`; `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`; `02_student_materials/decision_menus/day2_session3_team_name_menu.md`; `02_student_materials/decision_menus/day2_session3_team_norms_menu.md`; `02_student_materials/decision_menus/demo_robot_design_analysis_activity.md`; `90_templates/student_led_discussion_tally_sheet_template.md`; `90_templates/team_strategy_guide_template.md`; `90_templates/robot_behavior_specification_template.md`
+- Useful references: `02_student_materials/sld_prompts/day2_session3_team_norms_sld.md`; `02_student_materials/sld_prompts/day2_session3_team_identity_name_sld.md`; `02_student_materials/readings/day2_session3_why_team_names_matter.md`; `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`; `02_student_materials/decision_menus/day2_session3_team_name_menu.md`; `02_student_materials/decision_menus/day2_session3_team_norms_menu.md`; `02_student_materials/activities/demo_robot_design_analysis/demo_robot_design_analysis_activity.md`; `90_templates/student_led_discussion_tally_sheet_template.md`; `90_templates/team_strategy_guide_template.md`; `90_templates/robot_behavior_specification_template.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 4: First Programming Session
@@ -294,7 +294,7 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 - Team decision or task: Complete or update the Team Strategy Guide and Robot Behavior Specification using demo robot evidence, then compare the D-pad and joystick drive examples and identify what each should make the robot do.
 - Notebook evidence required: Game Strategy SLD work product, Strategy-to-Robot-Behavior SLD work product, Demo Robot Design Analysis evidence used, TeleOp name, hardware names, motor ports, button mappings, one code change or prediction, and test result.
 - Reflection prompt: Why must the names in the configuration file match the names in the program exactly?
-- Useful references: `02_student_materials/sld_prompts/day2_session4_game_strategy_sld.md`; `02_student_materials/sld_prompts/day2_session4_strategy_to_robot_behavior_sld.md`; `02_student_materials/guides/modified_robotics_game_rules_and_scoring_guide.md`; `02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md`; `02_student_materials/decision_menus/demo_robot_design_analysis_activity.md`; `90_templates/team_strategy_guide_template.md`; `90_templates/robot_behavior_specification_template.md`; `90_templates/student_led_discussion_tally_sheet_template.md`; `02_student_materials/readings/day2_session4_programming_background.md`; `02_student_materials/readings/day2_session4_reading_basic_teleop.md`; `02_student_materials/code_examples/onbot_java/README.md`
+- Useful references: `02_student_materials/sld_prompts/day2_session4_game_strategy_sld.md`; `02_student_materials/sld_prompts/day2_session4_strategy_to_robot_behavior_sld.md`; `02_student_materials/guides/modified_robotics_game_rules_and_scoring_guide.md`; `02_student_materials/decision_menus/day2_session4_game_strategy_goals_menu.md`; `02_student_materials/activities/demo_robot_design_analysis/demo_robot_design_analysis_activity.md`; `90_templates/team_strategy_guide_template.md`; `90_templates/robot_behavior_specification_template.md`; `90_templates/student_led_discussion_tally_sheet_template.md`; `02_student_materials/readings/day2_session4_programming_background.md`; `02_student_materials/readings/day2_session4_reading_basic_teleop.md`; `02_student_materials/code_examples/onbot_java/README.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 5: Chassis Build Start
@@ -303,7 +303,7 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 - Team decision or task: Use the Chassis Design Choice SLD to check the Team Strategy Guide, Robot Behavior Specification, and Demo Robot Design Analysis notes, then start the frame/drivetrain subsystem cycle.
 - Notebook evidence required: Chassis decision record, strategy and behavior check note, Demo Robot Design Analysis readiness note, frame/drivetrain subsystem cycle entry, first chassis sketch, first chassis test plan, build log entry with photo/sketch, parts used, first issue noticed, and next step.
 - Reflection prompt: Which design choice should we protect when the build gets difficult or slow?
-- Useful references: `02_student_materials/sld_prompts/day3_session5_chassis_design_choice_sld.md`; `90_templates/team_strategy_guide_template.md`; `90_templates/robot_behavior_specification_template.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `02_student_materials/decision_menus/demo_robot_design_analysis_activity.md`; `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`; `02_student_materials/readings/day3_session5_chassis_physics_space_background.md`; `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md`; `02_student_materials/decision_menus/day2_session4_chassis_material_menu.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md`
+- Useful references: `02_student_materials/sld_prompts/day3_session5_chassis_design_choice_sld.md`; `90_templates/team_strategy_guide_template.md`; `90_templates/robot_behavior_specification_template.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `02_student_materials/activities/demo_robot_design_analysis/demo_robot_design_analysis_activity.md`; `02_student_materials/readings/day2_session3_structure_function_and_robot_strategy.md`; `02_student_materials/readings/day3_session5_chassis_physics_space_background.md`; `02_student_materials/decision_menus/day2_session4_chassis_shape_menu.md`; `02_student_materials/decision_menus/day2_session4_chassis_material_menu.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 6: Chassis Readiness, Controller Mapping, and Drive Tuning
@@ -312,7 +312,7 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 - Team decision or task: Confirm the chassis is safe enough for powered testing, run controlled D-pad and joystick trials, use data to choose D-pad, joystick, or hybrid control, and use power-level data to choose the next tuning target.
 - Notebook evidence required: Chassis readiness checklist, issue/fix list, D-pad vs joystick trial data, motor power trial data, driver/operator notes, Controller Mapping SLD work product, Drive Power / Motor Tuning SLD work product, slow mode decision if applicable, and next test.
 - Reflection prompt: Which control mapping best helps our drivers make the robot perform the behaviors in our Robot Behavior Specification?
-- Useful references: `02_student_materials/sld_prompts/day3_session6_controller_mapping_sld.md`; `02_student_materials/sld_prompts/day3_session6_drive_power_tuning_sld.md`; `02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md`; `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/code_examples/onbot_java/README.md`; `02_student_materials/code_examples/onbot_java/DemoDriveDPad.java`; `02_student_materials/code_examples/onbot_java/DemoDriveJoy.java`; `90_templates/robot_behavior_specification_template.md`; `90_templates/subsystem_design_cycle_template.md`; `90_templates/student_led_discussion_tally_sheet_template.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md`
+- Useful references: `02_student_materials/sld_prompts/day3_session6_controller_mapping_sld.md`; `02_student_materials/sld_prompts/day3_session6_drive_power_tuning_sld.md`; `02_student_materials/activities/controller_mapping_drive_comparison/controller_mapping_drive_comparison_activity.md`; `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/code_examples/onbot_java/README.md`; `02_student_materials/code_examples/onbot_java/DemoDriveDPad.java`; `02_student_materials/code_examples/onbot_java/DemoDriveJoy.java`; `90_templates/robot_behavior_specification_template.md`; `90_templates/subsystem_design_cycle_template.md`; `90_templates/student_led_discussion_tally_sheet_template.md`; `02_student_materials/decision_menus/day2_session4_wheel_selection_menu.md`; `02_student_materials/decision_menus/day2_session4_motor_placement_menu.md`; `02_student_materials/decision_menus/day2_session4_electronics_battery_placement_menu.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 7: Robot Control Introduction
@@ -321,7 +321,7 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 - Team decision or task: Secure drivetrain parts, identify what might loosen or rub, and use the Autonomous Encoder Experiment Design SLD before beginning the Autonomous Straight-Line Challenge if the chassis is ready.
 - Notebook evidence required: Build photos, motor/wheel checklist, updated chassis/drivetrain sketch, issue list, optional Autonomous Encoder Experiment Plan, and optional autonomous straight-line challenge evidence.
 - Reflection prompt: What part of our drivetrain is most likely to loosen, rub, or shift during testing?
-- Useful references: `02_student_materials/readings/day4_session7_chassis_build_checklist.md`; `02_student_materials/readings/day4_session7_mounting_motors_and_wheels.md`; `02_student_materials/readings/day4_session7_autonomous_encoder_experiment_background.md`; `02_student_materials/sld_prompts/day4_session7_autonomous_encoder_experiment_design_sld.md`; `02_student_materials/guides/day4_session7_autonomous_straight_line_challenge_activity.md`; `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md`; `02_student_materials/code_examples/onbot_java/README.md`
+- Useful references: `02_student_materials/readings/day4_session7_chassis_build_checklist.md`; `02_student_materials/readings/day4_session7_mounting_motors_and_wheels.md`; `02_student_materials/readings/day4_session7_autonomous_encoder_experiment_background.md`; `02_student_materials/sld_prompts/day4_session7_autonomous_encoder_experiment_design_sld.md`; `02_student_materials/activities/autonomous_straight_line_challenge/autonomous_straight_line_challenge_activity.md`; `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/activities/controller_mapping_drive_comparison/controller_mapping_drive_comparison_activity.md`; `02_student_materials/code_examples/onbot_java/README.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 8: Wire, Configure, Test Drive, and Round-Robin Challenge
@@ -330,7 +330,7 @@ Use photos to support your engineering story. Do not rely on photos alone; add s
 - Team decision or task: Continue wiring/configuration or drive tuning as needed; ready teams run the Drive Reliability Round-Robin Challenge and use evidence to revise controls, chassis reliability, or drive-team roles.
 - Notebook evidence required: Frame/drivetrain subsystem cycle update, TeleOp test record, code/config change, controller-mapping or drive-tuning evidence, race times, penalties, adjustment log, role decision record, photo/video evidence if available, and one chassis/control/driver-practice revision.
 - Reflection prompt: What did the driving challenge reveal about our chassis, controls, drive tuning, and driver communication?
-- Useful references: `02_student_materials/guides/day4_session8_drive_reliability_round_robin_challenge.md`; `02_student_materials/sld_prompts/reusable_robot_operations_role_plan_sld.md`; `02_student_materials/sld_prompts/reusable_performance_testing_postmortem_sld.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `02_student_materials/readings/day4_session8_wiring_configuration_and_first_drive.md`; `02_student_materials/readings/day4_session8_troubleshooting_basic_drive.md`; `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/code_examples/onbot_java/README.md`; `02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md`; `02_student_materials/sld_prompts/day3_session6_controller_mapping_sld.md`; `02_student_materials/sld_prompts/day3_session6_drive_power_tuning_sld.md`
+- Useful references: `02_student_materials/activities/drive_reliability_round_robin/drive_reliability_round_robin_challenge.md`; `02_student_materials/sld_prompts/reusable_robot_operations_role_plan_sld.md`; `02_student_materials/sld_prompts/reusable_performance_testing_postmortem_sld.md`; `02_student_materials/guides/subsystem_design_cycle_guide.md`; `90_templates/subsystem_design_cycle_template.md`; `02_student_materials/readings/day4_session8_wiring_configuration_and_first_drive.md`; `02_student_materials/readings/day4_session8_troubleshooting_basic_drive.md`; `02_student_materials/readings/future_human_controller_mapping_background.md`; `02_student_materials/code_examples/onbot_java/README.md`; `02_student_materials/activities/controller_mapping_drive_comparison/controller_mapping_drive_comparison_activity.md`; `02_student_materials/sld_prompts/day3_session6_controller_mapping_sld.md`; `02_student_materials/sld_prompts/day3_session6_drive_power_tuning_sld.md`
 - TODO: Develop the specific printable student page for this session.
 
 ## Session 9: Strategy Check and Mechanism Planning

@@ -6,10 +6,10 @@ Use evidence to decide how your team should control the frame/drivetrain subsyst
 
 You will compare two drive-only OpModes:
 
-- [`DemoDriveDPad.java`](../code_examples/onbot_java/DemoDriveDPad.java): D-pad and bumper driving with helper methods.
-- [`DemoDriveJoy.java`](../code_examples/onbot_java/DemoDriveJoy.java): joystick arcade driving with direct motor-power math.
+- [`DemoDriveDPad.java`](../../code_examples/onbot_java/DemoDriveDPad.java): D-pad and bumper driving with helper methods.
+- [`DemoDriveJoy.java`](../../code_examples/onbot_java/DemoDriveJoy.java): joystick arcade driving with direct motor-power math.
 
-Use the [OnBot Java code examples README](../code_examples/onbot_java/README.md) before copying either file.
+Use the [OnBot Java code examples README](../../code_examples/onbot_java/README.md) before copying either file.
 
 This is a controller-mapping decision. Your choice should support your Robot Behavior Specification, your Subsystem Design Cycle evidence, and your team strategy.
 

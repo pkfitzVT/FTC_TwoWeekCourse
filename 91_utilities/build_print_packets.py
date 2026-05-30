@@ -25,12 +25,12 @@ PACKET_SOURCES = [
     ),
     (
         "Demo Robot Design Analysis Activity",
-        "02_student_materials/decision_menus/demo_robot_design_analysis_activity.md",
+        "02_student_materials/activities/demo_robot_design_analysis/demo_robot_design_analysis_activity.md",
         "Use during early paired rotations to operate, observe, and analyze multiple demo robots.",
     ),
     (
         "Demo Robot Design Observation Activity",
-        "02_student_materials/decision_menus/demo_robot_design_observation_activity.md",
+        "02_student_materials/activities/demo_robot_design_analysis/demo_robot_design_observation_activity.md",
         "Use while observing, sketching, photographing, and evaluating demo robot design choices.",
     ),
     (
@@ -50,10 +50,14 @@ PACKET_SOURCES = [
     ),
     (
         "Controller Mapping Drive Comparison Activity",
-        "02_student_materials/decision_menus/controller_mapping_drive_comparison_activity.md",
+        "02_student_materials/activities/controller_mapping_drive_comparison/controller_mapping_drive_comparison_activity.md",
         "Use after teams can run the D-pad and joystick drive demos.",
     ),
 ]
+
+# Manual printables, such as
+# 02_student_materials/activities/demo_robot_design_analysis/demo_robot_design_analysis.pdf,
+# are maintained separately and should not be overwritten by this generated HTML packet.
 
 
 def rel_href(target: Path, from_dir: Path) -> str:

@@ -26,7 +26,7 @@ Prepare orientation handouts, safety readings, borrowed-equipment expectations, 
 - [Robotics safety norms](../../02_student_materials/readings/day1_session1_robotics_safety_norms.md)
 - [Borrowed equipment expectations](../../02_student_materials/readings/day1_session1_borrowed_equipment_expectations.md)
 - [Individual goal menu](../../02_student_materials/decision_menus/day1_session1_individual_goal_menu.md)
-- [Demo Robot Design Analysis activity](../../02_student_materials/decision_menus/demo_robot_design_analysis_activity.md)
+- [Demo Robot Design Analysis activity](../../02_student_materials/activities/demo_robot_design_analysis/demo_robot_design_analysis_activity.md)
 
 ## Student-Led Discussion / Decision
 
@@ -70,7 +70,7 @@ Model cleanup and honest reporting immediately. Watch for students who need a lo
 ## Linked Resources
 
 - [Student SLD prompt](../../02_student_materials/sld_prompts/day1_session1_sld_shared_materials_student.md)
-- [Demo Robot Design Analysis activity](../../02_student_materials/decision_menus/demo_robot_design_analysis_activity.md)
+- [Demo Robot Design Analysis activity](../../02_student_materials/activities/demo_robot_design_analysis/demo_robot_design_analysis_activity.md)
 - [Teacher SLD guide](../../03_teacher_materials/teacher_guides/day1_session1_sld_shared_materials_teacher_guide.md)
 - [Student bio template](../../02_student_materials/engineering_notebook/day1_session1_student_bio_template.md)
 - [Engineering notebook](../../02_student_materials/engineering_notebook/student_engineering_notebook_master.md)

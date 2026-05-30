@@ -29,6 +29,14 @@ Use the browser print dialog or Save as PDF.
 
 This packet combines early-course student worksheets for discussion, demo robot evaluation, strategy, behavior specification, subsystem design, and controller mapping.
 
+The manually formatted demo robot printable is stored separately at:
+
+```text
+02_student_materials/activities/demo_robot_design_analysis/demo_robot_design_analysis.pdf
+```
+
+Do not overwrite manual PDFs with generated print-packet output.
+
 ## Manual Review Before Printing
 
 Before classroom printing:

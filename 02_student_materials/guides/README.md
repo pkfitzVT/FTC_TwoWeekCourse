@@ -4,6 +4,8 @@ This folder contains reusable student-facing guides and classroom routines for t
 
 These files are not tied to only one session. They support habits students should use across build, programming, testing, documentation, and revision work.
 
+Hands-on worksheets, testing challenges, data-collection sheets, and competition-style tasks live in [`../activities/README.md`](../activities/README.md).
+
 ## Guides
 
 - [`how_this_robotics_course_works.md`](how_this_robotics_course_works.md): short student-facing overview of the course purpose, repeated engineering cycle, SLDs, Challenge by Choice, advanced pathways, and documentation.

@@ -22,7 +22,7 @@ Prepare the collaborative engineering teams reading, demo robot rotation station
 ## Student Background Reading / Preparation
 
 - [Collaborative engineering teams](../../02_student_materials/readings/day1_session2_collaborative_engineering_teams.md)
-- [Demo Robot Design Analysis activity](../../02_student_materials/decision_menus/demo_robot_design_analysis_activity.md)
+- [Demo Robot Design Analysis activity](../../02_student_materials/activities/demo_robot_design_analysis/demo_robot_design_analysis_activity.md)
 - [Student bio template](../../02_student_materials/engineering_notebook/day1_session1_student_bio_template.md)
 
 ## Student-Led Discussion / Decision
@@ -67,5 +67,5 @@ Notice leadership patterns and students who may need structured entry points. Re
 ## Linked Resources
 
 - [Collaborative engineering teams](../../02_student_materials/readings/day1_session2_collaborative_engineering_teams.md)
-- [Demo Robot Design Analysis activity](../../02_student_materials/decision_menus/demo_robot_design_analysis_activity.md)
+- [Demo Robot Design Analysis activity](../../02_student_materials/activities/demo_robot_design_analysis/demo_robot_design_analysis_activity.md)
 - [Engineering notebook](../../02_student_materials/engineering_notebook/student_engineering_notebook_master.md)
