@@ -8,6 +8,8 @@ This is a 10-day, 20-session modified FIRST Tech Challenge course. It is not int
 
 The course culture is low-floor and high-ceiling. Every student should participate in building, testing, coding, documenting, and presenting in some way. Challenge by Choice pathways give students ways to go deeper without locking them into permanent specialist roles.
 
+The student-facing entry overview is `02_student_materials/guides/how_this_robotics_course_works.md`; use it before the more detailed SLD and subsystem-cycle reference guides.
+
 ## 2. Course Design Principles
 
 - Student-led problem solving: students discuss, decide, test, and revise instead of only following teacher directions.

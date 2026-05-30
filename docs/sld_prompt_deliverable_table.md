@@ -1,6 +1,6 @@
 # Student-Led Discussion Prompt and Deliverable Table
 
-Student-Led Discussion (SLD) is the course's decision-making process. SLD is the process. The deliverable is the recorded decision, reflection, design choice, test plan, or portfolio update that results from the discussion.
+Student-Led Discussion (SLD) is the course's agency-building decision-making process. SLD is the process. The deliverable is the recorded decision, reflection, design choice, test plan, or portfolio update that results from the discussion.
 
 As the course progresses, SLDs shift from identity and norms, to design decisions, to reflection and improvement based on evidence.
 

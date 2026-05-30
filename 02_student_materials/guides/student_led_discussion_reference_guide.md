@@ -1,14 +1,29 @@
 # Student-Led Discussion Reference Guide
 
-## Why We Use SLD
-
-In this course, Student-Led Discussion is how your team turns individual ideas into shared decisions. The goal is not just to talk. The goal is to use evidence, listen to each other, make a decision, and document the work product that comes out of the discussion.
+In this course, Student-Led Discussion, or SLD, is how your team turns individual ideas into shared decisions. The goal is not just to talk. The goal is to use evidence, listen to each other, make a decision, and document the work product that comes out of the discussion.
 
 SLD is the process.
 
 The work product is the result.
 
-Examples of work products include:
+The quality of your team's discussion affects the quality of your robot and the quality of your experience.
+
+## What Is Student-Led Discussion?
+
+In an SLD, students lead the conversation. The teacher may support safety, timing, and clarity, but students should increasingly lead the decision-making process.
+
+The team should:
+
+- ask questions
+- make claims
+- use evidence
+- build on ideas
+- raise reasonable concerns
+- include different voices
+- make decisions
+- document the result
+
+Examples of SLD work products include:
 
 - team norms
 - team name / identity
@@ -22,50 +37,57 @@ Examples of work products include:
 - postmortem revision plan
 - subsystem design decisions
 
-Student-Led Discussion is how teams turn individual ideas into shared decisions.
+## Why SLD Gives Your Team More Ownership
 
-Strong teams do not just build faster. They listen better, use evidence better, disagree more productively, include more voices, and document decisions more clearly.
+Student agency means your team increasingly takes responsibility for making decisions, explaining those decisions, testing them, and improving the way you work together.
 
-## What Is a Student-Led Discussion?
+At the beginning of the course, your teachers will provide more structure. As your team gains experience, your teachers will step back and your team will take more ownership.
 
-In an SLD, students lead the conversation. The teacher may support safety, timing, and clarity, but the goal is for the team to practice leading the decision process.
+SLD is how your team practices making thoughtful decisions without waiting for the teacher to decide everything. It also helps the team move away from decision-making based on popularity, seniority, intimidation, or the loudest voice.
 
-The team should:
+Instead, strong teams learn to:
 
-- ask questions
-- make claims
 - use evidence
-- build on ideas
-- raise concerns
+- ask useful questions
+- listen carefully
+- include quieter voices
+- name tradeoffs
+- raise reasonable objections
 - make decisions
 - document the result
+- reflect on how the discussion itself can improve
 
-## Why SLD Matters in Robotics
+## The Tone of the Conversation Matters
 
-Robot success depends on team decisions. Strong discussion helps teams make:
+A technically strong idea does not help the team much if the process shuts people out, creates conflict, or leaves students afraid to speak.
 
-- better design choices
-- better use of available parts
-- better role decisions
-- safer operation plans
-- better tests
-- better postmortems
-- better tuning choices
-- fewer repeated mistakes
+Productive tone includes:
 
-A robot can fail because of hardware, software, human operation, or strategy/communication. SLD helps the team notice which kind of problem they are really solving.
+- listening
+- curiosity
+- respect
+- asking follow-up questions
+- disagreeing without attacking people
+- inviting quieter voices
+- giving credit to other people's ideas
+- staying focused on the work
+- avoiding blame
 
-## Why We Track Discussion Moves
+The quality of your team's discussion affects the quality of your robot and the quality of your experience.
 
-We are not tallying discussion moves to judge people.
-
-We are studying the discussion so the team can improve how it makes decisions.
+## How to Use the SLD Tally Sheet and Rubric
 
 Use the SLD tally sheet:
 
-`90_templates/student_led_discussion_tally_sheet_template.md`
+[`90_templates/student_led_discussion_tally_sheet_template.md`](../../90_templates/student_led_discussion_tally_sheet_template.md)
+
+We are not tallying discussion moves to rank people.
+
+We are studying the discussion so the team can improve how it makes decisions.
 
 The score is not the purpose. The purpose is better teamwork, better decisions, better documentation, and better robot performance.
+
+The tally sheet gives different point values to different discussion moves. Think of those point values as a simple rubric for what helps the team think well. Evidence, building on ideas, reasonable objections, and decision-making moves matter because they help the team reach a stronger decision.
 
 ## Discussion Move Codes
 
@@ -79,55 +101,32 @@ The score is not the purpose. The purpose is better teamwork, better decisions, 
 | D | A student helps summarize, compare options, decide, or name the next test. |
 | X | A student makes an off-task or unsupported comment. |
 
-The tally can help a team notice patterns:
+Use the tally and rubric to ask:
 
-- Are only one or two people talking?
-- Are people using evidence?
+- Are all voices contributing?
+- Are people asking useful questions?
+- Are claims supported with evidence?
 - Are students building on each other's ideas?
-- Are concerns being considered?
-- Is the team reaching a decision?
-- Is the team going off-task?
+- Are reasonable objections being raised?
+- Is the team reaching a clear decision?
+- Is the team staying focused?
 - Are quieter voices being invited in?
 
-## What Makes an SLD Productive?
+## Types of SLDs You Will Use
 
-| Productive Move | What It Sounds Like |
-|---|---|
-| Ask a question | "What evidence do we have?" |
-| Make a claim | "I think this chassis shape fits our strategy." |
-| Use evidence | "In the demo robot test, this design turned better." |
-| Build on an idea | "I agree with that, and I would add..." |
-| Raise a concern | "One concern is that this may be harder to repair." |
-| Name a tradeoff | "This is faster, but harder to repair." |
-| Move toward a decision | "Can we agree to test this first?" |
+You will use SLD for different kinds of team decisions over time.
 
-## SLD and Work Products
+| Type of Discussion | When It Happens | What the Team Produces |
+|---|---|---|
+| Identity / Norms SLD | Early in the course and when needed | Team norms, identity, and expectations |
+| Strategy / Robot Behavior SLD | Before major robot decisions | Team strategy and robot behavior targets |
+| Design SLD | Before building or major revisions | Subsystem design plan |
+| Experimental Design SLD | Before collecting data | Test plan, variables, measurements, and roles |
+| Operations Role SLD | Before performance testing | Primary roles, backups, and practice plan |
+| Postmortem / Tuning SLD | After tests or competition rounds | Diagnosis, one or two changes, and retest plan |
+| Micro-decision conversation | During regular work time | Small documented choices about parts, code, roles, or safety |
 
-Each formal SLD should produce something useful.
-
-A good SLD ends with a decision, plan, design, role assignment, postmortem record, or next test.
-
-| Type of SLD | Work Product |
-|---|---|
-| Norms SLD | Team norms |
-| Strategy SLD | Team strategy guide |
-| Robot behavior SLD | Robot behavior specification |
-| Design SLD | Subsystem design decision |
-| Operations Role SLD | Role plan and backups |
-| Postmortem SLD | Issue diagnosis and revision plan |
-
-## SLD During the Design Cycle
-
-SLD is part of the design/build/test/postmortem cycle.
-
-| Moment | Discussion Type |
-|---|---|
-| Before major design or revision | Design SLD |
-| Before performance testing | Operations Role SLD |
-| After testing | Postmortem / Tuning SLD |
-| During build/program/test work | Micro-decisions |
-
-Micro-decisions are smaller conversations such as:
+Not every conversation needs a full formal SLD. During build, programming, and testing time, your team will make many micro-decisions:
 
 - Which bracket should we use?
 - Is this wire route safe?
@@ -136,29 +135,26 @@ Micro-decisions are smaller conversations such as:
 - Does this change affect another subsystem?
 - Should this change be documented?
 
-Not every conversation needs a full SLD, but important design, safety, code, strategy, or role decisions should be documented.
+If a choice changes the design, code, safety, strategy, or team roles, record it in the engineering portfolio.
 
-## Inclusion and Team Agency
+## What Productive Discussion Sounds Like
 
-A team loses information when only the loudest or most confident people speak.
+| Productive Move | What It Sounds Like |
+|---|---|
+| Ask a question | "What evidence do we have?" |
+| Make a claim | "I think this design fits our strategy." |
+| Use evidence | "During the test, this version turned more reliably." |
+| Build on an idea | "I agree with that, and I would add..." |
+| Raise a reasonable objection | "A concern I have is..." |
+| Name a tradeoff | "This is faster, but harder to repair." |
+| Move toward a decision | "Can we agree to test this version first?" |
+| Invite another voice | "We have not heard from everyone yet." |
 
-SLD helps teams:
+## Disagree Without Creating Drama
 
-- invite quieter voices
-- make decisions with evidence
-- reduce popularity-based decisions
-- reduce blame
-- share ownership
-- practice leadership
-- create a more accurate record of thinking
+Disagreement is not the problem.
 
-Including more voices does not mean every idea is automatically chosen. It means the team hears more information before deciding.
-
-## Disagreement Without Drama
-
-Disagreement is normal and useful.
-
-Disagreement is not the problem. Unclear, disrespectful, or unsupported disagreement is the problem.
+Unclear, disrespectful, or unsupported disagreement is the problem.
 
 Useful sentence stems:
 
@@ -166,10 +162,88 @@ Useful sentence stems:
 I see it differently because ___.
 What evidence supports that?
 A tradeoff I notice is ___.
+A concern I have is ___.
 I could support that if ___.
 Can we test both options quickly?
 What decision do we need before we can move on?
 ```
+
+## SLD and Work Products
+
+Each formal SLD should produce something useful.
+
+A good SLD ends with a decision, plan, design, role assignment, postmortem record, or next test.
+
+| Type of SLD | Example Work Product |
+|---|---|
+| Norms SLD | Team norms |
+| Strategy SLD | Team strategy guide |
+| Robot Behavior SLD | Robot behavior specification |
+| Design SLD | Subsystem design decision |
+| Experimental Design SLD | Data-collection plan |
+| Operations Role SLD | Role plan and backups |
+| Postmortem SLD | Diagnosis and revision plan |
+
+## SLD During the Design Cycle
+
+SLD is part of the design/build/test/postmortem cycle, not an extra activity.
+
+| Moment | Discussion Type |
+|---|---|
+| Before major design or revision | Design SLD |
+| Before collecting data | Experimental Design SLD |
+| Before performance testing | Operations Role SLD |
+| After testing | Postmortem / Tuning SLD |
+| During build/program/test work | Micro-decisions |
+
+For the full course cycle, see the [Subsystem Design, Operation, Testing, and Tuning Cycle Guide](subsystem_design_operation_testing_cycle_guide.md).
+
+For the course overview, see [How This Robotics Course Works](how_this_robotics_course_works.md).
+
+## Show How Your Team's Conversations Improve
+
+Your team should document not only what you decided, but also how your decision-making process improved.
+
+Useful growth evidence includes:
+
+- more balanced participation
+- more use of evidence
+- fewer off-task comments
+- better handling of disagreement
+- clearer work products
+- more specific postmortems
+- stronger follow-through after decisions
+- better role planning
+- more useful questions
+- better inclusion of quieter voices
+
+| Reflection Question | Team Notes |
+|---|---|
+| What did our team do well in this discussion? | |
+| What should improve next time? | |
+| Whose voice do we need to hear more often? | |
+| What evidence helped us make the decision? | |
+| How did this discussion improve the robot or our work process? | |
+
+## Why Documenting Your Discussions Matters
+
+Strong documentation makes your engineering portfolio more compelling. It shows that your robot was not built randomly. Your team used evidence, made decisions, learned from testing, and improved both the robot and the way you worked together.
+
+This can help when talking with:
+
+- judges
+- teachers
+- guests
+- mentors
+- other teams
+- future teammates
+
+Good discussion evidence might include a decision record, a tally-sheet reflection, a design sketch, test data, a postmortem category, or a short note explaining how the team changed its process.
+
+## Related Reusable SLDs
+
+- [Robot Operations Role Plan SLD](../sld_prompts/reusable_robot_operations_role_plan_sld.md)
+- [Performance Testing Postmortem SLD](../sld_prompts/reusable_performance_testing_postmortem_sld.md)
 
 ## Transferable Skills
 
@@ -181,12 +255,12 @@ These skills matter in:
 
 - engineering teams
 - science labs
-- sports teams
-- theater/music groups
 - workplaces
+- sports teams
+- theater and music groups
 - leadership groups
-- community problem solving
 - project management
+- community problem solving
 - design teams
 - emergency/problem-solving situations
 
@@ -203,6 +277,7 @@ These skills matter in:
 - [ ] I use evidence.
 - [ ] I help include quieter voices.
 - [ ] I name tradeoffs.
+- [ ] I raise concerns respectfully.
 - [ ] I help the team move toward a decision.
 
 ## After an SLD
@@ -211,3 +286,4 @@ These skills matter in:
 - [ ] The team identified the next step.
 - [ ] The team reflected on one discussion strength.
 - [ ] The team set one target for the next discussion.
+- [ ] The team saved evidence for the portfolio.

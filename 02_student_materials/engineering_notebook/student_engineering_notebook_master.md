@@ -14,6 +14,7 @@ This notebook is where your team records what you decided, built, tested, change
 
 Related materials:
 
+- `02_student_materials/guides/how_this_robotics_course_works.md`
 - `02_student_materials/engineering_notebook/day1_session1_student_bio_template.md`
 - `02_student_materials/decision_menus/day1_session1_individual_goal_menu.md`
 
@@ -29,6 +30,7 @@ Related materials:
 
 Related materials:
 
+- `02_student_materials/guides/how_this_robotics_course_works.md`
 - `02_student_materials/decision_menus/day2_session3_team_name_menu.md`
 - `02_student_materials/decision_menus/day2_session3_team_norms_menu.md`
 - `02_student_materials/sld_prompts/day2_session3_team_norms_sld.md`
