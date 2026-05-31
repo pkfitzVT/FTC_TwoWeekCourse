@@ -10,7 +10,15 @@ import html
 import os
 from pathlib import Path
 
-from build_static_site import ROOT, SITE, Page, collect_pages, markdown_to_html, title_from_markdown
+from build_static_site import (
+    ROOT,
+    SITE,
+    Page,
+    collect_pages,
+    collect_student_assets,
+    markdown_to_html,
+    title_from_markdown,
+)
 
 
 PRINT_DIR = SITE / "print"
@@ -95,22 +103,23 @@ def source_map() -> dict[Path, Path]:
     return {page.source.resolve(): page.output for page in collect_pages()}
 
 
-def render_source(source: Path, output: Path, mapping: dict[Path, Path]) -> str:
+def render_source(source: Path, output: Path, mapping: dict[Path, Path], asset_mapping: dict[Path, Path]) -> str:
     page = Page(source=source, output=output, title=title_from_markdown(source), section="Print Packet")
-    return markdown_to_html(source.read_text(encoding="utf-8"), page, mapping)
+    return markdown_to_html(source.read_text(encoding="utf-8"), page, mapping, asset_mapping)
 
 
 def build_packet() -> None:
     PRINT_DIR.mkdir(parents=True, exist_ok=True)
     packet_path = PRINT_DIR / "student_design_decision_packet.html"
     mapping = source_map()
+    asset_mapping = collect_student_assets()
     sections: list[str] = []
 
     for label, relative_source, note in PACKET_SOURCES:
         source = ROOT / relative_source
         if not source.exists():
             raise FileNotFoundError(f"Missing print packet source: {relative_source}")
-        body = render_source(source, packet_path, mapping)
+        body = render_source(source, packet_path, mapping, asset_mapping)
         source_link = rel_href(source, packet_path.parent)
         sections.append(
             f"""

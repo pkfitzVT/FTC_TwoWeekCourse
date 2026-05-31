@@ -11,6 +11,7 @@ import argparse
 import html
 import os
 import re
+import shutil
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable
@@ -20,6 +21,19 @@ ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "site"
 GENERATED = SITE / "generated"
 CSS = SITE / "assets" / "css" / "styles.css"
+STUDENT_MATERIALS = ROOT / "02_student_materials"
+GENERATED_STUDENT = GENERATED / "student"
+APPROVED_STUDENT_ASSET_SUFFIXES = {
+    ".pdf",
+    ".java",
+    ".png",
+    ".jpg",
+    ".jpeg",
+    ".webp",
+    ".svg",
+    ".csv",
+    ".txt",
+}
 
 
 @dataclass(frozen=True)
@@ -76,12 +90,53 @@ def collect_pages() -> list[Page]:
     return pages
 
 
+def collect_student_assets() -> dict[Path, Path]:
+    assets: dict[Path, Path] = {}
+    if not STUDENT_MATERIALS.exists():
+        return assets
+    for source in sorted(STUDENT_MATERIALS.rglob("*")):
+        if source.is_file() and source.suffix.lower() in APPROVED_STUDENT_ASSET_SUFFIXES:
+            relative_source = source.relative_to(STUDENT_MATERIALS)
+            assets[source.resolve()] = GENERATED_STUDENT / relative_source
+    return assets
+
+
+def sync_student_assets(asset_map: dict[Path, Path]) -> None:
+    expected_outputs = {output.resolve() for output in asset_map.values()}
+
+    for source, output in asset_map.items():
+        output.parent.mkdir(parents=True, exist_ok=True)
+        if (
+            not output.exists()
+            or source.stat().st_size != output.stat().st_size
+            or source.stat().st_mtime_ns != output.stat().st_mtime_ns
+        ):
+            shutil.copy2(source, output)
+
+    if not GENERATED_STUDENT.exists():
+        return
+
+    for generated_asset in sorted(GENERATED_STUDENT.rglob("*"), reverse=True):
+        if (
+            generated_asset.is_file()
+            and generated_asset.suffix.lower() in APPROVED_STUDENT_ASSET_SUFFIXES
+            and generated_asset.resolve() not in expected_outputs
+        ):
+            generated_asset.unlink()
+
+
 def slugify(text: str) -> str:
     slug = re.sub(r"[^a-zA-Z0-9]+", "-", text.strip().lower()).strip("-")
     return slug or "section"
 
 
-def convert_inline(text: str, current_page: Page, source_map: dict[Path, Path]) -> str:
+def convert_inline(
+    text: str,
+    current_page: Page,
+    source_map: dict[Path, Path],
+    asset_map: dict[Path, Path] | None = None,
+) -> str:
+    asset_map = asset_map or {}
     escaped = html.escape(text)
 
     def replace_link(match: re.Match[str]) -> str:
@@ -94,6 +149,11 @@ def convert_inline(text: str, current_page: Page, source_map: dict[Path, Path]) 
             source_target = (current_page.source.parent / base_target).resolve()
             if source_target.suffix.lower() == ".md" and source_target in source_map:
                 href_path = os.path.relpath(source_map[source_target], current_page.output.parent)
+                href = href_path.replace(os.sep, "/")
+                if fragment:
+                    href += f"#{fragment}"
+            elif source_target in asset_map:
+                href_path = os.path.relpath(asset_map[source_target], current_page.output.parent)
                 href = href_path.replace(os.sep, "/")
                 if fragment:
                     href += f"#{fragment}"
@@ -111,22 +171,39 @@ def convert_inline(text: str, current_page: Page, source_map: dict[Path, Path]) 
     return escaped
 
 
-def flush_paragraph(lines: list[str], output: list[str], current_page: Page, source_map: dict[Path, Path]) -> None:
+def flush_paragraph(
+    lines: list[str],
+    output: list[str],
+    current_page: Page,
+    source_map: dict[Path, Path],
+    asset_map: dict[Path, Path] | None = None,
+) -> None:
     if lines:
-        output.append(f"<p>{convert_inline(' '.join(lines), current_page, source_map)}</p>")
+        output.append(f"<p>{convert_inline(' '.join(lines), current_page, source_map, asset_map)}</p>")
         lines.clear()
 
 
-def flush_list(items: list[str], output: list[str], current_page: Page, source_map: dict[Path, Path]) -> None:
+def flush_list(
+    items: list[str],
+    output: list[str],
+    current_page: Page,
+    source_map: dict[Path, Path],
+    asset_map: dict[Path, Path] | None = None,
+) -> None:
     if items:
         output.append("<ul>")
         for item in items:
-            output.append(f"<li>{convert_inline(item, current_page, source_map)}</li>")
+            output.append(f"<li>{convert_inline(item, current_page, source_map, asset_map)}</li>")
         output.append("</ul>")
         items.clear()
 
 
-def render_table(rows: list[str], current_page: Page, source_map: dict[Path, Path]) -> str:
+def render_table(
+    rows: list[str],
+    current_page: Page,
+    source_map: dict[Path, Path],
+    asset_map: dict[Path, Path] | None = None,
+) -> str:
     parsed = [[cell.strip() for cell in row.strip().strip("|").split("|")] for row in rows]
     if len(parsed) >= 2 and all(re.fullmatch(r":?-{3,}:?", cell) for cell in parsed[1]):
         header = parsed[0]
@@ -139,19 +216,24 @@ def render_table(rows: list[str], current_page: Page, source_map: dict[Path, Pat
     if header:
         out.append("<thead><tr>")
         for cell in header:
-            out.append(f"<th>{convert_inline(cell, current_page, source_map)}</th>")
+            out.append(f"<th>{convert_inline(cell, current_page, source_map, asset_map)}</th>")
         out.append("</tr></thead>")
     out.append("<tbody>")
     for row in body:
         out.append("<tr>")
         for cell in row:
-            out.append(f"<td>{convert_inline(cell, current_page, source_map)}</td>")
+            out.append(f"<td>{convert_inline(cell, current_page, source_map, asset_map)}</td>")
         out.append("</tr>")
     out.append("</tbody></table></div>")
     return "\n".join(out)
 
 
-def markdown_to_html(markdown: str, current_page: Page, source_map: dict[Path, Path]) -> str:
+def markdown_to_html(
+    markdown: str,
+    current_page: Page,
+    source_map: dict[Path, Path],
+    asset_map: dict[Path, Path] | None = None,
+) -> str:
     output: list[str] = []
     paragraph: list[str] = []
     list_items: list[str] = []
@@ -162,15 +244,15 @@ def markdown_to_html(markdown: str, current_page: Page, source_map: dict[Path, P
     def flush_table() -> None:
         nonlocal table_rows
         if table_rows:
-            output.append(render_table(table_rows, current_page, source_map))
+            output.append(render_table(table_rows, current_page, source_map, asset_map))
             table_rows = []
 
     for raw_line in markdown.splitlines():
         line = raw_line.rstrip()
 
         if line.startswith("```"):
-            flush_paragraph(paragraph, output, current_page, source_map)
-            flush_list(list_items, output, current_page, source_map)
+            flush_paragraph(paragraph, output, current_page, source_map, asset_map)
+            flush_list(list_items, output, current_page, source_map, asset_map)
             flush_table()
             if in_code:
                 output.append(f"<pre><code>{html.escape(chr(10).join(code_lines))}</code></pre>")
@@ -185,45 +267,45 @@ def markdown_to_html(markdown: str, current_page: Page, source_map: dict[Path, P
             continue
 
         if not line.strip():
-            flush_paragraph(paragraph, output, current_page, source_map)
-            flush_list(list_items, output, current_page, source_map)
+            flush_paragraph(paragraph, output, current_page, source_map, asset_map)
+            flush_list(list_items, output, current_page, source_map, asset_map)
             flush_table()
             continue
 
         if line.startswith("|") and line.endswith("|"):
-            flush_paragraph(paragraph, output, current_page, source_map)
-            flush_list(list_items, output, current_page, source_map)
+            flush_paragraph(paragraph, output, current_page, source_map, asset_map)
+            flush_list(list_items, output, current_page, source_map, asset_map)
             table_rows.append(line)
             continue
         flush_table()
 
         heading = re.match(r"^(#{1,6})\s+(.*)$", line)
         if heading:
-            flush_paragraph(paragraph, output, current_page, source_map)
-            flush_list(list_items, output, current_page, source_map)
+            flush_paragraph(paragraph, output, current_page, source_map, asset_map)
+            flush_list(list_items, output, current_page, source_map, asset_map)
             level = len(heading.group(1))
             text = heading.group(2).strip()
             anchor = slugify(text)
-            output.append(f'<h{level} id="{anchor}">{convert_inline(text, current_page, source_map)}</h{level}>')
+            output.append(f'<h{level} id="{anchor}">{convert_inline(text, current_page, source_map, asset_map)}</h{level}>')
             continue
 
         bullet = re.match(r"^[-*]\s+(.*)$", line)
         if bullet:
-            flush_paragraph(paragraph, output, current_page, source_map)
+            flush_paragraph(paragraph, output, current_page, source_map, asset_map)
             list_items.append(bullet.group(1).strip())
             continue
 
         if line.startswith(">"):
-            flush_paragraph(paragraph, output, current_page, source_map)
-            flush_list(list_items, output, current_page, source_map)
+            flush_paragraph(paragraph, output, current_page, source_map, asset_map)
+            flush_list(list_items, output, current_page, source_map, asset_map)
             quote = line.lstrip(">").strip()
-            output.append(f"<blockquote>{convert_inline(quote, current_page, source_map)}</blockquote>")
+            output.append(f"<blockquote>{convert_inline(quote, current_page, source_map, asset_map)}</blockquote>")
             continue
 
         paragraph.append(line.strip())
 
-    flush_paragraph(paragraph, output, current_page, source_map)
-    flush_list(list_items, output, current_page, source_map)
+    flush_paragraph(paragraph, output, current_page, source_map, asset_map)
+    flush_list(list_items, output, current_page, source_map, asset_map)
     flush_table()
     if in_code:
         output.append(f"<pre><code>{html.escape(chr(10).join(code_lines))}</code></pre>")
@@ -267,9 +349,9 @@ def html_shell(title: str, body: str, css_href: str, nav_prefix: str = "", intro
 """
 
 
-def write_document_page(page: Page, source_map: dict[Path, Path]) -> None:
+def write_document_page(page: Page, source_map: dict[Path, Path], asset_map: dict[Path, Path]) -> None:
     source_text = page.source.read_text(encoding="utf-8")
-    article = markdown_to_html(source_text, page, source_map)
+    article = markdown_to_html(source_text, page, source_map, asset_map)
     source_href = os.path.relpath(page.source, page.output.parent).replace(os.sep, "/")
     home_href = os.path.relpath(SITE / "index.html", page.output.parent).replace(os.sep, "/")
     body = f"""
@@ -481,12 +563,14 @@ def check_links() -> list[tuple[Path, str, Path]]:
 
 def build() -> None:
     pages = collect_pages()
+    asset_map = collect_student_assets()
     if GENERATED.exists():
         for old_html in GENERATED.rglob("*.html"):
             old_html.unlink()
     source_map = {page.source.resolve(): page.output for page in pages}
     for page in pages:
-        write_document_page(page, source_map)
+        write_document_page(page, source_map, asset_map)
+    sync_student_assets(asset_map)
     write_static_pages(pages)
 
 

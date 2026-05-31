@@ -39,6 +39,6 @@ These activities are likely future additions as the course develops. Do not crea
 
 The demo robot analysis activity has a manual printable PDF:
 
-`02_student_materials/activities/demo_robot_design_analysis/demo_robot_design_analysis.pdf`
+[demo_robot_design_analysis.pdf](demo_robot_design_analysis/demo_robot_design_analysis.pdf)
 
 Do not overwrite manual PDFs with auto-generated print output. If a manual printable needs revision, update the source worksheet and then revise the PDF intentionally.
