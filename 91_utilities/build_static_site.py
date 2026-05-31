@@ -295,6 +295,13 @@ def list_items(pages: Iterable[Page], from_dir: Path) -> str:
     )
 
 
+def labeled_list_items(items: Iterable[tuple[str, Page]], from_dir: Path) -> str:
+    return "\n".join(
+        f'          <li><a href="{link_for(page, from_dir)}">{html.escape(label)}</a></li>'
+        for label, page in items
+    )
+
+
 def page_by_source(pages: list[Page], source: str) -> Page:
     target = (ROOT / source).resolve()
     for page in pages:
@@ -384,9 +391,18 @@ def write_static_pages(pages: list[Page]) -> None:
         "00_course_map/course_overview.md",
         "docs/course_content_inventory.md",
     ]
+    sld_planning_sources = [
+        ("SLD Prompt and Deliverable Table", "docs/sld_prompt_deliverable_table.md"),
+        ("Discussion Prompt Inventory", "docs/discussion_prompt_inventory.md"),
+        ("Discussion Support Coverage Matrix", "docs/discussion_support_coverage_matrix.md"),
+        ("Design Choice Menu Matrix", "docs/design_choice_menu_matrix.md"),
+    ]
     teacher_body = f"""
       <section class="section"><h2>Main Teacher Documents</h2><ul class="link-list">
 {list_items([page_by_source(pages, source) for source in teacher_sources], SITE / "teachers")}
+      </ul></section>
+      <section class="section"><h2>SLD Planning and Discussion Audit</h2><ul class="link-list">
+{labeled_list_items([(label, page_by_source(pages, source)) for label, source in sld_planning_sources], SITE / "teachers")}
       </ul></section>
       <section class="section"><h2>Teacher Guides, Templates, and Impact Study</h2><ul class="link-list">
 {list_items(section_pages(pages, "Teacher Materials") + section_pages(pages, "Templates") + section_pages(pages, "Impact Study"), SITE / "teachers")}
