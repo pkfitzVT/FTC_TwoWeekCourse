@@ -7,7 +7,6 @@ Markdown files into print-friendly HTML under site/print/.
 from __future__ import annotations
 
 import html
-import os
 from pathlib import Path
 
 from build_static_site import (
@@ -68,10 +67,6 @@ PACKET_SOURCES = [
 # are maintained separately and should not be overwritten by this generated HTML packet.
 
 
-def rel_href(target: Path, from_dir: Path) -> str:
-    return os.path.relpath(target, from_dir).replace(os.sep, "/")
-
-
 def shell(title: str, body: str, css_prefix: str = "../") -> str:
     return f"""<!doctype html>
 <html lang="en">
@@ -120,14 +115,12 @@ def build_packet() -> None:
         if not source.exists():
             raise FileNotFoundError(f"Missing print packet source: {relative_source}")
         body = render_source(source, packet_path, mapping, asset_mapping)
-        source_link = rel_href(source, packet_path.parent)
         sections.append(
             f"""
       <section class="worksheet-section">
         <div class="print-source keep-together">
           <strong>{html.escape(label)}</strong><br>
-          <span>{html.escape(note)}</span><br>
-          <span>Source: <a href="{html.escape(source_link, quote=True)}">{html.escape(relative_source)}</a></span>
+          <span>{html.escape(note)}</span>
         </div>
         <article class="worksheet-content">
 {body}

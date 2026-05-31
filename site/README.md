@@ -52,8 +52,6 @@ Generated HTML pages live in:
 - `site/generated/`
 - `site/print/`
 
-Each generated page includes a `View source Markdown` link.
-
 ## Build Print-Friendly Pages
 
 Print-friendly worksheet pages are generated separately so the Markdown source files remain the source of truth.

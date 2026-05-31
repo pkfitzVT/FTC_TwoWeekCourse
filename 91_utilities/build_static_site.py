@@ -130,6 +130,51 @@ def slugify(text: str) -> str:
     return slug or "section"
 
 
+def is_relative_to(path: Path, parent: Path) -> bool:
+    try:
+        path.relative_to(parent)
+    except ValueError:
+        return False
+    return True
+
+
+def generated_directory_href(source_target: Path, from_dir: Path) -> str | None:
+    if not source_target.exists() or not source_target.is_dir():
+        return None
+
+    source_target = source_target.resolve()
+    materials_index = SITE / "materials" / "index.html"
+    section_by_student_dir = {
+        "readings": "student-readings",
+        "guides": "student-guides",
+        "activities": "activities",
+        "code_examples": "code-examples",
+        "engineering_notebook": "engineering-notebook",
+        "decision_menus": "decision-menus",
+        "sld_prompts": "sld-prompts",
+        "challenge_by_choice": "challenge-by-choice",
+    }
+
+    if is_relative_to(source_target, STUDENT_MATERIALS):
+        relative_parts = source_target.relative_to(STUDENT_MATERIALS).parts
+        section = section_by_student_dir.get(relative_parts[0]) if relative_parts else None
+        if section:
+            href_path = os.path.relpath(materials_index, from_dir).replace(os.sep, "/")
+            return f"{href_path}#{section}"
+
+    docs = ROOT / "docs"
+    if source_target == docs:
+        href_path = os.path.relpath(materials_index, from_dir).replace(os.sep, "/")
+        return f"{href_path}#teacher-docs"
+    if is_relative_to(source_target, docs / "sessions"):
+        return os.path.relpath(SITE / "sessions" / "index.html", from_dir).replace(os.sep, "/")
+    if is_relative_to(source_target, docs / "impact_study"):
+        href_path = os.path.relpath(materials_index, from_dir).replace(os.sep, "/")
+        return f"{href_path}#impact-study"
+
+    return None
+
+
 def convert_inline(
     text: str,
     current_page: Page,
@@ -155,6 +200,10 @@ def convert_inline(
             elif source_target in asset_map:
                 href_path = os.path.relpath(asset_map[source_target], current_page.output.parent)
                 href = href_path.replace(os.sep, "/")
+                if fragment:
+                    href += f"#{fragment}"
+            elif directory_href := generated_directory_href(source_target, current_page.output.parent):
+                href = directory_href
                 if fragment:
                     href += f"#{fragment}"
             else:
@@ -352,11 +401,10 @@ def html_shell(title: str, body: str, css_href: str, nav_prefix: str = "", intro
 def write_document_page(page: Page, source_map: dict[Path, Path], asset_map: dict[Path, Path]) -> None:
     source_text = page.source.read_text(encoding="utf-8")
     article = markdown_to_html(source_text, page, source_map, asset_map)
-    source_href = os.path.relpath(page.source, page.output.parent).replace(os.sep, "/")
     home_href = os.path.relpath(SITE / "index.html", page.output.parent).replace(os.sep, "/")
     body = f"""
       <article class="document">
-        <p class="breadcrumb"><a href="{home_href}">Back to site home</a> | <a href="{source_href}">View source Markdown</a></p>
+        <p class="breadcrumb"><a href="{home_href}">Back to site home</a></p>
         {article}
       </article>
 """
@@ -672,8 +720,6 @@ Generated HTML pages live in:
 
 - `site/generated/`
 - `site/print/`
-
-Each generated page includes a `View source Markdown` link.
 
 ## Build Print-Friendly Pages
 
